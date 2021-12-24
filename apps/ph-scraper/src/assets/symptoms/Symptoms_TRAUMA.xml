@@ -1,0 +1,551 @@
+<Database>
+    
+    <GameDBSymptom ID="SYM_LARGE_ARTERIES_DAMAGED">
+        <DescriptionLocID>SYM_LARGE_ARTERIES_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>8</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_VASCULAR_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2226</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HYPOXIA">
+        <DescriptionLocID>SYM_HYPOXIA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>8</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_UNCONSCIOUSNESS</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PULSE_OXYMETRY</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_CONCETRATED_OXYGEN</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2194</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HYPOTHERMIA">
+        <DescriptionLocID>SYM_HYPOTHERMIA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>18</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_TEMPERATURE_MEASUREMENT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_WARMED_IV_FLUIDS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2192</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_FOREIGN_OBJECT_PRESENT">
+        <DescriptionLocID>SYM_FOREIGN_OBJECT_PRESENT_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>4</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_FOREIGN_OBJECT_REMOVAL</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2228</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LIVER_DAMAGED">
+        <DescriptionLocID>SYM_LIVER_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_DISTRIBUTIVE_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_HEPATOPLASTY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2210</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SPLEEN_DAMAGED">
+        <DescriptionLocID>SYM_SPLEEN_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_DISTRIBUTIVE_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_SPLENECTOMY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2212</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LUNGS_PERFORATED">
+        <DescriptionLocID>SYM_LUNGS_PERFORATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_RESPIRATORY_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PULMONARY_SURGERY_X</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2214</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_PANCREAS_DAMAGED">
+        <DescriptionLocID>SYM_PANCREAS_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_DISTRIBUTIVE_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_MRI</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PANCREATICOPLASTY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2216</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_KIDNEY_DAMAGED">
+        <DescriptionLocID>SYM_KIDNEY_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_DISTRIBUTIVE_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_MRI</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_LAPAROSCOPIC_PYELOPLASTY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2218</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_STOMACH_PERFORATED">
+        <DescriptionLocID>SYM_STOMACH_PERFORATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_GASTRIC_PERFORATION_REPAIR</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2220</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SMALL_INTESTINE_PERFORATED">
+        <DescriptionLocID>SYM_SMALL_INTESTINE_PERFORATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_SMALL_BOWEL_RESECTION</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2222</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LARGE_INTESTINE_PERFORATED">
+        <DescriptionLocID>SYM_LARGE_INTESTINE_PERFORATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BOWEL_RESECTION</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2224</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_TIBIAL_FRACTURE">
+        <DescriptionLocID>SYM_TIBIAL_FRACTURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_LOWER_LIMB</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_LEG</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1271</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_FEMORAL_FRACTURE">
+        <DescriptionLocID>SYM_FEMORAL_FRACTURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_LOWER_LIMB</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_LEG</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1265</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_ULNAR_FRACTURE">
+        <DescriptionLocID>SYM_ULNAR_FRACTURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_UPPER_LIMB</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_ARM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1251</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_RADIAL_FRACTURE">
+        <DescriptionLocID>SYM_RADIAL_FRACTURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_UPPER_LIMB</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_ARM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1251</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HUMERAL_FRACTURE">
+        <DescriptionLocID>SYM_HUMERAL_FRACTURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_UPPER_LIMB</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_ARM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1257</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_FRAGMENTED_RIBS">
+        <DescriptionLocID>SYM_FRAGMENTED_RIBS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_X_RAY_TORSO</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_FRACTURE_SURGERY_THORAX</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1263</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BLISTERS">
+        <DescriptionLocID>SYM_BLISTERS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Low</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PROTECTIVE_DRESSING</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2230</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_DESQUAMATION">
+        <DescriptionLocID>SYM_DESQUAMATION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Low</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PROTECTIVE_DRESSING</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2232</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_DARK_SKIN">
+        <DescriptionLocID>SYM_DARK_SKIN_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PROTECTIVE_DRESSING</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1371</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_NECROSIS">
+        <DescriptionLocID>SYM_NECROSIS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_DEBRIDEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2234</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_GUNSHOT_WOUND">
+        <DescriptionLocID>SYM_GUNSHOT_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2198</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BALLISTIC_WOUND">
+        <DescriptionLocID>SYM_BALLISTIC_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2200</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_STAB_WOUND">
+        <DescriptionLocID>SYM_STAB_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2202</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_PENETRATING_WOUND">
+        <DescriptionLocID>SYM_PENETRATING_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2204</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BLAST_WOUND">
+        <DescriptionLocID>SYM_BLAST_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2206</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BURN_WOUND">
+        <DescriptionLocID>SYM_BURN_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_EMERGENCY_CARE</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2208</IconIndex>
+    </GameDBSymptom>
+
+</Database>

@@ -1,0 +1,808 @@
+<Database>
+
+    <GameDBSymptom ID="SYM_PENETRATING_PULMONARY_LACERATION_X">
+        <DescriptionLocID>SYM_PENETRATING_PULMONARY_LACERATION_X_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_RESPIRATORY_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PULMONARY_SURGERY_X</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <LyingAnimationSuffix>_wound_chest</LyingAnimationSuffix>
+		<DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>1199</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LIVER_AND_SPLEEN_LACERATED">
+        <DescriptionLocID>SYM_LIVER_AND_SPLEEN_LACERATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2740</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SPLEEN_AND_PANCREAS_LACERATED">
+        <DescriptionLocID>SYM_SPLEEN_AND_PANCREAS_LACERATED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2742</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_UPPER_ABDOMEN_GUNSHOT">
+        <DescriptionLocID>SYM_UPPER_ABDOMEN_GUNSHOT_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <IconIndex>2744</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LOWER_ABDOMEN_BALLISTICS">
+        <DescriptionLocID>SYM_LOWER_ABDOMEN_BALLISTICS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <IconIndex>2746</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CHEST_GUNSHOT">
+        <DescriptionLocID>SYM_CHEST_GUNSHOT_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_RESPIRATORY_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_chest</LyingAnimationSuffix>
+        <IconIndex>2748</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_NECK_BALLISTIC_WOUND">
+        <DescriptionLocID>SYM_NECK_BALLISTIC_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>2750</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_UPPER_LIMB_BALLISTIC_WOUND">
+        <DescriptionLocID>SYM_UPPER_LIMB_BALLISTIC_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY_ARM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_arm</LyingAnimationSuffix>
+        <IconIndex>2752</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LOWER_LIMB_BALLISTIC_WOUND">
+        <DescriptionLocID>SYM_LOWER_LIMB_BALLISTIC_WOUND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY_LEG</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>LEG_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_leg</LyingAnimationSuffix>
+        <IconIndex>2754</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_UPPER_ABDOMEN_PENETRATING">
+        <DescriptionLocID>SYM_UPPER_ABDOMEN_PENETRATING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <IconIndex>2756</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LOWER_ABDOMEN_STAB">
+        <DescriptionLocID>SYM_LOWER_ABDOMEN_STAB_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <IconIndex>2758</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CHEST_STAB">
+        <DescriptionLocID>SYM_CHEST_STAB_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_RESPIRATORY_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_FAST</ExaminationRef>
+            <ExaminationRef>EXM_USG</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_chest</LyingAnimationSuffix>
+        <IconIndex>2760</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_NECK_PENETRATING">
+        <DescriptionLocID>SYM_NECK_PENETRATING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_MRI</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2762</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_UPPER_LIMB_PENETRATING">
+        <DescriptionLocID>SYM_UPPER_LIMB_PENETRATING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY_ARM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_arm</LyingAnimationSuffix>
+        <IconIndex>2764</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_LOWER_LIMB_PENETRATING">
+        <DescriptionLocID>SYM_LOWER_LIMB_PENETRATING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HYPOVOLEMIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY_LEG</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>LEG_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_leg</LyingAnimationSuffix>
+        <IconIndex>2766</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_ABDOMINAL_TRAUMA_EXPLOSION">
+        <DescriptionLocID>SYM_ABDOMINAL_TRAUMA_EXPLOSION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <DressLevelWhenTreated>ABDOMEN_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_abdomen</LyingAnimationSuffix>
+        <IconIndex>2768</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CHEST_TRAUMA_EXPLOSION">
+        <DescriptionLocID>SYM_CHEST_TRAUMA_EXPLOSION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_chest</LyingAnimationSuffix>
+        <IconIndex>2770</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_MILD_FROSTBITE_HAND">
+        <DescriptionLocID>SYM_MILD_FROSTBITE_HAND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PROTECTIVE_DRESSING</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2772</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SEVERE_FROSTBITE_HAND">
+        <DescriptionLocID>SYM_SEVERE_FROSTBITE_HAND_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2774</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_MILD_FROSTBITE_LEG">
+        <DescriptionLocID>SYM_MILD_FROSTBITE_LEG_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PROTECTIVE_DRESSING</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>LEG_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2776</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SEVERE_FROSTBITE_LEG">
+        <DescriptionLocID>SYM_SEVERE_FROSTBITE_LEG_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>LEG_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2778</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CHEMICAL_BURN_ARM">
+        <DescriptionLocID>SYM_CHEMICAL_BURN_ARM_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_arm</LyingAnimationSuffix>
+        <IconIndex>2780</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CHEMICAL_BURN_TORSO">
+        <DescriptionLocID>SYM_CHEMICAL_BURN_TORSO_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_chest</LyingAnimationSuffix>
+        <IconIndex>2782</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SKIN_LESION_LIGHTNING">
+        <DescriptionLocID>SYM_SKIN_LESION_LIGHTNING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2784</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SUBDERMAL_TISSUE_DAMAGED">
+        <DescriptionLocID>SYM_SUBDERMAL_TISSUE_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>10</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_MRI</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_TRAUMA_SURGERY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2786</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_PIGMENTATION_CHANGES">
+        <DescriptionLocID>SYM_PIGMENTATION_CHANGES_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_STEROID_TOPICAL_CREAM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2788</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SKIN_AND_FAT_TISSUE_DAMAGED">
+        <DescriptionLocID>SYM_SKIN_AND_FAT_TISSUE_DAMAGED_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_BIOPSY_TESTING</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2790</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_THERMAL_BURN_ARM">
+        <DescriptionLocID>SYM_THERMAL_BURN_ARM_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>FOREARM_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_arm</LyingAnimationSuffix>
+        <IconIndex>2792</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_THERMAL_BURN_LEG">
+        <DescriptionLocID>SYM_THERMAL_BURN_LEG_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>LEG_BANDAGE</DressLevelWhenTreated>
+        <LyingAnimationSuffix>_wound_leg</LyingAnimationSuffix>
+        <IconIndex>2794</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_SEVERE_THERMAL_BURN">
+        <DescriptionLocID>SYM_SEVERE_THERMAL_BURN_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <DressLevelWhenTreated>CHEST_BANDAGE</DressLevelWhenTreated>
+        <IconIndex>2796</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_LOW_VOLTAGE_BURN">
+        <DescriptionLocID>SYM_LOW_VOLTAGE_BURN_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Low</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2815</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_SUNBURNED_SKIN">
+        <DescriptionLocID>SYM_SUNBURNED_SKIN_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Low</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BURN_MANAGEMENT</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2813</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_BLACK_WIDOW_BITE">
+        <DescriptionLocID>SYM_BLACK_WIDOW_BITE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANTIVENOM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2817</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_RATTLESNAKE_BITE">
+        <DescriptionLocID>SYM_RATTLESNAKE_BITE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANTIVENOM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2819</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_COPPERHEAD_SNAKE_BITE">
+        <DescriptionLocID>SYM_COPPERHEAD_SNAKE_BITE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_EVALUATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANTIVENOM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>false</CanNotTalk>
+        <IconIndex>2821</IconIndex>
+    </GameDBSymptom>
+
+</Database>

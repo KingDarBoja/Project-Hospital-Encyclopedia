@@ -4,7 +4,6 @@ import { promises as fs } from "fs";
 import { DiagnoseDatabaseSchema } from './types';
 
 const BASE_DIAGNOSES_DIR = 'diagnoses';
-// const BASE_PATH = process.cwd();
 
 const parser = new XMLParser();
 

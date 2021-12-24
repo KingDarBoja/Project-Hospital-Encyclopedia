@@ -1,0 +1,144 @@
+﻿<Database>
+    <!-- ===================================== NEW SYMPTOMS ============================================== -->
+    
+    <GameDBSymptom ID="SYM_ESCHAR">
+        <DescriptionLocID>SYM_ESCHAR_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_STEROID_TOPICAL_CREAM</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2174</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_VIREMIA">
+        <DescriptionLocID>SYM_VIREMIA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_SEROLOGY_TESTING_TESTING</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANTIVIROTICS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2176</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_DISTRIBUTIVE_SHOCK">
+        <DescriptionLocID>SYM_DISTRIBUTIVE_SHOCK_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        <RiskOfDeathStartHours>2</RiskOfDeathStartHours>
+        <RiskOfDeathEndHours>4</RiskOfDeathEndHours>
+        <PatientMobility>INTUBATED</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_INFUSION</TreatmentRef>
+        </Treatments>
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_MEDIUM</CollapseProcedureRef>
+        <PlanAllTreatments>true</PlanAllTreatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>2182</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HYPOVOLEMIA">
+        <DescriptionLocID>SYM_HYPOVOLEMIA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>4</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>18</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_INFUSION</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2184</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_TACHYPNEA">
+        <DescriptionLocID>SYM_TACHYPNEA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CHEST_LISTENING</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_OXYGENOTHERAPY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2188</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BRADYPNEA">
+        <DescriptionLocID>SYM_BRADYPNEA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>Medium</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CHEST_LISTENING</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ACE_INHIBITOR</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2190</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_HYPOXEMIA">
+        <DescriptionLocID>SYM_HYPOXEMIA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>18</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_UNCONSCIOUSNESS</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PULSE_OXYMETRY</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_OXYGENOTHERAPY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2196</IconIndex>
+    </GameDBSymptom>
+</Database>
+
