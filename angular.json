@@ -122,6 +122,50 @@
       },
       "tags": [],
       "implicitDependencies": ["ph-encyclopedia"]
+    },
+    "ph-scraper": {
+      "root": "apps/ph-scraper",
+      "sourceRoot": "apps/ph-scraper/src",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/ph-scraper",
+            "main": "apps/ph-scraper/src/main.ts",
+            "tsConfig": "apps/ph-scraper/tsconfig.app.json",
+            "assets": ["apps/ph-scraper/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/ph-scraper/src/environments/environment.ts",
+                  "with": "apps/ph-scraper/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "ph-scraper:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/ph-scraper/**/*.ts"]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }
