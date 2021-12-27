@@ -9,9 +9,35 @@ export async function generateProcedures() {
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_PROCEDURES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_PROCEDURES_DIR);
 
-  const procedureFiles = await fse.readdir(inputPath);
+  // Get all the xml files inside the `input/procedures` directory and loop each
+  // to obtain a parsed json for futher processing.
+  const procedureFilePaths = await fse.readdir(inputPath);
+  for (const procedureFilePath of procedureFilePaths) {
+    const filePath = path.join(inputPath, procedureFilePath);
+    const stat = fse.statSync(filePath);
 
-  await fse.outputFile(path.resolve(outputPath, 'text.json'), '{}');
+    // Make sure we are not reading a directory.
+    if (stat.isFile()) {
+      populateProceduresDictionary(filePath);
+    }
+  }
 
-  console.log(procedureFiles);
+  // await fse.outputFile(path.resolve(outputPath, 'text.json'), '{}');
+
+  // console.log(procedureFiles);
+}
+
+async function populateProceduresDictionary(filePath: string) {
+  const rawDoc = await fse.readFile(filePath);
+
+  // Initialize xml parser and pass the file content.
+  const parser = new XMLParser();
+  const parsedDoc = parser.parse(rawDoc);
+
+  // Pretty-printing for debugging.
+  const prettyStr = JSON.stringify(parsedDoc, null, 2);
+
+  console.group(`******** File path: ${filePath} ********`);
+  console.log(prettyStr);
+  console.groupEnd();
 }
