@@ -21,7 +21,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "apps/ph-encyclopedia/src/favicon.ico",
-              "apps/ph-encyclopedia/src/assets"
+              "apps/ph-encyclopedia/src/assets",
+              {
+                "input": "libs/shared/assets/src/assets",
+                "glob": "**/*",
+                "output": "assets"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -182,6 +187,25 @@
           "options": {
             "lintFilePatterns": [
               "apps/ph-scraper/**/*.ts"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-assets": {
+      "root": "libs/shared/assets",
+      "sourceRoot": "libs/shared/assets/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/assets/**/*.ts"
             ]
           }
         }
