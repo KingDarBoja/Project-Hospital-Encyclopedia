@@ -21,7 +21,11 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "apps/ph-encyclopedia/src/favicon.ico",
-              "apps/ph-encyclopedia/src/assets",
+              {
+                "glob": "favicon.ico",
+                "input": "libs/shared/assets/src",
+                "output": "./"
+              },
               {
                 "input": "libs/shared/assets/src/assets",
                 "glob": "**/*",
