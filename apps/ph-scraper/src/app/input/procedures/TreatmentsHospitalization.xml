@@ -1,0 +1,140 @@
+﻿<Database>
+    <GameDBTreatment ID="TRT_HOSPITALIZATION_OBSERVATION">
+        <AbbreviationLocID>TRT_HOSPITALIZATION_OBSERVATION_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+
+            <RequiredRoomTags>
+                <Tag>observation</Tag>
+            </RequiredRoomTags>
+
+            <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+            <DressLevel>FULL</DressLevel>
+            <DressLevelAfter>FULL</DressLevelAfter>
+            <HospitalizationLevel>OBSERVATION</HospitalizationLevel>
+            <DetachedDepartmentRef>DPT_EMERGENCY</DetachedDepartmentRef>
+        </Procedure>
+        <TreatmentType>HOSPITALIZATION</TreatmentType>
+        <Cost>100</Cost>
+        <IconIndex>1971</IconIndex>
+        <DurationHours>8</DurationHours>
+    </GameDBTreatment>
+    
+    <GameDBTreatment ID="TRT_HOSPITALIZATION_TRAUMA">
+        <AbbreviationLocID>TRT_HOSPITALIZATION_TRAUMA_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+
+            <RequiredRoomTags>
+                <Tag>trauma_center</Tag>
+            </RequiredRoomTags>
+
+            <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+            <DressLevel>FULL</DressLevel>
+            <DressLevelAfter>FULL</DressLevelAfter>
+            <HospitalizationLevel>TRAUMA</HospitalizationLevel>
+        </Procedure>
+        <TreatmentType>HOSPITALIZATION</TreatmentType>
+        <Cost>100</Cost>
+        <IconIndex>1965</IconIndex>
+        <DurationHours>4</DurationHours>
+    </GameDBTreatment>
+    
+    <GameDBTreatment ID="TRT_HOSPITALIZATION_NORMAL">
+        <AbbreviationLocID>TRT_HOSPITALIZATION_NORMAL_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+
+            <RequiredRoomTags>
+                <Tag>hospitalization_normal</Tag>
+            </RequiredRoomTags>
+            
+            <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+            <DressLevel>FULL</DressLevel>
+            <DressLevelAfter>FULL</DressLevelAfter>
+            <HospitalizationLevel>NORMAL</HospitalizationLevel>
+        </Procedure>
+        <TreatmentType>HOSPITALIZATION</TreatmentType>
+        <Cost>100</Cost>
+        <IconIndex>1911</IconIndex>
+        <DurationHours>12</DurationHours>
+
+        <DepartmentNamingExceptions>
+            <DepartmentNamingException>
+                <DepartmentID>DPT_TRAUMATOLOGY_DEPARTMENT</DepartmentID>
+                <NameLocID>TRT_HOSPITALIZATION_BURN_CENTER</NameLocID>
+                <AbbreviationLocID>TRT_HOSPITALIZATION_BURN_CENTER_DESCRIPTION</AbbreviationLocID>
+                <IconID>2825</IconID>
+            </DepartmentNamingException>
+        </DepartmentNamingExceptions>
+
+
+    </GameDBTreatment>
+
+    <GameDBTreatment ID="TRT_HOSPITALIZATION_HIGH_PRIORITY">
+        <AbbreviationLocID>TRT_HOSPITALIZATION_HIGH_PRIORITY_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+
+            <RequiredRoomTags>
+                <Tag>hospitalization_high</Tag>
+            </RequiredRoomTags>
+
+            <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+            <DressLevel>FULL</DressLevel>
+            <DressLevelAfter>FULL</DressLevelAfter>
+            <HospitalizationLevel>HIGH_PRIORITY</HospitalizationLevel>
+        </Procedure>
+        <TreatmentType>HOSPITALIZATION</TreatmentType>
+        <Cost>100</Cost>
+        <IconIndex>1967</IconIndex>
+        <DurationHours>16</DurationHours>
+
+        <DepartmentNamingExceptions>
+            <DepartmentNamingException>
+                <DepartmentID>DPT_INFECTIOUS_DISEASES_DEPARTMENT</DepartmentID>
+                <NameLocID>TRT_HOSPITALIZATION_ISOLATION</NameLocID>
+                <AbbreviationLocID>TRT_HOSPITALIZATION_ISOLATION_DESCRIPTION</AbbreviationLocID>
+                <IconID>2823</IconID>
+            </DepartmentNamingException>
+        </DepartmentNamingExceptions>
+    </GameDBTreatment>
+
+    <GameDBTreatment ID="TRT_HOSPITALIZATION_ICU">
+        <AbbreviationLocID>TRT_HOSPITALIZATION_ICU_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+                <SkillRef>SKILL_DOC_SPEC_CRITICAL_CARE</SkillRef>
+            </RequiredSkillsToPrescribe>
+
+            <RequiredRoomTags>
+                <Tag>icu</Tag>
+            </RequiredRoomTags>
+
+            <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+            <DressLevel>FULL</DressLevel>
+            <DressLevelAfter>FULL</DressLevelAfter>
+            <HospitalizationLevel>ICU</HospitalizationLevel>
+            <DetachedDepartmentRef>DPT_ICU</DetachedDepartmentRef>
+        </Procedure>
+        <TreatmentType>HOSPITALIZATION</TreatmentType>
+        <Cost>100</Cost>
+        <IconIndex>1969</IconIndex>
+        <DurationHours>16</DurationHours>
+        <OnlyAfterDiagnosis>true</OnlyAfterDiagnosis>
+    </GameDBTreatment>
+</Database>

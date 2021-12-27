@@ -1,5 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
-import path = require('path');
+import * as path from 'path';
 import { promises as fs } from "fs";
 
 const BASE_SYMPTOMS_DIR = 'symptoms';

@@ -1,0 +1,37 @@
+﻿<Database>
+    <!--<GameDBExamination ID="EXM_RECEPTION">
+        <AbbreviationLocID>EXM_RECEPTION_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            &lt;!&ndash; Not used, hides a warning &ndash;&gt;
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredNurseQualificationList>    
+                <SkillRef>SKILL_NURSE_QUALIF_PATIENT_CARE</SkillRef>
+            </RequiredNurseQualificationList>
+            <ProcedureScript>ProcedureScriptExaminationReception</ProcedureScript>
+            <Priority>15</Priority>
+        </Procedure>
+        <Cost>0</Cost>
+        <IconIndex>1633</IconIndex>
+    </GameDBExamination>-->
+
+    <GameDBExamination ID="EXM_RECEPTION_FAST">
+        <AbbreviationLocID>EXM_RECEPTION_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <!-- Not used, hides a warning -->
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredNurseQualificationList>    
+                <SkillRef>SKILL_NURSE_QUALIF_PATIENT_CARE</SkillRef>
+            </RequiredNurseQualificationList>
+            <ProcedureScript>ProcedureScriptExaminationReceptionFast</ProcedureScript>
+            <Priority>20</Priority>
+        </Procedure>
+        <Cost>0</Cost>
+        <IconIndex>1719</IconIndex>
+    </GameDBExamination>    
+</Database>
