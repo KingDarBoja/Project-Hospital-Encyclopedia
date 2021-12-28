@@ -18,26 +18,47 @@
       </section>
       <section class="flex flex-col">
         <div class="text-blue-600 text-ellipsis">{{ exm.description }}</div>
-        <mat-list class="">
-          <div mat-subheader>Required Doctor Skills</div>
-          <div class="space-y-2">
-            <ng-container *ngFor="let doctor of exm.required_doctors">
-              <section mat-line class="flex flex-row items-center">
-                <img
-                  class="rounded-full"
-                  src="assets/icons/ph_icon_{{ doctor.icon_index }}.png"
-                />
-                <figcaption class="flex flex-col pl-2">
-                  <div class="font-bold whitespace-normal">
-                    {{ doctor.name }}
-                  </div>
-                  <div class="whitespace-normal">{{ doctor.description }}</div>
-                </figcaption>
-              </section>
-            </ng-container>
-          </div>
-        </mat-list>
+        <ng-container *ngIf="exm.required_doctors">
+          <ng-template
+            [ngTemplateOutlet]="skillList"
+            [ngTemplateOutletContext]="{
+              skills: exm.required_doctors,
+              title: 'Doctor'
+            }"
+          ></ng-template>
+        </ng-container>
+        <ng-container *ngIf="exm.required_lab_spec">
+          <ng-template
+            [ngTemplateOutlet]="skillList"
+            [ngTemplateOutletContext]="{
+              skills: [exm.required_lab_spec],
+              title: 'Lab Specialist'
+            }"
+          ></ng-template>
+        </ng-container>
       </section>
     </mat-card>
   </div>
 </section>
+
+<ng-template #skillList let-skills="skills" let-title="title">
+  <mat-list class="">
+    <div mat-subheader>Required {{ title }} Skills</div>
+    <div class="space-y-2">
+      <ng-container *ngFor="let skill of skills">
+        <section mat-line class="flex flex-row items-center">
+          <img
+            class="rounded-full"
+            src="assets/icons/ph_icon_{{ skill.icon_index }}.png"
+          />
+          <figcaption class="flex flex-col pl-2">
+            <div class="font-bold whitespace-normal">
+              {{ skill.name }}
+            </div>
+            <div class="whitespace-normal">{{ skill.description }}</div>
+          </figcaption>
+        </section>
+      </ng-container>
+    </div>
+  </mat-list>
+</ng-template>

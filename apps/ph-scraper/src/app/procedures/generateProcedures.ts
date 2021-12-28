@@ -100,10 +100,8 @@ async function populateProceduresDictionary(
   }
 
   for (const child of root) {
-    const requiredDoctors =
-      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map<
-        ProcedureSchema['required_doctors'][number]
-      >((skill) => {
+    const requiredDoctors: ProcedureSchema['required_doctors'] =
+      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map((skill) => {
         const auxSkillEntry = auxDict.skills[skill];
         const locSkillName =
           localizationDict[auxSkillEntry.name]?.i18n.en ?? auxSkillEntry.name;
@@ -115,7 +113,23 @@ async function populateProceduresDictionary(
           description: locSkillDesc,
           icon_index: auxSkillEntry.icon_index + 1,
         };
-      }) ?? [];
+      }) ?? undefined;
+
+    let requiredLabSpecialist: ProcedureSchema['required_lab_spec'] = undefined;
+    if (child.Procedure.RequiredStatLabQualificationRef) {
+      const specSkillEntry =
+        auxDict.skills[child.Procedure.RequiredStatLabQualificationRef];
+      const locSkillName =
+        localizationDict[specSkillEntry.name]?.i18n.en ?? specSkillEntry.name;
+      const locSkillDesc =
+        localizationDict[specSkillEntry.description]?.i18n.en ??
+        specSkillEntry.description;
+      requiredLabSpecialist = {
+        name: locSkillName,
+        description: locSkillDesc,
+        icon_index: specSkillEntry.icon_index + 1,
+      };
+    }
 
     const locName = localizationDict[child.ID]?.i18n.en ?? child.ID;
     const locDesc =
@@ -127,6 +141,7 @@ async function populateProceduresDictionary(
       name: locName,
       description: locDesc,
       required_doctors: requiredDoctors,
+      required_lab_spec: requiredLabSpecialist,
       // Icons were generated with start index of 1 whereas the game uses a
       // zero-index based grid.
       icon_index: child.IconIndex + 1,
