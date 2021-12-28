@@ -1,10 +1,27 @@
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { ExaminationModule } from './examination/examination.module';
+
+const routes: Routes = [
+  {
+    path: 'examinations',
+    loadChildren: () =>
+      import('./procedures/examination/examination.module').then(
+        (m) => m.ExaminationModule
+      ),
+  },
+  {
+    path: 'treatments',
+    loadChildren: () =>
+      import('./procedures/treatment/treatment.module').then(
+        (m) => m.TreatmentModule
+      ),
+  },
+];
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +29,7 @@ import { ExaminationModule } from './examination/examination.module';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ExaminationModule,
+    RouterModule.forRoot(routes),
   ],
   bootstrap: [AppComponent],
 })
