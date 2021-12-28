@@ -1,21 +1,20 @@
 <section class="mb-2">
   <span class="font-medium text-2xl text-blue-900">Examinations</span>
 </section>
-<section class="grid grid-cols-2 gap-4" *ngIf="vm$ | async as vm">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4" *ngIf="vm$ | async as vm">
   <div class="col-span-1" *ngFor="let exm of vm">
     <mat-card class="border border-blue-900 space-y-2 h-full">
       <section class="flex items-center space-x-4">
         <img
-          mat-card-avatar
-          class="rounded border border-blue-900 examination-filter"
+          class="rounded-full border border-blue-900 examination-filter"
           src="assets/icons/ph_icon_{{ exm.icon_index }}.png"
         />
-        <figcaption class="text-lg text-blue-900 truncate">
+        <figcaption class="text-lg text-blue-900 text-ellipsis">
           {{ exm.name }}
         </figcaption>
       </section>
       <section class="flex flex-col">
-        <div class="text-blue-600 truncate">{{ exm.description }}</div>
+        <div class="text-blue-600 text-ellipsis">{{ exm.description }}</div>
         <mat-list class="">
           <div mat-subheader>Required Doctor Skills</div>
           <mat-list-item *ngFor="let doctor of exm.required_doctors">

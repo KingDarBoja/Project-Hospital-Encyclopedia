@@ -1,7 +1,7 @@
 {
   "EXM_ABDOMINAL_PALPATION": {
-    "name": "EXM_ABDOMINAL_PALPATION",
-    "description": "EXM_ABDOMINAL_PALPATION_DESCRIPTION",
+    "name": "Abdominal palpation",
+    "description": "Type of physical examination. The examiner palpates (touches) nine areas of the patient's abdomen, performing it twice, both superficially and deeply. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -12,15 +12,15 @@
     "discomfort": "Low"
   },
   "EXM_ANGIOGRAPHY": {
-    "name": "EXM_ANGIOGRAPHY",
-    "description": "EXM_ANGIOGRAPHY_DESCRIPTION",
+    "name": "Angiography",
+    "description": "An imaging method used to visualize the lumen of the blood vessels and organs, particulary the arteries, the veins, and the heart. \\n\\nRequired room: CAG room",
     "required_doctors": [],
     "icon_index": 1722,
     "discomfort": "Low"
   },
   "EXM_AUDIOMETRY": {
-    "name": "EXM_AUDIOMETRY",
-    "description": "EXM_AUDIOMETRY_DESCRIPTION",
+    "name": "Audiometry",
+    "description": "Audiometric testing determines patient's level of hearing. \\n\\nRequired room: Doctor's office / Observation room / ICU / Office / Diagnostic unit at Emergency / ICU / General Surgery dpt / Internal Medicine dpt / DID",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_GENERAL_SURGERY",
@@ -43,8 +43,8 @@
     "discomfort": "Low"
   },
   "EXM_BACTERIA_CULTIVATION_SAMPLING": {
-    "name": "EXM_BACTERIA_CULTIVATION_SAMPLING",
-    "description": "EXM_BACTERIA_CULTIVATION_SAMPLING_DESCRIPTION_1_1",
+    "name": "Microbial sampling",
+    "description": "Microbial sampling is the collection of samples from the patient (e.g. body fluids, sputum, stool) for further analysis. \\n\\nRequired room: Microbiology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / Internal Medicine dpt / Neurology dpt / ICU \\n\\nRequired equipment: Glassware + Fume hood + Microbiolog. incubator + Microscope",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -55,22 +55,22 @@
     "discomfort": "Low"
   },
   "EXM_BACTERIA_CULTIVATION_TESTING": {
-    "name": "EXM_BACTERIA_CULTIVATION_TESTING",
-    "description": "EXM_BACTERIA_CULTIVATION_TESTING_DESCRIPTION_1_1",
+    "name": "Microbial cultivation",
+    "description": "Laboratory cultivation of the specific sample obtained from the patient in order to determine if bacterias are present and which kind of bacteria it is. \\n\\nRequired room: Microbiology Lab",
     "required_doctors": [],
     "icon_index": 1664,
     "discomfort": "None"
   },
   "EXM_BARRIUM_SWALLOV_X_RAY": {
-    "name": "EXM_BARRIUM_SWALLOV_X_RAY",
-    "description": "EXM_BARRIUM_SWALLOV_X_RAY_DESCRIPTION",
+    "name": "Barium swallow",
+    "description": "A test where the patient swallows a barium sulfate mixture that shows up on x-ray. It is used to examine the lumen of the esophagus, stomach, and intestines. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1706,
     "discomfort": "Low"
   },
   "EXM_BASIC_VISUAL_TEST": {
-    "name": "EXM_BASIC_VISUAL_TEST",
-    "description": "EXM_BASIC_VISUAL_TEST_DESCRIPTION_V2",
+    "name": "Basic visual test",
+    "description": "Common visual test used to examine the patient's visual acuity. \\n\\nRequired room: Any office at Emergency / General Surgery dpt / Internal Medicine dpt / Cardiology / Neurology / DID \\n\\nRequired equipment: Eye test",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -81,8 +81,8 @@
     "discomfort": "None"
   },
   "EXM_BIOPSY_SAMPLING": {
-    "name": "EXM_BIOPSY_SAMPLING",
-    "description": "EXM_BIOPSY_SAMPLING_DESCRIPTION_1_1",
+    "name": "Biopsy - sampling",
+    "description": "A surgical procedure where a piece of tissue (e.g. lung, liver, intestine) is taken out for further testing. \\n\\nRequired room: Histology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / Orthopaedy dpt / Cardiology dpt / Neurology dpt / ICU \\n\\nRequired equipment: Glassware + Lab analyzer + Microscope",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -93,15 +93,15 @@
     "discomfort": "High"
   },
   "EXM_BIOPSY_TESTING": {
-    "name": "EXM_BIOPSY_TESTING",
-    "description": "EXM_BIOPSY_TESTING_DESCRIPTION_1_1",
+    "name": "Biopsy - testing",
+    "description": "The piece of tissue that was taken our during the biopsy procedure is examined under a microscope and treated with various preparations for allow for more specific testing. \\n\\nRequired room: Histology Lab",
     "required_doctors": [],
     "icon_index": 1712,
     "discomfort": "None"
   },
   "EXM_BLOOD_PRESSURE_AND_PULSE_MEASUREMENT": {
-    "name": "EXM_BLOOD_PRESSURE_AND_PULSE_MEASUREMENT",
-    "description": "EXM_BLOOD_PRESSURE_AND_PULSE_MEASUREMENT_DESCRIPTION",
+    "name": "Blood pressure measurement",
+    "description": "The classic, manual measurement of the patient's blood pressure and pulse (heartbeat frequency) using sphygmomanometer. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -112,8 +112,8 @@
     "discomfort": "None"
   },
   "EXM_BLOOD_TEST_SAMPLING": {
-    "name": "EXM_BLOOD_TEST_SAMPLING",
-    "description": "EXM_BLOOD_TEST_SAMPLING_DESCRIPTION_1_1",
+    "name": "Blood draw",
+    "description": "The collection of a sample of the patient's blood (venous or arterial) for further analysis or testing. \\n\\nRequired room: Hematology Lab \\n\\nSampling: Any department \\n\\nRequired equipment: Glassware + Hematoanalyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -124,15 +124,15 @@
     "discomfort": "Medium"
   },
   "EXM_BLOOD_TEST_TESTING": {
-    "name": "EXM_BLOOD_TEST_TESTING",
-    "description": "EXM_BLOOD_TEST_TESTING_DESCRIPTION_1_1",
+    "name": "Blood test",
+    "description": "Laboratory analysis of a blood sample. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 1642,
     "discomfort": "None"
   },
   "EXM_CBC_SAMPLING": {
-    "name": "EXM_CBC_SAMPLING",
-    "description": "EXM_CBC_SAMPLING_DESCRIPTION_V2",
+    "name": "CBC - sampling",
+    "description": "The sampling of blood for a Complete Blood Count (CBC) test. \\n\\nRequired room: Hematology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / Internal Medicine dpt / Orthopaedy dpt / Neurology dpt / ICU / DID / Traumatology dpt \\n\\nRequired equipment: Glassware + Hematoanalyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -143,15 +143,15 @@
     "discomfort": "Medium"
   },
   "EXM_CBC_TESTING": {
-    "name": "EXM_CBC_TESTING",
-    "description": "EXM_CBC_TESTING_DESCRIPTION_1_1",
+    "name": "CBC - testing",
+    "description": "Complete Blood Count (CBC) test counts all of the cells found in the blood and determines if there is an increase or decrease in any of those cells. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 1716,
     "discomfort": "None"
   },
   "EXM_CC_BLOOD_ANALYSIS": {
-    "name": "EXM_CC_BLOOD_ANALYSIS",
-    "description": "EXM_CC_BLOOD_ANALYSIS_DESCRIPTION",
+    "name": "Blood analysis - ICU",
+    "description": "Special blood analysis that is mostly used at intensive care units. \\n\\nRequired room: ICU room \\n\\nRequired equipment: Hematoanalyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_CRITICAL_CARE",
@@ -162,8 +162,8 @@
     "discomfort": "Low"
   },
   "EXM_CC_ECHO": {
-    "name": "EXM_CC_ECHO",
-    "description": "EXM_CC_ECHO_DESCRIPTION",
+    "name": "Urgent Echo",
+    "description": "Special critical care echocardiography used mainly in intensive care units or trauma centers to assess if the heart is pumping properly, if there is any fluid in the pericardium (the sac around the heart) or fluid surrounding the lungs. \\n\\nRequired room: ICU room / Trauma center \\n\\nRequired equipment: FAST usg",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
@@ -178,8 +178,8 @@
     "discomfort": "None"
   },
   "EXM_HEART_MONITORING": {
-    "name": "EXM_HEART_MONITORING",
-    "description": "EXM_HEART_MONITORING_DESCRIPTION",
+    "name": "Heart monitoring",
+    "description": "Longterm monitoring of the heart's eletrical activity. \\n\\nRequired room: ICU / Trauma center / Observation room \\n\\nRequiered equipment: Wall monitor / Anesthetic machine",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
@@ -194,8 +194,8 @@
     "discomfort": "None"
   },
   "EXM_CRP": {
-    "name": "EXM_CRP",
-    "description": "EXM_CRP_DESCRIPTION",
+    "name": "CRP",
+    "description": "C-reactive protein (CRP) is diagnostic test based on a quick blood test measuring the concentration of C-reactive protein that is indicative of inflammatory and infectious diseases. \\n\\nRequired room: Any office / Diagnostic unit / Observation room / Trauma center / ICU at Any department except Neurology dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -206,22 +206,22 @@
     "discomfort": "Low"
   },
   "EXM_CT": {
-    "name": "EXM_CT",
-    "description": "EXM_CT_DESCRIPTION",
+    "name": "CT",
+    "description": "Computed tomography (CT) is an imaging modality that creates detailed images of the internal organs and bones. By injecting intravenous constrast or making the patient swallow contrast, the use of CT can be used to assess a wider range of diseases. \\n\\nRequired room: CT room",
     "required_doctors": [],
     "icon_index": 1676,
     "discomfort": "Low"
   },
   "EXM_CT_ENTEROGRAPHY": {
-    "name": "EXM_CT_ENTEROGRAPHY",
-    "description": "EXM_CT_ENTEROGRAPHY_DESCRIPTION",
+    "name": "CT - enterography",
+    "description": "Computed tomography (CT) enterography is diagnostic imaging modality creating detailed images of the intestines by injecting intravenous contrast after the patient has ingested liquid contrast. \\n\\nRequired room: CT room",
     "required_doctors": [],
     "icon_index": 1676,
     "discomfort": "Low"
   },
   "EXM_EAR_EXAMINATION": {
-    "name": "EXM_EAR_EXAMINATION",
-    "description": "EXM_EAR_EXAMINATION_DESCRIPTION",
+    "name": "Ear examination",
+    "description": "Examination and visual inspection of the patient's ears, including the ear canal and the eardrum. \\n\\nRequired room: Doctor's office / Diagnostic unit / Observation room / Trauma center / ICU at Emergency dpt / Internal medicine dpt / ICU / Neurology",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_INTERNAL_MEDICINE",
@@ -244,29 +244,29 @@
     "discomfort": "Low"
   },
   "EXM_ECG": {
-    "name": "EXM_ECG",
-    "description": "EXM_ECG_DESCRIPTION",
+    "name": "ECG",
+    "description": "Electrocardiography (ECG) is the recording of the heart's electrical activity by electrodes on the skin. \\n\\nRequired room: Cardiography unit",
     "required_doctors": [],
     "icon_index": 1654,
     "discomfort": "Low"
   },
   "EXM_EEG": {
-    "name": "EXM_EEG",
-    "description": "EXM_EEG_DESCRIPTION",
+    "name": "EEG",
+    "description": "Electroencephalography (EEG) is the recording of the brain's electrical activity by equipping the patient with a hat containing many electrodes. \\n\\nRequired room: Neuroexam unit",
     "required_doctors": [],
     "icon_index": 1724,
     "discomfort": "Low"
   },
   "EXM_ECHO": {
-    "name": "EXM_ECHO",
-    "description": "EXM_ECHO_DESCRIPTION",
+    "name": "Echo",
+    "description": "Echocardiography is the ultrasonographic assessment of the patient's heart and large veins and arteries entering and leaving the heart. \\n\\nRequired room: Cardiography unit",
     "required_doctors": [],
     "icon_index": 1698,
     "discomfort": "Low"
   },
   "EXM_EMG": {
-    "name": "EXM_EMG",
-    "description": "EXM_EMG_DESCRIPTION_1_1",
+    "name": "EMG",
+    "description": "Electromyography (EMG) is the recording and evaluation of the electrical activity of the patient's muscles. \\n\\nRequired room: Office/Diagnostic unit at Orthopaedy dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ORTHOPAEDY",
@@ -277,8 +277,8 @@
     "discomfort": "Low"
   },
   "EXM_EVALUATION": {
-    "name": "EXM_EVALUATION",
-    "description": "EXM_EVALUATION_DESCRIPTION",
+    "name": "Evaluation",
+    "description": "Considering all the symptoms and examinations recently carried out to specify the diagnosis. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -289,8 +289,8 @@
     "discomfort": "None"
   },
   "EXM_FAST": {
-    "name": "EXM_FAST",
-    "description": "EXM_FAST_DESCRIPTION",
+    "name": "FAST",
+    "description": "Fast Assessment with Sonography in Trauma (FAST) is a special ultrasonography method used in the evaluation of trauma patients and intensive care unit patients. \\n\\nRequired room: Trauma center, ICU",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
@@ -305,8 +305,8 @@
     "discomfort": "None"
   },
   "EXM_FECAL_ELASTASE_TEST_SAMPLING": {
-    "name": "EXM_FECAL_ELASTASE_TEST_SAMPLING",
-    "description": "EXM_FECAL_ELASTASE_TEST_SAMPLING_DESCRIPTION_1_1",
+    "name": "Elastase test - sampling",
+    "description": "The collection of a stool sample from the patient in order to quantify the amount of the elastase produced by the pancreas. It indicates the actual function of the pancreas. \\n\\nRequired room: Hematology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / ICU \\n\\nRequired equipment: Glassware + RIA",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -317,15 +317,15 @@
     "discomfort": "Low"
   },
   "EXM_FECAL_ELASTASE_TEST_TESTING": {
-    "name": "EXM_FECAL_ELASTASE_TEST_TESTING",
-    "description": "EXM_FECAL_ELASTASE_TEST_TESTING_DESCRIPTION_1_1",
+    "name": "Elastase test - testing",
+    "description": "The measurement of elastase in a stool sample from a patient. The amount indicates the actual function of the pancreas. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 1696,
     "discomfort": "None"
   },
   "EXM_FUNGAL_CULTIVATION_SAMPLING": {
-    "name": "EXM_FUNGAL_CULTIVATION_SAMPLING",
-    "description": "EXM_FUNGAL_CULTIVATION_SAMPLING_DESCRIPTION_1_1",
+    "name": "Mycologic sampling",
+    "description": "Collecting various samples from the patient's body for cultivation in order to determine if fungal species are present or not. \\n\\nRequired room: Microbiology Lab \\n\\nSampling: Emergency dpt / ICU \\n\\nRequired equipment: Glassware + Fume hood + Microbiolog. incubator + Microscope",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -336,15 +336,15 @@
     "discomfort": "Low"
   },
   "EXM_FUNGAL_CULTIVATION_TESTING": {
-    "name": "EXM_FUNGAL_CULTIVATION_TESTING",
-    "description": "EXM_FUNGAL_CULTIVATION_TESTING_DESCRIPTION_1_1",
+    "name": "Fungal cultivation",
+    "description": "Laboratory cultivation of the specific samples obtained from the patient's body. \\n\\nRequired room: Microbiology Lab",
     "required_doctors": [],
     "icon_index": 1648,
     "discomfort": "None"
   },
   "EXM_GASTROSCOPY": {
-    "name": "EXM_GASTROSCOPY",
-    "description": "EXM_GASTROSCOPY_DESCRIPTION",
+    "name": "Gastroscopy",
+    "description": "A procedure where a flexible tube (endoscope) with a tiny video camera and a light source at the end is inserted through the mouth in order to examine the upper part of digestive tract.\\n\\nRequired room: ICU / Office / Diagnostic unit at General Surgery dpt / Internal Medicine dpt / Cardiology dpt / DID",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_GENERAL_SURGERY",
@@ -367,8 +367,8 @@
     "discomfort": "High"
   },
   "EXM_GONIOSCOPY": {
-    "name": "EXM_GONIOSCOPY",
-    "description": "EXM_GONIOSCOPY_DESCRIPTION",
+    "name": "Gonioscopy",
+    "description": "Gonioscopy is an eye examination used to evaluate the drainage system of the eye. \\n\\nRequired room: ICU / Office / Diagnostic unit at Neurology",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_NEUROLOGY",
@@ -383,8 +383,8 @@
     "discomfort": "Medium"
   },
   "EXM_CHEST_LISTENING": {
-    "name": "EXM_CHEST_LISTENING",
-    "description": "EXM_CHEST_LISTENING_DESCRIPTION",
+    "name": "Chest auscultation",
+    "description": "The auscultation (listening with a stethoscope) of the heart and lungs. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -395,8 +395,8 @@
     "discomfort": "Low"
   },
   "EXM_LARYNGOSCOPY": {
-    "name": "EXM_LARYNGOSCOPY",
-    "description": "EXM_LARYNGOSCOPY_DESCRIPTION",
+    "name": "Laryngoscopy",
+    "description": "A procedure where a flexible tube (endoscope) with a tiny video camera and a light source in the end is inserted through the nose to examine the larynx, glottis, and vocal chords. Laryngoscopy is also used to facilitate tracheal intubation. \\n\\nRequired room: Doctor's office / Observation room / Trauma center / ICU",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
@@ -411,15 +411,15 @@
     "discomfort": "Medium"
   },
   "EXM_MRI": {
-    "name": "EXM_MRI",
-    "description": "EXM_MRI_DESCRIPTION",
+    "name": "MRI",
+    "description": "Magnetic resonance imaging (MRI) creates detailed images of the anatomy and physiology of the body and internal organs by using a magnetic fields, magnetics waves, and radio waves. \\n\\nRequired room: MRI room",
     "required_doctors": [],
     "icon_index": 1674,
     "discomfort": "Low"
   },
   "EXM_NASAL_CAVITY_INSPECTION": {
-    "name": "EXM_NASAL_CAVITY_INSPECTION",
-    "description": "EXM_NASAL_CAVITY_INSPECTION_DESCRIPTION",
+    "name": "Nasal cavity inspection",
+    "description": "Examination and visual inspection of the patient's nose including the nasal cavity. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -430,8 +430,8 @@
     "discomfort": "Low"
   },
   "EXM_NECK_PALPATION": {
-    "name": "EXM_NECK_PALPATION",
-    "description": "EXM_NECK_PALPATION_DESCRIPTION",
+    "name": "Neck palpation",
+    "description": "Palpation (touching) of the patient's neck. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -442,8 +442,8 @@
     "discomfort": "Low"
   },
   "EXM_NEUROLOGICAL_TESTING": {
-    "name": "EXM_NEUROLOGICAL_TESTING",
-    "description": "EXM_NEUROLOGICAL_TESTING_DESCRIPTION",
+    "name": "Neurological testing",
+    "description": "Different simple and specific questions and tests that provide information about the patient's central nervous system. \\n\\nRequired room: Any office / Diagnostic unit at all departments except Orthopaedy dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -454,8 +454,8 @@
     "discomfort": "Low"
   },
   "EXM_OPHTHALMOSCOPY": {
-    "name": "EXM_OPHTHALMOSCOPY",
-    "description": "EXM_OPHTHALMOSCOPY_DESCRIPTION",
+    "name": "Ophthalmoscopy",
+    "description": "A procedure where the fundus/retina is visualised through a funduscope/opthalmoscope. \\n\\nRequired room: Doctor's office / Observation room / Trauma center / ICU / Office/Diagnostic unit at Emergency / ICU / Internal Medicine dpt / Neurology dpt / Traumatology dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
@@ -478,8 +478,8 @@
     "discomfort": "None"
   },
   "EXM_ORAL_CAVITY_INSPECTION": {
-    "name": "EXM_ORAL_CAVITY_INSPECTION",
-    "description": "EXM_ORAL_CAVITY_INSPECTION_DESCRIPTION",
+    "name": "Oral cavity inspection",
+    "description": "Examination and visual inspection of the patient's oral cavity. \\n\\nRequired room: Any office / Diagnostic unit at all departments except Orthopaedy dpt and Neurology",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -490,8 +490,8 @@
     "discomfort": "Medium"
   },
   "EXM_PCR_SAMPLING": {
-    "name": "EXM_PCR_SAMPLING",
-    "description": "EXM_PCR_SAMPLING_DESCRIPTION_1_1",
+    "name": "PCR - sampling",
+    "description": "Sampling of biological material for polymerase chain reaction analysis in the laboratory. Examination is quick, cheap and exact. \\n\\nRequired room: Hematology Lab \\n\\nSampling: All departments \\n\\nRequired equipment: Glassware + Thermal cycler",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -502,22 +502,22 @@
     "discomfort": "Medium"
   },
   "EXM_PCR_TESTING": {
-    "name": "EXM_PCR_TESTING",
-    "description": "EXM_PCR_TESTING_DESCRIPTION_1_1",
+    "name": "PCR - testing",
+    "description": "Polymerase chain reaction is quick examination method of identifying infectious disease caused by bacteria or viruses. Examination is quick, cheap and exact. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 1728,
     "discomfort": "None"
   },
   "EXM_PERIMETRY": {
-    "name": "EXM_PERIMETRY",
-    "description": "EXM_PERIMETRY_DESCRIPTION",
+    "name": "Perimetry",
+    "description": "Perimetry is ophtalmology test that systematically tests the complete field of vision. \\n\\nRequired room: Neuroexam Unit at Neurology dpt",
     "required_doctors": [],
     "icon_index": 1730,
     "discomfort": "None"
   },
   "EXM_PERITONEAL_FLUID_ANALYSIS_SAMPLING": {
-    "name": "EXM_PERITONEAL_FLUID_ANALYSIS_SAMPLING",
-    "description": "EXM_PERITONEAL_FLUID_ANALYSIS_SAMPLING_DESCRIPTION_1_1",
+    "name": "Peritoneal fluid analysis - sampling",
+    "description": "Sampling of peritoneal fluid with a large needle and syringe through the abdominal wall. \\n\\nRequired room: Histology Lab \\n\\nSampling: General Surgery dpt \\n\\nRequired equipment: Glassware + Medical centrifuge + Lab analyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_GENERAL_SURGERY",
@@ -532,15 +532,15 @@
     "discomfort": "Medium"
   },
   "EXM_PERITONEAL_FLUID_ANALYSIS_TESTING": {
-    "name": "EXM_PERITONEAL_FLUID_ANALYSIS_TESTING",
-    "description": "EXM_PERITONEAL_FLUID_ANALYSIS_TESTING_DESCRIPTION_1_1",
+    "name": "Peritoneal fluid analysis - testing",
+    "description": "Biochemical test that analyzes the fluid collected from the peritoneal space. \\n\\nRequired room: Histology Lab",
     "required_doctors": [],
     "icon_index": 1712,
     "discomfort": "None"
   },
   "EXM_PHYSICAL_AND_VISUAL_EXAMINATION": {
-    "name": "EXM_PHYSICAL_AND_VISUAL_EXAMINATION",
-    "description": "EXM_PHYSICAL_AND_VISUAL_EXAMINATION_DESCRIPTION",
+    "name": "Physical examination",
+    "description": "Examination of the specific area on the patient's body. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -551,8 +551,8 @@
     "discomfort": "Low"
   },
   "EXM_INTERVIEW": {
-    "name": "EXM_INTERVIEW",
-    "description": "EXM_INTERVIEW_DESCRIPTION",
+    "name": "Interview",
+    "description": "Interviewing the patient to get as much information as possible about his medical condition. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -563,8 +563,8 @@
     "discomfort": "None"
   },
   "EXM_SEROLOGY_TESTING_SAMPLING": {
-    "name": "EXM_SEROLOGY_TESTING_SAMPLING",
-    "description": "EXM_SEROLOGY_TESTING_SAMPLING_DESCRIPTION_1_1",
+    "name": "Serologic sampling",
+    "description": "Drawing of a blood sample for serologic tests. \\n\\nRequired room: Hematology Lab \\n\\nSampling: All departments \\n\\nRequired equipment: Glassware + RIA",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -575,15 +575,15 @@
     "discomfort": "Medium"
   },
   "EXM_SEROLOGY_TESTING_TESTING": {
-    "name": "EXM_SEROLOGY_TESTING_TESTING",
-    "description": "EXM_SEROLOGY_TESTING_TESTING_DESCRIPTION_1_1",
+    "name": "Serologic testing",
+    "description": "Special blood test examining specific antibodies and antigens. Antibodies are proteins made by human immune system to neutralize pathogens. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 1666,
     "discomfort": "None"
   },
   "EXM_SKIN_INJECTION_TEST": {
-    "name": "EXM_SKIN_INJECTION_TEST",
-    "description": "EXM_SKIN_INJECTION_TEST_DESCRIPTION",
+    "name": "Skin allergy test",
+    "description": "Injection of a small amount of different allergen extracts into the skin usually on the arm to confirm or deny the allergic reactions to specific allergens. \\n\\nRequired room: Offices / Diagnostic units at Emergency dpt / ICU dpt / Neurology dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -594,8 +594,8 @@
     "discomfort": "Medium"
   },
   "EXM_SPEECH_LISTENING": {
-    "name": "EXM_SPEECH_LISTENING",
-    "description": "EXM_SPEECH_LISTENING_DESCRIPTION",
+    "name": "Speech listening",
+    "description": "Listening to speech flow of the patient. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -606,8 +606,8 @@
     "discomfort": "None"
   },
   "EXM_SPINAL_FLUID_ANALYSIS_SAMPLING": {
-    "name": "EXM_SPINAL_FLUID_ANALYSIS_SAMPLING",
-    "description": "EXM_SPINAL_FLUID_ANALYSIS_SAMPLING_DESCRIPTION_1_1",
+    "name": "CSF sampling",
+    "description": "Sampling of cerebrospinal fluid is performed by inserting a needle through the lower back into the spinal canal, draining a small amount of the fluid. \\n\\nRequired room: Histology Lab \\n\\nSampling: Neurology dpt / DID \\n\\nRequired equipment: Glassware + Medical centrifuge + Lab analyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_NEUROLOGY",
@@ -618,15 +618,15 @@
     "discomfort": "Medium"
   },
   "EXM_SPINAL_FLUID_ANALYSIS_TESTING": {
-    "name": "EXM_SPINAL_FLUID_ANALYSIS_TESTING",
-    "description": "EXM_SPINAL_FLUID_ANALYSIS_TESTING_DESCRIPTION_1_1",
+    "name": "CSF analysis",
+    "description": "Process of analysis of cerebrospinal fluid in the laboratory. \\n\\nRequired room: Histology Lab",
     "required_doctors": [],
     "icon_index": 1712,
     "discomfort": "None"
   },
   "EXM_SPIROMETRY": {
-    "name": "EXM_SPIROMETRY",
-    "description": "EXM_SPIROMETRY_DESCRIPTION",
+    "name": "Spirometry",
+    "description": "One of the most common pulmonary function test, measuring lung function. \\n\\nRequired room: Office / Diagnostic Unit at Internal Medicine dpt",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_INTERNAL_MEDICINE",
@@ -637,8 +637,8 @@
     "discomfort": "None"
   },
   "EXM_STOOL_ANALYSIS_SAMPLING": {
-    "name": "EXM_STOOL_ANALYSIS_SAMPLING",
-    "description": "EXM_STOOL_ANALYSIS_SAMPLING_DESCRIPTION_1_1",
+    "name": "Stool collecting",
+    "description": "Procedure to collect a sample of patient's stool for further analysis. \\n\\nRequired room: Histology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / Internal Medicine dpt / ICU / DID \\n\\nRequired equipment: Glassware + Stool analyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -649,15 +649,15 @@
     "discomfort": "Medium"
   },
   "EXM_STOOL_ANALYSIS_TESTING": {
-    "name": "EXM_STOOL_ANALYSIS_TESTING",
-    "description": "EXM_STOOL_ANALYSIS_TESTING_DESCRIPTION_1_1",
+    "name": "Stool analysis",
+    "description": "Analysis of the patient's stool for bacteria, blood, parasites etc. \\n\\nRequired room: Histology Lab",
     "required_doctors": [],
     "icon_index": 1644,
     "discomfort": "None"
   },
   "EXM_SWEAT_CHLORIDE_TEST": {
-    "name": "EXM_SWEAT_CHLORIDE_TEST",
-    "description": "EXM_SWEAT_CHLORIDE_TEST_DESCRIPTION",
+    "name": "Sweat Chloride Test",
+    "description": "Special biochemical test used to diagnose cystic fibrosis. \\n\\nRequired room: Office / Diagnostic unit at Internal Medicine dpt / ICU",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_INTERNAL_MEDICINE",
@@ -672,8 +672,8 @@
     "discomfort": "None"
   },
   "EXM_TEMPERATURE_MEASUREMENT": {
-    "name": "EXM_TEMPERATURE_MEASUREMENT",
-    "description": "EXM_TEMPERATURE_MEASUREMENT_DESCRIPTION",
+    "name": "Temperature measurement",
+    "description": "Examination to determine the current body temperature. \\n\\nRequired room: Any office / Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -684,8 +684,8 @@
     "discomfort": "Low"
   },
   "EXM_THORAX_PERCUSSION": {
-    "name": "EXM_THORAX_PERCUSSION",
-    "description": "EXM_THORAX_PERCUSSION_DESCRIPTION_V2",
+    "name": "Thorax percussion",
+    "description": "Examination based on systematically tapping on the thorax to identify areas with less air within the thorax. \\n\\nRequired room: Any office/Diagnostic unit",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -696,29 +696,29 @@
     "discomfort": "Low"
   },
   "EXM_TONOMETRY": {
-    "name": "EXM_TONOMETRY",
-    "description": "EXM_TONOMETRY_DESCRIPTION",
+    "name": "Tonometry",
+    "description": "Test that measures pressure inside the eye also known as intraocular pressure. \\n\\nRequired room: Neuroexam unit",
     "required_doctors": [],
     "icon_index": 1688,
     "discomfort": "None"
   },
   "EXM_TRANSIENT_ELASTOGRAPHY": {
-    "name": "EXM_TRANSIENT_ELASTOGRAPHY",
-    "description": "EXM_TRANSIENT_ELASTOGRAPHY_DESCRIPTION",
+    "name": "Transient elastography",
+    "description": "Special ultra sound imaging method that maps elastic properties and stiffness of soft tissues in the internal organs. \\n\\nRequired room: Sonography unit at General Surgery dpt / Radiology",
     "required_doctors": [],
     "icon_index": 1694,
     "discomfort": "Low"
   },
   "EXM_URGENT_BLOOD_ANALYSIS": {
-    "name": "EXM_URGENT_BLOOD_ANALYSIS",
-    "description": "EXM_URGENT_BLOOD_ANALYSIS_DESCRIPTION",
+    "name": "PS blood control",
+    "description": "Post surgery blood analysis is used in post-operative care in patients that could suffer from sepsis. \\n\\nRequired room: Cardiography unit \\n\\nRequired equipment: Lab analyzer",
     "required_doctors": [],
     "icon_index": 1642,
     "discomfort": "Low"
   },
   "EXM_URINE_SAMPLE_ANALYSIS_SAMPLING": {
-    "name": "EXM_URINE_SAMPLE_ANALYSIS_SAMPLING",
-    "description": "EXM_URINE_SAMPLE_ANALYSIS_SAMPLING_DESCRIPTION_V2",
+    "name": "Urine analysis - sampling",
+    "description": "Sampling of mid-stream urine from a patient, or from a patient's catheter. \\n\\nRequired room: Histology Lab \\n\\nSampling: Emergency dpt / General Surgery dpt / Internal Medicine dpt / Cardiology dpt / ICU / DID / Traumatology dpt \\n\\nRequired equipment: Glassware + Lab analyzer",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -729,57 +729,57 @@
     "discomfort": "Low"
   },
   "EXM_URINE_SAMPLE_ANALYSIS_TESTING": {
-    "name": "EXM_URINE_SAMPLE_ANALYSIS_TESTING",
-    "description": "EXM_URINE_SAMPLE_ANALYSIS_TESTING_DESCRIPTION_1_1",
+    "name": "Urine analysis - testing",
+    "description": "Biochemical analysis of a urine sample. \\n\\nRequired room: Histology Lab",
     "required_doctors": [],
     "icon_index": 1692,
     "discomfort": "None"
   },
   "EXM_USG": {
-    "name": "EXM_USG",
-    "description": "EXM_USG_DESCRIPTION",
+    "name": "USG",
+    "description": "Ultrasonography is a medical imaging technique using ultrasound waves, resulting in visualization of both soft and hard tissues and organs. \\n\\nRequired room: Sonography unit at General Surgery dpt / Orthopaedy dpt / Cardiology / Radiology",
     "required_doctors": [],
     "icon_index": 1694,
     "discomfort": "Low"
   },
   "EXM_X_RAY_BACK": {
-    "name": "EXM_X_RAY_BACK",
-    "description": "EXM_X_RAY_BACK_DESCRIPTION",
+    "name": "X-ray back",
+    "description": "X-ray imaging of the bones of the back. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1670,
     "discomfort": "Low"
   },
   "EXM_X_RAY_HEAD": {
-    "name": "EXM_X_RAY_HEAD",
-    "description": "EXM_X_RAY_HEAD_DESCRIPTION",
+    "name": "X-ray head",
+    "description": "X-ray imaging of the bones of the skull. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1682,
     "discomfort": "Low"
   },
   "EXM_X_RAY_LOWER_LIMB": {
-    "name": "EXM_X_RAY_LOWER_LIMB",
-    "description": "EXM_X_RAY_LOWER_LIMB_DESCRIPTION",
+    "name": "X-ray lower limb",
+    "description": "X-ray imaging of the bones of the lower limb. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1680,
     "discomfort": "Low"
   },
   "EXM_X_RAY_TORSO": {
-    "name": "EXM_X_RAY_TORSO",
-    "description": "EXM_X_RAY_TORSO_DESCRIPTION",
+    "name": "X-ray chest",
+    "description": "X-ray imaging of the bones and shadows of the thorax. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1670,
     "discomfort": "Low"
   },
   "EXM_X_RAY_UPPER_LIMB": {
-    "name": "EXM_X_RAY_UPPER_LIMB",
-    "description": "EXM_X_RAY_UPPER_LIMB_DESCRIPTION",
+    "name": "X-ray upper limb",
+    "description": "X-ray imaging of the bones the arm. \\n\\nRequired room: X-ray room",
     "required_doctors": [],
     "icon_index": 1678,
     "discomfort": "Low"
   },
   "EXM_DIFFERENTIAL_DIAGNOSIS": {
-    "name": "EXM_DIFFERENTIAL_DIAGNOSIS",
-    "description": "EXM_DIFFERENTIAL_DIAGNOSIS_DESCRIPTION",
+    "name": "Differential diagnosis",
+    "description": "Special case-review that reduces the amount of possible diagnoses. Can only be performed by a doctor with advanced diagnosis specialization.",
     "required_doctors": [
       {
         "name": "SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS",
@@ -790,8 +790,8 @@
     "discomfort": "None"
   },
   "EXM_RT_PCR_SAMPLING": {
-    "name": "EXM_RT_PCR_SAMPLING",
-    "description": "EXM_RT_PCR_SAMPLING_DESCRIPTION",
+    "name": "RT-PCR sampling",
+    "description": "Reverse transcription polymerase chain reaction is a laboratory technique combining reverse transcription of RNA into DNA and amplification of specific DNA targets using PCR. \\n\\nRequired room: Hematology Lab \\n\\nSampling: Emergency dpt / Infectious diseases dpt / ICU /\\n\\nRequired equipment: Glassware + Thermal cycler",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -802,15 +802,15 @@
     "discomfort": "Medium"
   },
   "EXM_RT_PCR_TESTING": {
-    "name": "EXM_RT_PCR_TESTING",
-    "description": "EXM_RT_PCR_TESTING_DESCRIPTION",
+    "name": "RT-PCR testing",
+    "description": "Reverse transcription polymerase chain reaction is a laboratory technique combining reverse transcription of RNA into DNA and amplification of specific DNA targets using PCR. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 2279,
     "discomfort": "None"
   },
   "EXM_ELISA_SAMPLING": {
-    "name": "EXM_ELISA_SAMPLING",
-    "description": "EXM_ELISA_SAMPLING_DESCRIPTION",
+    "name": "ELISA sampling",
+    "description": "Enzyme-linked immunosorbent assay is a laboratory technique used to detect and quantify peptides, proteins, antibodies and hormones. \\n\\nSampling: Emergency dpt / Internal Medicine dpt / Infectious diseases dpt / ICU \\n\\nRequired equipment: Glassware + RIA",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -821,15 +821,15 @@
     "discomfort": "Medium"
   },
   "EXM_ELISA_TESTING": {
-    "name": "EXM_ELISA_TESTING",
-    "description": "EXM_ELISA_TESTING_DESCRIPTION",
+    "name": "ELISA testing",
+    "description": "Enzyme-linked immunosorbent assay is a laboratory technique used to detect and quantify peptides, proteins, antibodies and hormones. \\n\\nRequired room: Hematology Lab",
     "required_doctors": [],
     "icon_index": 2281,
     "discomfort": "None"
   },
   "EXM_PULSE_OXYMETRY": {
-    "name": "EXM_PULSE_OXYMETRY",
-    "description": "EXM_PULSE_OXYMETRY_DESCRIPTION",
+    "name": "Pulse oxymetry",
+    "description": "Pulse oxymetry is an easy-to-use and effective method for monitoring patient's oxygen saturation.",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -852,8 +852,8 @@
     "discomfort": "Low"
   },
   "EXM_RECEPTION_FAST": {
-    "name": "EXM_RECEPTION_FAST",
-    "description": "EXM_RECEPTION_DESCRIPTION",
+    "name": "Triage in the reception",
+    "description": "Receptionists can assign a higher priority to the patient based on their symptoms. \\n\\nRequired room: Reception",
     "required_doctors": [
       {
         "name": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
@@ -862,5 +862,17 @@
     ],
     "icon_index": 1720,
     "discomfort": "None"
+  },
+  "EXM_AUTOPSY": {
+    "name": "Autopsy",
+    "description": "Post-mortem examination of patient's body to uncover the remaining hidden symptoms and the cause of death.",
+    "required_doctors": [
+      {
+        "name": "DLC_SKILL_DOC_SPEC_PATHOLOGY",
+        "description": "DLC_SKILL_DOC_SPEC_PATHOLOGY"
+      }
+    ],
+    "icon_index": 2173,
+    "discomfort": "Low"
   }
 }
