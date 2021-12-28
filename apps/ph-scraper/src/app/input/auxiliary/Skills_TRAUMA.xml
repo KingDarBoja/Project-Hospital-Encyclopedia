@@ -1,0 +1,16 @@
+<Database>
+    <!-- Doctor's SPECIALIZATIONS -->
+    <GameDBSkill ID="SKILL_DOC_SPEC_TRAUMATOLOGY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_TRAUMATOLOGY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>473</IconIndex>
+        <ExtraLevelingPercent>50</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_TRAUMA_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_TRAUMA_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>50</ExtraLevelingPercent>
+    </GameDBSkill>
+
+</Database>

@@ -1,0 +1,2359 @@
+﻿<Database>
+    <!-- ===== List of tags used in procedures to identify which rooms they're allowed in ===== 
+      
+      examinations_no_equipment
+      examinations_basic_equipment
+
+      any_office
+      any_outpatient_office
+      any_inpatient_office
+      specialized_office
+
+      emergency_doctors_office
+      general_surgery_office
+      gs_inpatient_office
+      internal_medicine_office
+      im_inpatient_office
+      orthopaedy_office
+      orthopaedy_inpatient_office
+      cardiology_office
+      neurology_office
+      neurology_inpatient_office
+      
+      cardio_unit
+      cardio_unit_gs
+      cardio_unit_im
+      cardio_unit_car
+      cardio_unit_ne
+      neurology_unit
+      sonography_unit
+      gs_sonography_unit
+
+      room_x_ray
+      room_ct
+      room_mri
+      room_angiography
+
+      deprecated_lab
+      hematology_lab
+      microbiology_lab
+      histology_lab
+      
+      observation
+      icu
+      trauma_center
+      
+      ward
+      
+      receipt
+    -->
+
+    <!-- + + + + + + + + + + + + + + Shared rooms, any department + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+    <GameDBRoomType ID="ROOM_TYPE_RECEPTION"> <!-- exept ICU -->
+        <AbbreviationLocID>ROOM_TYPE_RECEPTION_DESCRIPTION</AbbreviationLocID>
+        <TextureID>388</TextureID>
+        <IconIndex>806</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                      <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_waiting</Tag>           <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>            <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_reception_desk</Tag>          <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_print</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_refreshments</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>nurse_workspace</Tag>
+            <Tag>nurse_reception</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_NURSE_SPEC_RECEPTIONIST</RequiredSkill>
+        
+        <MinWidth>3</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CLEANING_CLOSET">
+        <AbbreviationLocID>ROOM_TYPE_CLEANING_CLOSET_DESCRIPTION</AbbreviationLocID>
+        <TextureID>389</TextureID>
+        <IconIndex>808</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_shelf_def</Tag>            <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bucket_cart</Tag>          <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_sink_def</Tag>
+        	<Tag>ui_trash_bins</Tag>
+        	<Tag>ui_cabinets</Tag>
+        </BuildingModeFilters>
+        
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>cleaning_closet</Tag>
+            <Tag>janitor_workspace</Tag>
+        </Tags>
+
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_WC">
+        <AbbreviationLocID>ROOM_TYPE_WC_DESCRIPTION</AbbreviationLocID>
+        <TextureID>390</TextureID>
+        <IconIndex>810</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wc</Tag>                  		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_sink_def</Tag>            		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_handdryer</Tag>           		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_trash_bins</Tag>
+        	<Tag>ui_mirror</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>wc</Tag>
+        </Tags>
+
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+    </GameDBRoomType>
+    
+    <GameDBRoomType ID="ROOM_TYPE_COMMON_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_COMMON_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>393</TextureID>
+        <IconIndex>818</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_fridge</Tag>              		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_sink_def</Tag>            		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_tv</Tag>           			<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_sofa</Tag>           			<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_locker</Tag>           		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bookcase</Tag>           		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_def</Tag>           		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_dining_tables</Tag>           	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_coffee_machine</Tag>           <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_mirror</Tag>
+        	<Tag>ui_refreshments</Tag>
+        	<Tag>ui_coffee_table</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>common_room</Tag>
+            <Tag>lunch_room</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_WAITING">
+        <AbbreviationLocID>ROOM_TYPE_WAITING_DESCRIPTION</AbbreviationLocID>
+        <TextureID>385</TextureID>
+        <IconIndex>802</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+        <FullRoomSoundEvent>SFX_WAITING_ROOM_FULL</FullRoomSoundEvent>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_waiting</Tag>         	<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_queue</Tag>         			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_refreshments</Tag>
+        	<Tag>ui_mirror</Tag>
+        	<Tag>ui_dining_table</Tag>
+        	<Tag>ui_refreshments</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>waiting_room</Tag>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>2</MinHeight>
+    </GameDBRoomType>
+    
+    <GameDBRoomType ID="ROOM_TYPE_ON_CALL_ROOM"> <!-- except Radiology-->
+        <AbbreviationLocID>ROOM_TYPE_ON_CALL_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>395</TextureID>
+        <IconIndex>822</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>            			<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>    				<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+       <!-- <GameDBRequiredEquipment>    <Tag>ui_sofa</Tag>    					<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bookcase</Tag>    				<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_tv</Tag>    					<MinCount>0</MinCount>     </GameDBRequiredEquipment> -->
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_sofa</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_tv</Tag>
+        	<Tag>ui_coffee_table</Tag>
+        </BuildingModeFilters>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_NURSES_STATION"> <!-- except Radiology-->
+        <AbbreviationLocID>ROOM_TYPE_NURSES_STATION_DESCRIPTION</AbbreviationLocID>
+        <TextureID>396</TextureID>
+        <IconIndex>824</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>            			<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   	<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>            	<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>            	<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>lunch_cart</Tag>           	    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_warming_cabinet</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_sink_def</Tag>
+        	<Tag>ui_shelf_def</Tag>
+        	<Tag>ui_glassware</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>nurse_workspace</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CORRIDOR">
+        <AbbreviationLocID>ROOM_TYPE_CORRIDOR_DESCRIPTION</AbbreviationLocID>
+        <TextureID>368</TextureID>
+        <IconIndex>832</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+        	<Tag>ui_chair_waiting</Tag>
+        	<Tag>ui_refreshments</Tag>
+        	<Tag>ui_stretcher</Tag>
+        	<Tag>ui_wheelchair</Tag>
+        </BuildingModeFilters>
+        
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>corridor</Tag>
+        </Tags>
+
+        <MinWidth>1</MinWidth>
+        <MinHeight>1</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_WARD"><!-- exept Emergency, ICU, Radiology -->
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_WARD_DESCRIPTION</AbbreviationLocID>
+        <TextureID>370</TextureID>
+        <IconIndex>836</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_beds</Tag>        				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_night_stand</Tag>         		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>       		<MinCount>1</MinCount>   </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bedsocket</Tag>       			<MinCount>0</MinCount>   </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+       <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_sofa</Tag>
+        	<Tag>ui_tv</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_bookcase</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>patient_lunch</Tag>
+            <Tag>patient_medicine</Tag>
+            <Tag>night_stand</Tag>
+            <Tag>hospitalization</Tag>
+            <Tag>hospitalization_normal</Tag> <!-- for showing patient counts in low/high in management -->
+            <Tag>ward</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_HIGH_PRIORITY_INPATIENT_WARD"><!-- except Emergency, ICU, Cardiology -->
+        <AbbreviationLocID>ROOM_TYPE_HIGH_PRIORITY_INPATIENT_WARD_DESCRIPTION</AbbreviationLocID>
+        <TextureID>371</TextureID>
+        <IconIndex>838</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_beds</Tag>        				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_life_monitor</Tag>        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_night_stand</Tag>         		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>       		<MinCount>1</MinCount>   </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bedsocket</Tag>       			<MinCount>0</MinCount>   </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_sofa</Tag>
+        	<Tag>ui_tv</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_bookcase</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>patient_lunch</Tag>
+            <Tag>patient_medicine</Tag>
+            <Tag>life_monitor</Tag>
+            <Tag>night_stand</Tag>
+            <Tag>hospitalization</Tag>
+            <Tag>hospitalization_high</Tag> <!-- for showing patient counts in low/high in management -->
+            <Tag>ward</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+
+    <GameDBRoomType ID="ROOM_TYPE_OPERATING_ROOM"><!-- except Emergency, ICU, Radiology -->
+        <AbbreviationLocID>ROOM_TYPE_OPERATING_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>386</TextureID>
+        <IconIndex>812</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_scrubbing_sink</Tag>               <MinCount>3</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_scrubs_shelf</Tag>                 <MinCount>3</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_warming_cabinet</Tag>              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_op_table</Tag>                     <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_op_lamps</Tag>               		<MinCount>2</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_anesthetic_machine</Tag>           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>stool</Tag>                           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_angio_viewer</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_instrument_table</Tag>             <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_surgery_instruments</Tag>          <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocautery_machine</Tag>       <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_suction_machine</Tag>              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>              		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>              		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        <TagOnlySingleObject>bed_head</TagOnlySingleObject>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_biohazard_bin</Tag>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_glassware</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>operating_room</Tag>
+        </Tags>
+        
+        <NoBiohazardClothes>true</NoBiohazardClothes>
+        
+        <MinWidth>8</MinWidth>
+        <MinHeight>6</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + Emergency department + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+    
+    <GameDBRoomType ID="ROOM_TYPE_DOCTORS_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_DOCTORS_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                  			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>             			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>small_equipment</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>emergency_doctors_office</Tag>
+            <Tag>receipt</Tag>
+            <Tag>any_office</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+        
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+
+    </GameDBRoomType>
+    
+    <GameDBRoomType ID="ROOM_TYPE_ER_OBSERVATION_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_ER_OBSERVATION_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>394</TextureID>
+        <IconIndex>820</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_beds</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>           <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_night_stand</Tag>                 	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>                 	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_life_monitor</Tag>                	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>                    	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>             	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>          		<MinCount>1</MinCount>	  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>                  	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ceiling_lamp_only</Tag>            <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bedsocket</Tag>            		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>            	<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_chair_office</Tag>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_warming_cabinet</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>patient_lunch</Tag>
+            <Tag>life_monitor</Tag>
+            <Tag>night_stand</Tag>
+            <Tag>hospitalization</Tag>
+            <Tag>hospitalization_normal</Tag> <!-- for showing patient counts in low/high in management -->
+            <Tag>observation</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_TRAUMA_CENTER">
+        <AbbreviationLocID>ROOM_TYPE_TRAUMA_CENTER_DESCRIPTION</AbbreviationLocID>
+        <TextureID>391</TextureID>
+        <IconIndex>814</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_op_table</Tag>                 	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ceiling_lamp_only</Tag>            <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_fast_usg</Tag>                     <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>                <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_anesthetic_machine</Tag>           <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>           <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>                <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>                  <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_angio_viewer</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>              	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_warming_cabinet</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>trauma_center</Tag>
+            <Tag>hospitalization</Tag>
+            <Tag>hospitalization_high</Tag> <!-- for showing patient counts in low/high in management -->
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_glassware</Tag>             			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_stool_analyzer</Tag>                 <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_analyzer</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>thermal_cycler</Tag>                   	<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_lab_equipment</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + ICU + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+    
+    <GameDBRoomType ID="ROOM_TYPE_INTENSIVE_CARE_UNIT">
+        <AbbreviationLocID>ROOM_TYPE_INTENSIVE_CARE_UNIT_DESCRIPTION</AbbreviationLocID>
+        <TextureID>397</TextureID>
+        <IconIndex>826</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+        <FullRoomSoundEvent>AMB_ICU</FullRoomSoundEvent>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_modern_bed</Tag>             		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ventilator</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_defibrillator</Tag>                <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>                  <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>              	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_life_monitor</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_life_support</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_fast_usg</Tag>                    	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_hematoanalyzer</Tag>               <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bedsocket</Tag>                    <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>                    <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_warming_cabinet</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_ceiling_lamp_only</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>patient_medicine</Tag>
+            <Tag>mechanical_ventilator</Tag>
+            <Tag>life_monitor</Tag>
+            <Tag>life_support</Tag>
+            <Tag>hospitalization</Tag>
+            <Tag>hospitalization_high</Tag> <!-- for showing patient counts in low/high in management -->
+            <Tag>icu</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + General surgery department + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_GENERAL_SURGERY_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_GENERAL_SURGERY_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>      			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>general_surgery_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_DOC_SPEC_GENERAL_SURGERY</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_GS_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_GS_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>398</TextureID>
+        <IconIndex>828</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_dialysis_machine</Tag>    				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>stool</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>dialysis_machine</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>general_surgery_office</Tag>
+            <Tag>any_inpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>gs_inpatient_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS">
+        <AbbreviationLocID>ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS_DESCRIPTION</AbbreviationLocID>
+        <TextureID>399</TextureID>
+        <IconIndex>830</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>      					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>   					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>     					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>  							<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_elastograph</Tag>     					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_shockwave</Tag>       					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>shockwave</Tag>
+            <Tag>shockwave_mandatory</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>elastograph</Tag>
+            <Tag>elastograph_mandatory</Tag>
+            <Tag>table_equipment</Tag>
+            <Tag>sonography_unit</Tag>
+            <Tag>gs_sonography_unit</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_USG</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.2</StatisticsMultiplier>
+    </GameDBRoomType>
+    
+    <GameDBRoomType ID="ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION</AbbreviationLocID>
+        <TextureID>369</TextureID>
+        <IconIndex>834</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+        
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>        		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>           			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>       						<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocardiograph</Tag>   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>      				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_lab_analyzer</Tag>                   	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>electrocardiograph</Tag>
+            <Tag>electrocardiograph_mandatory</Tag>
+            <Tag>table_equipment</Tag>
+            <Tag>cardio_unit</Tag>
+            <Tag>cardio_unit_gs</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB_GS">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_GS_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>lab_eq</Tag>             				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_stool_analyzer</Tag>                 <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_analyzer</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_chair_office</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + Internal medicine department + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_INTERNAL_MEDICINE_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INTERNAL_MEDICINE_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>      			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>spirometer</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>internal_medicine_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_DOC_SPEC_INTERNAL_MEDICINE</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_IM_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_IM_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>398</TextureID>
+        <IconIndex>828</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_audiometer</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>spirometer</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>stool</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>internal_medicine_office</Tag>
+            <Tag>im_inpatient_office</Tag>
+            <Tag>any_inpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+   <GameDBRoomType ID="ROOM_TYPE_UNIQUE_IM_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_UNIQUE_IM_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>354</TextureID>
+        <IconIndex>2551</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_op_table</Tag>                         <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_op_lamps</Tag>               		    <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ent</Tag>  					        <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_thoracentesis</Tag>  				    <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_warming_cabinet</Tag>                  <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_instrument_table</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_surgery_instruments</Tag>              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+
+
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+            <Tag>ui_oxygen_tank</Tag>
+            <Tag>ui_equipment_table</Tag>
+            <Tag>ui_mobile_cabinet</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_card_file</Tag>
+            <Tag>ui_chair_def</Tag>
+            <Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>specialized_office</Tag>
+            <Tag>im_unique_office</Tag> <!-- new tag -->
+            <Tag>thoracentesis</Tag>
+            <Tag>ent_workstation</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_IM">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_IM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>369</TextureID>
+        <IconIndex>834</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>        		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>           			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>       						<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocardiograph</Tag>   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>      				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_lab_analyzer</Tag>                   	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>electrocardiograph</Tag>
+            <Tag>electrocardiograph_mandatory</Tag>
+            <Tag>table_equipment</Tag>
+            <Tag>cardio_unit</Tag>
+            <Tag>cardio_unit_im</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB_IM">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_IM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>lab_eq</Tag>             				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_stool_analyzer</Tag>                 <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_analyzer</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>thermal_cycler</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_chair_office</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + Orthopaedics and Traumatology + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_ORTHOPAEDICS_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_ORTHOPAEDICS_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>      			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>              		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electromyograph</Tag>              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>small_equipment</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>orthopaedy_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_OT_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_OT_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>398</TextureID>
+        <IconIndex>828</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electromyograph</Tag>          		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>stool</Tag>    			            <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>orthopaedy_office</Tag>
+            <Tag>orthopaedy_inpatient_office</Tag>
+            <Tag>any_inpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OT">
+        <AbbreviationLocID>ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OT_DESCRIPTION</AbbreviationLocID>
+        <TextureID>399</TextureID>
+        <IconIndex>830</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>      					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>   					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>     					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>  							<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>sonography_unit</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_USG</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB_OT">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_OT_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>lab_eq</Tag>             				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_chair_office</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + Cardiology + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_CARDIOLOGY_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOLOGY_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                  			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>             			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>small_equipment</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>cardiology_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+        
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_CARDIOLOGY_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_CARDIOLOGY_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>398</TextureID>
+        <IconIndex>828</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_crp_scan</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>stool</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>cardiology_office</Tag>
+            <Tag>any_inpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_CAR">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_CAR_DESCRIPTION</AbbreviationLocID>
+        <TextureID>369</TextureID>
+        <IconIndex>834</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>        		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>           			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>       						<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocardiograph</Tag>   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>      				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_lab_analyzer</Tag>                   	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>electrocardiograph</Tag>
+            <Tag>electrocardiograph_mandatory</Tag>
+            <Tag>table_equipment</Tag>
+            <Tag>cardio_unit</Tag>
+            <Tag>cardio_unit_car</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_CAR">
+        <AbbreviationLocID>ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_CAR_DESCRIPTION</AbbreviationLocID>
+        <TextureID>399</TextureID>
+        <IconIndex>830</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              					<MinCount>1</MinCount>    	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         					<MinCount>1</MinCount>    	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>      					<MinCount>1</MinCount>  	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>   					<MinCount>1</MinCount>  	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 					<MinCount>1</MinCount>  	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>     					<MinCount>1</MinCount>    	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   			<MinCount>1</MinCount>  	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>  							<MinCount>1</MinCount>  	</GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>sonography_unit</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_USG</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB_CAR">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_CAR_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>lab_eq</Tag>             				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + Neurology + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_NEUROLOGY_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_NEUROLOGY_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>384</TextureID>
+        <IconIndex>800</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                  			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>             			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>          		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <AcceptsOutpatients>true</AcceptsOutpatients>
+        
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>doctor_workspace</Tag>
+            <Tag>intern_workspace</Tag>
+            <Tag>small_equipment</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>any_outpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>neurology_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+        
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_INPATIENT_NEUROLOGY_OFFICE">
+        <AbbreviationLocID>ROOM_TYPE_INPATIENT_NEUROLOGY_OFFICE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>398</TextureID>
+        <IconIndex>828</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>          				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>       				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>         				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_eye_test</Tag>            				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_workstation</Tag>  					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_dialysis_machine</Tag>    				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_wheelchair</Tag>          				<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>whiteboard</Tag>          		    <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_oxygen_tank</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>stool</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>dialysis_machine</Tag>
+            <Tag>examinations_no_equipment</Tag>
+            <Tag>examinations_basic_equipment</Tag>
+            <Tag>specialized_office</Tag>
+            <Tag>neurology_office</Tag>
+            <Tag>neurology_inpatient_office</Tag>
+            <Tag>any_inpatient_office</Tag>
+            <Tag>any_office</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>1.2</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_NEURODIAGNOSTIC_UNIT_NE">
+        <AbbreviationLocID>ROOM_TYPE_NEURODIAGNOSTIC_UNIT_NE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>375</TextureID>
+        <IconIndex>846</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>      					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>   					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>     					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_campimeter</Tag>          		        <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_tonometer</Tag>          		        <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electroencephalograph</Tag>            <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ophthalmic_equipment</Tag>              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+            <Tag>ui_mobile_cabinet</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_bookcase</Tag>
+            <Tag>ui_card_file</Tag>
+            <Tag>ui_chair_def</Tag>
+            <Tag>ui_privacy_screens</Tag>
+            <Tag>ui_neuro_ophtalmic_diagnostic_unit</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>small_equipment</Tag>
+            <Tag>ophthalmic_equipment</Tag>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>neurology_unit</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_NE">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_NE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>369</TextureID>
+        <IconIndex>834</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>        		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>           			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocardiograph</Tag>   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>      				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_lab_analyzer</Tag>                   	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        
+        <BuildingModeFilters>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_chair_def</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>electrocardiograph</Tag>
+            <Tag>electrocardiograph_mandatory</Tag>
+            <Tag>table_equipment</Tag>
+            <Tag>cardio_unit</Tag>
+            <Tag>cardio_unit_ne</Tag>
+            <Tag>hospitalization_workspace</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+    
+    <GameDBRoomType ID="ROOM_TYPE_STAT_LAB_NE">
+        <AbbreviationLocID>ROOM_TYPE_STAT_LAB_NE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>387</TextureID>
+        <IconIndex>804</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>lab_eq</Tag>             				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_shelf</Tag>                 		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_analyzer</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>thermal_cycler</Tag>                   	<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_stainless_desk</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>deprecated_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + Radiology + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+    
+    <GameDBRoomType ID="ROOM_TYPE_X_RAY_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_X_RAY_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>392</TextureID>
+        <IconIndex>816</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_xray_control_panel</Tag>     		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_xray_machine</Tag>   				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_xray_viewer</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   		<MinCount>1</MinCount>  </GameDBRequiredEquipment> <!-- because of barrium swallov xray exm-->
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <!--Will block the room for hospitalized patients :/ AcceptsOutpatients>true</AcceptsOutpatients-->
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>room_x_ray</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY</RequiredSkill>
+        
+        <MinWidth>5</MinWidth>
+        <MinHeight>5</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_CT_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_CT_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>374</TextureID>
+        <IconIndex>844</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_ct</Tag>         					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   		<MinCount>1</MinCount>  </GameDBRequiredEquipment> <!--because of ct enterography-->
+            <GameDBRequiredEquipment>    <Tag>ui_radiology_viewer</Tag>				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <!--Will block the room for hospitalized patients :/ AcceptsOutpatients>true</AcceptsOutpatients-->
+        
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>room_ct</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY</RequiredSkill>
+        
+        <MinWidth>5</MinWidth>
+        <MinHeight>5</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_MRI_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_MRI_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>373</TextureID>
+        <IconIndex>842</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+        
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_mri</Tag>        					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_radiology_viewer</Tag>				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <!--Will block the room for hospitalized patients :/ AcceptsOutpatients>true</AcceptsOutpatients-->
+        
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>room_mri</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY</RequiredSkill>
+        
+        <MinWidth>6</MinWidth>
+        <MinHeight>5</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_ANGIOGRAPHY_ROOM">
+        <AbbreviationLocID>ROOM_TYPE_ANGIOGRAPHY_ROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>372</TextureID>
+        <IconIndex>840</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_angiopanel</Tag>     				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_angio_viewer</Tag>    				<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_angiography</Tag> 					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <!--Will block the room for hospitalized patients :/ AcceptsOutpatients>true</AcceptsOutpatients-->
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_privacy_screens</Tag>
+        	<Tag>ui_equipment_table</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>room_angiography</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>5</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_RADIO_CARDIO_UNIT">
+        <AbbreviationLocID>ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION</AbbreviationLocID>
+        <TextureID>369</TextureID>
+        <IconIndex>834</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>                   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>              				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>        		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>           			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>        			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>          			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>       						<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_electrocardiograph</Tag>   			<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>      				<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_lab_analyzer</Tag>                   	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+            <Tag>ui_mobile_cabinet</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_bookcase</Tag>
+            <Tag>ui_card_file</Tag>
+            <Tag>ui_chair_def</Tag>
+            <Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>electrocardiograph</Tag>
+            <Tag>electrocardiograph_mandatory</Tag>
+            <Tag>cardio_unit</Tag>
+            <Tag>table_equipment</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_RADIO_SONO_UNIT">
+        <AbbreviationLocID>ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS_DESCRIPTION</AbbreviationLocID>
+        <TextureID>399</TextureID>
+        <IconIndex>830</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>              					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>         					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_table</Tag>      					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_exam_lamp_def</Tag>   					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag> 					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>     					<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>   			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_usg</Tag>  							<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_elastograph</Tag>     					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_shockwave</Tag>       					<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_equipment_table</Tag>          	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+            <Tag>ui_mobile_cabinet</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_bookcase</Tag>
+            <Tag>ui_card_file</Tag>
+            <Tag>ui_chair_def</Tag>
+            <Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>ultrasonograph</Tag>
+            <Tag>shockwave</Tag>
+            <Tag>shockwave_mandatory</Tag>
+            <Tag>elastograph</Tag>
+            <Tag>elastograph_mandatory</Tag>
+            <Tag>sonography_unit</Tag>
+            <Tag>table_equipment</Tag>
+        </Tags>
+
+        <RequiredSkill>SKILL_LAB_SPECIALIST_SPEC_USG</RequiredSkill>
+
+        <MinWidth>5</MinWidth>
+        <MinHeight>4</MinHeight>
+        <StatisticsMultiplier>2.0</StatisticsMultiplier>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + LAB DEPARTMENT + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_HEMATOLOGY_LAB">
+        <AbbreviationLocID>ROOM_TYPE_HEMATOLOGY_LAB_DESCRIPTION</AbbreviationLocID>
+        <TextureID>376</TextureID>
+        <IconIndex>850</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_glassware</Tag>             			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_hematoanalyzer</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ria</Tag>                       		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>thermal_cycler</Tag>                   	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_desk</Tag>                       <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_lab_equipment</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>hematology_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_MICROBIOLOGY_LAB">
+        <AbbreviationLocID>ROOM_TYPE_MICROBIOLOGY_LAB_DESCRIPTION</AbbreviationLocID>
+        <TextureID>377</TextureID>
+        <IconIndex>2868</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_glassware</Tag>             			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_mic_incubator</Tag>                  <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_fume_hood</Tag>                   	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_desk</Tag>                       <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_lab_equipment</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>microbiology_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="ROOM_TYPE_HISTOLOGY_LAB">
+        <AbbreviationLocID>ROOM_TYPE_HISTOLOGY_LAB_DESCRIPTION</AbbreviationLocID>
+        <TextureID>378</TextureID>
+        <IconIndex>854</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                        		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_print</Tag>                        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_microscope</Tag>                		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_glassware</Tag>             			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_biohazard_bin</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_ultracentrifuge</Tag>           		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_sink</Tag>                  		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_medical_fridge</Tag>            		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_stool_analyzer</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_analyzer</Tag>                   <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>                   <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_lab_desk</Tag>                       <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_equipment_table</Tag>
+        	<Tag>ui_mobile_cabinet</Tag>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_cabinets_equipment</Tag>
+        	<Tag>ui_scrubs_shelf</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_lab_equipment</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>stat_lab</Tag>
+            <Tag>histology_lab</Tag>
+        </Tags>
+        
+        <RequiredSkill>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredSkill>
+        
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + ROOM FOR FUTURE DLC + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_LOUNGE"><!--Added so game does not break with admin dlc-->
+        <AbbreviationLocID>DLC_ROOM_TYPE_LOUNGE_DESCRIPTION</AbbreviationLocID>
+        <Hidden>true</Hidden>
+    </GameDBRoomType>   
+    
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + OTHERS + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_ELEVATOR_MARKER">
+        <AbbreviationLocID>ROOM_TYPE_ELEVATOR_MARKER_DESCRIPTION</AbbreviationLocID>
+        <TextureID>379</TextureID>
+        <IconIndex>856</IconIndex>
+        <AccessRights>PATIENT</AccessRights>
+
+        <RequiredEquipment> </RequiredEquipment>
+        <BuildingModeFilters> </BuildingModeFilters>
+
+        <AllFloors>true</AllFloors>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+     <!-- + + + + + + + + + + + + + + + + + + + + + + + for REMOVE + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT"><!-- except ICU, Internal medicine, Orthopaedy, Cardiology, Neurology, Radiology -->
+        <AbbreviationLocID>ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_DESCRIPTION</AbbreviationLocID>
+        <TextureID>399</TextureID>
+        <IconIndex>830</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>exam_table</Tag>                      <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>standing_lamp</Tag>                   <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>biohazard_trash</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>desk</Tag>                            <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>pc</Tag>                              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>printer</Tag>                         <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>office_chair</Tag>                    <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>sink_ward</Tag>                       <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>doc_equipment</Tag>                   <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <!--<GameDBRequiredEquipment>    <Tag>therapy_shockwave</Tag>               <MinCount>1</MinCount>  </GameDBRequiredEquipment>-->
+            <GameDBRequiredEquipment>    <Tag>ultrasonograph</Tag>                  <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+           <!-- <GameDBRequiredEquipment>    <Tag>elastograph</Tag>                     <MinCount>1</MinCount>  </GameDBRequiredEquipment>-->
+        </RequiredEquipment>
+
+        <BuildingModeFilters><Tag>ui_diagnostic_sonography_unit</Tag></BuildingModeFilters>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+</Database>    

@@ -1,0 +1,47 @@
+<Database>
+
+    <GameDBSymptom ID="SYM_HEMORRHAGIC_FEVER">
+        <DescriptionLocID>SYM_HEMORRHAGIC_FEVER_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+        <RiskOfDeathStartHours>0.1</RiskOfDeathStartHours>
+        <RiskOfDeathEndHours>0.5</RiskOfDeathEndHours>
+        <PatientMobility>INTUBATED</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_IV_PASSIVE_IMMUNOTHERAPY</TreatmentRef>
+        </Treatments>
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_MEDIUM</CollapseProcedureRef>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>2180</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_ORIFICE_BLEEDING">
+        <DescriptionLocID>SYM_ORIFICE_BLEEDING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>4</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEMORRHAGIC_FEVER</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BLOOD_COMPONENT_THERAPY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>90</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2178</IconIndex>
+    </GameDBSymptom>
+
+</Database>

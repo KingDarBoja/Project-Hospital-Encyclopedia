@@ -1,0 +1,318 @@
+﻿<Database>
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + ADMIN + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_PHARMACY">
+        <AbbreviationLocID>DLC_ROOM_TYPE_PHARMACY_DESCRIPTION</AbbreviationLocID>
+        <TextureID>380</TextureID><!--TODO DLCADM new icon-->
+        <IconIndex>858</IconIndex><!--TODO DLCADM new icon-->
+        <AccessRights>PATIENT</AccessRights>
+
+        <!--TODO DLCADM fill correct tags -->
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                      <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_drug_shelf</Tag>      		 <MinCount>3</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_drug_shelf_optional</Tag>     <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>            <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_reception_desk</Tag>          <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+        
+        <!--TODO DLCADM fill correct tags -->
+        <BuildingModeFilters>
+            <Tag>ui_reception_desk</Tag>
+            <Tag>ui_chair_office</Tag>
+            <Tag>ui_print</Tag>
+            <Tag>ui_card_file</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_refreshments</Tag>
+            <Tag>ui_chair_waiting</Tag>
+            <Tag>ui_pharmacy_sign</Tag>
+            <Tag>ui_pharmacy_cross</Tag>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lab_specialist_workspace</Tag>
+            <Tag>pharmacy</Tag>
+        </Tags>
+
+        <RequiredSkill>DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY</RequiredSkill>
+
+        <AcceptsOutpatients>false</AcceptsOutpatients>
+        
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_JANITOR_ADMIN">
+        <AbbreviationLocID>DLC_ROOM_TYPE_JANITOR_ADMIN_DESCRIPTION</AbbreviationLocID>
+        <TextureID>383</TextureID>
+        <IconIndex>2536</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <!--TODO DLCADM fill correct tags -->
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>            			<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>    				<MinCount>1</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+            <Tag>ui_cabinets</Tag>
+        	<Tag>ui_card_file</Tag>
+        	<Tag>ui_sofa</Tag>
+        	<Tag>ui_bookcase</Tag>
+        	<Tag>ui_tv</Tag>
+        	<Tag>ui_coffee_table</Tag>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+        </BuildingModeFilters>
+
+        <NoNightShift>true</NoNightShift>
+
+        <Tags>
+            <Tag>janitor_workspace</Tag>
+            <Tag>janitor_admin</Tag><!--For hiring-->
+            <Tag>janitor_admin_workplace</Tag>
+        </Tags>
+
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+        
+        <MaxNumberInHospital>1</MaxNumberInHospital>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_LOUNGE">
+        <AbbreviationLocID>DLC_ROOM_TYPE_LOUNGE_DESCRIPTION</AbbreviationLocID>
+        <TextureID>382</TextureID><!--TODO DLCADM new icon-->
+        <IconIndex>862</IconIndex><!--TODO DLCADM new icon-->
+        <AccessRights>PATIENT</AccessRights>
+
+        <!--TODO DLCADM fill correct tags -->
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_visitor_seat</Tag>                      <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+            <Tag>ui_refreshments</Tag>
+            <Tag>ui_tv</Tag>
+            <Tag>ui_sofa</Tag>
+            <Tag>ui_bookcase</Tag>
+            <Tag>ui_coffee_table</Tag>
+            <Tag>ui_tv</Tag>
+            <Tag>ui_cabinets</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>lounge</Tag><!--TODO DLCADM delete if not needed -->
+        </Tags>
+
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+    </GameDBRoomType>    
+    
+    <GameDBRoomType ID="DLC_ROOM_TYPE_GIFT_SHOP">
+        <AbbreviationLocID>DLC_ROOM_TYPE_GIFT_SHOP_DESCRIPTION</AbbreviationLocID>
+        <TextureID>381</TextureID><!--TODO DLCADM new icon-->
+        <IconIndex>860</IconIndex><!--TODO DLCADM new icon-->
+        <AccessRights>PATIENT</AccessRights>
+
+        <!--TODO DLCADM fill correct tags -->
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_pc</Tag>                              <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_giftshop</Tag>                        <MinCount>2</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_chair_office</Tag>            <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_reception_desk</Tag>          <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>  <Tag>ui_signboard</Tag>                       <MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+            <Tag>ui_reception_desk</Tag>
+            <Tag>ui_chair_office</Tag>
+            <Tag>ui_refreshments</Tag>
+            <Tag>ui_reception_desk</Tag>
+            <Tag>ui_dining_table</Tag>
+        </BuildingModeFilters>
+
+        <NoNightShift>true</NoNightShift>
+
+        <Tags>
+            <Tag>janitor_workspace</Tag>
+            <Tag>janitor_admin_workplace</Tag>
+            <Tag>gift_shop</Tag>
+        </Tags>
+
+        <MinWidth>3</MinWidth>
+        <MinHeight>2</MinHeight>
+
+        <StatisticsMultiplier>1.75</StatisticsMultiplier>
+
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_CAFETERIA">
+        <AbbreviationLocID>DLC_ROOM_TYPE_CAFETERIA_DESCRIPTION</AbbreviationLocID>
+        <TextureID>353</TextureID><!--TODO DLCADM new icon-->
+        <IconIndex>2540</IconIndex><!--TODO DLCADM new icon-->
+        <AccessRights>STAFF</AccessRights>
+
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_meal_counter</Tag>             <MinCount>2</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_def</Tag>           		<MinCount>2</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_dining_tables</Tag>           	<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_sink_def</Tag>            		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_coffee_machine</Tag>           <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cafeteria_board</Tag>          <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_donut_snack</Tag>           	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_fruit_snack</Tag>           	<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cafeteria_counter</Tag>        <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cutlery</Tag>           		<MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_coffee_machine</Tag>           <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_coffee_machine</Tag>           <MinCount>0</MinCount>    </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <BuildingModeFilters>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_refreshments</Tag>
+            <Tag>ui_coffee_table</Tag>
+            <Tag>ui_tv</Tag>
+            <Tag>ui_sofa</Tag>
+            <Tag>ui_cafeteria</Tag>
+        </BuildingModeFilters>
+        
+        <Tags>
+            <Tag>cross_janitor_cart_tile_selection</Tag>
+            <Tag>lunch_room</Tag>
+            <Tag>cafeteria</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>2</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_CLASSROOM">
+        <AbbreviationLocID>DLC_ROOM_TYPE_CLASSROOM_DESCRIPTION</AbbreviationLocID>
+        <TextureID>352</TextureID>
+        <IconIndex>2538</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+        
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_beamer</Tag>            	    <MinCount>1</MinCount>     </GameDBRequiredEquipment>
+        	<GameDBRequiredEquipment>    <Tag>ui_beamer_screen</Tag>            <MinCount>1</MinCount>     </GameDBRequiredEquipment>
+        	<GameDBRequiredEquipment>    <Tag>ui_chair_def</Tag>           		<MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pc</Tag>            			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_print</Tag>    				<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_office_desk</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_chair_office</Tag>    			<MinCount>0</MinCount>     </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_bookcase</Tag>    			    <MinCount>0</MinCount>     </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_cabinets</Tag>
+        	<Tag>ui_sofa</Tag>
+        	<Tag>ui_coffee_table</Tag>
+        	<Tag>ui_dining_tables</Tag>
+        	<Tag>ui_coffee_machine</Tag>
+        	<Tag>ui_sandwich</Tag>
+        	<Tag>ui_refreshments</Tag>
+        	<Tag>ui_snacks</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>classroom</Tag>            
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>3</MinHeight>
+    </GameDBRoomType>
+
+
+    <!-- + + + + + + + + + + + + + + + + + + + + + + + PATHOLOGY + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_PATHOLOGY_OR">
+        <AbbreviationLocID>DLC_ROOM_TYPE_PATHOLOGY_OR_DESCRIPTION</AbbreviationLocID>
+        <TextureID>356</TextureID>
+        <IconIndex>2555</IconIndex>
+        <AccessRights>PATIENT_PROCEDURE</AccessRights>
+
+        <!--TODO DLCPATH fill correct tags -->
+        <RequiredEquipment>
+        	<GameDBRequiredEquipment>    <Tag>ui_autopsy_table</Tag>                <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_clean_hands</Tag>       			<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_scrubs_shelf</Tag>                 <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_cabinets_equipment</Tag>           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>operating_bed_lights</Tag>            <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pathology_instruments</Tag>        <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pathology_viewer</Tag>             <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_sterilization_lamp</Tag>           <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_organ_weight</Tag>               	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_microscope</Tag>               	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_glassware</Tag>               		<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_biohazard_bin</Tag>                <MinCount>1</MinCount>    </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>              		<MinCount>0</MinCount>  </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+        	<Tag>ui_surgery_instruments</Tag>
+        	<Tag>ui_pathology_table</Tag>
+        	<Tag>ui_instrument_table</Tag>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_biohazard_bin</Tag>
+            <Tag>ui_equipment_table</Tag>
+            <Tag>ui_mobile_cabinet</Tag>
+            <Tag>ui_glassware</Tag>
+            <Tag>ui_lab_shelf_wall</Tag>
+            <Tag>ui_whiteboard</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>autopsy_room</Tag>
+            <Tag>operating_room</Tag>
+        </Tags>
+
+        <NoBiohazardClothes>true</NoBiohazardClothes>
+
+        <MinWidth>6</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+    <GameDBRoomType ID="DLC_ROOM_TYPE_PATHOLOGY_WARD">
+        <AbbreviationLocID>DLC_ROOM_TYPE_PATHOLOGY_WARD_DESCRIPTION</AbbreviationLocID>
+        <TextureID>355</TextureID>
+        <IconIndex>2553</IconIndex>
+        <AccessRights>STAFF</AccessRights>
+
+        <!--TODO DLCPATH fill correct tags -->
+        <RequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pathology_freezer</Tag>        <MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_pathology_bed</Tag>        	<MinCount>1</MinCount>  </GameDBRequiredEquipment>
+            <GameDBRequiredEquipment>    <Tag>ui_stretcher</Tag>       			<MinCount>0</MinCount>   </GameDBRequiredEquipment>
+        </RequiredEquipment>
+
+        <LockedByDefault>false</LockedByDefault>
+
+        <BuildingModeFilters>
+            <Tag>ui_cabinets</Tag>
+            <Tag>ui_privacy_screens</Tag>
+        </BuildingModeFilters>
+
+        <Tags>
+            <Tag>hospitalization</Tag>
+            <Tag>ward</Tag>
+            <Tag>receipt</Tag>
+        </Tags>
+
+        <MinWidth>4</MinWidth>
+        <MinHeight>4</MinHeight>
+    </GameDBRoomType>
+
+
+</Database>

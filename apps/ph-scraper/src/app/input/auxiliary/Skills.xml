@@ -1,0 +1,166 @@
+﻿<Database>
+    <!-- Doctor's SKILLS -->
+    <GameDBSkill ID="SKILL_DOC_QUALIF_GENERAL_MEDICINE">
+        <AbbreviationLocID>SKILL_DOC_QUALIF_GENERAL_MEDICINE_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2304</IconIndex>
+        <ExtraLevelingPercent>-200</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_QUALIF_DIAGNOSIS">
+        <AbbreviationLocID>SKILL_DOC_QUALIF_DIAGNOSIS_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2310</IconIndex>
+        <ExtraLevelingPercent>-100</ExtraLevelingPercent>
+    </GameDBSkill>
+    
+    <!-- Doctor's SPECIALIZATIONS -->
+    <GameDBSkill ID="SKILL_DOC_SPEC_ACUTE_MEDICINE">
+        <AbbreviationLocID>SKILL_DOC_SPEC_ACUTE_MEDICINE_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>389</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS">
+        <AbbreviationLocID>SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2328</IconIndex>
+        <ExtraLevelingPercent>50</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_CRITICAL_CARE">
+        <AbbreviationLocID>SKILL_DOC_SPEC_CRITICAL_CARE_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>396</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_GENERAL_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_GENERAL_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>403</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_OPERATIVE_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_OPERATIVE_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>50</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_INTERNAL_MEDICINE">
+        <AbbreviationLocID>SKILL_DOC_SPEC_INTERNAL_MEDICINE_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>410</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_ORTHOPAEDY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_ORTHOPAEDY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>417</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_ORTHOPAEDIC_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_ORTHOPAEDIC_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_CARDIOLOGY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_CARDIOLOGY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>424</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_CARDIO_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_CARDIO_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_NEUROLOGY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_NEUROLOGY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>431</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_NEURO_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_NEURO_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_DOC_SPEC_ANESTHESIOLOGY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_ANESTHESIOLOGY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2352</IconIndex>
+        <ExtraLevelingPercent>50</ExtraLevelingPercent>
+    </GameDBSkill>
+    
+    
+    <!-- Nurse's SKILLS -->
+    <GameDBSkill ID="SKILL_NURSE_QUALIF_PATIENT_CARE">
+        <AbbreviationLocID>SKILL_NURSE_QUALIF_PATIENT_CARE_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2358</IconIndex>
+    </GameDBSkill>
+    
+    <!-- Nurse's SPECIALIZATIONS -->
+    <GameDBSkill ID="SKILL_NURSE_SPEC_RECEPTIONIST">
+        <AbbreviationLocID>SKILL_NURSE_SPEC_RECEPTIONIST_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2364</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_NURSE_SPEC_MEDICAL_SURGERY">
+        <AbbreviationLocID>SKILL_NURSE_SPEC_MEDICAL_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2400</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_NURSE_SPEC_CLINICAL_SPECIALIST">
+        <AbbreviationLocID>SKILL_NURSE_SPEC_CLINICAL_SPECIALIST_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2376</IconIndex>
+    </GameDBSkill>
+    
+    
+    <!-- Lab guys SKILLS -->
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>445</IconIndex>
+    </GameDBSkill>
+    
+    <!-- Lab guys SPECIALIZATIONS -->
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_SPEC_BIOCHEMISTRY">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_SPEC_BIOCHEMISTRY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2322</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>438</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_SPEC_USG">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_SPEC_USG_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2382</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2334</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY">
+        <AbbreviationLocID>SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2340</IconIndex>
+    </GameDBSkill>
+    
+    
+    <!-- Janitor SKILLS -->
+    <GameDBSkill ID="SKILL_JANITOR_QUALIF_EFFICIENCY">
+        <AbbreviationLocID>SKILL_JANITOR_QUALIF_EFFICIENCY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2370</IconIndex>
+    </GameDBSkill>
+    <GameDBSkill ID="SKILL_JANITOR_QUALIF_DEXTERITY">
+        <AbbreviationLocID>SKILL_JANITOR_QUALIF_DEXTERITY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2346</IconIndex>
+    </GameDBSkill>
+    
+    
+    <!-- =============================== Deprecated =============================== -->
+
+    <GameDBSkill ID="SKILL_DOC_SPEC_INTERNAL_MEDICINE_SURGERY">
+        <AbbreviationLocID>SKILL_DOC_SPEC_INTERNAL_MEDICINE_SURGERY_DESCRIPTION</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>2388</IconIndex>
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+
+
+</Database>
