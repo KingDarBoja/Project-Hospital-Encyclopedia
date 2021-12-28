@@ -208,6 +208,21 @@
         }
       },
       "tags": []
+    },
+    "shared-procedures": {
+      "root": "libs/shared/procedures",
+      "sourceRoot": "libs/shared/procedures/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared/procedures/**/*.ts"]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }

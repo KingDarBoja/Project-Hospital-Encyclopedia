@@ -17,6 +17,9 @@
     "paths": {
       "@ph-encyclopedia/shared/localization": [
         "libs/shared/localization/src/index.ts"
+      ],
+      "@ph-encyclopedia/shared/procedures": [
+        "libs/shared/procedures/src/index.ts"
       ]
     }
   },

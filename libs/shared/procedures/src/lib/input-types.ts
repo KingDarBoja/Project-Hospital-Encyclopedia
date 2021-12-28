@@ -1,8 +1,8 @@
 export interface ProcedureDatabaseSchema {
-  Database: Database;
+  Database: ProcedureDatabase;
 }
 
-interface Database {
+export interface ProcedureDatabase {
   GameDBExamination?: GameDBExamination[];
   GameDBTreatment?:   GameDBTreatment[];
 }
@@ -143,6 +143,7 @@ enum StaffSelectionRules {
 }
 
 interface GameDBTreatment {
+  ID:                             string;
   AbbreviationLocID:              string;
   DiscomfortLevel:                DiscomfortLevel[];
   Procedure:                      GameDBTreatmentProcedure;

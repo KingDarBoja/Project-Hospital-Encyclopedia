@@ -1,9 +1,13 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fse from 'fs-extra';
-import { ProcedureDatabaseSchema } from './input-types';
-import { ProcedureSchema } from './output-types';
+import * as chalk from 'chalk';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
+import {
+  ProcedureSchema,
+  ProcedureDatabaseSchema,
+  ProcedureDatabase,
+} from '@ph-encyclopedia/shared/procedures';
 
 const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_PROCEDURES_DIR = 'procedures';
@@ -16,9 +20,14 @@ const parser = new XMLParser({
   },
 });
 
-/** Create an examination dictionary, where each key is the `ID` from the parsed
- * examination xml. */
-const examinationDict: Record<string, ProcedureSchema> = {};
+// Create examination and treatment dictionaries, where each key is the `ID` from the parsed examination xml.
+const procedures: {
+  examinations: Record<string, ProcedureSchema>;
+  treatments: Record<string, ProcedureSchema>;
+} = {
+  examinations: {},
+  treatments: {},
+};
 
 const alwaysArray = [
   'GameDBExamination',
@@ -37,7 +46,7 @@ const alwaysArray = [
 export async function generateProcedures(
   localizationDict: Record<string, LocalizationSchema>
 ) {
-  console.log('- Started processing of procedures');
+  console.log(chalk.green('2. Started processing of procedures'));
 
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_PROCEDURES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_PROCEDURES_DIR);
@@ -57,10 +66,15 @@ export async function generateProcedures(
 
   await fse.outputFile(
     path.resolve(outputPath, 'examinations.json'),
-    JSON.stringify(examinationDict)
+    JSON.stringify(procedures.examinations)
   );
 
-  console.log('- Finished processing of procedures');
+  await fse.outputFile(
+    path.resolve(outputPath, 'treatments.json'),
+    JSON.stringify(procedures.treatments)
+  );
+
+  console.log(chalk.green('2. Finished processing of procedures'));
 }
 
 async function populateProceduresDictionary(
@@ -73,49 +87,51 @@ async function populateProceduresDictionary(
   const parsedDoc = parser.parse(rawDoc) as ProcedureDatabaseSchema;
 
   // Check if it is an examination or a treatment.
+  let root:
+    | ProcedureDatabase['GameDBExamination']
+    | ProcedureDatabase['GameDBTreatment'] = [];
   if (parsedDoc.Database.GameDBExamination) {
-    console.log('Examination!');
-    const rootExaminations = parsedDoc.Database.GameDBExamination;
-
-    /** TODO: Need to obtain the localization strings for each field. */
-    for (const examination of rootExaminations) {
-      const requiredDoctors =
-        examination.Procedure.RequiredDoctorQualificationList?.SkillRef.map(
-          (skill) => ({ name: skill, description: skill })
-        ) ?? [];
-
-      const locNameEntry = localizationDict[examination.ID]
-        ? localizationDict[examination.ID].i18n.en
-        : examination.ID;
-      const locDescEntry = localizationDict[examination.AbbreviationLocID]
-        ? localizationDict[examination.AbbreviationLocID].i18n.en
-        : examination.AbbreviationLocID;
-
-      examinationDict[examination.ID] ??= {
-        name: locNameEntry,
-        description: locDescEntry,
-        required_doctors: requiredDoctors,
-        // Icons were generated with start index of 1 whereas the game uses a
-        // zero-index based grid.
-        icon_index: examination.IconIndex + 1,
-        discomfort:
-          examination.DiscomfortLevel.length > 1
-            ? examination.DiscomfortLevel[
-                examination.DiscomfortLevel.length - 1
-              ]
-            : examination.DiscomfortLevel[0],
-      };
-    }
+    root = parsedDoc.Database.GameDBExamination;
   } else if (parsedDoc.Database.GameDBTreatment) {
-    console.log('Treatment!');
+    root = parsedDoc.Database.GameDBTreatment;
   }
 
-  // final.push(parsedDoc);
+  for (const child of root) {
+    /** TODO: Provide the skill dictionary to obtain the mapped icon index and
+     * the localization string. */
+    const requiredDoctors =
+      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map((skill) => {
+        return {
+          name: skill,
+          description: skill,
+        };
+      }) ?? [];
 
-  // Pretty-printing for debugging.
-  // const prettyStr = JSON.stringify(parsedDoc, null, 2);
+    const locNameEntry = localizationDict[child.ID]
+      ? localizationDict[child.ID].i18n.en
+      : child.ID;
+    const locDescEntry = localizationDict[child.AbbreviationLocID]
+      ? localizationDict[child.AbbreviationLocID].i18n.en
+      : child.AbbreviationLocID;
 
-  // console.log(`******** File path: ${filePath} ********`);
-  // console.log(prettyStr);
-  // console.groupEnd();
+    // Create the new entry and assign to the corresponding dictionary.
+    const newProcedureEntry = {
+      name: locNameEntry,
+      description: locDescEntry,
+      required_doctors: requiredDoctors,
+      // Icons were generated with start index of 1 whereas the game uses a
+      // zero-index based grid.
+      icon_index: child.IconIndex + 1,
+      discomfort:
+        child.DiscomfortLevel.length > 1
+          ? child.DiscomfortLevel[child.DiscomfortLevel.length - 1]
+          : child.DiscomfortLevel[0],
+    };
+
+    if (parsedDoc.Database.GameDBExamination) {
+      procedures.examinations[child.ID] ??= newProcedureEntry;
+    } else if (parsedDoc.Database.GameDBTreatment) {
+      procedures.treatments[child.ID] ??= newProcedureEntry;
+    }
+  }
 }
