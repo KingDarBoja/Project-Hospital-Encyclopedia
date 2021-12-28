@@ -1,7 +1,10 @@
 <section class="mb-2">
   <span class="font-medium text-2xl text-blue-900">Examinations</span>
 </section>
-<section class="grid grid-cols-1 md:grid-cols-2 gap-4" *ngIf="vm$ | async as vm">
+<section
+  class="grid grid-cols-1 md:grid-cols-2 gap-4"
+  *ngIf="vm$ | async as vm"
+>
   <div class="col-span-1" *ngFor="let exm of vm">
     <mat-card class="border border-blue-900 space-y-2 h-full">
       <section class="flex items-center space-x-4">
@@ -17,15 +20,22 @@
         <div class="text-blue-600 text-ellipsis">{{ exm.description }}</div>
         <mat-list class="">
           <div mat-subheader>Required Doctor Skills</div>
-          <mat-list-item *ngFor="let doctor of exm.required_doctors">
-            <img
-              mat-list-icon
-              class="rounded border border-blue-900 examination-filter"
-              src="assets/icons/ph_icon_235.png"
-            />
-            <div mat-line>{{ doctor.name }}</div>
-            <div mat-line>{{ doctor.description }}</div>
-          </mat-list-item>
+          <div class="space-y-2">
+            <ng-container *ngFor="let doctor of exm.required_doctors">
+              <section mat-line class="flex flex-row items-center">
+                <img
+                  class="rounded-full"
+                  src="assets/icons/ph_icon_{{ doctor.icon_index }}.png"
+                />
+                <figcaption class="flex flex-col pl-2">
+                  <div class="font-bold whitespace-normal">
+                    {{ doctor.name }}
+                  </div>
+                  <div class="whitespace-normal">{{ doctor.description }}</div>
+                </figcaption>
+              </section>
+            </ng-container>
+          </div>
         </mat-list>
       </section>
     </mat-card>
