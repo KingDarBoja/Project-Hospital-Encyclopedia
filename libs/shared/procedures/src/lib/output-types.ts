@@ -10,7 +10,7 @@ export interface ProcedureSchema {
   /** The `AbbreviationLocID` tag value. */
   description: string;
   /** The `RequiredDoctorQualificationList` skillRef array values. */
-  required_doctors: Array<{ name: string, description: string }>;
+  required_doctors: Array<{ name: string, description: string; icon_index: number }>;
   /** The `IconIndex` value to display the corresponding icon. */
   icon_index: number;
   /** The `DiscomfortLevel` enum value to reflect into a colour. */

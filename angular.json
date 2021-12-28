@@ -194,6 +194,21 @@
       },
       "tags": []
     },
+    "shared-auxiliary": {
+      "root": "libs/shared/auxiliary",
+      "sourceRoot": "libs/shared/auxiliary/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared/auxiliary/**/*.ts"]
+          }
+        }
+      },
+      "tags": []
+    },
     "shared-localization": {
       "root": "libs/shared/localization",
       "sourceRoot": "libs/shared/localization/src",

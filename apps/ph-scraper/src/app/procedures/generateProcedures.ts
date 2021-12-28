@@ -8,6 +8,7 @@ import {
   ProcedureDatabaseSchema,
   ProcedureDatabase,
 } from '@ph-encyclopedia/shared/procedures';
+import { Auxiliary } from '../generateAuxiliary';
 
 const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_PROCEDURES_DIR = 'procedures';
@@ -44,7 +45,8 @@ const alwaysArray = [
 ];
 
 export async function generateProcedures(
-  localizationDict: Record<string, LocalizationSchema>
+  localizationDict: Record<string, LocalizationSchema>,
+  auxDict: Auxiliary
 ) {
   console.log(chalk.green('2. Started processing of procedures'));
 
@@ -60,7 +62,7 @@ export async function generateProcedures(
 
     // Make sure we are not reading a directory.
     if (stat.isFile()) {
-      await populateProceduresDictionary(filePath, localizationDict);
+      await populateProceduresDictionary(filePath, localizationDict, auxDict);
     }
   }
 
@@ -79,7 +81,8 @@ export async function generateProcedures(
 
 async function populateProceduresDictionary(
   filePath: string,
-  localizationDict: Record<string, LocalizationSchema>
+  localizationDict: Record<string, LocalizationSchema>,
+  auxDict: Auxiliary
 ) {
   const rawDoc = await fse.readFile(filePath);
 
@@ -97,27 +100,32 @@ async function populateProceduresDictionary(
   }
 
   for (const child of root) {
-    /** TODO: Provide the skill dictionary to obtain the mapped icon index and
-     * the localization string. */
     const requiredDoctors =
-      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map((skill) => {
+      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map<
+        ProcedureSchema['required_doctors'][number]
+      >((skill) => {
+        const auxSkillEntry = auxDict.skills[skill];
+        const locSkillName =
+          localizationDict[auxSkillEntry.name]?.i18n.en ?? auxSkillEntry.name;
+        const locSkillDesc =
+          localizationDict[auxSkillEntry.description]?.i18n.en ??
+          auxSkillEntry.description;
         return {
-          name: skill,
-          description: skill,
+          name: locSkillName,
+          description: locSkillDesc,
+          icon_index: auxSkillEntry.icon_index + 1,
         };
       }) ?? [];
 
-    const locNameEntry = localizationDict[child.ID]
-      ? localizationDict[child.ID].i18n.en
-      : child.ID;
-    const locDescEntry = localizationDict[child.AbbreviationLocID]
-      ? localizationDict[child.AbbreviationLocID].i18n.en
-      : child.AbbreviationLocID;
+    const locName = localizationDict[child.ID]?.i18n.en ?? child.ID;
+    const locDesc =
+      localizationDict[child.AbbreviationLocID]?.i18n.en ??
+      child.AbbreviationLocID;
 
     // Create the new entry and assign to the corresponding dictionary.
-    const newProcedureEntry = {
-      name: locNameEntry,
-      description: locDescEntry,
+    const newProcedureEntry: ProcedureSchema = {
+      name: locName,
+      description: locDesc,
       required_doctors: requiredDoctors,
       // Icons were generated with start index of 1 whereas the game uses a
       // zero-index based grid.

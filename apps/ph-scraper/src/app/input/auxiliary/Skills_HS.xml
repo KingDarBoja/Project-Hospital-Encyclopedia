@@ -1,0 +1,25 @@
+<Database>
+    <!-- Doctor's SPECIALIZATIONS -->
+    <GameDBSkill ID="DLC_SKILL_DOC_SPEC_PATHOLOGY">
+        <AbbreviationLocID>DLC_SKILL_DOC_SPEC_PATHOLOGY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>459</IconIndex>
+    </GameDBSkill>
+    
+    <!-- Lab guys SPECIALIZATIONS -->
+    <GameDBSkill ID="DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY">
+        <AbbreviationLocID>DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2436</IconIndex>
+    </GameDBSkill>
+
+    <!-- Janitor SKILLS -->
+    <GameDBSkill ID="DLC_SKILL_JANITOR_SPEC_VENDOR">
+        <AbbreviationLocID>DLC_SKILL_JANITOR_SPEC_VENDOR_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2448</IconIndex>
+    </GameDBSkill>    
+    
+    <GameDBSkill ID="DLC_SKILL_JANITOR_SPEC_MANAGER">
+        <AbbreviationLocID>DLC_SKILL_JANITOR_SPEC_MANAGER_DESCRIPTION</AbbreviationLocID>
+        <IconIndex>2442</IconIndex>
+    </GameDBSkill>
+
+</Database>
