@@ -13,7 +13,12 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@ph-encyclopedia/shared/localization": [
+        "libs/shared/localization/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

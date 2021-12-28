@@ -3,6 +3,7 @@ import * as path from 'path';
 import * as fse from 'fs-extra';
 import { ProcedureDatabaseSchema } from './input-types';
 import { ProcedureSchema } from './output-types';
+import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 
 const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_PROCEDURES_DIR = 'procedures';
@@ -10,7 +11,7 @@ const BASE_PROCEDURES_DIR = 'procedures';
 const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '',
-  isArray: (name, jpath, isLeafNode, isAttribute) => {
+  isArray: (name) => {
     if (alwaysArray.indexOf(name) !== -1) return true;
   },
 });
@@ -19,7 +20,6 @@ const parser = new XMLParser({
  * examination xml. */
 const examinationDict: Record<string, ProcedureSchema> = {};
 
-// const final = [];
 const alwaysArray = [
   'GameDBExamination',
   'DiscomfortLevel',
@@ -34,7 +34,11 @@ const alwaysArray = [
   'AnimationNameIdle',
 ];
 
-export async function generateProcedures() {
+export async function generateProcedures(
+  localizationDict: Record<string, LocalizationSchema>
+) {
+  console.log('- Started processing of procedures');
+
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_PROCEDURES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_PROCEDURES_DIR);
 
@@ -47,7 +51,7 @@ export async function generateProcedures() {
 
     // Make sure we are not reading a directory.
     if (stat.isFile()) {
-      await populateProceduresDictionary(filePath);
+      await populateProceduresDictionary(filePath, localizationDict);
     }
   }
 
@@ -56,10 +60,13 @@ export async function generateProcedures() {
     JSON.stringify(examinationDict)
   );
 
-  // console.log(procedureFiles);
+  console.log('- Finished processing of procedures');
 }
 
-async function populateProceduresDictionary(filePath: string) {
+async function populateProceduresDictionary(
+  filePath: string,
+  localizationDict: Record<string, LocalizationSchema>
+) {
   const rawDoc = await fse.readFile(filePath);
 
   // Parse the file content.
@@ -77,9 +84,16 @@ async function populateProceduresDictionary(filePath: string) {
           (skill) => ({ name: skill, description: skill })
         ) ?? [];
 
+      const locNameEntry = localizationDict[examination.ID]
+        ? localizationDict[examination.ID].i18n.en
+        : examination.ID;
+      const locDescEntry = localizationDict[examination.AbbreviationLocID]
+        ? localizationDict[examination.AbbreviationLocID].i18n.en
+        : examination.AbbreviationLocID;
+
       examinationDict[examination.ID] ??= {
-        name: examination.ID,
-        description: examination.AbbreviationLocID,
+        name: locNameEntry,
+        description: locDescEntry,
         required_doctors: requiredDoctors,
         // Icons were generated with start index of 1 whereas the game uses a
         // zero-index based grid.
@@ -101,7 +115,7 @@ async function populateProceduresDictionary(filePath: string) {
   // Pretty-printing for debugging.
   // const prettyStr = JSON.stringify(parsedDoc, null, 2);
 
-  console.log(`******** File path: ${filePath} ********`);
+  // console.log(`******** File path: ${filePath} ********`);
   // console.log(prettyStr);
   // console.groupEnd();
 }

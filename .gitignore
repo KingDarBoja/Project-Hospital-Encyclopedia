@@ -39,3 +39,6 @@ testem.log
 Thumbs.db
 
 .angular
+
+
+/apps/ph-scraper/src/app/output/*

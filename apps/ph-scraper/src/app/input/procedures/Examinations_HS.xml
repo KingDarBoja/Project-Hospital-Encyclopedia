@@ -1,0 +1,56 @@
+﻿<Database>
+
+    <GameDBExamination ID="EXM_AUTOPSY">
+        <AbbreviationLocID>EXM_AUTOPSY_DESCRIPTION</AbbreviationLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_OR_DEFAULT_ROOM</StaffSelectionRules>
+            <RequiredDoctorQualificationList>
+                <SkillRef>DLC_SKILL_DOC_SPEC_PATHOLOGY</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>autopsy_table_head</Tag>
+                </RequiredEquipment>                
+                <RequiredEquipment>
+                    <Tag>autopsy_table_legs</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>                
+                <RequiredEquipment>
+                    <Tag>scrubs_shelf</Tag>
+                </RequiredEquipment>                 
+                <RequiredEquipment>
+                    <Tag>ui_pathology_viewer</Tag>
+                </RequiredEquipment>                 
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>autopsy_room</Tag>
+            </RequiredRoomTags>
+
+            <BedPositionsStaff>
+                <MainSurgeonPosition>BODY_LEFT</MainSurgeonPosition>
+                <SurgeonAsistantPosition>NONE</SurgeonAsistantPosition>
+                <AnesthesiologistPosition>NONE</AnesthesiologistPosition>
+                <SurgeryNursePosition>NONE</SurgeryNursePosition>
+                <AssistantNursePosition>NONE</AssistantNursePosition>
+            </BedPositionsStaff>
+            
+            <ProcedureScript>DLCProcedureScriptAutopsy</ProcedureScript>
+            <ProcedureAnimationState>LYING</ProcedureAnimationState>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>UNDERWEAR_CLOSED_EYES_AUTOPSY</DressLevel>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>1000</Cost>
+        <IconIndex>2172</IconIndex>
+        <DurationHours>3</DurationHours>
+    </GameDBExamination>
+</Database>
+  
