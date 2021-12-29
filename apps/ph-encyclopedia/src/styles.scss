@@ -23,3 +23,49 @@ ph-encyclopedia-root {
     height: auto;
   }
 }
+
+$dpt-red: rgb(212, 95, 93);
+$dpt-orange: rgb(230, 147, 115);
+$dpt-yellow: rgb(251, 201, 123);
+$dpt-pink: rgb(245, 138, 148);
+$dpt-brown: rgb(216, 188, 166);
+$dpt-green: rgb(141, 194, 138);
+$dpt-pale: rgb(154, 209, 189);
+$dpt-blue: rgb(139, 172, 214);
+$dpt-violet: rgb(168, 174, 216);
+$dpt-grey: rgb(110, 110, 110);
+
+.dpt-text {
+  &-red {
+    color: $dpt-red;
+  }
+
+  &-orange {
+    color: $dpt-orange;
+  }
+
+  &-yellow {
+    color: $dpt-yellow;
+  }
+  &-pink {
+    color: $dpt-pink;
+  }
+  &-brown {
+    color: $dpt-brown;
+  }
+  &-green {
+    color: $dpt-green;
+  }
+  &-pale {
+    color: $dpt-pale;
+  }
+  &-blue {
+    color: $dpt-blue;
+  }
+  &-violet {
+    color: $dpt-violet;
+  }
+  &-grey {
+    color: $dpt-grey;
+  }
+}
