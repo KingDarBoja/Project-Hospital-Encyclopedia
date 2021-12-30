@@ -24,6 +24,13 @@ const routes: Routes = [
         (m) => m.TreatmentModule
       ),
   },
+  {
+    path: 'dpt',
+    loadChildren: () =>
+      import('./departments/departments.module').then(
+        (m) => m.DepartmentsModule
+      ),
+  },
 ];
 
 @NgModule({
