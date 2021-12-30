@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EmergencyDptComponent } from './emergency.component';
+import { DepartmentPageModule } from './ui/department-page/department-page.module';
 
 const DepartmentRoutes: Routes = [
   {
@@ -11,7 +12,7 @@ const DepartmentRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(DepartmentRoutes)],
+  imports: [DepartmentPageModule, RouterModule.forChild(DepartmentRoutes)],
   exports: [RouterModule],
   declarations: [EmergencyDptComponent],
 })

@@ -31,6 +31,13 @@ const routes: Routes = [
         (m) => m.DepartmentsModule
       ),
   },
+  {
+    path: 'symptoms',
+    loadChildren: () =>
+      import('./symptoms/symptom-list/symptom-list.module').then(
+        (m) => m.SymptomListModule
+      ),
+  },
 ];
 
 @NgModule({
