@@ -7,28 +7,12 @@ import {
   ProcedureSchema,
   ProcedureDatabaseSchema,
   ProcedureDatabase,
+  Procedures,
 } from '@ph-encyclopedia/shared/procedures';
 import { Auxiliary } from '../generateAuxiliary';
+import { BASE_PATH } from '../common';
 
-const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_PROCEDURES_DIR = 'procedures';
-
-const parser = new XMLParser({
-  ignoreAttributes: false,
-  attributeNamePrefix: '',
-  isArray: (name) => {
-    if (alwaysArray.indexOf(name) !== -1) return true;
-  },
-});
-
-// Create examination and treatment dictionaries, where each key is the `ID` from the parsed examination xml.
-const procedures: {
-  examinations: Record<string, ProcedureSchema>;
-  treatments: Record<string, ProcedureSchema>;
-} = {
-  examinations: {},
-  treatments: {},
-};
 
 const alwaysArray = [
   'GameDBExamination',
@@ -44,11 +28,25 @@ const alwaysArray = [
   'AnimationNameIdle',
 ];
 
+const parser = new XMLParser({
+  ignoreAttributes: false,
+  attributeNamePrefix: '',
+  isArray: (name) => {
+    if (alwaysArray.indexOf(name) !== -1) return true;
+  },
+});
+
+// Create examination and treatment dictionaries, where each key is the `ID` from the parsed examination xml.
+const procedures: Procedures = {
+  examinations: {},
+  treatments: {},
+};
+
 export async function generateProcedures(
   localizationDict: Record<string, LocalizationSchema>,
   auxDict: Auxiliary
-) {
-  console.log(chalk.green('2. Started processing of procedures'));
+): Promise<Procedures> {
+  console.log(chalk.green('3. Started processing of procedures'));
 
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_PROCEDURES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_PROCEDURES_DIR);
@@ -76,7 +74,9 @@ export async function generateProcedures(
     JSON.stringify(procedures.treatments)
   );
 
-  console.log(chalk.green('2. Finished processing of procedures'));
+  console.log(chalk.green('3. Finished processing of procedures'));
+
+  return procedures;
 }
 
 async function populateProceduresDictionary(
@@ -138,6 +138,7 @@ async function populateProceduresDictionary(
 
     // Create the new entry and assign to the corresponding dictionary.
     const newProcedureEntry: ProcedureSchema = {
+      id: child.ID,
       name: locName,
       description: locDesc,
       required_doctors: requiredDoctors,

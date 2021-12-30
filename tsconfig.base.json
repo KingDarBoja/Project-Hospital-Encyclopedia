@@ -23,7 +23,8 @@
       ],
       "@ph-encyclopedia/shared/procedures": [
         "libs/shared/procedures/src/index.ts"
-      ]
+      ],
+      "@ph-encyclopedia/shared/symptoms": ["libs/shared/symptoms/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

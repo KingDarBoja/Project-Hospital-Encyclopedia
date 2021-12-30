@@ -17,6 +17,7 @@ interface GameDBSymptom {
   ShameLevel:                number;
   IsMainSymptom:             boolean;
   IconIndex:                 number;
+  ID:                        string;
   WalkAnimSuffix?:           WalkAnimSuffix;
   WalkSpeedModifier?:        number;
   RiskOfCollapseStartHours?: number;
@@ -28,6 +29,9 @@ interface GameDBSymptom {
   CollapseProcedureRef?:     CollapseProcedureRef;
   PlanAllTreatments?:        boolean;
   BleedingLevel?:            number;
+  SpeechBubbleRef?:          SpeechBubbleRef;
+  DressLevelWhenTreated?:    DressLevelWhenTreated;
+  LyingAnimationSuffix?:     LyingAnimationSuffix;
 }
 
 enum CollapseProcedureRef {
@@ -36,23 +40,41 @@ enum CollapseProcedureRef {
   ControlProcedureCollapseMedium = "CONTROL_PROCEDURE_COLLAPSE_MEDIUM",
 }
 
-enum DiscomfortLevel {
+export enum DiscomfortLevel {
   High = "High",
   Low = "Low",
   Medium = "Medium",
   None = "None",
 }
 
-interface Examinations {
-  ExaminationRef: ExaminationRef;
+enum DressLevelWhenTreated {
+  AbdomenBandage = "ABDOMEN_BANDAGE",
+  ChestBandage = "CHEST_BANDAGE",
+  ForearmBandage = "FOREARM_BANDAGE",
+  HeadBandage = "HEAD_BANDAGE",
+  LegBandage = "LEG_BANDAGE",
 }
 
-type ExaminationRef = string[] | string;
+interface Examinations {
+  ExaminationRef: string[];
+}
+
+enum LyingAnimationSuffix {
+  WoundAbdomen = "_wound_abdomen",
+  WoundArm = "_wound_arm",
+  WoundChest = "_wound_chest",
+  WoundHead = "_wound_head",
+  WoundLeg = "_wound_leg",
+}
 
 export enum PatientMobility {
   Imobile = "IMOBILE",
   Intubated = "INTUBATED",
   Mobile = "MOBILE",
+}
+
+enum SpeechBubbleRef {
+  BubblePlaceholder = "BUBBLE_PLACEHOLDER",
 }
 
 interface Treatments {

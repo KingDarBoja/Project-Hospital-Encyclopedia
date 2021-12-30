@@ -9,7 +9,9 @@ interface EmployeeSkill {
  * the corresponding fields converted to the localized strings.
  */
 export interface ProcedureSchema {
-  /** The `ID` attribute value. */
+  /** The `ID` attribute raw value for relationships. */
+  id: string;
+  /** The `ID` attribute value.. */
   name: string;
   /** The `AbbreviationLocID` tag value. */
   description: string;
@@ -21,4 +23,9 @@ export interface ProcedureSchema {
   icon_index: number;
   /** The `DiscomfortLevel` enum value to reflect into a colour. */
   discomfort: DiscomfortLevel;
+};
+
+export type Procedures = {
+  examinations: Record<string, ProcedureSchema>;
+  treatments: Record<string, ProcedureSchema>;
 };

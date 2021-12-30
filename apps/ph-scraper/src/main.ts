@@ -1,9 +1,9 @@
 import * as chalk from 'chalk';
 import { generateAuxiliary } from './app/generateAuxiliary';
 // import { generateDiagnoses } from './app/diagnoses/generateDiagnoses';
-// import { generateSymptoms } from './app/symptoms/generateSymptoms';
 import { generateLocalization } from "./app/localization/generateLocatization";
 import { generateProcedures } from "./app/procedures/generateProcedures";
+import { generateSymptoms } from './app/symptoms/generateSymptoms';
 
 async function main() {
   console.log(chalk.bgRed('---- Starting Project Hospital Scraper ----'));
@@ -15,12 +15,12 @@ async function main() {
   const auxDict = await generateAuxiliary(localizationDict);
 
   // 3. Obtain all procedues (examination and treatments).
-  await generateProcedures(localizationDict, auxDict);
+  const procedures = await generateProcedures(localizationDict, auxDict);
 
-  // 4.
-  // generateSymptoms();
+  // 4. Obtain all symptoms (including DLCs ones).
+  await generateSymptoms(localizationDict, procedures);
 
-  // 5.
+  // 5. Obtain all diagnoses (using the generated symptoms).
   // generateDiagnoses();
 
   console.log(chalk.bgRed('---- Finished Project Hospital Scraper ----'));

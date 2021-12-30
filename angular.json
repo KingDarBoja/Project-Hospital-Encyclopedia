@@ -238,6 +238,21 @@
         }
       },
       "tags": []
+    },
+    "shared-symptoms": {
+      "root": "libs/shared/symptoms",
+      "sourceRoot": "libs/shared/symptoms/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared/symptoms/**/*.ts"]
+          }
+        }
+      },
+      "tags": []
     }
   }
 }
