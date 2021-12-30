@@ -1,35 +1,126 @@
-<mat-card class="border border-blue-900 space-y-2 h-full">
-  <section class="flex items-center space-x-4">
-    <img
-      class="rounded-full border border-blue-900 examination-filter"
-      src="assets/icons/ph_icon_{{ symptom.icon_index }}.png"
-    />
-    <figcaption class="text-lg text-blue-900 text-ellipsis">
+<mat-card class="h-full p-0">
+  <section
+    mat-card-header
+    class="flex items-center space-x-4 rounded-t bg-red-700"
+  >
+    <div mat-card-avatar class="">
+      <img class="" src="assets/icons/ph_icon_{{ symptom.icon_index }}.png" />
+    </div>
+    <figcaption class="text-lg text-white text-ellipsis font-medium">
       {{ symptom.name }}
     </figcaption>
   </section>
-  <section class="flex flex-col">
-    <div class="text-blue-600 text-ellipsis">{{ symptom.description }}</div>
-    <!-- <ng-container *ngIf="procedure.required_doctors">
-      <ng-template
-        [ngTemplateOutlet]="skillList"
-        [ngTemplateOutletContext]="{
-          skills: procedure.required_doctors,
-          title: 'Doctor'
-        }"
-      ></ng-template>
-    </ng-container>
-    <ng-container *ngIf="procedure.required_lab_spec">
-      <ng-template
-        [ngTemplateOutlet]="skillList"
-        [ngTemplateOutletContext]="{
-          skills: [procedure.required_lab_spec],
-          title: 'Lab Specialist'
-        }"
-      ></ng-template>
-    </ng-container> -->
-  </section>
+  <mat-card-content>
+    <section class="flex flex-col space-y-2">
+      <div class="text-ellipsis text-justify text-gray-600">
+        {{ symptom.description }}
+      </div>
+      <mat-list class="text-sm text-gray-600">
+        <div class="font-medium mb-1">Patient insights</div>
+        <div mat-list-item class="flex flex-row">
+          <span class="font-medium">Hazard -</span>
+          <span class="pl-1 lowercase">{{ symptom.hazard }}</span>
+        </div>
+        <div mat-list-item class="flex flex-row">
+          <span class="font-medium">Discomfort -</span>
+          <span class="pl-1 lowercase">{{ symptom.discomfort }}</span>
+        </div>
+        <div mat-list-item class="flex flex-row">
+          <span class="font-medium">Mobility - </span>
+          <span class="pl-1 lowercase">{{ symptom.mobility }}</span>
+        </div>
+        <!-- <div mat-list-item class="flex flex-row">
+          <span class="font-medium">Left Text</span>
+          <span class="pl-4">Right Text</span>
+        </div> -->
+      </mat-list>
+      <mat-list class="text-sm dpt-text-green">
+        <div class="flex flex-row items-center font-medium mb-1">
+          <img
+            class="examination-filter h-8 w-8"
+            src="assets/icons/ph_icon_140.png"
+          />
+          <span>Examinations</span>
+        </div>
+        <div
+          mat-list-item
+          class="flex flex-row items-center ml-4"
+          *ngFor="let exm of symptom.examinations"
+        >
+          <img
+            class="examination-filter h-8 w-8"
+            src="assets/icons/ph_icon_{{ exm.icon_index }}.png"
+          />
+          <span class="pl-1 lowercase">{{ exm.name }}</span>
+        </div>
+      </mat-list>
+      <ng-container *ngIf="symptom.treatment">
+        <mat-list class="text-sm dpt-text-blue">
+          <div class="flex flex-row items-center font-medium mb-1">
+            <img
+              class="treatment-filter h-8 w-8"
+              src="assets/icons/ph_icon_367.png"
+            />
+            <span>Treatments</span>
+          </div>
+
+          <div mat-list-item class="flex flex-row items-center ml-4">
+            <img
+              class="treatment-filter h-8 w-8"
+              src="assets/icons/ph_icon_{{ symptom.treatment.icon_index }}.png"
+            />
+            <span class="pl-1 lowercase">{{ symptom.treatment.name }}</span>
+          </div>
+        </mat-list>
+      </ng-container>
+      <ng-container *ngIf="symptom.collapse_sym">
+        <section class="flex flex-col">
+          <div class="font-bold flex items-center text-red-500">
+            <mat-icon class="">warning</mat-icon>
+            <span class="ml-2">This symptom can lead to a collapse.</span>
+          </div>
+          <mat-list class="text-sm text-red-500">
+            <div class="font-medium mb-1">
+              Collapse Symptom:
+              <span class="font-bold">{{ symptom.collapse_sym.name }}.</span>
+            </div>
+            <div mat-list-item class="flex flex-row">
+              <span class="font-medium">Start Hours -</span>
+              <span class="pl-1 lowercase">{{
+                symptom.collapse_sym.start_hours
+              }}</span>
+            </div>
+            <div mat-list-item class="flex flex-row">
+              <span class="font-medium">End Hours -</span>
+              <span class="pl-1 lowercase">{{
+                symptom.collapse_sym.end_hours
+              }}</span>
+            </div>
+          </mat-list>
+        </section>
+      </ng-container>
+      <!-- <ng-container *ngIf="procedure.required_doctors">
+        <ng-template
+          [ngTemplateOutlet]="skillList"
+          [ngTemplateOutletContext]="{
+            skills: procedure.required_doctors,
+            title: 'Doctor'
+          }"
+        ></ng-template>
+      </ng-container>
+      <ng-container *ngIf="procedure.required_lab_spec">
+        <ng-template
+          [ngTemplateOutlet]="skillList"
+          [ngTemplateOutletContext]="{
+            skills: [procedure.required_lab_spec],
+            title: 'Lab Specialist'
+          }"
+        ></ng-template>
+      </ng-container> -->
+    </section>
+  </mat-card-content>
 </mat-card>
+
 <!--
 <ng-template #skillList let-skills="skills" let-title="title">
   <mat-list class="">

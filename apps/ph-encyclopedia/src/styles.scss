@@ -13,6 +13,11 @@ body {
 }
 
 .examination-filter {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(406%) hue-rotate(69deg) brightness(99%)
+    contrast(90%);
+}
+
+.treatment-filter {
   filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(2413%) hue-rotate(213deg) brightness(97%)
     contrast(96%);
 }
@@ -22,9 +27,22 @@ ph-encyclopedia-root {
   .mat-list-base .mat-list-option {
     height: auto;
   }
+
+  .mat-card-avatar {
+    height: auto;
+    width: auto;
+  }
+
+  .mat-card {
+    padding: 0;
+  }
+
+  .mat-card-content {
+    padding: 16px;
+  }
 }
 
-$dpt-red: rgb(212, 95, 93);
+$dpt-red: rgb(99, 96, 96);
 $dpt-orange: rgb(230, 147, 115);
 $dpt-yellow: rgb(251, 201, 123);
 $dpt-pink: rgb(245, 138, 148);
