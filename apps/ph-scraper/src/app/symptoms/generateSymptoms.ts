@@ -81,10 +81,10 @@ async function populateSymptomsDictionary(
       ? proceduresDict.treatments[child.Treatments.TreatmentRef]
       : undefined;
     const collapseSym: SymptomSchema['collapse_sym'] =
-      child.CollapseProcedureRef
+      child.CollapseSymptomRef
         ? {
             id: child.CollapseProcedureRef,
-            name: localizationDict[child.CollapseProcedureRef].i18n.en,
+            name: localizationDict[child.CollapseSymptomRef].i18n.en,
             start_hours: child.RiskOfCollapseStartHours,
             end_hours: child.RiskOfCollapseEndHours,
           }
