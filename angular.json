@@ -9,7 +9,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/ph-encyclopedia",
             "index": "apps/ph-encyclopedia/src/index.html",
@@ -98,11 +100,16 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/ph-encyclopedia"],
+          "outputs": [
+            "coverage/apps/ph-encyclopedia"
+          ],
           "options": {
             "jestConfig": "apps/ph-encyclopedia/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       },
       "tags": []
@@ -126,14 +133,20 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/ph-encyclopedia-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/ph-encyclopedia-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["ph-encyclopedia"]
+      "implicitDependencies": [
+        "ph-encyclopedia"
+      ]
     },
     "ph-scraper": {
       "root": "apps/ph-scraper",
@@ -142,12 +155,16 @@
       "architect": {
         "build": {
           "builder": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/ph-scraper",
             "main": "apps/ph-scraper/src/main.ts",
             "tsConfig": "apps/ph-scraper/tsconfig.app.json",
-            "assets": ["apps/ph-scraper/src/assets"]
+            "assets": [
+              "apps/ph-scraper/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -171,9 +188,13 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/ph-scraper/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/ph-scraper/**/*.ts"
+            ]
           }
         }
       },
@@ -186,9 +207,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/shared/assets/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/shared/assets/**/*.ts"
+            ]
           }
         }
       },
@@ -201,9 +226,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/shared/auxiliary/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/shared/auxiliary/**/*.ts"
+            ]
           }
         }
       },
@@ -216,9 +245,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/shared/localization/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/shared/localization/**/*.ts"
+            ]
           }
         }
       },
@@ -231,9 +264,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/shared/procedures/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/shared/procedures/**/*.ts"
+            ]
           }
         }
       },
@@ -246,9 +283,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/shared/symptoms/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/shared/symptoms/**/*.ts"
+            ]
           }
         }
       },
