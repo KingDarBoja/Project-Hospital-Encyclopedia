@@ -34,43 +34,51 @@
           <span class="pl-4">Right Text</span>
         </div> -->
       </mat-list>
-      <mat-list class="text-sm dpt-text-green">
-        <div class="flex flex-row items-center font-medium mb-1">
+      <mat-list class="dpt-text-green">
+        <div class="flex flex-row items-center font-medium mb-1 text-md">
           <img
-            class="examination-filter h-8 w-8"
+            class="examination-filter h-12 w-12"
             src="assets/icons/ph_icon_140.png"
           />
           <span>Examinations</span>
         </div>
-        <div
+        <section
           mat-list-item
-          class="flex flex-row items-center ml-4"
+          class="flex flex-row items-center ml-4 text-sm"
           *ngFor="let exm of symptom.examinations"
         >
           <img
-            class="examination-filter h-8 w-8"
+            class="examination-filter h-10 w-10"
             src="assets/icons/ph_icon_{{ exm.icon_index }}.png"
           />
-          <span class="pl-1 lowercase">{{ exm.name }}</span>
-        </div>
+          <div class="pl-1">
+            <span class="font-medium">{{ exm.name }}</span> -
+            {{ exm.description }}
+          </div>
+        </section>
       </mat-list>
       <ng-container *ngIf="symptom.treatment">
-        <mat-list class="text-sm dpt-text-blue">
-          <div class="flex flex-row items-center font-medium mb-1">
+        <mat-list class="dpt-text-blue">
+          <div class="flex flex-row items-center font-medium mb-1 text-md">
             <img
-              class="treatment-filter h-8 w-8"
+              class="treatment-filter h-12 w-12"
               src="assets/icons/ph_icon_367.png"
             />
             <span>Treatments</span>
           </div>
-
-          <div mat-list-item class="flex flex-row items-center ml-4">
+          <section
+            mat-list-item
+            class="flex flex-row items-center ml-4 text-sm"
+          >
             <img
-              class="treatment-filter h-8 w-8"
+              class="treatment-filter h-10 w-10"
               src="assets/icons/ph_icon_{{ symptom.treatment.icon_index }}.png"
             />
-            <span class="pl-1 lowercase">{{ symptom.treatment.name }}</span>
-          </div>
+            <div class="pl-1">
+              <span class="font-medium">{{ symptom.treatment.name }}</span> -
+              {{ symptom.treatment.description }}
+            </div>
+          </section>
         </mat-list>
       </ng-container>
       <ng-container *ngIf="symptom.collapse_sym">
@@ -81,7 +89,7 @@
           </div>
           <mat-list class="text-sm text-red-500">
             <div class="font-medium mb-1">
-              Collapse Symptom:
+              Collapse symptom:
               <span class="font-bold">{{ symptom.collapse_sym.name }}.</span>
             </div>
             <div mat-list-item class="flex flex-row">
