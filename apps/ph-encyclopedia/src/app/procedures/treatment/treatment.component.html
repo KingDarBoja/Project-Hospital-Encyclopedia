@@ -1,13 +1,17 @@
-<section class="mb-2">
-  <span class="font-medium text-2xl text-blue-900">Treatments</span>
-</section>
-<section
-  class="grid grid-cols-1 md:grid-cols-2 gap-4"
-  *ngIf="vm$ | async as vm"
->
-  <div class="col-span-1" *ngFor="let exm of vm">
-    <ph-encyclopedia-procedure-card
-      [procedure]="exm"
-    ></ph-encyclopedia-procedure-card>
-  </div>
-</section>
+<ng-container *ngIf="treatment$ | async as treatments">
+  <section class="mb-2 flex flex-col">
+    <span class="font-medium text-2xl text-blue-900">Treatments</span>
+    <div class="text-lg text-blue-900">
+      Total treatments: {{ treatments.length }}
+    </div>
+  </section>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="col-span-1" *ngFor="let trt of treatments">
+      <ph-encyclopedia-procedure-card
+        [procedure]="trt"
+        [type]="'TRT'"
+      ></ph-encyclopedia-procedure-card>
+    </div>
+  </section>
+</ng-container>
+

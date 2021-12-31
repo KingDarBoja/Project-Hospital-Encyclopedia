@@ -1,13 +1,17 @@
-<section class="mb-2">
-  <span class="font-medium text-2xl text-blue-900">Examinations</span>
-</section>
-<section
-  class="grid grid-cols-1 md:grid-cols-2 gap-4"
-  *ngIf="vm$ | async as vm"
->
-  <div class="col-span-1" *ngFor="let exm of vm">
-    <ph-encyclopedia-procedure-card
-      [procedure]="exm"
-    ></ph-encyclopedia-procedure-card>
-  </div>
-</section>
+<ng-container *ngIf="examination$ | async as examinations">
+  <section class="mb-2 flex flex-col">
+    <span class="font-medium text-2xl text-green-900">Examinations</span>
+    <div class="text-lg text-green-900">
+      Total examinations: {{ examinations.length }}
+    </div>
+  </section>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="col-span-1" *ngFor="let exm of examinations">
+      <ph-encyclopedia-procedure-card
+        [procedure]="exm"
+        [type]="'EXM'"
+      ></ph-encyclopedia-procedure-card>
+    </div>
+  </section>
+</ng-container>
+

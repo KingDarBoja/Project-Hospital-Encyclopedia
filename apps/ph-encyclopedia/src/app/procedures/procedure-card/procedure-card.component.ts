@@ -3,9 +3,9 @@ import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
 
 @Component({
   selector: 'ph-encyclopedia-procedure-card',
-  templateUrl: 'procedure-card.component.html'
+  templateUrl: 'procedure-card.component.html',
 })
-
 export class ProcedureCardComponent {
   @Input() procedure!: ProcedureSchema;
+  @Input() type!: 'EXM' | 'TRT';
 }

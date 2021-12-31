@@ -8,7 +8,7 @@ import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
   templateUrl: 'treatment.component.html',
 })
 export class TreatmentComponent {
-  readonly vm$ = this.http
+  readonly treatment$ = this.http
     .get<Record<string, ProcedureSchema>>('assets/procedures/treatments.json')
     .pipe(
       map((res) =>
