@@ -7,10 +7,38 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
 }
+
+/***** Scrollbar ****/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/***** Color filters ****/
 
 .examination-filter {
   filter: brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(406%) hue-rotate(69deg) brightness(99%)
@@ -20,6 +48,11 @@ body {
 .treatment-filter {
   filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(2413%) hue-rotate(213deg) brightness(97%)
     contrast(96%);
+}
+
+.black-filter {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(30%) hue-rotate(73deg) brightness(106%)
+    contrast(107%);
 }
 
 ph-encyclopedia-root {

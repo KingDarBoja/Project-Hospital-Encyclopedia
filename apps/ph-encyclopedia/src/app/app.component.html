@@ -1,34 +1,166 @@
-<!-- <img src="assets/icons/ph_icon_1081.png"> -->
 <mat-toolbar color="primary" class="h-20">
-  <a routerLink="./" class="flex flex-row items-center">
+  <a routerLink="./" class="flex flex-row items-center w-48 md:w-auto">
     <img class="h-14 object-contain" src="assets/logo/ph_encyclopedia.png" />
-    <figcaption class="flex flex-col leading-tight ml-4">
+    <!-- <figcaption class="flex flex-col leading-tight ml-4">
       <title>Project Hospital</title>
       <title>Encyclopedia</title>
-    </figcaption>
+    </figcaption> -->
   </a>
   <span class="flex-1"></span>
-  <button mat-button [matMenuTriggerFor]="departmentsMenu">Departments</button>
-  <button mat-button disabled>Modded Dpts.</button>
-  <button mat-button [matMenuTriggerFor]="proceduresMenu">Procedures</button>
-  <button mat-button routerLink="/symptoms">Symptoms</button>
-  <button mat-button disabled>Misc</button>
-  <button mat-button disabled>FAQ</button>
+  <div class="hidden lg:block">
+    <ng-container [ngTemplateOutlet]="navItems"></ng-container>
+  </div>
+  <div class="block lg:hidden">
+    <button mat-button [mat-menu-trigger-for]="mainMenu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
 </mat-toolbar>
-
-<div class="container mx-auto px-2">
-  <section class="flex flex-col space-y-2 justify-center items-center h-40">
-    <span class="text-4xl font-bold text-blue-900">
-      Project Hospital Encyclopedia
-    </span>
-    <span class="text-lg text-red-800 font-bold"> Work in Progress!</span>
-  </section>
-  <router-outlet></router-outlet>
+<div class="h-full overflow-y-auto">
+  <div class="container mx-auto px-2">
+    <section class="flex flex-col space-y-2 justify-center items-center h-40">
+      <span class="text-4xl font-bold text-blue-900">
+        Project Hospital Encyclopedia
+      </span>
+      <span class="text-lg text-red-800 font-bold"> Work in Progress!</span>
+    </section>
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
+<mat-menu x-position="before" #mainMenu="matMenu">
+  <ng-container [ngTemplateOutlet]="navMenuList"></ng-container>
+</mat-menu>
+
+<ng-template #navItems>
+  <button
+    class="flex"
+    mat-button
+    matTooltip="Departments"
+    [matMenuTriggerFor]="departmentsMenu"
+  >
+    <img class="h-8 object-contain mx-auto" src="assets/icons/ph_icon_42.png" />
+    <span class="">Departments</span>
+  </button>
+  <button
+    class="flex"
+    mat-button
+    matTooltip="Modded Dpts."
+    disabled
+    [matMenuTriggerFor]="moddedDepartmentsMenu"
+  >
+    <img class="h-8 object-contain mx-auto" src="assets/icons/ph_icon_97.png" />
+    <span class="">Modded Dpts.</span>
+  </button>
+  <button
+    class="flex"
+    mat-button
+    matTooltip="Procedures"
+    [matMenuTriggerFor]="proceduresMenu"
+  >
+    <img
+      class="h-8 object-contain mx-auto"
+      src="assets/icons/ph_icon_2286.png"
+    />
+    <span class="">Procedures</span>
+  </button>
+  <button class="flex" mat-button matTooltip="Symptoms" routerLink="/symptoms">
+    <img
+      class="h-8 object-contain mx-auto"
+      src="assets/icons/ph_icon_106.png"
+    />
+    <span class="">Symptoms</span>
+  </button>
+  <button class="flex" mat-button matTooltip="Misc" disabled>
+    <img
+      class="h-8 object-contain mx-auto"
+      src="assets/icons/ph_icon_519.png"
+    />
+    <span class="">Misc</span>
+  </button>
+  <button class="flex" mat-button matTooltip="FAQ" disabled>
+    <img
+      class="h-8 object-contain mx-auto"
+      src="assets/icons/ph_icon_319.png"
+    />
+    <span class="">FAQ</span>
+  </button>
+</ng-template>
+
+<ng-template #navMenuList>
+  <mat-nav-list>
+    <a
+      mat-list-item
+      matTooltip="Departments"
+      [matMenuTriggerFor]="departmentsMenu"
+    >
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_42.png"
+      />
+      <span class="">Departments</span>
+    </a>
+    <a mat-list-item matTooltip="Modded Dpts." disabled>
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_97.png"
+      />
+      <span class="">Modded Dpts.</span>
+    </a>
+    <a
+      mat-list-item
+      matTooltip="Procedures"
+      [matMenuTriggerFor]="proceduresMenu"
+    >
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_2286.png"
+      />
+      <span class="">Procedures</span>
+    </a>
+    <a mat-list-item matTooltip="Symptoms" routerLink="/symptoms">
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_106.png"
+      />
+      <span class="">Symptoms</span>
+    </a>
+    <a mat-list-item matTooltip="Misc" disabled>
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_519.png"
+      />
+      <span class="">Misc</span>
+    </a>
+    <a mat-list-item matTooltip="FAQ" disabled>
+      <img
+        class="lg:hidden h-8 object-contain black-filter"
+        src="assets/icons/ph_icon_319.png"
+      />
+      <span class="">FAQ</span>
+    </a>
+  </mat-nav-list>
+</ng-template>
+
 <mat-menu #proceduresMenu="matMenu">
-  <a mat-menu-item routerLink="/examinations">Examinations</a>
-  <a mat-menu-item routerLink="/treatments">Treatments</a>
+  <a mat-menu-item routerLink="/examinations">
+    <div class="flex flex-row items-center">
+      <img
+        class="h-8 w-8 examination-filter object-contain"
+        src="assets/icons/ph_icon_140.png"
+      />
+      <span class="dpt-text-green">Examinations</span>
+    </div>
+  </a>
+  <a mat-menu-item routerLink="/treatments">
+    <div class="flex flex-row items-center">
+      <img
+        class="h-8 w-8 treatment-filter object-contain"
+        src="assets/icons/ph_icon_367.png"
+      />
+      <span class="dpt-text-blue">Treatments</span>
+    </div>
+  </a>
 </mat-menu>
 
 <mat-menu #departmentsMenu="matMenu">
@@ -78,6 +210,15 @@
     <div class="flex flex-row items-center">
       <img class="h-8 object-contain" src="assets/icons/ph_icon_473.png" />
       <span class="ml-2 dpt-text-pink font-medium">Traumatology</span>
+    </div>
+  </a>
+</mat-menu>
+
+<mat-menu #moddedDepartmentsMenu="matMenu">
+  <a mat-menu-item routerLink="/dpt/emergency">
+    <div class="flex flex-row items-center">
+      <img class="h-8 object-contain" src="assets/icons/ph_icon_389.png" />
+      <span class="ml-2 dpt-text-orange font-medium">TBD</span>
     </div>
   </a>
 </mat-menu>
