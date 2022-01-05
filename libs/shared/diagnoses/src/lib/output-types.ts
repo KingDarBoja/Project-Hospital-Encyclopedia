@@ -2,6 +2,36 @@ import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
 import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
 import { OccurrenceRef } from '..';
 
+export enum OfficialDepartments {
+  EMERGENCY = 'er',
+  GENERAL_SURGERY = 'surg',
+  INTERNAL_MEDICINE = 'intern',
+  ORTHOPEDY = 'ortho',
+  CARDIOLOGY = 'cardio',
+  NEUROLOGY = 'neuro',
+  TRAUMATOLOGY = 'trauma',
+  INFECTIOUS_DISEASES = 'infect',
+};
+
+export type DiagnosesDict = {
+  /** Emergency */
+  er: Record<string, DiagnoseSchema>;
+  /** General Surgery */
+  surg: Record<string, DiagnoseSchema>;
+  /** Internal Medicine */
+  intern: Record<string, DiagnoseSchema>;
+  /** Orthopedy */
+  ortho: Record<string, DiagnoseSchema>;
+  /** Cardiology */
+  cardio: Record<string, DiagnoseSchema>;
+  /** Neurology */
+  neuro: Record<string, DiagnoseSchema>;
+  /** Trauma */
+  trauma: Record<string, DiagnoseSchema>;
+  /** Infectious Diseases */
+  infect: Record<string, DiagnoseSchema>;
+};
+
 type DiagnoseSymptomSchema = Pick<
   SymptomSchema,
   'id' | 'name' | 'icon_index' | 'hazard' | 'collapse_sym'

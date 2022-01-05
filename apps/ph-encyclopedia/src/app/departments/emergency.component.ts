@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Departments } from './ui/department-page/department-page.component';
+import { OfficialDepartments } from '@ph-encyclopedia/shared/diagnoses';
 
 @Component({
   template: `
@@ -9,5 +9,5 @@ import { Departments } from './ui/department-page/department-page.component';
   `,
 })
 export class EmergencyDptComponent {
-  readonly dptCodes = Departments;
+  readonly dptCodes = OfficialDepartments;
 }

@@ -7,27 +7,9 @@ import {
   DepartmentRef,
   DiagnoseDatabaseSchema,
   DiagnoseSchema,
+  DiagnosesDict,
 } from '@ph-encyclopedia/shared/diagnoses';
 import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
-
-type DiagnosesDict = {
-  /** Emergency */
-  er: Record<string, DiagnoseSchema>;
-  /** General Surgery */
-  surg: Record<string, DiagnoseSchema>;
-  /** Internal Medicine */
-  intern: Record<string, DiagnoseSchema>;
-  /** Orthopedy */
-  ortho: Record<string, DiagnoseSchema>;
-  /** Cardiology */
-  cardio: Record<string, DiagnoseSchema>;
-  /** Neurology */
-  neuro: Record<string, DiagnoseSchema>;
-  /** Trauma */
-  trauma: Record<string, DiagnoseSchema>;
-  /** Infectious Diseases */
-  infect: Record<string, DiagnoseSchema>;
-};
 
 const BASE_DIAGNOSES_DIR = 'diagnoses';
 
