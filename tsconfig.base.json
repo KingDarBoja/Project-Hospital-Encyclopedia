@@ -18,6 +18,9 @@
       "@ph-encyclopedia/shared/auxiliary": [
         "libs/shared/auxiliary/src/index.ts"
       ],
+      "@ph-encyclopedia/shared/diagnoses": [
+        "libs/shared/diagnoses/src/index.ts"
+      ],
       "@ph-encyclopedia/shared/localization": [
         "libs/shared/localization/src/index.ts"
       ],

@@ -14,6 +14,8 @@ interface CollapseSymptomSchema {
  * the corresponding fields converted to the localized strings.
  */
 export interface SymptomSchema {
+  /** Provide the `ID` tag of the symptom for relationships. */
+  id: string;
   /** The `ID` attribute value. */
   name: string;
   /** The `DescriptionLocID` tag value. */

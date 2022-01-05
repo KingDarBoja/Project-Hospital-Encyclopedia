@@ -1,7 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fse from 'fs-extra';
-import * as chalk from 'chalk';
 import { BASE_PATH } from './common';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
@@ -35,7 +34,7 @@ const final = [];
 export async function generateAuxiliary(
   localizationDict: Record<string, LocalizationSchema>
 ): Promise<Auxiliary> {
-  console.log(chalk.green('2. Started processing of auxiliary'));
+
 
   const specDirname = 'auxiliary';
   const inputPath = path.resolve(BASE_PATH, 'input', specDirname);
@@ -62,8 +61,6 @@ export async function generateAuxiliary(
     path.resolve(outputPath, 'skills.json'),
     JSON.stringify(auxiliary.skills)
   );
-
-  console.log(chalk.green('2. Finished processing of auxiliary'));
 
   return auxiliary;
 }

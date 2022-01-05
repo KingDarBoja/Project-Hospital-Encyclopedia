@@ -1,7 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fse from 'fs-extra';
-import * as chalk from 'chalk';
 import { BASE_PATH } from '../common';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
@@ -27,13 +26,11 @@ export async function generateSymptoms(
   localizationDict: Record<string, LocalizationSchema>,
   proceduresDict: Procedures
 ) {
-  console.log(chalk.green('4. Started processing of symptoms'));
-
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_SYMPTOMS_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_SYMPTOMS_DIR);
 
   // Get all the xml files inside the `input/symptoms` directory and loop each
-  // to obtain a parsed json for futher processing.
+  // to obtain a parsed json for further processing.
   const filePaths = await fse.readdir(inputPath);
   for (const filePath of filePaths) {
     const fullFilePath = path.join(inputPath, filePath);
@@ -54,7 +51,7 @@ export async function generateSymptoms(
     JSON.stringify(symptoms)
   );
 
-  console.log(chalk.green('4. Finished processing of symptoms'));
+  return symptoms;
 }
 
 async function populateSymptomsDictionary(
@@ -91,6 +88,7 @@ async function populateSymptomsDictionary(
         : undefined;
 
     const newSymptom: SymptomSchema = {
+      id: child.ID,
       name: locName,
       description: locDesc,
       icon_index: child.IconIndex + 1,

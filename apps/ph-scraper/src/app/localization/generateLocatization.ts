@@ -1,7 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fse from 'fs-extra';
-import * as chalk from 'chalk';
 import {
   LocalizationDatabaseSchema,
   LocalizationSchema,
@@ -20,13 +19,13 @@ const parser = new XMLParser({
 const localizationDict: Record<string, LocalizationSchema> = {};
 
 export async function generateLocalization() {
-  console.log(chalk.yellow('1. Started processing of localization'));
+
 
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_LOC_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_LOC_DIR);
 
   // Get all the xml files inside the `input/localization` directory and loop each
-  // to obtain a parsed json for futher processing.
+  // to obtain a parsed json for further processing.
   const filePaths = await fse.readdir(inputPath);
   for (const filePath of filePaths) {
     const fullFilePath = path.join(inputPath, filePath);
@@ -42,8 +41,6 @@ export async function generateLocalization() {
     path.resolve(outputPath, 'localization.json'),
     JSON.stringify(localizationDict)
   );
-
-  console.log(chalk.yellow('1. Finished processing of localization'));
 
   return localizationDict;
 }

@@ -16,23 +16,35 @@ interface GameDBMedicalCondition {
   IconIndex:              number;
   DepartmentRef:          DepartmentRef;
   InsurancePayment:       number;
-  Tags:                   Tags;
-  WalkAnimSuffix?:        string;
+  Tags?:                  Tags;
+  ID:                     string;
+  WalkAnimSuffix?:        WalkAnimSuffix;
   WalkSpeedModifier?:     number;
-  WalkAnimSuffixTreated?: string;
+  WalkAnimSuffixTreated?: WalkAnimSuffix;
   Disabled?:              boolean;
+  DontSendToHDU?:         boolean;
+  BiohazardStretchers?:   boolean;
+  FullyBandaged?:         boolean;
 }
 
-enum DepartmentRef {
+export enum DepartmentRef {
+  DptCardiology = "DPT_CARDIOLOGY",
   DptEmergency = "DPT_EMERGENCY",
+  DptGeneralSurgeryDepartment = "DPT_GENERAL_SURGERY_DEPARTMENT",
+  DptInfectiousDiseasesDepartment = "DPT_INFECTIOUS_DISEASES_DEPARTMENT",
+  DptInternalMedicineDepartment = "DPT_INTERNAL_MEDICINE_DEPARTMENT",
+  DptNeurology = "DPT_NEUROLOGY",
+  DptOrthopaedicsAndTraumatology = "DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY",
+  DptTraumatologyDepartment = "DPT_TRAUMATOLOGY_DEPARTMENT",
 }
 
 interface Examinations {
   ExaminationRef: string[];
 }
 
-enum OccurrenceRef {
+export enum OccurrenceRef {
   OccurrenceCommon = "OCCURRENCE_COMMON",
+  OccurrenceRare = "OCCURRENCE_RARE",
   OccurrenceUncommon = "OCCURRENCE_UNCOMMON",
 }
 
@@ -50,12 +62,18 @@ interface Tags {
   Tag: Tag[];
 }
 
-enum Tag {
+export enum Tag {
   Clinic = "clinic",
   Disease = "disease",
+  Helicopter = "helicopter",
   Trauma = "trauma",
 }
 
 interface Treatments {
   TreatmentRef: string[];
+}
+
+enum WalkAnimSuffix {
+  Crutch = "_crutch",
+  Limp = "_limp",
 }

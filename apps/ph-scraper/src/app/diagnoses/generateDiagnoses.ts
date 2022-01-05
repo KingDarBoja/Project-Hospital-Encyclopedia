@@ -1,24 +1,170 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
-import { promises as fs } from "fs";
-import { DiagnoseDatabaseSchema } from './types';
+import * as fse from 'fs-extra';
+import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
+import { BASE_PATH } from '../common';
+import {
+  DepartmentRef,
+  DiagnoseDatabaseSchema,
+  DiagnoseSchema,
+} from '@ph-encyclopedia/shared/diagnoses';
+import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
+
+type DiagnosesDict = {
+  /** Emergency */
+  er: Record<string, DiagnoseSchema>;
+  /** General Surgery */
+  surg: Record<string, DiagnoseSchema>;
+  /** Internal Medicine */
+  intern: Record<string, DiagnoseSchema>;
+  /** Orthopedy */
+  ortho: Record<string, DiagnoseSchema>;
+  /** Cardiology */
+  cardio: Record<string, DiagnoseSchema>;
+  /** Neurology */
+  neuro: Record<string, DiagnoseSchema>;
+  /** Trauma */
+  trauma: Record<string, DiagnoseSchema>;
+  /** Infectious Diseases */
+  infect: Record<string, DiagnoseSchema>;
+};
 
 const BASE_DIAGNOSES_DIR = 'diagnoses';
 
-const parser = new XMLParser();
+const alwaysArray = ['ExaminationRef', 'Tag'];
+const parser = new XMLParser({
+  ignoreAttributes: false,
+  attributeNamePrefix: '',
+  isArray: (name) => {
+    if (alwaysArray.indexOf(name) !== -1) return true;
+  },
+});
 
-export async function generateDiagnoses() {
-  const fileName = 'DiagnosesER.xml';
-  const fullFilePath = path.resolve(__dirname, 'assets', BASE_DIAGNOSES_DIR, fileName);
-  console.log('Reading Path ', fullFilePath);
+const diagnoses: DiagnosesDict = {
+  er: {},
+  surg: {},
+  intern: {},
+  ortho: {},
+  cardio: {},
+  neuro: {},
+  trauma: {},
+  infect: {},
+};
 
+export async function generateDiagnoses(
+  localizationDict: Record<string, LocalizationSchema>,
+  symptomsDict: Record<string, SymptomSchema>
+) {
+  const inputPath = path.resolve(BASE_PATH, 'input', BASE_DIAGNOSES_DIR);
+  const outputPath = path.resolve(BASE_PATH, 'output', BASE_DIAGNOSES_DIR);
 
-  const xmlDiagnose = await fs.readFile(fullFilePath);
-  const parsedDiagnose = parser.parse(xmlDiagnose) as DiagnoseDatabaseSchema;
+  // Get all the xml files inside the `input/diagnoses` directory and loop each
+  // to obtain a parsed json per department for further processing.
+  const filePaths = await fse.readdir(inputPath);
+  for (const filePath of filePaths) {
+    const fullFilePath = path.join(inputPath, filePath);
+    const stat = fse.statSync(fullFilePath);
 
-  // As example
-  const firstMedicalCondition = parsedDiagnose.Database.GameDBMedicalCondition[0];
-  const prettyStr = JSON.stringify(firstMedicalCondition, null, 2);
+    // Make sure we are not reading a directory.
+    if (stat.isFile()) {
+      await populateDiagnosesDictionary(
+        fullFilePath,
+        localizationDict,
+        symptomsDict
+      );
+    }
+  }
 
-  console.log(prettyStr);
+  await Promise.all([
+    Object.keys(diagnoses).map((dpt) =>
+      fse.outputFile(
+        path.resolve(outputPath, `diagnoses_${dpt}.json`),
+        JSON.stringify(diagnoses[dpt])
+      )
+    ),
+  ]);
+
+  return diagnoses;
+}
+
+async function populateDiagnosesDictionary(
+  filePath: string,
+  localizationDict: Record<string, LocalizationSchema>,
+  symptomsDict: Record<string, SymptomSchema>
+) {
+  const rawDoc = await fse.readFile(filePath);
+
+  // Parse the file content.
+  const parsedDoc = parser.parse(rawDoc) as DiagnoseDatabaseSchema;
+  const root = parsedDoc.Database.GameDBMedicalCondition;
+
+  for (const child of root) {
+    const locName = localizationDict[child.ID]?.i18n.en ?? child.ID;
+    const locDesc =
+      localizationDict[child.AbbreviationLocID]?.i18n.en ??
+      child.AbbreviationLocID;
+
+    const newDiagnose: DiagnoseSchema = {
+      id: child.ID,
+      name: locName,
+      description: locDesc,
+      icon_index: child.IconIndex + 1,
+      symptoms: child.Symptoms.GameDBSymptomRules.map<
+        DiagnoseSchema['symptoms'][number]
+      >((symptom) => {
+        const symptomEntry = symptomsDict[symptom.GameDBSymptomRef];
+        return {
+          id: symptomEntry.id,
+          name: symptomEntry.name,
+          icon_index: symptomEntry.icon_index,
+          hazard: symptomEntry.hazard,
+          collapse_sym: symptomEntry.collapse_sym,
+          probability: symptom.ProbabilityPercent,
+          examinations: symptomEntry.examinations.map((exm) => ({
+            id: exm.id,
+            name: exm.name,
+            icon_index: exm.icon_index,
+          })),
+          treatment: symptomEntry.treatment
+            ? {
+                id: symptomEntry.treatment.id,
+                name: symptomEntry.treatment.name,
+                icon_index: symptomEntry.treatment.icon_index,
+              }
+            : undefined,
+        };
+      }),
+      insurance: child.InsurancePayment,
+      occurrence: child.OccurrenceRef,
+    };
+
+    switch (child.DepartmentRef) {
+      case DepartmentRef.DptEmergency:
+        diagnoses.er[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptGeneralSurgeryDepartment:
+        diagnoses.surg[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptInternalMedicineDepartment:
+        diagnoses.intern[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptOrthopaedicsAndTraumatology:
+        diagnoses.ortho[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptCardiology:
+        diagnoses.cardio[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptNeurology:
+        diagnoses.neuro[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptTraumatologyDepartment:
+        diagnoses.trauma[child.ID] ??= newDiagnose;
+        break;
+      case DepartmentRef.DptInfectiousDiseasesDepartment:
+        diagnoses.infect[child.ID] ??= newDiagnose;
+        break;
+      default:
+        break;
+    }
+  }
 }

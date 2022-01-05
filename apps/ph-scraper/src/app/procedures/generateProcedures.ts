@@ -1,7 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fse from 'fs-extra';
-import * as chalk from 'chalk';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
   ProcedureSchema,
@@ -46,13 +45,11 @@ export async function generateProcedures(
   localizationDict: Record<string, LocalizationSchema>,
   auxDict: Auxiliary
 ): Promise<Procedures> {
-  console.log(chalk.green('3. Started processing of procedures'));
-
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_PROCEDURES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_PROCEDURES_DIR);
 
   // Get all the xml files inside the `input/procedures` directory and loop each
-  // to obtain a parsed json for futher processing.
+  // to obtain a parsed json for further processing.
   const procedureFilePaths = await fse.readdir(inputPath);
   for (const procedureFilePath of procedureFilePaths) {
     const filePath = path.join(inputPath, procedureFilePath);
@@ -73,8 +70,6 @@ export async function generateProcedures(
     path.resolve(outputPath, 'treatments.json'),
     JSON.stringify(procedures.treatments)
   );
-
-  console.log(chalk.green('3. Finished processing of procedures'));
 
   return procedures;
 }

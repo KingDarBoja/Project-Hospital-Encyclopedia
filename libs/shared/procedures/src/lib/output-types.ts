@@ -1,7 +1,9 @@
-import { DiscomfortLevel } from "./input-types";
+import { DiscomfortLevel } from './input-types';
 
 interface EmployeeSkill {
-   name: string, description: string; icon_index: number
+  name: string;
+  description: string;
+  icon_index: number;
 }
 
 /**
@@ -23,7 +25,7 @@ export interface ProcedureSchema {
   icon_index: number;
   /** The `DiscomfortLevel` enum value to reflect into a colour. */
   discomfort: DiscomfortLevel;
-};
+}
 
 export type Procedures = {
   examinations: Record<string, ProcedureSchema>;
