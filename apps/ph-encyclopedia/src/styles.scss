@@ -40,6 +40,11 @@ body {
 
 /***** Color filters ****/
 
+.symptom-filter {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(48%) saturate(5081%) hue-rotate(350deg) brightness(116%)
+    contrast(92%);
+}
+
 .examination-filter {
   filter: brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(406%) hue-rotate(69deg) brightness(99%)
     contrast(90%);
@@ -75,7 +80,7 @@ ph-encyclopedia-root {
   }
 }
 
-$dpt-red: rgb(99, 96, 96);
+$dpt-red: rgb(212, 95, 93);
 $dpt-orange: rgb(230, 147, 115);
 $dpt-yellow: rgb(251, 201, 123);
 $dpt-pink: rgb(245, 138, 148);
