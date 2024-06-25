@@ -1,0 +1,16 @@
+{
+  "name": "shared-procedures",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/procedures/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/procedures/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

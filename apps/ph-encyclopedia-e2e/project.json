@@ -1,0 +1,29 @@
+{
+  "name": "ph-encyclopedia-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ph-encyclopedia-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ph-encyclopedia-e2e/cypress.json",
+        "devServerTarget": "ph-encyclopedia:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ph-encyclopedia:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ph-encyclopedia-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ph-encyclopedia"]
+}

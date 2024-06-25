@@ -1,0 +1,16 @@
+{
+  "name": "shared-diagnoses",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/diagnoses/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/diagnoses/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
