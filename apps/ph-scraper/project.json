@@ -5,7 +5,7 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:build",
+      "executor": "@nx/node:build",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/ph-scraper",
@@ -28,13 +28,13 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/node:execute",
+      "executor": "@nx/node:execute",
       "options": {
         "buildTarget": "ph-scraper:build"
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/ph-scraper/**/*.ts"]
