@@ -1,6 +1,6 @@
-<mat-toolbar color="primary" class="h-20">
+<mat-toolbar color="primary" class="main-toolbar">
   <a routerLink="./" class="flex flex-row items-center w-48 md:w-auto">
-    <img class="h-14 object-contain" src="assets/logo/ph_encyclopedia.png" />
+    <img class="h-12 object-contain" src="assets/logo/ph_encyclopedia.png" />
     <!-- <figcaption class="flex flex-col leading-tight ml-4">
       <title>Project Hospital</title>
       <title>Encyclopedia</title>
@@ -17,12 +17,34 @@
   </div>
 </mat-toolbar>
 <div class="overflow-y-auto pb-5 page-content">
-  <div class="container mx-auto px-2">
-    <section class="flex flex-col space-y-2 justify-center items-center h-40">
-      <span class="text-4xl font-bold text-blue-900">
-        Project Hospital Encyclopedia
-      </span>
-      <span class="text-lg text-red-800 font-bold"> Work in Progress!</span>
+  <div class="container mx-auto p-4 text-blue-900">
+    <section class="flex flex-col space-y-4">
+      <h1 class="font-bold text-center">Project Hospital Encyclopedia</h1>
+      <p class="text-justify">
+        Welcome to the fan made encyclopedia of Project Hospital game developed
+        by the indie studio <b>Oxymoron Games</b>.
+        <br />
+        This is a work in progress so any new feature will be added depending on
+        my free time.
+        <br />
+      </p>
+      <p class="">
+        The upcoming features will be as follows:
+        <mat-list>
+          <mat-list-item>
+            <mat-icon matListItemIcon>lens</mat-icon>
+            <div matListItemTitle>I18N (Translated descriptions).</div>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListItemIcon>lens</mat-icon>
+            <div matListItemTitle>Modded Departments.</div>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon matListItemIcon>lens</mat-icon>
+            <div matListItemTitle>Rework the UI of this encyclopedia.</div>
+          </mat-list-item>
+        </mat-list>
+      </p>
     </section>
     <router-outlet></router-outlet>
   </div>
@@ -34,56 +56,71 @@
 
 <ng-template #navItems>
   <button
-    class="flex"
     mat-button
     matTooltip="Departments"
     [matMenuTriggerFor]="departmentsMenu"
   >
-    <img class="h-8 object-contain mx-auto" src="assets/icons/ph_icon_42.png" />
-    <span class="">Departments</span>
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_42.png"
+      />
+      <span class="">Departments</span>
+    </div>
   </button>
   <button
-    class="flex"
     mat-button
     matTooltip="Modded Dpts."
     disabled
     [matMenuTriggerFor]="moddedDepartmentsMenu"
   >
-    <img class="h-8 object-contain mx-auto" src="assets/icons/ph_icon_97.png" />
-    <span class="">Modded Dpts.</span>
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_97.png"
+      />
+      <span class="">Modded Dpts.</span>
+    </div>
   </button>
   <button
-    class="flex"
     mat-button
     matTooltip="Procedures"
     [matMenuTriggerFor]="proceduresMenu"
   >
-    <img
-      class="h-8 object-contain mx-auto"
-      src="assets/icons/ph_icon_2286.png"
-    />
-    <span class="">Procedures</span>
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_2286.png"
+      />
+      <span class="">Procedures</span>
+    </div>
   </button>
-  <button class="flex" mat-button matTooltip="Symptoms" routerLink="/symptoms">
-    <img
-      class="h-8 object-contain mx-auto"
-      src="assets/icons/ph_icon_106.png"
-    />
-    <span class="">Symptoms</span>
+  <button mat-button matTooltip="Symptoms" routerLink="/symptoms">
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_106.png"
+      />
+      <span class="">Symptoms</span>
+    </div>
   </button>
-  <button class="flex" mat-button matTooltip="Misc" disabled>
-    <img
-      class="h-8 object-contain mx-auto"
-      src="assets/icons/ph_icon_519.png"
-    />
-    <span class="">Misc</span>
+  <button mat-button matTooltip="Misc" disabled>
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_519.png"
+      />
+      <span class="">Misc</span>
+    </div>
   </button>
-  <button class="flex" mat-button matTooltip="FAQ" disabled>
-    <img
-      class="h-8 object-contain mx-auto"
-      src="assets/icons/ph_icon_319.png"
-    />
-    <span class="">FAQ</span>
+  <button mat-button matTooltip="FAQ" disabled>
+    <div class="flex items-center h-6">
+      <img
+        class="object-contain w-8 mx-auto"
+        src="assets/icons/ph_icon_319.png"
+      />
+      <span class="">FAQ</span>
+    </div>
   </button>
 </ng-template>
 
@@ -94,50 +131,62 @@
       matTooltip="Departments"
       [matMenuTriggerFor]="departmentsMenu"
     >
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_42.png"
-      />
-      <span class="">Departments</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_42.png"
+        />
+        <span class="">Departments</span>
+      </div>
     </a>
     <a mat-list-item matTooltip="Modded Dpts." disabled>
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_97.png"
-      />
-      <span class="">Modded Dpts.</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_97.png"
+        />
+        <span class="">Modded Dpts.</span>
+      </div>
     </a>
     <a
       mat-list-item
       matTooltip="Procedures"
       [matMenuTriggerFor]="proceduresMenu"
     >
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_2286.png"
-      />
-      <span class="">Procedures</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_2286.png"
+        />
+        <span class="">Procedures</span>
+      </div>
     </a>
     <a mat-list-item matTooltip="Symptoms" routerLink="/symptoms">
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_106.png"
-      />
-      <span class="">Symptoms</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_106.png"
+        />
+        <span class="">Symptoms</span>
+      </div>
     </a>
     <a mat-list-item matTooltip="Misc" disabled>
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_519.png"
-      />
-      <span class="">Misc</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_519.png"
+        />
+        <span class="">Misc</span>
+      </div>
     </a>
     <a mat-list-item matTooltip="FAQ" disabled>
-      <img
-        class="lg:hidden h-8 object-contain black-filter"
-        src="assets/icons/ph_icon_319.png"
-      />
-      <span class="">FAQ</span>
+      <div class="flex items-center h-6 space-x-4">
+        <img
+          class="lg:hidden w-8 object-contain black-filter"
+          src="assets/icons/ph_icon_319.png"
+        />
+        <span class="">FAQ</span>
+      </div>
     </a>
   </mat-nav-list>
 </ng-template>
