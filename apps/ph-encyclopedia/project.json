@@ -100,7 +100,9 @@
       "executor": "angular-cli-ghpages:deploy",
       "options": {
         "repo": "https://github.com/KingDarBoja/ph-encyclopedia-page.git",
-        "base-href": "/ph-encyclopedia-page/"
+        "base-href": "/ph-encyclopedia-page/",
+        "dir": "dist/apps/ph-encyclopedia",
+        "noNojekyll": true
       }
     }
   }
