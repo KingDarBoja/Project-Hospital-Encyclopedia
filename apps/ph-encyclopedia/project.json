@@ -4,6 +4,7 @@
   "projectType": "application",
   "sourceRoot": "apps/ph-encyclopedia/src",
   "prefix": "ph-encyclopedia",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -71,10 +72,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ph-encyclopedia:build:production"
+          "buildTarget": "ph-encyclopedia:build:production"
         },
         "development": {
-          "browserTarget": "ph-encyclopedia:build:development"
+          "buildTarget": "ph-encyclopedia:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -82,29 +83,25 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ph-encyclopedia:build"
+        "buildTarget": "ph-encyclopedia:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "apps/ph-encyclopedia/src/**/*.ts",
-          "apps/ph-encyclopedia/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/apps/ph-encyclopedia"],
       "options": {
-        "jestConfig": "apps/ph-encyclopedia/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "apps/ph-encyclopedia/jest.config.ts"
       }
     },
     "deploy": {
-      "executor": "angular-cli-ghpages:deploy"
+      "executor": "angular-cli-ghpages:deploy",
+      "options": {
+        "repo": "https://github.com/KingDarBoja/ph-encyclopedia-page.git",
+        "base-href": "/ph-encyclopedia-page/"
+      }
     }
-  },
-  "tags": []
+  }
 }
