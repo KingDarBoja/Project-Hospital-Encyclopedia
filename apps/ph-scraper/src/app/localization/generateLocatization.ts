@@ -1,5 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import {
   LocalizationDatabaseSchema,
@@ -24,7 +25,7 @@ export async function generateLocalization() {
 
   // Get all the xml files inside the `input/localization` directory and loop each
   // to obtain a parsed json for further processing.
-  const filePaths = await fse.readdir(inputPath);
+  const filePaths = await fs.readdir(inputPath, { recursive: true });
   for (const filePath of filePaths) {
     const fullFilePath = path.join(inputPath, filePath);
     const stat = fse.statSync(fullFilePath);

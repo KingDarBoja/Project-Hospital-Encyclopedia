@@ -8,7 +8,7 @@ files and the web app to display diagnoses, treatments, symptoms, etc.
 After updating the `input` xml files, run the following command with npx or yarn (preferred package manager of this repo):
 
 ```cmd
-nx run 
+yarn nx run ph-scraper:serve
 ```
 
 ## Tools used for development

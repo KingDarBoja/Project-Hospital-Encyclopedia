@@ -36,6 +36,7 @@ export enum DepartmentRef {
   DptNeurology = "DPT_NEUROLOGY",
   DptOrthopaedicsAndTraumatology = "DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY",
   DptTraumatologyDepartment = "DPT_TRAUMATOLOGY_DEPARTMENT",
+  DptOncologyDepartment = 'DPT_ONCOLOGY',
 }
 
 interface Examinations {

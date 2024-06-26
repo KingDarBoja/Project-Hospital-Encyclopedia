@@ -1,5 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import { BASE_PATH } from './common';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
@@ -40,18 +41,18 @@ export async function generateAuxiliary(
 
   // Get all the xml files inside the `input` directory and loop each to obtain
   // a parsed json for futher processing.
-  const procedureFilePaths = await fse.readdir(inputPath);
+  const procedureFilePaths = await fs.readdir(inputPath, { recursive: true });
   for (const procedureFilePath of procedureFilePaths) {
     const filePath = path.join(inputPath, procedureFilePath);
     const stat = fse.statSync(filePath);
 
     // Make sure we are not reading a directory.
     if (stat.isFile()) {
-      if (procedureFilePath.startsWith('Skills')) {
+      if (procedureFilePath.includes('Skills')) {
         await populateSkillDictionary(filePath, localizationDict);
       }
 
-      if (procedureFilePath.startsWith('RoomTypes')) {
+      if (procedureFilePath.includes('RoomTypes')) {
         // await populateRoomTypesDictionary(filePath, localizationDict);
         continue; // Do nothing in the meantime.
       }

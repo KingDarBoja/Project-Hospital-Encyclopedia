@@ -11,7 +11,8 @@ export enum OfficialDepartments {
   NEUROLOGY = 'neuro',
   TRAUMATOLOGY = 'trauma',
   INFECTIOUS_DISEASES = 'infect',
-};
+  ONCOLOGY = 'onco',
+}
 
 export type DiagnosesDict = {
   /** Emergency */
@@ -30,6 +31,8 @@ export type DiagnosesDict = {
   trauma: Record<string, DiagnoseSchema>;
   /** Infectious Diseases */
   infect: Record<string, DiagnoseSchema>;
+  /** Mod: Oncology */
+  onco: Record<string, DiagnoseSchema>;
 };
 
 type DiagnoseSymptomSchema = Pick<

@@ -1,5 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
@@ -50,7 +51,7 @@ export async function generateProcedures(
 
   // Get all the xml files inside the `input/procedures` directory and loop each
   // to obtain a parsed json for further processing.
-  const procedureFilePaths = await fse.readdir(inputPath);
+  const procedureFilePaths = await fs.readdir(inputPath, { recursive: true });
   for (const procedureFilePath of procedureFilePaths) {
     const filePath = path.join(inputPath, procedureFilePath);
     const stat = fse.statSync(filePath);
@@ -95,8 +96,10 @@ async function populateProceduresDictionary(
   }
 
   for (const child of root) {
+    const docProcArray =
+      child.Procedure.RequiredDoctorQualificationList?.SkillRef || [];
     const requiredDoctors: ProcedureSchema['required_doctors'] =
-      child.Procedure.RequiredDoctorQualificationList?.SkillRef.map((skill) => {
+      docProcArray.map((skill) => {
         const auxSkillEntry = auxDict.skills[skill];
         const locSkillName =
           localizationDict[auxSkillEntry.name]?.i18n.en ?? auxSkillEntry.name;
@@ -108,7 +111,7 @@ async function populateProceduresDictionary(
           description: locSkillDesc,
           icon_index: auxSkillEntry.icon_index + 1,
         };
-      }) ?? undefined;
+      });
 
     let requiredLabSpecialist: ProcedureSchema['required_lab_spec'] = undefined;
     if (child.Procedure.RequiredStatLabQualificationRef) {
