@@ -4,38 +4,63 @@
   "sourceRoot": "apps/ph-scraper/src",
   "projectType": "application",
   "tags": [],
-  "targets": {
+"targets": {
     "build": {
-      "executor": "@nx/node:build",
+      "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
       "options": {
+        "platform": "node",
         "outputPath": "dist/apps/ph-scraper",
+        "format": ["cjs"],
+        "bundle": false,
         "main": "apps/ph-scraper/src/main.ts",
         "tsConfig": "apps/ph-scraper/tsconfig.app.json",
-        "assets": ["apps/ph-scraper/src/assets"]
+        "assets": ["apps/ph-scraper/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
       },
       "configurations": {
+        "development": {},
         "production": {
-          "optimization": true,
-          "extractLicenses": true,
-          "inspect": false,
-          "fileReplacements": [
-            {
-              "replace": "apps/ph-scraper/src/environments/environment.ts",
-              "with": "apps/ph-scraper/src/environments/environment.prod.ts"
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
             }
-          ]
+          }
         }
       }
     },
     "serve": {
-      "executor": "@nx/node:execute",
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
       "options": {
         "buildTarget": "ph-scraper:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ph-scraper:build:development"
+        },
+        "production": {
+          "buildTarget": "ph-scraper:build:production"
+        }
       }
     },
     "lint": {
       "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/ph-scraper/jest.config.ts"
+      }
     }
   }
 }

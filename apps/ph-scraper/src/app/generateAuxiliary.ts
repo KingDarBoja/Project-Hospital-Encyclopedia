@@ -29,8 +29,6 @@ const auxiliary: Auxiliary = {
   roomTypes: {},
 };
 
-const final = [];
-
 export async function generateAuxiliary(
   localizationDict: Record<string, LocalizationSchema>
 ): Promise<Auxiliary> {
@@ -51,8 +49,11 @@ export async function generateAuxiliary(
     if (stat.isFile()) {
       if (procedureFilePath.startsWith('Skills')) {
         await populateSkillDictionary(filePath, localizationDict);
-      } else if (procedureFilePath.startsWith('RoomTypes')) {
-        await populateRoomTypesDictionary(filePath, localizationDict);
+      }
+
+      if (procedureFilePath.startsWith('RoomTypes')) {
+        // await populateRoomTypesDictionary(filePath, localizationDict);
+        continue; // Do nothing in the meantime.
       }
     }
   }
@@ -91,12 +92,12 @@ async function populateSkillDictionary(
   }
 }
 
-async function populateRoomTypesDictionary(
-  filePath: string,
-  localizationDict: Record<string, LocalizationSchema>
-) {
-  const rawDoc = await fse.readFile(filePath);
+// async function populateRoomTypesDictionary(
+//   filePath: string,
+//   localizationDict: Record<string, LocalizationSchema>
+// ) {
+//   const rawDoc = await fse.readFile(filePath);
 
-  // Parse the file content.
-  const parsedDoc = parser.parse(rawDoc);
-}
+//   // Parse the file content.
+//   const parsedDoc = parser.parse(rawDoc);
+// }

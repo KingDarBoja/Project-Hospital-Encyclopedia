@@ -5,8 +5,8 @@ import {
   LocalizationDatabaseSchema,
   LocalizationSchema,
 } from '@ph-encyclopedia/shared/localization';
+import { BASE_PATH } from '../common';
 
-const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_LOC_DIR = 'localization';
 
 const parser = new XMLParser({
@@ -19,8 +19,6 @@ const parser = new XMLParser({
 const localizationDict: Record<string, LocalizationSchema> = {};
 
 export async function generateLocalization() {
-
-
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_LOC_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_LOC_DIR);
 
