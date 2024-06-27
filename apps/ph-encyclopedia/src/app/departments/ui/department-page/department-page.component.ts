@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { HttpClient } from '@angular/common/http';
-import { EMPTY, map, switchMap, tap } from 'rxjs';
+import { EMPTY, map, switchMap } from 'rxjs';
 import {
   DiagnoseSchema,
   OfficialDepartments,
@@ -47,7 +47,6 @@ export class DepartmentPageComponent {
   }
 
   private fetchDiagnoses(dptCode: OfficialDepartmentsType) {
-    console.log("🚀 ~ DepartmentPageComponent ~ fetchDiagnoses ~ dptCode:", dptCode)
     return this.httpEndpoint(dptCode).pipe(
       map((res) => ({
         dptCode,
@@ -55,7 +54,7 @@ export class DepartmentPageComponent {
           a.name.localeCompare(b.name)
         ),
       })),
-      tap((res) => console.log(res))
+      // tap((res) => console.log(res))
     );
   }
 }

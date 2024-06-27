@@ -1,9 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@use "@angular/material" as mat;
+@use './sidenav-theme' as sidenav;
+
+$theme: mat.define-theme((color: (theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+    ));
+
+@include mat.core();
+
+:root {
+  @include mat.all-component-themes($theme);
+  @include sidenav.sidenav-component-theme($theme);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
@@ -13,73 +28,45 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 /***** Scrollbar ****/
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: mat.get-theme-color($theme, 'primary', 90);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
-}
+  background: mat.get-theme-color($theme, 'primary', 20);
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  &:hover {
+    background: mat.get-theme-color($theme, 'primary', 30);
+  }
 }
 
 /***** Color filters ****/
 
 .symptom-filter {
-  filter: brightness(0) saturate(100%) invert(14%) sepia(48%) saturate(5081%) hue-rotate(350deg) brightness(116%)
-    contrast(92%);
+  filter: brightness(0) saturate(100%) invert(14%) sepia(48%) saturate(5081%) hue-rotate(350deg) brightness(116%) contrast(92%);
 }
 
 .examination-filter {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(406%) hue-rotate(69deg) brightness(99%)
-    contrast(90%);
+  filter: brightness(0) saturate(100%) invert(69%) sepia(28%) saturate(406%) hue-rotate(69deg) brightness(99%) contrast(90%);
 }
 
 .treatment-filter {
-  filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(2413%) hue-rotate(213deg) brightness(97%)
-    contrast(96%);
+  filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(2413%) hue-rotate(213deg) brightness(97%) contrast(96%);
 }
 
 .black-filter {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(30%) hue-rotate(73deg) brightness(106%)
-    contrast(107%);
-}
-
-ph-encyclopedia-root {
-  .mat-list-base .mat-list-item,
-  .mat-list-base .mat-list-option {
-    height: auto;
-  }
-
-  .mat-card-avatar {
-    height: auto;
-    width: auto;
-  }
-
-  .mat-card {
-    padding: 0;
-  }
-
-  .mat-card-content {
-    padding: 16px;
-  }
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(30%) hue-rotate(73deg) brightness(106%) contrast(107%);
 }
 
 $dpt-red: rgb(212, 95, 93);
@@ -105,30 +92,37 @@ $dpt-grey: rgb(110, 110, 110);
   &-yellow {
     color: $dpt-yellow;
   }
+
   &-pink {
     color: $dpt-pink;
   }
+
   &-brown {
     color: $dpt-brown;
   }
+
   &-green {
     color: $dpt-green;
   }
+
   &-pale {
     color: $dpt-pale;
   }
+
   &-blue {
     color: $dpt-blue;
   }
+
   &-violet {
     color: $dpt-violet;
   }
+
   &-grey {
     color: $dpt-grey;
   }
 }
 
-// Workaround for the mat-card not aligning properly
-// .mat-mdc-card-header-text {
-//   margin-top: 8px !important;
-// }
+/* Workaround for the mat-card not aligning properly */
+.custom-mdc-card-title {
+  line-height: 40px !important;
+}

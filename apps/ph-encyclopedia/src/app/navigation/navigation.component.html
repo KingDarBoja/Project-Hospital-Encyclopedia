@@ -1,0 +1,84 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar class="app-toolbar">
+      <a routerLink="./" class="flex flex-row items-center w-48 md:w-auto">
+        <img
+          class="h-12 object-contain"
+          src="assets/logo/ph_encyclopedia.png"
+        />
+      </a>
+    </mat-toolbar>
+    <mat-nav-list id="app-nav" aria-label="Main app navigation">
+      @for (section of sections; track section) {
+      <mat-list-item
+        class="nav-list-item"
+        [routerLink]="section.route"
+        routerLinkActive="nav-list-item-active"
+      >
+        <div matListItemIcon>
+          <img
+            src="assets/icons/{{ section.icon }}.png"
+            alt="{{ section.name }}"
+            [ngClass]="section.colorFilter && section.colorFilter + '-filter'"
+          />
+        </div>
+        <div matListItemTitle>
+          {{ section.name }}
+        </div>
+      </mat-list-item>
+
+      @if (section.divider) {
+      <mat-divider></mat-divider>
+      } @if (section.children?.length) {
+      <mat-nav-list id="{{ section.name }}-nav">
+        @for (child of section.children; track child) {
+        <mat-list-item
+          class="nav-list-item"
+          [routerLink]="child.route"
+          routerLinkActive="nav-list-item-active"
+        >
+          <div matListItemIcon>
+            <img
+              src="assets/icons/{{ child.icon }}.png"
+              alt="{{ child.name }}"
+            />
+          </div>
+          <div matListItemTitle>
+            {{ child.name }}
+          </div>
+        </mat-list-item>
+        @if (child.divider) {
+        <mat-divider></mat-divider>
+        } }
+      </mat-nav-list>
+      } }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="app-toolbar">
+      @if (isHandset$ | async) {
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      }
+      <h2>Project Hospital Encyclopedia</h2>
+      <div class="navigation-toolbar-spacer"></div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div class="m-2 p-2">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

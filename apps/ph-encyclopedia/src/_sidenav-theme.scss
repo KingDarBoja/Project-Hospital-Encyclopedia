@@ -1,0 +1,64 @@
+@use "@angular/material" as mat;
+
+@mixin sidenav-component-theme($theme) {
+
+  /* Remove the border radius set by default */
+  .mat-sidenav {
+    border-radius: 0;
+  }
+
+  .mat-drawer,
+  .mat-sidenav,
+  .mat-toolbar {
+    // let's take mat-toolbar's default theme
+    background-color: mat.get-theme-color($theme, 'primary', 10) !important;
+    color: mat.get-theme-color($theme, 'primary', 90) !important;
+
+    .mat-divider {
+      border-top-color: mat.get-theme-color($theme, 'primary', 90) !important;
+    }
+
+    &>.mat-icon {
+      background-color: mat.get-theme-color($theme, 'primary', 10) !important;
+      color: mat.get-theme-color($theme, 'primary', 90) !important;
+
+      &:hover {
+        background: mat.get-theme-color($theme, 'primary', 40) !important;
+      }
+    }
+
+    .mat-mdc-nav-list {
+      padding: 0px !important;
+    }
+
+    .mat-mdc-nav-list .mat-mdc-list-item {
+      /* Override the border radius applied on hover to the mat-list-item */
+      border-radius: 0 !important;
+      /* Override the default height applied to mat-list-item */
+      // height: 56px !important;
+    }
+
+    // Custom css class for my nav-list-items at sidenav
+    .nav-list-item {
+
+      &.mdc-list-item--with-leading-icon>.mat-icon,
+      .mdc-list-item__primary-text {
+        color: mat.get-theme-color($theme, 'secondary', 100) !important;
+      }
+
+      &:hover {
+        background: mat.get-theme-color($theme, 'primary', 40) !important;
+      }
+    }
+
+    /* Only set if the mat-list-item is active (adds the class). */
+    .nav-list-item-active {
+      background: mat.get-theme-color($theme, 'primary', 20) !important;
+
+      &.mdc-list-item--with-leading-icon>.mat-icon,
+      .mdc-list-item__primary-text {
+        color: mat.get-theme-color($theme, 'secondary', 80) !important;
+      }
+    }
+  }
+}
