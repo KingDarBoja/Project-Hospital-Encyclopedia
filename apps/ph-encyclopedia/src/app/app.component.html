@@ -71,7 +71,6 @@
   <button
     mat-button
     matTooltip="Modded Dpts."
-    disabled
     [matMenuTriggerFor]="moddedDepartmentsMenu"
   >
     <div class="flex items-center h-6">
@@ -139,7 +138,11 @@
         <span class="">Departments</span>
       </div>
     </a>
-    <a mat-list-item matTooltip="Modded Dpts." disabled>
+    <a
+      mat-list-item
+      matTooltip="Modded Dpts."
+      [matMenuTriggerFor]="moddedDepartmentsMenu"
+    >
       <div class="flex items-center h-6 space-x-4">
         <img
           class="lg:hidden w-8 object-contain black-filter"
@@ -264,10 +267,10 @@
 </mat-menu>
 
 <mat-menu #moddedDepartmentsMenu="matMenu">
-  <a mat-menu-item routerLink="/dpt/emergency">
+  <a mat-menu-item routerLink="/modded_dpt/oncology">
     <div class="flex flex-row items-center">
-      <img class="h-8 object-contain" src="assets/icons/ph_icon_389.png" />
-      <span class="ml-2 dpt-text-orange font-medium">TBD</span>
+      <img class="h-8 object-contain" src="assets/icons/Mod_ONCO/mod_dept_icon_2.png" />
+      <span class="ml-2 dpt-text-violet font-medium">Oncology</span>
     </div>
   </a>
 </mat-menu>

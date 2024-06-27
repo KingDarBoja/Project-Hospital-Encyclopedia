@@ -1,17 +1,16 @@
 <mat-card class="h-full">
-  <section
-    mat-card-header
-    class="flex items-center space-x-4 rounded-t bg-red-700"
+  <mat-card-header
+    class="text-white text-ellipsis font-medium rounded-t bg-red-700"
   >
-    <div mat-card-avatar class="">
-      <img class="" src="assets/icons/ph_icon_{{ diagnose.icon_index }}.png" />
+    <div mat-card-avatar >
+      <img src="assets/icons/ph_icon_{{ diagnose.icon_index }}.png" />
     </div>
-    <figcaption class="text-lg text-white text-ellipsis font-medium">
+    <mat-card-title>
       {{ diagnose.name }}
-    </figcaption>
-  </section>
+    </mat-card-title>
+  </mat-card-header>
   <mat-card-content>
-    <section class="flex flex-col space-y-2">
+    <section class="flex flex-col mt-2 space-y-2">
       <div
         class="text-left font-medium"
         [ngClass]="occurenceColour[diagnose.occurrence]"
@@ -90,7 +89,6 @@
             </section>
           </figcaption>
         </section>
-
       </ng-container>
     </div>
   </mat-list>

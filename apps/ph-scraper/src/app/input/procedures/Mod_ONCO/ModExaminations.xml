@@ -1,0 +1,668 @@
+<Database>
+	<!-- Obsolete Exams (Should be safe to delete eight weeks after removing from diagnosis) 
+		 Always comment out, never truely delete in case users have issues of removal after eight weeks.
+	-->
+	
+	<!-- OBSOLETE Exams
+	
+	OBSOLETE Carcinoembryonic Antigen (CEA) Test 01/03/20
+	<GameDBExamination ID="EXM_SLP_CEA">
+        <AbbreviationLocID>EXM_SLP_CEA_DESC</AbbreviationLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <Procedure>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+           
+            <RequiredRoomTags>
+                <Tag>examinations_basic_equipment</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationTemplate</ProcedureScript>
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_blood_sampling_in</AnimationNameIn>
+                <AnimationNameIdle>stand_blood_sampling_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_blood_sampling_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+			
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1665</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_EXM_ICON_005</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_EXM_ICON_006</CustomIconSmallAssetRef>
+		
+        <DurationHours>0</DurationHours>
+        <LabTestingExaminationRef>EXM_SLP_CEA_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+	
+	<GameDBExamination ID="EXM_SLP_CEA_TEST">
+        <AbbreviationLocID>EXM_SLP_CEA_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>hematoanalyzer</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>hematology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <Priority>20</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1665</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_EXM_ICON_005</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_EXM_ICON_006</CustomIconSmallAssetRef>
+		
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+	
+	OBSOLETE 5-HIAA Urine Test 01/03/20
+	<GameDBExamination ID="EXM_SLP_5HIAA">
+        <AbbreviationLocID>EXM_SLP_5HIAA_DESC</AbbreviationLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <Procedure>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>emergency_doctors_office</Tag>
+                <Tag>trauma_center</Tag>
+                <Tag>observation</Tag>
+				<Tag>ward</Tag>
+                <Tag>general_surgery_office</Tag>
+                <Tag>internal_medicine_office</Tag>
+                <Tag>cardiology_office</Tag>
+                <Tag>icu</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationUrineAnalysis</ProcedureScript>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <AnimationSetupSitting>
+                <AnimationNameOut>stand_urine_sampling</AnimationNameOut>
+            </AnimationSetupSitting>
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1691</IconIndex>
+        <DurationHours>0</DurationHours>
+        <LabTestingExaminationRef>EXM_SLP_5HIAA_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+
+    <GameDBExamination ID="EXM_SLP_5HIAA_TEST">
+        <AbbreviationLocID>EXM_SLP_5HIAA_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>lab_analyzer</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+            
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>histology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <Priority>20</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1691</IconIndex>
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+	
+	OBSOLETE Chromogranin-A Blood Test 01/03/20
+	<GameDBExamination ID="EXM_SLP_CHRAB">
+        <AbbreviationLocID>EXM_SLP_CHRAB_DESC</AbbreviationLocID>
+        <DiscomfortLevel>Medium</DiscomfortLevel>
+        <Procedure>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+           
+            <RequiredRoomTags>
+                <Tag>examinations_basic_equipment</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationGeneralEquipment</ProcedureScript>
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_blood_sampling_in</AnimationNameIn>
+                <AnimationNameIdle>stand_blood_sampling_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_blood_sampling_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1665</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_EXM_ICON_009</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_EXM_ICON_010</CustomIconSmallAssetRef>
+		
+        <DurationHours>0</DurationHours>
+        <LabTestingExaminationRef>EXM_SLP_CHRAB_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+	
+	<GameDBExamination ID="EXM_SLP_CHRAB_TEST">
+        <AbbreviationLocID>EXM_SLP_CHRAB_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>RIA</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>hematology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <Priority>20</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <Cost>50</Cost>
+        <IconIndex>1665</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_EXM_ICON_009</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_EXM_ICON_010</CustomIconSmallAssetRef>
+		
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+	
+	-->
+	
+	<!-- ######################### -->
+	<!-- Oncology Mod by Sleepy068 -->
+	<!-- ======================================== -->
+	<!-- ============= Core Content ============= -->
+	<!-- ======================================== -->
+	
+	<!-- ============================================== -->
+	<!-- ============= CRP Export Content ============= -->
+	<!-- ============================================== -->
+	<!-- Ovarian Biopsy -->
+	<GameDBExamination ID="EXM_CRP_OVARIAN_BIOPSY_SAMPLE">
+        <AbbreviationLocID>EXM_CRP_OVARIAN_BIOPSY_SAMPLE_DESC</AbbreviationLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_OR_DEFAULT_ROOM</StaffSelectionRules>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+            
+            <RequiredRoomTags>
+                <Tag>examinations_basic_equipment</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationGeneralEquipment</ProcedureScript>
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>HALF</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+        <DurationHours>0</DurationHours>
+			
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0001</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0002</CustomIconSmallAssetRef>
+		
+        <LabTestingExaminationRef>EXM_CRP_OVARIAN_BIOPSY_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+
+    <GameDBExamination ID="EXM_CRP_OVARIAN_BIOPSY_TEST">
+        <AbbreviationLocID>EXM_CRP_OVARIAN_BIOPSY_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_IGNORE_DOCTOR</StaffSelectionRules>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>lab_eq</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>microscope</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>histology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>29</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0003</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0004</CustomIconSmallAssetRef>
+		
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+
+	<!-- Vaginal Biopsy -->
+	<GameDBExamination ID="EXM_CRP_VAGINAL_BIOPSY_SAMPLE">
+        <AbbreviationLocID>EXM_CRP_VAGINAL_BIOPSY_SAMPLE_DESC</AbbreviationLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_OR_DEFAULT_ROOM</StaffSelectionRules>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+            
+            <RequiredRoomTags>
+                <Tag>examinations_basic_equipment</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationGeneralEquipment</ProcedureScript>
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>HALF</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+        <DurationHours>0</DurationHours>
+			
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0005</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0006</CustomIconSmallAssetRef>
+		
+        <LabTestingExaminationRef>EXM_CRP_VAGINAL_BIOPSY_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+
+    <GameDBExamination ID="EXM_CRP_VAGINAL_BIOPSY_TEST">
+        <AbbreviationLocID>EXM_CRP_VAGINAL_BIOPSY_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_IGNORE_DOCTOR</StaffSelectionRules>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>lab_eq</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>microscope</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>histology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>29</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0007</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0008</CustomIconSmallAssetRef>
+		
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+
+	<!-- Salivary Gland Biopsy -->
+	<GameDBExamination ID="EXM_CRP_SALIVARYGLAND_BIOPSY_SAMPLE">
+        <AbbreviationLocID>EXM_CRP_SALIVARYGLAND_BIOPSY_SAMPLE_DESC</AbbreviationLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_OR_DEFAULT_ROOM</StaffSelectionRules>
+            <RequiredDoctorQualificationList>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredDoctorQualificationList>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>sit_exam</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>doc_equipment</Tag>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+            
+            <RequiredRoomTags>
+                <Tag>examinations_basic_equipment</Tag>
+            </RequiredRoomTags>
+            
+            <ProcedureScript>ProcedureScriptExaminationGeneralEquipment</ProcedureScript>
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>HALF</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>20</Priority>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+        <DurationHours>0</DurationHours>
+			
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0009</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0010</CustomIconSmallAssetRef>
+		
+        <LabTestingExaminationRef>EXM_CRP_SALIVARYGLAND_BIOPSY_TEST</LabTestingExaminationRef>
+    </GameDBExamination>
+
+    <GameDBExamination ID="EXM_CRP_SALIVARYGLAND_BIOPSY_TEST">
+        <AbbreviationLocID>EXM_CRP_SALIVARYGLAND_BIOPSY_TEST_DESC</AbbreviationLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <Procedure>
+            <StaffSelectionRules>REQUIRED_ROOM_IGNORE_DOCTOR</StaffSelectionRules>
+            <RequiredSkillsToPrescribe>
+                <SkillRef>SKILL_DOC_QUALIF_GENERAL_MEDICINE</SkillRef>
+            </RequiredSkillsToPrescribe>
+            <RequiredStatLabQualificationRef>SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION</RequiredStatLabQualificationRef>
+            <RequiredEquipmentList>
+                <RequiredEquipment>
+                    <Tag>stat_lab_exam</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>lab_eq</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>microscope</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>false</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>biohazard_trash</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+                <RequiredEquipment>
+                    <Tag>clean_hands</Tag>
+                    <DurationHours>0.1</DurationHours>
+                    <BlocksSpecialist>true</BlocksSpecialist>
+                </RequiredEquipment>
+            </RequiredEquipmentList>
+
+            <RequiredRoomTags>
+                <Tag>deprecated_lab</Tag>
+                <Tag>histology_lab</Tag>
+            </RequiredRoomTags>
+            
+            <AnimationSetupSitting>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupSitting>
+            <AnimationSetupLying>
+                <AnimationNameIn>stand_examination_in</AnimationNameIn>
+                <AnimationNameIdle>stand_examination_idle</AnimationNameIdle>
+                <AnimationNameOut>stand_examination_out</AnimationNameOut>
+            </AnimationSetupLying>
+            <DressLevel>FULL</DressLevel>
+            <Biohazard>true</Biohazard>
+            <Priority>29</Priority>
+            <FallbackLabDepartmentRef>DPT_LAB</FallbackLabDepartmentRef>
+        </Procedure>
+        <ExaminationType>EXAMINATION</ExaminationType>
+        <Cost>50</Cost>
+        <IconIndex>1711</IconIndex>
+		
+		<CustomIconBigAssetRef>ASSET_ONC_CRP_EXM_ICON_0011</CustomIconBigAssetRef>
+        <CustomIconSmallAssetRef>ASSET_ONC_CRP_EXM_ICON_0012</CustomIconSmallAssetRef>
+		
+        <DurationHours>2</DurationHours>
+    </GameDBExamination>
+
+
+</Database>

@@ -9,9 +9,9 @@ async function main() {
   console.log(chalk.bgRed('---- Starting Project Hospital Scraper ----'));
 
   // 1. Obtain all the english text as dictionary.
-  console.log(chalk.yellow('1. Started processing of localization'));
+  console.log(chalk.green('1. Started processing of localization'));
   const localizationDict = await generateLocalization();
-  console.log(chalk.yellow('1. Finished processing of localization'));
+  console.log(chalk.green('1. Finished processing of localization'));
 
   // 2. Obtain skill and room types description to be used by procedures.
   console.log(chalk.green('2. Started processing of auxiliary'));

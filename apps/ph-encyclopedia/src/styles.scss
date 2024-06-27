@@ -3,6 +3,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 html,
 body {
   height: 100%;
@@ -125,3 +127,8 @@ $dpt-grey: rgb(110, 110, 110);
     color: $dpt-grey;
   }
 }
+
+// Workaround for the mat-card not aligning properly
+// .mat-mdc-card-header-text {
+//   margin-top: 8px !important;
+// }

@@ -1,5 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import { BASE_PATH } from './common';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
@@ -29,8 +30,6 @@ const auxiliary: Auxiliary = {
   roomTypes: {},
 };
 
-const final = [];
-
 export async function generateAuxiliary(
   localizationDict: Record<string, LocalizationSchema>
 ): Promise<Auxiliary> {
@@ -42,17 +41,20 @@ export async function generateAuxiliary(
 
   // Get all the xml files inside the `input` directory and loop each to obtain
   // a parsed json for futher processing.
-  const procedureFilePaths = await fse.readdir(inputPath);
+  const procedureFilePaths = await fs.readdir(inputPath, { recursive: true });
   for (const procedureFilePath of procedureFilePaths) {
     const filePath = path.join(inputPath, procedureFilePath);
     const stat = fse.statSync(filePath);
 
     // Make sure we are not reading a directory.
     if (stat.isFile()) {
-      if (procedureFilePath.startsWith('Skills')) {
+      if (procedureFilePath.includes('Skills')) {
         await populateSkillDictionary(filePath, localizationDict);
-      } else if (procedureFilePath.startsWith('RoomTypes')) {
-        await populateRoomTypesDictionary(filePath, localizationDict);
+      }
+
+      if (procedureFilePath.includes('RoomTypes')) {
+        // await populateRoomTypesDictionary(filePath, localizationDict);
+        continue; // Do nothing in the meantime.
       }
     }
   }
@@ -91,12 +93,12 @@ async function populateSkillDictionary(
   }
 }
 
-async function populateRoomTypesDictionary(
-  filePath: string,
-  localizationDict: Record<string, LocalizationSchema>
-) {
-  const rawDoc = await fse.readFile(filePath);
+// async function populateRoomTypesDictionary(
+//   filePath: string,
+//   localizationDict: Record<string, LocalizationSchema>
+// ) {
+//   const rawDoc = await fse.readFile(filePath);
 
-  // Parse the file content.
-  const parsedDoc = parser.parse(rawDoc);
-}
+//   // Parse the file content.
+//   const parsedDoc = parser.parse(rawDoc);
+// }

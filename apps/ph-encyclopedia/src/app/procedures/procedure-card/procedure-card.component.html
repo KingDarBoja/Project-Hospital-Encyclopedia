@@ -1,19 +1,20 @@
 <mat-card class="h-full">
-  <section
-    mat-card-header
-    class="flex items-center space-x-4 rounded-t"
+  <mat-card-header
+    class="text-white text-ellipsis font-medium rounded-t"
     [ngClass]="[type === 'EXM' ? 'bg-green-700' : 'bg-blue-700']"
   >
-    <div mat-card-avatar class="">
-      <img class="" src="assets/icons/ph_icon_{{ procedure.icon_index }}.png" />
+    <div mat-card-avatar>
+      <img src="assets/icons/ph_icon_{{ procedure.icon_index }}.png" />
     </div>
-    <figcaption class="text-lg text-white text-ellipsis font-medium">
+    <mat-card-title>
       {{ procedure.name }}
-    </figcaption>
-  </section>
+    </mat-card-title>
+  </mat-card-header>
   <mat-card-content>
-    <section class="flex flex-col space-y-2">
-      <div class="text-ellipsis text-justify text-gray-600">{{ procedure.description }}</div>
+    <section class="flex flex-col mt-2 space-y-2">
+      <div class="text-ellipsis text-justify text-gray-600">
+        {{ procedure.description }}
+      </div>
       <ng-container *ngIf="procedure.required_doctors">
         <ng-template
           [ngTemplateOutlet]="skillList"

@@ -1,5 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import { BASE_PATH } from '../common';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
@@ -8,6 +9,7 @@ import {
   SymptomSchema,
 } from '@ph-encyclopedia/shared/symptoms';
 import { Procedures } from '@ph-encyclopedia/shared/procedures';
+import chalk from 'chalk';
 
 const BASE_SYMPTOMS_DIR = 'symptoms';
 
@@ -31,7 +33,7 @@ export async function generateSymptoms(
 
   // Get all the xml files inside the `input/symptoms` directory and loop each
   // to obtain a parsed json for further processing.
-  const filePaths = await fse.readdir(inputPath);
+  const filePaths = await fs.readdir(inputPath, { recursive: true });
   for (const filePath of filePaths) {
     const fullFilePath = path.join(inputPath, filePath);
     const stat = fse.statSync(fullFilePath);
@@ -73,19 +75,32 @@ async function populateSymptomsDictionary(
     const examinations: SymptomSchema['examinations'] =
       child.Examinations.ExaminationRef.map(
         (ref) => proceduresDict.examinations[ref]
-      );
+      ).filter(x => !!x);
     const treatment: SymptomSchema['treatment'] = child.Treatments
       ? proceduresDict.treatments[child.Treatments.TreatmentRef]
       : undefined;
-    const collapseSym: SymptomSchema['collapse_sym'] =
-      child.CollapseSymptomRef
-        ? {
-            id: child.CollapseProcedureRef,
-            name: localizationDict[child.CollapseSymptomRef].i18n.en,
-            start_hours: child.RiskOfCollapseStartHours,
-            end_hours: child.RiskOfCollapseEndHours,
-          }
-        : undefined;
+
+    /** Check if the provided collapse symptom reference exists, otherwise log
+     * an alert about missing symptom locstring. */
+    let collapseSym: SymptomSchema['collapse_sym'] = undefined;
+    if (child.CollapseSymptomRef) {
+      const existInLoc = child.CollapseSymptomRef in localizationDict;
+      if (!existInLoc) {
+        console.log(
+          chalk.yellow(
+            `-- Warning: the collapse symptom reference ${child.CollapseSymptomRef} has a missing locstring! --`
+          )
+        );
+      }
+      collapseSym = {
+        id: child.CollapseProcedureRef,
+        name: existInLoc
+          ? localizationDict[child.CollapseSymptomRef].i18n.en
+          : 'Missing locstring',
+        start_hours: child.RiskOfCollapseStartHours,
+        end_hours: child.RiskOfCollapseEndHours,
+      };
+    }
 
     const newSymptom: SymptomSchema = {
       id: child.ID,

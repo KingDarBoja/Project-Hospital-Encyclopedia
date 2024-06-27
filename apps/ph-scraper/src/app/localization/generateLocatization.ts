@@ -1,12 +1,13 @@
 import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
+import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import {
   LocalizationDatabaseSchema,
   LocalizationSchema,
 } from '@ph-encyclopedia/shared/localization';
+import { BASE_PATH } from '../common';
 
-const BASE_PATH = path.resolve('apps', 'ph-scraper', 'src', 'app');
 const BASE_LOC_DIR = 'localization';
 
 const parser = new XMLParser({
@@ -19,14 +20,12 @@ const parser = new XMLParser({
 const localizationDict: Record<string, LocalizationSchema> = {};
 
 export async function generateLocalization() {
-
-
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_LOC_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_LOC_DIR);
 
   // Get all the xml files inside the `input/localization` directory and loop each
   // to obtain a parsed json for further processing.
-  const filePaths = await fse.readdir(inputPath);
+  const filePaths = await fs.readdir(inputPath, { recursive: true });
   for (const filePath of filePaths) {
     const fullFilePath = path.join(inputPath, filePath);
     const stat = fse.statSync(fullFilePath);

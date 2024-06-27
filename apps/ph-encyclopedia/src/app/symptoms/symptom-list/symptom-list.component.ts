@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
-import { map, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Component({
   templateUrl: 'symptom-list.component.html',
@@ -12,8 +12,12 @@ export class SymptomListComponent {
     .pipe(
       map((res) =>
         Object.values(res || {}).sort((a, b) => a.name.localeCompare(b.name))
-      ),
-      tap((res) => console.log(res))
+      )
+      // tap((res) => {
+      //   console.log("🚀 ~ SymptomListComponent ~ tap ~ Symptoms:", res)
+      //   const emptyExams = res.filter(x => x.examinations.some(y => !y));
+      //   console.log("🚀 ~ SymptomListComponent ~ tap ~ emptyExams:", emptyExams)
+      // })
     );
 
   constructor(private readonly http: HttpClient) {}

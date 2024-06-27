@@ -1,70 +1,69 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OfficialDepartments } from '@ph-encyclopedia/shared/diagnoses';
 import { DepartmentPageModule } from './ui/department-page/department-page.module';
-import { EmergencyDptComponent } from './emergency.component';
-import { GeneralSurgeryDptComponent } from './general_surgery.component';
-import { InternalMedicineDptComponent } from './internal_medicine.component';
-import { OrthopedicsDptComponent } from './orthopedics.component';
-import { CardiologyDptComponent } from './cardiology.component';
-import { NeurologyDptComponent } from './neurology.component';
-import { TraumatologyDptComponent } from './traumatology.component';
-import { InfectiousDiseasesDptComponent } from './infectious_diseases.component';
+import { DepartmentPageComponent } from './ui/department-page/department-page.component';
 
 const DepartmentRoutes: Routes = [
   {
     path: 'emergency',
-    component: EmergencyDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.EMERGENCY },
   },
   {
     path: 'general_surgery',
-    component: GeneralSurgeryDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.INTERNAL_MEDICINE },
   },
   {
     path: 'internal_medicine',
-    component: InternalMedicineDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.INTERNAL_MEDICINE },
   },
   {
     path: 'orthopedics',
-    component: OrthopedicsDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.ORTHOPEDY },
   },
   {
     path: 'cardiology',
-    component: CardiologyDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.CARDIOLOGY },
   },
   {
     path: 'neurology',
-    component: NeurologyDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.NEUROLOGY },
   },
   {
     path: 'traumatology',
-    component: TraumatologyDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.TRAUMATOLOGY },
   },
   {
     path: 'infectious_diseases',
-    component: InfectiousDiseasesDptComponent,
+    component: DepartmentPageComponent,
     pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.INFECTIOUS_DISEASES },
+  },
+  /* --- Modded Departments Routes --- */
+  {
+    path: 'oncology',
+    component: DepartmentPageComponent,
+    pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.ONCOLOGY },
   },
 ];
 
 @NgModule({
   imports: [DepartmentPageModule, RouterModule.forChild(DepartmentRoutes)],
   exports: [RouterModule],
-  declarations: [
-    EmergencyDptComponent,
-    GeneralSurgeryDptComponent,
-    InternalMedicineDptComponent,
-    OrthopedicsDptComponent,
-    CardiologyDptComponent,
-    NeurologyDptComponent,
-    TraumatologyDptComponent,
-    InfectiousDiseasesDptComponent,
-  ],
 })
 export class DepartmentsModule {}
