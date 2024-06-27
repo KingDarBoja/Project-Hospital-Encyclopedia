@@ -38,6 +38,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'modded_dpt',
+    loadChildren: () =>
+      import('./departments/departments.module').then(
+        (m) => m.DepartmentsModule
+      ),
+  },
+  {
     path: 'symptoms',
     loadChildren: () =>
       import('./symptoms/symptom-list/symptom-list.module').then(

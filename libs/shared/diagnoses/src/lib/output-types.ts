@@ -14,6 +14,8 @@ export enum OfficialDepartments {
   ONCOLOGY = 'onco',
 }
 
+export type OfficialDepartmentsType = `${OfficialDepartments}`;
+
 export type DiagnosesDict = {
   /** Emergency */
   er: Record<string, DiagnoseSchema>;

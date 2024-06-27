@@ -1,17 +1,19 @@
-<ng-container *ngIf="vm$ | async as vm">
-  <section class="mb-2 flex flex-col">
-    <span class="font-medium text-2xl text-red-900">{{
-      dptTitles[vm.dptCode]
-    }}</span>
-    <div class="text-lg text-red-900">
-      Total diagnoses: {{ vm.diagnoses.length }}
-    </div>
-  </section>
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-    <div class="col-span-1" *ngFor="let diagnose of vm.diagnoses">
-      <ph-encyclopedia-diagnose-card
-        [diagnose]="diagnose"
-      ></ph-encyclopedia-diagnose-card>
-    </div>
-  </section>
-</ng-container>
+@if (diagnoses()) {
+<section class="mb-2 flex flex-col">
+  <span class="font-medium text-2xl text-red-900">{{
+    dptTitles[diagnoses()!.dptCode]
+  }}</span>
+  <div class="text-lg text-red-900">
+    Total diagnoses: {{ diagnoses()!.diagnoses.length }}
+  </div>
+</section>
+<section
+  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4"
+>
+  <div class="col-span-1" *ngFor="let diagnose of diagnoses()!.diagnoses">
+    <ph-encyclopedia-diagnose-card
+      [diagnose]="diagnose"
+    ></ph-encyclopedia-diagnose-card>
+  </div>
+</section>
+}
