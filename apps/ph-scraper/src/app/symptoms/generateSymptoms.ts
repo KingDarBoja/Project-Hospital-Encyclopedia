@@ -75,7 +75,7 @@ async function populateSymptomsDictionary(
     const examinations: SymptomSchema['examinations'] =
       child.Examinations.ExaminationRef.map(
         (ref) => proceduresDict.examinations[ref]
-      );
+      ).filter(x => !!x);
     const treatment: SymptomSchema['treatment'] = child.Treatments
       ? proceduresDict.treatments[child.Treatments.TreatmentRef]
       : undefined;

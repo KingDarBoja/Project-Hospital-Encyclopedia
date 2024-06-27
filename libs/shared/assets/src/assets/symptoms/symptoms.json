@@ -31986,9 +31986,7 @@
     "name": "Hypercalcemia",
     "description": "Hypercalcemia is a condition in which the calcium level in your blood is above normal. Hypercalcaemia is most often caused by overactivity in the four tiny glands in the neck (parathyroid glands) or from cancer. Extra calcium in the blood affects many bodily systems.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "TRT_INTRAVENOUS_INFUSION",
       "name": "IV infusion",
@@ -32018,9 +32016,7 @@
     "name": "Severe Hypercalcemia",
     "description": "Severe hypercalcemia is a medical emergency requiring urgent treatment. Hypercalcemia is a condition in which the calcium level in your blood is above normal. Rarely, severe hypercalcemia can interfere with your heart function, causing palpitations and fainting, indications of cardiac arrhythmia, and other heart problems.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "SUR_SLP_PARATHY",
       "name": "Parathyroidectomy",
@@ -32062,7 +32058,6 @@
     "description": "Acute liver failure (ALF) is a rare syndrome defined by a rapid decline in hepatic function.",
     "icon_index": 2,
     "examinations": [
-      null,
       {
         "id": "EXM_USG",
         "name": "USG",
@@ -32129,10 +32124,7 @@
     "name": "Pure Mucinous Cells",
     "description": "Mucinous carcinoma can form along side of other types cancer cells but when it doesn't the cancer is considered 'pure'. Pure mucinous carcinoma is composed of 90–100% mucinous cells.",
     "icon_index": 2,
-    "examinations": [
-      null,
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Low",
     "mobility": "MOBILE",
@@ -32156,8 +32148,7 @@
         },
         "icon_index": 1728,
         "discomfort": "None"
-      },
-      null
+      }
     ],
     "discomfort": "None",
     "hazard": "Low",
@@ -32169,9 +32160,7 @@
     "name": "Cytokeratin 19 (CK19) Brightly Expressed",
     "description": "Keratin, type I cytoskeletal 19 also known as cytokeratin-19 (CK-19) or keratin-19 (K19) is a 40 kDa protein that in humans is encoded by the KRT19 gene. Expression in certain cancers allows CK19 to help act as a marker and help determine what type of cancer the patient may have.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Low",
     "mobility": "MOBILE",
@@ -33294,9 +33283,7 @@
     "name": "Colorectal Adenocarcinoma Detected",
     "description": "Testing has detected Colorectal Adenocarcinoma with evidence it is only localised.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "SUR_SLP_POLYPECTOMY",
       "name": "Polypectomy",
@@ -33331,9 +33318,7 @@
     "name": "Colorectal Adenocarcinoma Detected",
     "description": "Testing has detected Colorectal Adenocarcinoma with evidence it is regional.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "SUR_SLP_PARTIAL_COLECTOMY",
       "name": "Colectomy",
@@ -33406,9 +33391,7 @@
     "name": "Signet Ring Cell Colorectal Carcinoma Detected",
     "description": "Testing has detected Signet Ring Cell Carcinoma of the Colon.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33419,9 +33402,7 @@
     "name": "Mucinous Colorectal Adenocarcinoma (Mixed) Detected",
     "description": "Testing has detected Mucinous Adenocarcinoma of the Colon with evidence it is in a mixed cancer state.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33432,9 +33413,7 @@
     "name": "Mucinous Colorectal Adenocarcinoma (Pure) Detected",
     "description": "Testing has detected Mucinous Adenocarcinoma of the Colon with evidence it is in a pure cancer state.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33445,9 +33424,7 @@
     "name": "Pre-B Cell Acute Lymphocytic Leukaemia Detected",
     "description": "Testing has detected Pre-B Cell Lymphocytic Leukaemia with evidence it is Acute.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33458,9 +33435,7 @@
     "name": "B Cell Acute Lymphocytic Leukaemia Detected",
     "description": "Testing has detected B Cell Lymphocytic Leukaemia with evidence it is Acute.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33471,9 +33446,7 @@
     "name": "T Cell Acute Lymphocytic Leukaemia Detected",
     "description": "Testing has detected T Cell Lymphocytic Leukaemia with evidence it is Acute.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33484,9 +33457,7 @@
     "name": "Chronic Lymphocytic Leukaemia Detected",
     "description": "Testing has detected Lymphocytic Leukaemia with evidence it is Chronic but Stable.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33497,9 +33468,7 @@
     "name": "Chronic Lymphocytic Leukaemia Detected",
     "description": "Testing has detected Lymphocytic Leukaemia with evidence it is Chronic and in an Advanced state.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33510,9 +33479,7 @@
     "name": "T-cell Large Granular Lymphocyte (LGL) Leukaemia Detected",
     "description": "Testing has detected Lymphocytic Leukaemia with evidence it is a subtype, T-Cell Large Granular Lymphocyte (LGL) Leukaemia.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33523,9 +33490,7 @@
     "name": "NK-cell Large Granular Lymphocyte (LGL) Leukaemia Detected",
     "description": "Testing has detected Lymphocytic Leukaemia with evidence it is a subtype, NK-Cell Large Granular Lymphocyte (LGL) Leukaemia.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33536,9 +33501,7 @@
     "name": "T-cell Prolymphocytic Leukaemia (T-PLL) Detected",
     "description": "Testing has detected Lymphocytic Leukaemia with evidence it is a rare subtype, T-cell Prolymphocytic Leukaemia.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33549,9 +33512,7 @@
     "name": "Acute Myeloid Leukaemia (AML) Detected",
     "description": "Testing has detected Myeloid Leukaemia with evidence it is Acute.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33562,9 +33523,7 @@
     "name": "Chronic Myeloid Leukaemia (CML) Detected",
     "description": "Testing has detected Myeloid Leukaemia with evidence it is in its Chronic phase.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33575,9 +33534,7 @@
     "name": "Chronic Myeloid Leukaemia (CML) Detected",
     "description": "Testing has detected Myeloid Leukaemia with evidence it is in its Accelerated phase.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33588,9 +33545,7 @@
     "name": "Chronic Myeloid Leukaemia (CML) Detected",
     "description": "Testing has detected Myeloid Leukaemia with evidence it is in its Blast Crisis phase.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33601,9 +33556,7 @@
     "name": "Hairy Cell Leukaemia (HCL) Detected",
     "description": "Testing has detected Hairy Cell Leukaemia.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33614,9 +33567,7 @@
     "name": "Hairy Cell Leukaemia Variant (HCL-V) Detected",
     "description": "Testing has detected Hairy Cell Leukaemia with evidence it is a rare variant.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33627,9 +33578,7 @@
     "name": "Diffuse Large B-Cell (NOS) Lymphoma Detected",
     "description": "Testing has detected Diffuse Large B-Cell (NOS) Lymphoma.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33640,9 +33589,7 @@
     "name": "Follicular Lymphoma Detected",
     "description": "Testing has detected Follicular Lymphoma.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -33653,9 +33600,7 @@
     "name": "Mantle Cell Lymphoma Detected",
     "description": "Testing has detected Mantle Cell Lymphoma.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -34459,9 +34404,7 @@
     "name": "Hepatocellular Carcinoma (Localised) Detected",
     "description": "Testing has detected Hepatocellular Carcinoma with evidence it is localised.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "discomfort": "None",
     "hazard": "Medium",
     "mobility": "MOBILE",
@@ -34472,9 +34415,7 @@
     "name": "Hepatocellular Carcinoma (Regional) Detected",
     "description": "Testing has detected Hepatocellular Carcinoma with evidence it is regional.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "SUR_SLP_HEPATECTOMY",
       "name": "Hepatectomy",
@@ -34509,9 +34450,7 @@
     "name": "Hepatocellular Carcinoma (Critical) Detected",
     "description": "Testing has detected Hepatocellular Carcinoma with evidence it is in a critical state.",
     "icon_index": 2,
-    "examinations": [
-      null
-    ],
+    "examinations": [],
     "treatment": {
       "id": "SUR_SLP_HEPATECTOMY",
       "name": "Hepatectomy",
