@@ -8,7 +8,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/ph-encyclopedia",
         "index": "apps/ph-encyclopedia/src/index.html",
@@ -30,7 +32,6 @@
           }
         ],
         "styles": [
-          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/ph-encyclopedia/src/styles.scss"
         ],
         "scripts": []
@@ -91,7 +92,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/ph-encyclopedia"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/ph-encyclopedia"
+      ],
       "options": {
         "jestConfig": "apps/ph-encyclopedia/jest.config.ts"
       }
