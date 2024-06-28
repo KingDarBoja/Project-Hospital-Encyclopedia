@@ -1,19 +1,18 @@
-@if (diagnoses()) {
+@if (diagnoses$ | async; as diagnoses) {
 <section class="mb-2 flex flex-col">
   <span class="font-medium text-2xl text-red-900">{{
-    dptTitles[diagnoses()!.dptCode]
+    dptTitles[diagnoses.dptCode]
   }}</span>
   <div class="text-lg text-red-900">
-    Total diagnoses: {{ diagnoses()!.diagnoses.length }}
+    Total diagnoses: {{ diagnoses.diagnoses.length }}
   </div>
 </section>
-<section
-  class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-5 gap-4"
->
-  <div class="col-span-1" *ngFor="let diagnose of diagnoses()!.diagnoses">
-    <ph-encyclopedia-diagnose-card
-      [diagnose]="diagnose"
-    ></ph-encyclopedia-diagnose-card>
-  </div>
+<section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-5 gap-4">
+  @for (diagnose of diagnoses.diagnoses; track diagnose.id) {
+  <ph-encyclopedia-diagnose-card
+    class="col-span-1"
+    [diagnose]="diagnose"
+  ></ph-encyclopedia-diagnose-card>
+  }
 </section>
 }

@@ -67,42 +67,42 @@ export class NavigationComponent {
       children: [
         {
           route: '/dpt/emergency',
-          icon: 'ph_icon_389',
+          icon: 'ph_icon_390',
           name: 'Emergency',
         },
         {
           route: '/dpt/general_surgery',
-          icon: 'ph_icon_403',
+          icon: 'ph_icon_404',
           name: 'General Surgery',
         },
         {
           route: '/dpt/internal_medicine',
-          icon: 'ph_icon_410',
+          icon: 'ph_icon_411',
           name: 'Internal Medicine',
         },
         {
           route: '/dpt/orthopedics',
-          icon: 'ph_icon_417',
+          icon: 'ph_icon_418',
           name: 'Orthopedics',
         },
         {
           route: '/dpt/cardiology',
-          icon: 'ph_icon_424',
+          icon: 'ph_icon_425',
           name: 'Cardiology',
         },
         {
           route: '/dpt/neurology',
-          icon: 'ph_icon_431',
+          icon: 'ph_icon_432',
           name: 'Neurology',
         },
         {
           route: '/dpt/traumatology',
-          icon: 'ph_icon_473',
+          icon: 'ph_icon_474',
           name: 'Traumatology',
         },
         {
           route: '/dpt/infectious_diseases',
-          icon: 'ph_icon_466',
+          icon: 'ph_icon_467',
           name: 'Infectious Diseases',
           divider: true,
         },
@@ -116,7 +116,7 @@ export class NavigationComponent {
       children: [
         {
           route: '/modded_dpt/oncology',
-          icon: 'Mod_ONCO/mod_dept_icon_2',
+          icon: 'Mod_ONCO/mod_dept_icon_1',
           name: 'Oncology',
         },
         {

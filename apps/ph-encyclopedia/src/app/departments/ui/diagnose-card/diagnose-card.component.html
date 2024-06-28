@@ -36,7 +36,7 @@
       </div>
       @if (diagnose.symptoms) {
       <mat-list class="space-y-2">
-        @for (symptom of diagnose.symptoms; track symptom) {
+        @for (symptom of diagnose.symptoms; track symptom.id) {
         <mat-card appearance="outlined">
           <mat-card-content class="flex flex-col space-y-1">
             <div class="text-red-900 font-bold text-base">Symptom</div>
@@ -65,7 +65,7 @@
               <div class="text-sm">
                 @if (symptom.examinations.length) {
                 <ul class="-space-y-2">
-                  @for (exm of symptom.examinations; track exm) {
+                  @for (exm of symptom.examinations; track exm.id) {
                   <li class="flex flex-row items-center">
                     <img
                       class="rounded-full h-8 w-8 examination-filter"

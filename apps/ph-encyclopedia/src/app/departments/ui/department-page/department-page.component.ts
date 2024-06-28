@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
 import { HttpClient } from '@angular/common/http';
 import { EMPTY, map, switchMap } from 'rxjs';
 import {
@@ -33,11 +32,8 @@ export class DepartmentPageComponent {
   dptCode = this.activatedRoute.data.pipe(
     map((data) => data['dptCode'] as OfficialDepartmentsType)
   );
-  diagnoses = toSignal(
-    this.dptCode.pipe(
-      switchMap((dptCode) => (dptCode ? this.fetchDiagnoses(dptCode) : EMPTY))
-    ),
-    { initialValue: null }
+  diagnoses$ = this.dptCode.pipe(
+    switchMap((dptCode) => (dptCode ? this.fetchDiagnoses(dptCode) : EMPTY))
   );
 
   private httpEndpoint(dptCode: OfficialDepartmentsType) {

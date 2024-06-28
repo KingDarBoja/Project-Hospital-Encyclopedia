@@ -16,7 +16,7 @@
       </a>
     </mat-toolbar>
     <mat-nav-list id="app-nav" aria-label="Main app navigation">
-      @for (section of sections; track section) {
+      @for (section of sections; track section.name) {
       <mat-list-item
         class="nav-list-item"
         [routerLink]="section.route"
@@ -38,7 +38,7 @@
       <mat-divider></mat-divider>
       } @if (section.children?.length) {
       <mat-nav-list id="{{ section.name }}-nav">
-        @for (child of section.children; track child) {
+        @for (child of section.children; track child.name) {
         <mat-list-item
           class="nav-list-item"
           [routerLink]="child.route"

@@ -50,7 +50,7 @@
         Required {{ title }} Skills
       </div>
       <div class="space-y-1">
-        @for (skill of skills; track skill) {
+        @for (skill of skills; track skill.name) {
         <section
           class="flex flex-1 space-x-1 items-center text-sm text-blue-900"
         >

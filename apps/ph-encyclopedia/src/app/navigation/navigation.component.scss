@@ -19,3 +19,9 @@
 .navigation-toolbar-spacer {
   flex: 1;
 }
+
+/* Make the images bigger */
+.mdc-list-item--with-leading-icon .mdc-list-item__start {
+  height: 32px !important;
+  width: 32px !important;
+}
