@@ -38,7 +38,7 @@ export async function generateLocalization() {
 
   await fse.outputFile(
     path.resolve(outputPath, 'localization.json'),
-    JSON.stringify(localizationDict)
+    JSON.stringify(localizationDict, null, 2)
   );
 
   return localizationDict;

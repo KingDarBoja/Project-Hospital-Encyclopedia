@@ -51,7 +51,7 @@ export async function generateSymptoms(
 
   await fse.outputFile(
     path.resolve(outputPath, 'symptoms.json'),
-    JSON.stringify(symptoms)
+    JSON.stringify(symptoms, null, 2)
   );
 
   return symptoms;

@@ -64,12 +64,12 @@ export async function generateProcedures(
 
   await fse.outputFile(
     path.resolve(outputPath, 'examinations.json'),
-    JSON.stringify(procedures.examinations)
+    JSON.stringify(procedures.examinations, null, 2)
   );
 
   await fse.outputFile(
     path.resolve(outputPath, 'treatments.json'),
-    JSON.stringify(procedures.treatments)
+    JSON.stringify(procedures.treatments, null, 2)
   );
 
   return procedures;
