@@ -1,0 +1,298 @@
+{
+  "SKILL_DOC_QUALIF_GENERAL_MEDICINE": {
+    "id": "SKILL_DOC_QUALIF_GENERAL_MEDICINE",
+    "description_loc_id": "SKILL_DOC_QUALIF_GENERAL_MEDICINE_DESCRIPTION",
+    "name": "General Medicine",
+    "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+    "icon_index": 2305,
+    "type": "BASE"
+  },
+  "SKILL_DOC_QUALIF_DIAGNOSIS": {
+    "id": "SKILL_DOC_QUALIF_DIAGNOSIS",
+    "description_loc_id": "SKILL_DOC_QUALIF_DIAGNOSIS_DESCRIPTION",
+    "name": "Diagnosis",
+    "description": "Diagnosis qualification level affects how often the doctor will misdiagnose patients or have to consult other doctors.",
+    "icon_index": 2311,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ACUTE_MEDICINE": {
+    "id": "SKILL_DOC_SPEC_ACUTE_MEDICINE",
+    "description_loc_id": "SKILL_DOC_SPEC_ACUTE_MEDICINE_DESCRIPTION",
+    "name": "Acute medicine",
+    "description": "Acute medicine gives access to specialized procedures for diagnosing and treating critical patients at Emergency.",
+    "icon_index": 390,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS": {
+    "id": "SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS",
+    "description_loc_id": "SKILL_DOC_SPEC_ADVANCED_DIAGNOSIS_DESCRIPTION",
+    "name": "Advanced diagnosis",
+    "description": "Advanced diagnosis specialization gives the doctor access to differential diagnosis.",
+    "icon_index": 2329,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_CRITICAL_CARE": {
+    "id": "SKILL_DOC_SPEC_CRITICAL_CARE",
+    "description_loc_id": "SKILL_DOC_SPEC_CRITICAL_CARE_DESCRIPTION",
+    "name": "Critical care medicine",
+    "description": "Critical care medicine gives the doctor access to specialized diagnostic methods used at ICU.",
+    "icon_index": 397,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_GENERAL_SURGERY": {
+    "id": "SKILL_DOC_SPEC_GENERAL_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_GENERAL_SURGERY_DESCRIPTION",
+    "name": "General surgery",
+    "description": "General surgery specialization is used in examinations and for prescribing treatments at General Surgery department and allows the doctor to assist at surgery.",
+    "icon_index": 404,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_OPERATIVE_SURGERY": {
+    "id": "SKILL_DOC_SPEC_OPERATIVE_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_OPERATIVE_SURGERY_DESCRIPTION",
+    "name": "Operative surgery",
+    "description": "Operative surgery allows the doctor to act as main surgeon at General Surgery department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_INTERNAL_MEDICINE": {
+    "id": "SKILL_DOC_SPEC_INTERNAL_MEDICINE",
+    "description_loc_id": "SKILL_DOC_SPEC_INTERNAL_MEDICINE_DESCRIPTION",
+    "name": "Internal medicine",
+    "description": "Internal medicine specialization is used in specialized examinations and for prescribing treatments at Internal Medicine department and allows the doctor to assist at surgery.",
+    "icon_index": 411,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ORTHOPAEDY": {
+    "id": "SKILL_DOC_SPEC_ORTHOPAEDY",
+    "description_loc_id": "SKILL_DOC_SPEC_ORTHOPAEDY_DESCRIPTION",
+    "name": "Orthopaedy",
+    "description": "Orthopaedy is used in specialized examinations and for prescribing treatments at Orthopaedy department and allows the doctor to assist at surgery.",
+    "icon_index": 418,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ORTHOPAEDIC_SURGERY": {
+    "id": "SKILL_DOC_SPEC_ORTHOPAEDIC_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_ORTHOPAEDIC_SURGERY_DESCRIPTION",
+    "name": "Orthopaedic surgery",
+    "description": "Orthopaedic surgery allows the doctor to act as main surgeon at Orthopaedy department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_CARDIOLOGY": {
+    "id": "SKILL_DOC_SPEC_CARDIOLOGY",
+    "description_loc_id": "SKILL_DOC_SPEC_CARDIOLOGY_DESCRIPTION",
+    "name": "Cardiology",
+    "description": "Cardiology is used in specialized examinations and for prescribing treatments at Cardiology department and allows the doctor to assist at surgery.",
+    "icon_index": 425,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_CARDIO_SURGERY": {
+    "id": "SKILL_DOC_SPEC_CARDIO_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_CARDIO_SURGERY_DESCRIPTION",
+    "name": "Cardio-surgery",
+    "description": "Cardio-surgery allows the doctor to act as main surgeon at Cardiology department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_NEUROLOGY": {
+    "id": "SKILL_DOC_SPEC_NEUROLOGY",
+    "description_loc_id": "SKILL_DOC_SPEC_NEUROLOGY_DESCRIPTION",
+    "name": "Neurology",
+    "description": "Neurology is used in specialized examinations and for prescribing treatments at Neurology department and allows the doctor to assist at surgery.",
+    "icon_index": 432,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_NEURO_SURGERY": {
+    "id": "SKILL_DOC_SPEC_NEURO_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_NEURO_SURGERY_DESCRIPTION",
+    "name": "Neuro-surgery",
+    "description": "Neuro-surgery allows the doctor to act as main surgeon at Neurology department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ANESTHESIOLOGY": {
+    "id": "SKILL_DOC_SPEC_ANESTHESIOLOGY",
+    "description_loc_id": "SKILL_DOC_SPEC_ANESTHESIOLOGY_DESCRIPTION",
+    "name": "Anesthesiology",
+    "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+    "icon_index": 2353,
+    "type": "BASE"
+  },
+  "SKILL_NURSE_QUALIF_PATIENT_CARE": {
+    "id": "SKILL_NURSE_QUALIF_PATIENT_CARE",
+    "description_loc_id": "SKILL_NURSE_QUALIF_PATIENT_CARE_DESCRIPTION",
+    "name": "Patient care",
+    "description": "Nurse is capable of providing various types of patient care.",
+    "icon_index": 2359,
+    "type": "BASE"
+  },
+  "SKILL_NURSE_SPEC_RECEPTIONIST": {
+    "id": "SKILL_NURSE_SPEC_RECEPTIONIST",
+    "description_loc_id": "SKILL_NURSE_SPEC_RECEPTIONIST_DESCRIPTION",
+    "name": "Receptionist",
+    "description": "Receptionist represent point of first contact with patient.",
+    "icon_index": 2365,
+    "type": "BASE"
+  },
+  "SKILL_NURSE_SPEC_MEDICAL_SURGERY": {
+    "id": "SKILL_NURSE_SPEC_MEDICAL_SURGERY",
+    "description_loc_id": "SKILL_NURSE_SPEC_MEDICAL_SURGERY_DESCRIPTION",
+    "name": "Medical surgery",
+    "description": "Medical surgery nurse represent important part of operative surgical teams.",
+    "icon_index": 2401,
+    "type": "BASE"
+  },
+  "SKILL_NURSE_SPEC_CLINICAL_SPECIALIST": {
+    "id": "SKILL_NURSE_SPEC_CLINICAL_SPECIALIST",
+    "description_loc_id": "SKILL_NURSE_SPEC_CLINICAL_SPECIALIST_DESCRIPTION",
+    "name": "Clinical Nurse Specialist",
+    "description": "Clinical Nurse Specialist is capable of revealing appearance of patient's symptoms.",
+    "icon_index": 2377,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION": {
+    "id": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION_DESCRIPTION",
+    "name": "Biochemistry",
+    "description": "Biochemistry gives access to various STAT laboratory tests.",
+    "icon_index": 446,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_SPEC_BIOCHEMISTRY": {
+    "id": "SKILL_LAB_SPECIALIST_SPEC_BIOCHEMISTRY",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_SPEC_BIOCHEMISTRY_DESCRIPTION",
+    "name": "Advanced biochemistry",
+    "description": "Advanced biochemistry increases effectiveness of laboratory tests.",
+    "icon_index": 2323,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY": {
+    "id": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY_DESCRIPTION",
+    "name": "Radiology",
+    "description": "Radiology specialist is capable of fully operating radiology imaging machines and other radiology related equipment.",
+    "icon_index": 439,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_SPEC_USG": {
+    "id": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_SPEC_USG_DESCRIPTION",
+    "name": "USG",
+    "description": "USG technologist is capable of operating Ultrasonographic devices.",
+    "icon_index": 2383,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY": {
+    "id": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY_DESCRIPTION",
+    "name": "Cardiology",
+    "description": "Cardiology technologist is capable of operating examination devices related to Cardiology.",
+    "icon_index": 2335,
+    "type": "BASE"
+  },
+  "SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY": {
+    "id": "SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY",
+    "description_loc_id": "SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY_DESCRIPTION",
+    "name": "Neurology",
+    "description": "Neurology technologist is capable of operating examination devices related to Neurology.",
+    "icon_index": 2341,
+    "type": "BASE"
+  },
+  "SKILL_JANITOR_QUALIF_EFFICIENCY": {
+    "id": "SKILL_JANITOR_QUALIF_EFFICIENCY",
+    "description_loc_id": "SKILL_JANITOR_QUALIF_EFFICIENCY_DESCRIPTION",
+    "name": "Efficiency",
+    "description": "Efficiency affects, how well janitors plan when cleaning different rooms.",
+    "icon_index": 2371,
+    "type": "BASE"
+  },
+  "SKILL_JANITOR_QUALIF_DEXTERITY": {
+    "id": "SKILL_JANITOR_QUALIF_DEXTERITY",
+    "description_loc_id": "SKILL_JANITOR_QUALIF_DEXTERITY_DESCRIPTION",
+    "name": "Dexterity",
+    "description": "Dexterity affects the speed when cleaning.",
+    "icon_index": 2347,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_INTERNAL_MEDICINE_SURGERY": {
+    "id": "SKILL_DOC_SPEC_INTERNAL_MEDICINE_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_INTERNAL_MEDICINE_SURGERY_DESCRIPTION",
+    "name": "IM surgery",
+    "description": "Internal medicine allows the doctor to act as main surgeon at Internal Medicine department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "DLC_SKILL_DOC_SPEC_PATHOLOGY": {
+    "id": "DLC_SKILL_DOC_SPEC_PATHOLOGY",
+    "description_loc_id": "DLC_SKILL_DOC_SPEC_PATHOLOGY_DESCRIPTION",
+    "name": "Pathology",
+    "description": "Pathologists have a broad understanding of the causes and effects of diseases or injuries and allow you to perform autopsies.",
+    "icon_index": 460,
+    "type": "BASE"
+  },
+  "DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY": {
+    "id": "DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY",
+    "description_loc_id": "DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY_DESCRIPTION",
+    "name": "Pharmacology",
+    "description": "Pharmacologists sell medicine to your patients and ensure they get correct doses and instructions.",
+    "icon_index": 2437,
+    "type": "BASE"
+  },
+  "DLC_SKILL_JANITOR_SPEC_VENDOR": {
+    "id": "DLC_SKILL_JANITOR_SPEC_VENDOR",
+    "description_loc_id": "DLC_SKILL_JANITOR_SPEC_VENDOR_DESCRIPTION",
+    "name": "Gift shop vendor",
+    "description": "Gift shop vendor sells gifts to family members and friends visiting hospitalized patients.",
+    "icon_index": 2449,
+    "type": "BASE"
+  },
+  "DLC_SKILL_JANITOR_SPEC_MANAGER": {
+    "id": "DLC_SKILL_JANITOR_SPEC_MANAGER",
+    "description_loc_id": "DLC_SKILL_JANITOR_SPEC_MANAGER_DESCRIPTION",
+    "name": "Manager",
+    "description": "If a manager is hired for the Administrative department, they increase the overall efficiency of all janitors in the hospital and allows you to assign janitors to individual rooms. This employee also acts as the boss of all janitors.",
+    "icon_index": 2443,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_EPIDEMIOLOGY": {
+    "id": "SKILL_DOC_SPEC_EPIDEMIOLOGY",
+    "description_loc_id": "SKILL_DOC_SPEC_EPIDEMIOLOGY_DESCRIPTION",
+    "name": "Epidemiology",
+    "description": "Epidemiologists investigate the distribution of diseases and parasites to determine the cause, risk factors, progress, life cycle, or mode of transmission.",
+    "icon_index": 467,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_TRAUMATOLOGY": {
+    "id": "SKILL_DOC_SPEC_TRAUMATOLOGY",
+    "description_loc_id": "SKILL_DOC_SPEC_TRAUMATOLOGY_DESCRIPTION",
+    "name": "Traumatology",
+    "description": "Traumatologists specialize in treating severe acute physical injuries that require immediate medical attention.",
+    "icon_index": 474,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_TRAUMA_SURGERY": {
+    "id": "SKILL_DOC_SPEC_TRAUMA_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_TRAUMA_SURGERY_DESCRIPTION",
+    "name": "Trauma surgery",
+    "description": "Traumatology surgeon is specialized in complex surgical procedures for traumatic and polytraumatic injuries.",
+    "icon_index": 2389,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ONCO": {
+    "id": "SKILL_DOC_SPEC_ONCO",
+    "description_loc_id": "SKILL_DOC_SPEC_ONCO_DESCR",
+    "name": "Oncology",
+    "description": "Oncology gives access to specialized procedures for detecting, diagnosing and treating various forms of cancer.",
+    "icon_index": 404,
+    "type": "BASE"
+  },
+  "SKILL_DOC_SPEC_ONCO_SURGERY": {
+    "id": "SKILL_DOC_SPEC_ONCO_SURGERY",
+    "description_loc_id": "SKILL_DOC_SPEC_ONCO_SURG_DESCR",
+    "name": "Surgical Oncology",
+    "description": "Surgical oncology allows the doctor to act as main surgeon at Oncology department and affects how often surgeries will end up with complications.",
+    "icon_index": 2389,
+    "type": "BASE"
+  }
+}

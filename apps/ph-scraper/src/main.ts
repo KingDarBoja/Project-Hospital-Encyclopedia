@@ -1,9 +1,9 @@
-import * as chalk from 'chalk';
+import chalk from 'chalk';
 import { generateAuxiliary } from './app/generateAuxiliary';
-import { generateDiagnoses } from './app/diagnoses/generateDiagnoses';
-import { generateLocalization } from "./app/localization/generateLocatization";
-import { generateProcedures } from "./app/procedures/generateProcedures";
-import { generateSymptoms } from './app/symptoms/generateSymptoms';
+import { generateDiagnoses } from './app/generateDiagnoses';
+import { generateLocalization } from "./app/generateLocatization";
+import { generateProcedures } from "./app/generateProcedures";
+import { generateSymptoms } from './app/generateSymptoms';
 
 async function main() {
   console.log(chalk.bgRed('---- Starting Project Hospital Scraper ----'));

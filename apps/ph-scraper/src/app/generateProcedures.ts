@@ -9,8 +9,8 @@ import {
   ProcedureDatabase,
   Procedures,
 } from '@ph-encyclopedia/shared/procedures';
-import { Auxiliary } from '../generateAuxiliary';
-import { BASE_PATH } from '../common';
+import { Auxiliary } from './generateAuxiliary';
+import { BASE_PATH } from './common';
 
 const BASE_PROCEDURES_DIR = 'procedures';
 

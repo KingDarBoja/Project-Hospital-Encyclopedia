@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
-import { BASE_PATH } from '../common';
+import { BASE_PATH } from './common';
 import {
   DepartmentRef,
   DiagnoseDatabaseSchema,

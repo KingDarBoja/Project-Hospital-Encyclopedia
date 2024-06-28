@@ -6,7 +6,7 @@ import {
   LocalizationDatabaseSchema,
   LocalizationSchema,
 } from '@ph-encyclopedia/shared/localization';
-import { BASE_PATH } from '../common';
+import { BASE_PATH } from './common';
 
 const BASE_LOC_DIR = 'localization';
 

@@ -1,8 +1,8 @@
 export interface SkillsDatabaseSchema {
-  Database: Database;
+  Database: SkillDatabaseSchema;
 }
 
-interface Database {
+interface SkillDatabaseSchema {
   GameDBSkill: GameDBSkill[];
 }
 
@@ -16,4 +16,45 @@ interface GameDBSkill {
 
 enum ParentSkill {
   SkillDocQualifGeneralMedicine = 'SKILL_DOC_QUALIF_GENERAL_MEDICINE',
+}
+
+export interface RoomTypesDatabaseSchema {
+  Database: RoomTypeDatabaseSchema;
+}
+
+interface RoomTypeDatabaseSchema {
+  GameDBRoomType: GameDBRoomType[];
+}
+
+interface GameDBRoomType {
+  AbbreviationLocID: string;
+  TextureID: string;
+  IconIndex: number;
+  AccessRights: string;
+  RequiredEquipment: RequiredEquipment;
+  LockedByDefault: string;
+  /** These are different `Tag` array values. Ex: 'ui_mobile_cabinet', 'ui_bookcase */
+  BuildingModeFilters: BuildingModeFilters;
+  /** These are different `Tag` array values. Ex: 'ultrasonograph', 'sonography_unit' */
+  Tags: BuildingModeFilters;
+  MinWidth: number;
+  MinHeight: number;
+  ID: string;
+  AcceptsOutpatients?: string;
+  RequiredSkill?: string;
+  StatisticsMultiplier?: string;
+  Hidden?: string;
+}
+
+interface BuildingModeFilters {
+  Tag: string[];
+}
+
+interface RequiredEquipment {
+  GameDBRequiredEquipment: GameDBRequiredEquipment[];
+}
+
+interface GameDBRequiredEquipment {
+  Tag: string;
+  MinCount: string;
 }

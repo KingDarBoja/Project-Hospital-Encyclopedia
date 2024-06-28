@@ -2,14 +2,15 @@ import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
-import { BASE_PATH } from '../common';
+import chalk from 'chalk';
+
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
   SymptomDatabaseSchema,
   SymptomSchema,
 } from '@ph-encyclopedia/shared/symptoms';
 import { Procedures } from '@ph-encyclopedia/shared/procedures';
-import chalk from 'chalk';
+import { BASE_PATH } from './common';
 
 const BASE_SYMPTOMS_DIR = 'symptoms';
 

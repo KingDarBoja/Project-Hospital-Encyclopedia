@@ -1,0 +1,2285 @@
+{
+  "ROOM_TYPE_RECEPTION": {
+    "id": "ROOM_TYPE_RECEPTION",
+    "description_loc_id": "ROOM_TYPE_RECEPTION_DESCRIPTION",
+    "name": "Reception",
+    "description": "The reception ensures that patients get triaged correctly upon arrival, so patients with high risk get prioritized during their visit.\\n\\nMin. Staff requirements: \\n1x Nurse - Receptionist",
+    "icon_index": 807,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_chair_waiting",
+      "ui_chair_office",
+      "ui_reception_desk"
+    ],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "nurse_workspace",
+      "nurse_reception"
+    ],
+    "worker": "SKILL_NURSE_SPEC_RECEPTIONIST",
+    "size": {
+      "width": 3,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_CLEANING_CLOSET": {
+    "id": "ROOM_TYPE_CLEANING_CLOSET",
+    "description_loc_id": "ROOM_TYPE_CLEANING_CLOSET_DESCRIPTION",
+    "name": "Cleaning closet",
+    "description": "Cleaning closet stores all mandatory equipment for janitors.",
+    "icon_index": 809,
+    "equipment_tags": [
+      "ui_shelf_def",
+      "ui_bucket_cart"
+    ],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "cleaning_closet",
+      "janitor_workspace"
+    ],
+    "size": {
+      "width": 3,
+      "height": 2
+    }
+  },
+  "ROOM_TYPE_WC": {
+    "id": "ROOM_TYPE_WC",
+    "description_loc_id": "ROOM_TYPE_WC_DESCRIPTION",
+    "name": "Restroom",
+    "description": "Room where even a queen must walk. \\n\\nMin. Staff requirements: \\nNone",
+    "icon_index": 811,
+    "equipment_tags": [
+      "ui_wc",
+      "ui_sink_def",
+      "ui_handdryer"
+    ],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "wc"
+    ],
+    "size": {
+      "width": 3,
+      "height": 2
+    }
+  },
+  "ROOM_TYPE_COMMON_ROOM": {
+    "id": "ROOM_TYPE_COMMON_ROOM",
+    "description_loc_id": "ROOM_TYPE_COMMON_ROOM_DESCRIPTION",
+    "name": "Common room",
+    "description": "The common room is the place for hospital staff to rest, study and eat.",
+    "icon_index": 819,
+    "equipment_tags": [
+      "ui_fridge",
+      "ui_sink_def",
+      "ui_tv",
+      "ui_sofa",
+      "ui_locker",
+      "ui_bookcase",
+      "ui_chair_def",
+      "ui_dining_tables",
+      "ui_coffee_machine"
+    ],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "common_room",
+      "lunch_room"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_WAITING": {
+    "id": "ROOM_TYPE_WAITING",
+    "description_loc_id": "ROOM_TYPE_WAITING_DESCRIPTION",
+    "name": "Waiting room",
+    "description": "Waiting rooms should be placed within reach of each office, lab and radiology room.",
+    "icon_index": 803,
+    "equipment_tags": [
+      "ui_chair_waiting",
+      "ui_queue"
+    ],
+    "office_tags": [
+      "waiting_room",
+      "cross_janitor_cart_tile_selection"
+    ],
+    "size": {
+      "width": 4,
+      "height": 2
+    }
+  },
+  "ROOM_TYPE_ON_CALL_ROOM": {
+    "id": "ROOM_TYPE_ON_CALL_ROOM",
+    "description_loc_id": "ROOM_TYPE_ON_CALL_ROOM_DESCRIPTION",
+    "name": "On-call room",
+    "description": "All doctors needed for running a department are based in here.\\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 823,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "hospitalization_workspace"
+    ],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_NURSES_STATION": {
+    "id": "ROOM_TYPE_NURSES_STATION",
+    "description_loc_id": "ROOM_TYPE_NURSES_STATION_DESCRIPTION",
+    "name": "Nurses station",
+    "description": "All nurses that are necessary for running a department are based in here. \\n\\nMin. Staff requirements: \\n1-3x Nurse",
+    "icon_index": 825,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_cabinets_equipment",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "lunch_cart",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "nurse_workspace",
+      "hospitalization_workspace"
+    ],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_CORRIDOR": {
+    "id": "ROOM_TYPE_CORRIDOR",
+    "description_loc_id": "ROOM_TYPE_CORRIDOR_DESCRIPTION",
+    "name": "Corridor",
+    "description": "Mark corridors as this room type to assign the area and equipment to a department and enable automatic lights and janitor's cleaning service.  \\n\\nMin. Staff requirements: \\nNone",
+    "icon_index": 833,
+    "equipment_tags": [],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "corridor"
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    }
+  },
+  "ROOM_TYPE_INPATIENT_WARD": {
+    "id": "ROOM_TYPE_INPATIENT_WARD",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_WARD_DESCRIPTION",
+    "name": "Regular ward",
+    "description": "Regular ward for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n1x Nurse \\n(Personnel based in On-call room and Nurses station)",
+    "icon_index": 837,
+    "equipment_tags": [
+      "ui_beds",
+      "ui_night_stand",
+      "ui_defibrillator",
+      "ui_bedsocket"
+    ],
+    "office_tags": [
+      "patient_lunch",
+      "patient_medicine",
+      "night_stand",
+      "hospitalization",
+      "hospitalization_normal",
+      "ward",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_HIGH_PRIORITY_INPATIENT_WARD": {
+    "id": "ROOM_TYPE_HIGH_PRIORITY_INPATIENT_WARD",
+    "description_loc_id": "ROOM_TYPE_HIGH_PRIORITY_INPATIENT_WARD_DESCRIPTION",
+    "name": "HDU",
+    "description": "High dependency unit provides higher level of medical care for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n1x Nurse \\n(Personnel based in On-call room and Nurses station)",
+    "icon_index": 839,
+    "equipment_tags": [
+      "ui_beds",
+      "ui_life_monitor",
+      "ui_night_stand",
+      "ui_defibrillator",
+      "ui_bedsocket"
+    ],
+    "office_tags": [
+      "patient_lunch",
+      "patient_medicine",
+      "life_monitor",
+      "night_stand",
+      "hospitalization",
+      "hospitalization_high",
+      "ward",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_OPERATING_ROOM": {
+    "id": "ROOM_TYPE_OPERATING_ROOM",
+    "description_loc_id": "ROOM_TYPE_OPERATING_ROOM_DESCRIPTION",
+    "name": "Operating room",
+    "description": "Operating room fully equipped for all surgical procedures.\\n\\nMin. Staff requirements: \\n1x Doctor - Surgeon \\n1x Doctor - Assistant \\n1x Anesthesiologist \\n1x Surgery nurse \\n1x Nurse \\n(Personnel based in On-call room and Nurses station)",
+    "icon_index": 813,
+    "equipment_tags": [
+      "ui_defibrillator",
+      "ui_scrubbing_sink",
+      "ui_scrubs_shelf",
+      "ui_warming_cabinet",
+      "ui_cabinets_equipment",
+      "ui_op_table",
+      "ui_op_lamps",
+      "ui_anesthetic_machine",
+      "stool",
+      "ui_angio_viewer",
+      "ui_instrument_table",
+      "ui_surgery_instruments",
+      "ui_electrocautery_machine",
+      "ui_suction_machine",
+      "ui_stretcher",
+      "ui_equipment_table"
+    ],
+    "office_tags": [],
+    "size": {
+      "width": 8,
+      "height": 6
+    }
+  },
+  "ROOM_TYPE_DOCTORS_OFFICE": {
+    "id": "ROOM_TYPE_DOCTORS_OFFICE",
+    "description_loc_id": "ROOM_TYPE_DOCTORS_OFFICE_DESCRIPTION",
+    "name": "Doctor's office",
+    "description": "Basic clinical office for simple examinations and treatments. Staff requirements:\\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "ui_office_desk",
+      "ui_equipment_table",
+      "ui_chair_office",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "small_equipment",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "emergency_doctors_office",
+      "receipt",
+      "any_office"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_ER_OBSERVATION_ROOM": {
+    "id": "ROOM_TYPE_ER_OBSERVATION_ROOM",
+    "description_loc_id": "ROOM_TYPE_ER_OBSERVATION_ROOM_DESCRIPTION",
+    "name": "Observation room",
+    "description": "Many various examinations can be done here, patients are under proper medical supervision. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 821,
+    "equipment_tags": [
+      "ui_beds",
+      "ui_cabinets_equipment",
+      "ui_night_stand",
+      "ui_clean_hands",
+      "ui_life_monitor",
+      "ui_crp_scan",
+      "ui_biohazard_bin",
+      "ui_workstation",
+      "ui_defibrillator",
+      "ui_audiometer",
+      "ui_ceiling_lamp_only",
+      "ui_bedsocket",
+      "whiteboard",
+      "ui_equipment_table",
+      "ui_wheelchair"
+    ],
+    "office_tags": [
+      "patient_lunch",
+      "life_monitor",
+      "night_stand",
+      "hospitalization",
+      "hospitalization_normal",
+      "observation",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_TRAUMA_CENTER": {
+    "id": "ROOM_TYPE_TRAUMA_CENTER",
+    "description_loc_id": "ROOM_TYPE_TRAUMA_CENTER_DESCRIPTION",
+    "name": "Trauma center",
+    "description": "Trauma center serves as the main entry point for critical patients delivered by ambulances and also accepts collapsed patients. \\n\\nMin. Staff requirements: \\n1x Doctor - Acute Medicine \\n1x Nurse \\n(Personnel based in On-call room and Nurses station)",
+    "icon_index": 815,
+    "equipment_tags": [
+      "ui_op_table",
+      "ui_ceiling_lamp_only",
+      "ui_fast_usg",
+      "ui_defibrillator",
+      "ui_anesthetic_machine",
+      "ui_cabinets_equipment",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_angio_viewer",
+      "ui_workstation",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "trauma_center",
+      "hospitalization",
+      "hospitalization_high",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB": {
+    "id": "ROOM_TYPE_STAT_LAB",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_DESCRIPTION",
+    "name": "STAT Lab",
+    "description": "The STAT laboratory provides a wide variety of tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "ui_glassware",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria",
+      "ui_stool_analyzer",
+      "ui_lab_analyzer",
+      "thermal_cycler",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INTENSIVE_CARE_UNIT": {
+    "id": "ROOM_TYPE_INTENSIVE_CARE_UNIT",
+    "description_loc_id": "ROOM_TYPE_INTENSIVE_CARE_UNIT_DESCRIPTION",
+    "name": "ICU",
+    "description": "Intensive care unit provides superior medical care to critical patients to maintain their vital functions. \\n\\nMin. Staff requirements: \\n1x Doctor \\n1x Nurse \\n(Personnel based in On-call room and Nurses station)",
+    "icon_index": 827,
+    "equipment_tags": [
+      "ui_modern_bed",
+      "ui_ventilator",
+      "ui_cabinets_equipment",
+      "ui_defibrillator",
+      "ui_clean_hands",
+      "ui_workstation",
+      "ui_life_monitor",
+      "ui_life_support",
+      "ui_fast_usg",
+      "ui_hematoanalyzer",
+      "ui_crp_scan",
+      "ui_bedsocket",
+      "ui_stretcher",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "patient_medicine",
+      "mechanical_ventilator",
+      "life_monitor",
+      "life_support",
+      "hospitalization",
+      "hospitalization_high",
+      "icu",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_GENERAL_SURGERY_OFFICE": {
+    "id": "ROOM_TYPE_GENERAL_SURGERY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_GENERAL_SURGERY_OFFICE_DESCRIPTION",
+    "name": "General surgery office",
+    "description": "General surgery office is common diagnostic outpatient office. \\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "whiteboard",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "general_surgery_office",
+      "receipt"
+    ],
+    "worker": "SKILL_DOC_SPEC_GENERAL_SURGERY",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_GS_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_GS_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_GS_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at General Surgery department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_dialysis_machine",
+      "ui_audiometer",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "dialysis_machine",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "general_surgery_office",
+      "any_inpatient_office",
+      "any_office",
+      "gs_inpatient_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_elastograph",
+      "ui_shockwave",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "shockwave",
+      "shockwave_mandatory",
+      "ultrasonograph",
+      "elastograph",
+      "elastograph_mandatory",
+      "table_equipment",
+      "sonography_unit",
+      "gs_sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_gs",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB_GS": {
+    "id": "ROOM_TYPE_STAT_LAB_GS",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_GS_DESCRIPTION",
+    "name": "Surgery Lab",
+    "description": "The surgical laboratory provides a wide variety of tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "lab_eq",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria",
+      "ui_stool_analyzer",
+      "ui_lab_analyzer"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INTERNAL_MEDICINE_OFFICE": {
+    "id": "ROOM_TYPE_INTERNAL_MEDICINE_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INTERNAL_MEDICINE_OFFICE_DESCRIPTION",
+    "name": "Internal medicine office",
+    "description": "Internal medicine office is common diagnostic outpatient office. \\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "spirometer",
+      "whiteboard",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "internal_medicine_office",
+      "receipt"
+    ],
+    "worker": "SKILL_DOC_SPEC_INTERNAL_MEDICINE",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_IM_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_IM_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_IM_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Internal medicine department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "spirometer",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "internal_medicine_office",
+      "im_inpatient_office",
+      "any_inpatient_office",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_UNIQUE_IM_OFFICE": {
+    "id": "ROOM_TYPE_UNIQUE_IM_OFFICE",
+    "description_loc_id": "ROOM_TYPE_UNIQUE_IM_OFFICE_DESCRIPTION",
+    "name": "Special procedures unit",
+    "description": "Unique Internal medicine department unit used for various special minimally invasive procedures.",
+    "icon_index": 2552,
+    "equipment_tags": [
+      "ui_workstation",
+      "ui_cabinets_equipment",
+      "ui_op_table",
+      "ui_op_lamps",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_ent",
+      "ui_thoracentesis",
+      "ui_stretcher",
+      "ui_warming_cabinet",
+      "ui_instrument_table",
+      "ui_surgery_instruments"
+    ],
+    "office_tags": [
+      "specialized_office",
+      "im_unique_office",
+      "thoracentesis",
+      "ent_workstation",
+      "hospitalization_workspace"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_IM": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_IM",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_IM_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_im",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB_IM": {
+    "id": "ROOM_TYPE_STAT_LAB_IM",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_IM_DESCRIPTION",
+    "name": "Med Lab",
+    "description": "The med laboratory provides a wide variety of laboratory tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "lab_eq",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria",
+      "ui_stool_analyzer",
+      "ui_lab_analyzer",
+      "thermal_cycler"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_ORTHOPAEDICS_OFFICE": {
+    "id": "ROOM_TYPE_ORTHOPAEDICS_OFFICE",
+    "description_loc_id": "ROOM_TYPE_ORTHOPAEDICS_OFFICE_DESCRIPTION",
+    "name": "Orthopaedy office",
+    "description": "Orthopaedy office is common diagnostic outpatient office. \\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_crp_scan",
+      "ui_electromyograph",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "small_equipment",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "orthopaedy_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_OT_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_OT_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_OT_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Orthopaedy department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_electromyograph",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "stool",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "orthopaedy_office",
+      "orthopaedy_inpatient_office",
+      "any_inpatient_office",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OT": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OT",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OT_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB_OT": {
+    "id": "ROOM_TYPE_STAT_LAB_OT",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_OT_DESCRIPTION",
+    "name": "Orthopaedic Lab",
+    "description": "The orthopaedic laboratory provides a wide variety of tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "lab_eq",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOLOGY_OFFICE": {
+    "id": "ROOM_TYPE_CARDIOLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_CARDIOLOGY_OFFICE_DESCRIPTION",
+    "name": "Cardiology office",
+    "description": "Cardiology office is common diagnostic outpatient office. \\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_office_desk",
+      "ui_equipment_table",
+      "ui_chair_office",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "small_equipment",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "cardiology_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_CARDIOLOGY_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_CARDIOLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_CARDIOLOGY_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Cardiology department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "cardiology_office",
+      "any_inpatient_office",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_CAR": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_CAR",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_CAR_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_car",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_CAR": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_CAR",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_CAR_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB_CAR": {
+    "id": "ROOM_TYPE_STAT_LAB_CAR",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_CAR_DESCRIPTION",
+    "name": "Cardiology Lab",
+    "description": "The cardiology laboratory provides a wide variety of tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "lab_eq",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_NEUROLOGY_OFFICE": {
+    "id": "ROOM_TYPE_NEUROLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_NEUROLOGY_OFFICE_DESCRIPTION",
+    "name": "Neurology office",
+    "description": "Neurology office is common diagnostic outpatient office. \\n\\nMin. Staff requirements: \\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_office_desk",
+      "ui_equipment_table",
+      "ui_chair_office",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "small_equipment",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "neurology_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_NEUROLOGY_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_NEUROLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_NEUROLOGY_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Neurology department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_dialysis_machine",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "dialysis_machine",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "neurology_office",
+      "neurology_inpatient_office",
+      "any_inpatient_office",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_NEURODIAGNOSTIC_UNIT_NE": {
+    "id": "ROOM_TYPE_NEURODIAGNOSTIC_UNIT_NE",
+    "description_loc_id": "ROOM_TYPE_NEURODIAGNOSTIC_UNIT_NE_DESCRIPTION",
+    "name": "Neuroexam unit",
+    "description": "Neuroexam unit provides specific neurological examinations. \\n\\nMin. Staff requirements: \\n1x Technologist - Neurologist",
+    "icon_index": 847,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_campimeter",
+      "ui_tonometer",
+      "ui_electroencephalograph",
+      "ui_ophthalmic_equipment",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "small_equipment",
+      "ophthalmic_equipment",
+      "lab_specialist_workspace",
+      "neurology_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_NE": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_NE",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_NE_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_ne",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_STAT_LAB_NE": {
+    "id": "ROOM_TYPE_STAT_LAB_NE",
+    "description_loc_id": "ROOM_TYPE_STAT_LAB_NE_DESCRIPTION",
+    "name": "Neurology Lab",
+    "description": "The neurology laboratory provides a wide variety of tests to confirm different diagnoses.\\nMin. Staff requirements:\\n1x Technologist - Biochemist",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "lab_eq",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_lab_shelf",
+      "ui_ria",
+      "ui_lab_analyzer",
+      "thermal_cycler",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "deprecated_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_X_RAY_ROOM": {
+    "id": "ROOM_TYPE_X_RAY_ROOM",
+    "description_loc_id": "ROOM_TYPE_X_RAY_ROOM_DESCRIPTION",
+    "name": "X-ray room",
+    "description": "The X-ray room provides X-ray imaging of different parts of human body, depicting structures beneath the skin and muscles.\\n\\nMin. Staff requirements: \\n1x Technologist - Radiologist",
+    "icon_index": 817,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_xray_control_panel",
+      "ui_xray_machine",
+      "ui_xray_viewer",
+      "ui_cabinets_equipment",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "room_x_ray"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 5
+    }
+  },
+  "ROOM_TYPE_CT_ROOM": {
+    "id": "ROOM_TYPE_CT_ROOM",
+    "description_loc_id": "ROOM_TYPE_CT_ROOM_DESCRIPTION",
+    "name": "CT room",
+    "description": "CT, short for 'Computed tomography', is a sophisticated x-ray imaging technique for creating high resolution images. \\n\\nMin. Staff requirements: \\n1x Technologist - Radiologist",
+    "icon_index": 845,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_ct",
+      "ui_cabinets_equipment",
+      "ui_radiology_viewer",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "room_ct"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 5
+    }
+  },
+  "ROOM_TYPE_MRI_ROOM": {
+    "id": "ROOM_TYPE_MRI_ROOM",
+    "description_loc_id": "ROOM_TYPE_MRI_ROOM_DESCRIPTION",
+    "name": "MRI room",
+    "description": "Magnetic resonance imaging creates detailed images of the body using magnetic field and radio waves technique. \\n\\nMin. Staff requirements: \\n1x Technologist - Radiologist",
+    "icon_index": 843,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_mri",
+      "ui_radiology_viewer",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "room_mri"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY",
+    "size": {
+      "width": 6,
+      "height": 5
+    }
+  },
+  "ROOM_TYPE_ANGIOGRAPHY_ROOM": {
+    "id": "ROOM_TYPE_ANGIOGRAPHY_ROOM",
+    "description_loc_id": "ROOM_TYPE_ANGIOGRAPHY_ROOM_DESCRIPTION",
+    "name": "CAG room",
+    "description": "Coronary angiography is a medical technique also called arteriography that visualizes blood vessels and organs of the body. \\n\\nMin. Staff requirements: \\n1x Technologist - Radiologist",
+    "icon_index": 841,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_cabinets_equipment",
+      "ui_angiopanel",
+      "ui_angio_viewer",
+      "ui_angiography",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "room_angiography"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_RADIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 5
+    }
+  },
+  "ROOM_TYPE_RADIO_CARDIO_UNIT": {
+    "id": "ROOM_TYPE_RADIO_CARDIO_UNIT",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "cardio_unit",
+      "table_equipment"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_RADIO_SONO_UNIT": {
+    "id": "ROOM_TYPE_RADIO_SONO_UNIT",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_elastograph",
+      "ui_shockwave",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "shockwave",
+      "shockwave_mandatory",
+      "elastograph",
+      "elastograph_mandatory",
+      "sonography_unit",
+      "table_equipment"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_HEMATOLOGY_LAB": {
+    "id": "ROOM_TYPE_HEMATOLOGY_LAB",
+    "description_loc_id": "ROOM_TYPE_HEMATOLOGY_LAB_DESCRIPTION",
+    "name": "Hematology Lab",
+    "description": "Fully equiped laboratory capable to provide blood and serology related tests.\\n\\nMin. Staff requirements:\\n1x Technologist",
+    "icon_index": 851,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_glassware",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_ria",
+      "thermal_cycler",
+      "ui_chair_office",
+      "ui_lab_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "hematology_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_MICROBIOLOGY_LAB": {
+    "id": "ROOM_TYPE_MICROBIOLOGY_LAB",
+    "description_loc_id": "ROOM_TYPE_MICROBIOLOGY_LAB_DESCRIPTION",
+    "name": "Microbiology Lab",
+    "description": "Fully equiped laboratory capable to provide cultivation and testing of various samples.\\n\\nMin. Staff requirements:\\n1x Technologist",
+    "icon_index": 2869,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "ui_glassware",
+      "ui_biohazard_bin",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_mic_incubator",
+      "ui_fume_hood",
+      "ui_chair_office",
+      "ui_chair_office",
+      "ui_lab_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "microbiology_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_HISTOLOGY_LAB": {
+    "id": "ROOM_TYPE_HISTOLOGY_LAB",
+    "description_loc_id": "ROOM_TYPE_HISTOLOGY_LAB_DESCRIPTION",
+    "name": "Histology Lab",
+    "description": "Fully equiped laboratory capable to provide microscopic analysis of various samples.\\n\\nMin. Staff requirements:\\n1x Technologist",
+    "icon_index": 855,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "ui_glassware",
+      "ui_biohazard_bin",
+      "ui_ultracentrifuge",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_stool_analyzer",
+      "ui_lab_analyzer",
+      "ui_chair_office",
+      "ui_chair_office",
+      "ui_lab_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "histology_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "DLC_ROOM_TYPE_LOUNGE": {
+    "id": "DLC_ROOM_TYPE_LOUNGE",
+    "description_loc_id": "DLC_ROOM_TYPE_LOUNGE_DESCRIPTION",
+    "name": "Lounge",
+    "description": "Place where visitors can meet hospitalized patients, talk to them, sit and relax.",
+    "icon_index": null,
+    "equipment_tags": [],
+    "office_tags": [],
+    "size": {}
+  },
+  "ROOM_TYPE_ELEVATOR_MARKER": {
+    "id": "ROOM_TYPE_ELEVATOR_MARKER",
+    "description_loc_id": "ROOM_TYPE_ELEVATOR_MARKER_DESCRIPTION",
+    "name": "Elevator planner",
+    "description": "When using management mode as a planning tool, this can be used to mark where elevators will go.",
+    "icon_index": 857,
+    "equipment_tags": [],
+    "office_tags": [],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_DESCRIPTION",
+    "name": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT",
+    "description": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_DESCRIPTION",
+    "icon_index": 831,
+    "equipment_tags": [
+      "exam_table",
+      "standing_lamp",
+      "biohazard_trash",
+      "desk",
+      "pc",
+      "printer",
+      "office_chair",
+      "sink_ward",
+      "doc_equipment",
+      "ultrasonograph"
+    ],
+    "office_tags": [],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "DLC_ROOM_TYPE_PHARMACY": {
+    "id": "DLC_ROOM_TYPE_PHARMACY",
+    "description_loc_id": "DLC_ROOM_TYPE_PHARMACY_DESCRIPTION",
+    "name": "Pharmacy",
+    "description": "Hospital pharmacy sells medicine to your patients. \\nMin. staff requirements: 1x Pharmacologist",
+    "icon_index": 859,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_drug_shelf",
+      "ui_drug_shelf_optional",
+      "ui_chair_office",
+      "ui_reception_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "pharmacy"
+    ],
+    "worker": "DLC_SKILL_LAB_SPECIALIST_SPEC_PHARMACOLOGY",
+    "size": {
+      "width": 3,
+      "height": 2
+    }
+  },
+  "DLC_ROOM_TYPE_JANITOR_ADMIN": {
+    "id": "DLC_ROOM_TYPE_JANITOR_ADMIN",
+    "description_loc_id": "DLC_ROOM_TYPE_JANITOR_ADMIN_DESCRIPTION",
+    "name": "Service office",
+    "description": "This room allows you to hire a manager who increases the overall efficiency of all janitors in the hospital and allows you to assign them to clean individual rooms. \\nMin. staff requirements: 1x Janitor manager",
+    "icon_index": 2537,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_office_desk",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "janitor_workspace",
+      "janitor_admin",
+      "janitor_admin_workplace"
+    ],
+    "size": {
+      "width": 3,
+      "height": 2
+    }
+  },
+  "DLC_ROOM_TYPE_GIFT_SHOP": {
+    "id": "DLC_ROOM_TYPE_GIFT_SHOP",
+    "description_loc_id": "DLC_ROOM_TYPE_GIFT_SHOP_DESCRIPTION",
+    "name": "Gift shop",
+    "description": "Gift shop sells gifts to family members and friends visiting hospitalized patients. \\nMin. staff requirements: 1x Gift shop vendor",
+    "icon_index": 861,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_giftshop",
+      "ui_chair_office",
+      "ui_reception_desk",
+      "ui_signboard"
+    ],
+    "office_tags": [
+      "janitor_workspace",
+      "janitor_admin_workplace",
+      "gift_shop"
+    ],
+    "size": {
+      "width": 3,
+      "height": 2
+    }
+  },
+  "DLC_ROOM_TYPE_CAFETERIA": {
+    "id": "DLC_ROOM_TYPE_CAFETERIA",
+    "description_loc_id": "DLC_ROOM_TYPE_CAFETERIA_DESCRIPTION",
+    "name": "Cafeteria",
+    "description": "Employee's canteen, place to eat proper meals.",
+    "icon_index": 2541,
+    "equipment_tags": [
+      "ui_meal_counter",
+      "ui_chair_def",
+      "ui_dining_tables",
+      "ui_sink_def",
+      "ui_coffee_machine",
+      "ui_cafeteria_board",
+      "ui_donut_snack",
+      "ui_fruit_snack",
+      "ui_cafeteria_counter",
+      "ui_cutlery",
+      "ui_coffee_machine",
+      "ui_coffee_machine"
+    ],
+    "office_tags": [
+      "cross_janitor_cart_tile_selection",
+      "lunch_room",
+      "cafeteria"
+    ],
+    "size": {
+      "width": 4,
+      "height": 2
+    }
+  },
+  "DLC_ROOM_TYPE_CLASSROOM": {
+    "id": "DLC_ROOM_TYPE_CLASSROOM",
+    "description_loc_id": "DLC_ROOM_TYPE_CLASSROOM_DESCRIPTION",
+    "name": "Study room",
+    "description": "Employees can train their skills and specializations in the study room.",
+    "icon_index": 2539,
+    "equipment_tags": [
+      "ui_beamer",
+      "ui_beamer_screen",
+      "ui_chair_def",
+      "ui_pc",
+      "ui_print",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_bookcase"
+    ],
+    "office_tags": [],
+    "size": {
+      "width": 4,
+      "height": 3
+    }
+  },
+  "DLC_ROOM_TYPE_PATHOLOGY_OR": {
+    "id": "DLC_ROOM_TYPE_PATHOLOGY_OR",
+    "description_loc_id": "DLC_ROOM_TYPE_PATHOLOGY_OR_DESCRIPTION",
+    "name": "Autopsy room",
+    "description": "Pathologists perform autopsies here, trying to figure out the course of a disease and the cause of death. \\nMin. staff requirements: 1x Pathologist in On-call room",
+    "icon_index": 2556,
+    "equipment_tags": [
+      "ui_autopsy_table",
+      "ui_clean_hands",
+      "ui_scrubs_shelf",
+      "ui_cabinets_equipment",
+      "operating_bed_lights",
+      "ui_pathology_instruments",
+      "ui_pathology_viewer",
+      "ui_sterilization_lamp",
+      "ui_organ_weight",
+      "ui_microscope",
+      "ui_glassware",
+      "ui_biohazard_bin",
+      "ui_stretcher"
+    ],
+    "office_tags": [
+      "autopsy_room",
+      "operating_room"
+    ],
+    "size": {
+      "width": 6,
+      "height": 4
+    }
+  },
+  "DLC_ROOM_TYPE_PATHOLOGY_WARD": {
+    "id": "DLC_ROOM_TYPE_PATHOLOGY_WARD",
+    "description_loc_id": "DLC_ROOM_TYPE_PATHOLOGY_WARD_DESCRIPTION",
+    "name": "Cold room",
+    "description": "Cold room can safely hold dead bodies before and after the autopsy procedure.",
+    "icon_index": 2554,
+    "equipment_tags": [
+      "ui_pathology_freezer",
+      "ui_pathology_bed",
+      "ui_stretcher"
+    ],
+    "office_tags": [
+      "hospitalization",
+      "ward",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_ISOLATION_INPATIENT_WARD": {
+    "id": "ROOM_TYPE_ISOLATION_INPATIENT_WARD",
+    "description_loc_id": "ROOM_TYPE_ISOLATION_INPATIENT_WARD_DESCRIPTION",
+    "name": "Isolation unit",
+    "description": "Isolation unit is a separate ward used to isolate patients suffering from infectious diseases and to prevent spreading pathogens.",
+    "icon_index": 2588,
+    "equipment_tags": [
+      "ui_beds",
+      "ui_life_monitor",
+      "ui_ventilator",
+      "ui_defibrillator",
+      "ui_bedsocket",
+      "ui_isolation_ward"
+    ],
+    "office_tags": [
+      "hospitalization_high",
+      "patient_lunch",
+      "patient_medicine",
+      "life_monitor",
+      "mechanical_ventilator",
+      "hospitalization",
+      "hospitalization_high",
+      "ward",
+      "receipt"
+    ],
+    "size": {
+      "width": 3,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_INFECTIOUS_DISEASES_OFFICE": {
+    "id": "ROOM_TYPE_INFECTIOUS_DISEASES_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INFECTIOUS_DISEASES_OFFICE_DESCRIPTION",
+    "name": "DID office",
+    "description": "Infectious diseases office represents the outpatient clinical office for simple examinations and treatments. Staff requirements:\\n1x Epidemiologist",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "whiteboard",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "infectious_diseases_office",
+      "receipt"
+    ],
+    "worker": "SKILL_DOC_SPEC_EPIDEMIOLOGY",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_DID_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_DID_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_DID_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Infectious diseases department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Epidemiologist \\n(Personnel based in On-call room)",
+    "icon_index": 2809,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "infectious_diseases_office",
+      "did_inpatient_office",
+      "infectious_diseases_office",
+      "any_inpatient_office",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_DID": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_DID",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 2811,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_did",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_HEMATOLOGY_LAB_DID": {
+    "id": "ROOM_TYPE_HEMATOLOGY_LAB_DID",
+    "description_loc_id": "ROOM_TYPE_HEMATOLOGY_LAB_DESCRIPTION",
+    "name": "Hematology Lab",
+    "description": "Fully equiped laboratory capable to provide blood and serology related tests.\\n\\nMin. Staff requirements:\\n1x Technologist",
+    "icon_index": 851,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_glassware",
+      "ui_hematoanalyzer",
+      "ui_biohazard_bin",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_ria",
+      "thermal_cycler",
+      "ui_chair_office",
+      "ui_lab_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "hematology_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_BURN_UNIT": {
+    "id": "ROOM_TYPE_BURN_UNIT",
+    "description_loc_id": "ROOM_TYPE_BURN_UNIT_DESCRIPTION",
+    "name": "Burn unit",
+    "description": "Burn unit specializes in treatment of burns of all kinds.",
+    "icon_index": 2590,
+    "equipment_tags": [
+      "ui_beds",
+      "ui_life_monitor",
+      "ui_defibrillator",
+      "ui_bedsocket",
+      "ui_ventilator",
+      "ui_cabinets_equipment",
+      "ui_clean_hands"
+    ],
+    "office_tags": [
+      "patient_lunch",
+      "life_monitor",
+      "patient_medicine",
+      "mechanical_ventilator",
+      "hospitalization",
+      "hospitalization_normal",
+      "receipt",
+      "burn_unit",
+      "examinations_no_equipment"
+    ],
+    "size": {
+      "width": 3,
+      "height": 3
+    }
+  },
+  "ROOM_TYPE_TRAUMATOLOGY_OFFICE": {
+    "id": "ROOM_TYPE_TRAUMATOLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_TRAUMATOLOGY_OFFICE_DESCRIPTION",
+    "name": "Traumatology office",
+    "description": "Outpatient clinical office for simple examinations and treatments. Staff requirements:\\n1x Traumatologist",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "whiteboard",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "traumatology_office",
+      "receipt"
+    ],
+    "worker": "SKILL_DOC_SPEC_TRAUMATOLOGY",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_TRAUMATOLOGY_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_TRAUMATOLOGY_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_TRAUMATOLOGY_OFFICE_DESCRIPTION",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Traumatology department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Traumatologist \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_stretcher",
+      "ui_wheelchair",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "any_inpatient_office",
+      "any_office",
+      "traumatology_office",
+      "traumatology_inpatient_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_TRAUMATOLOGY": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_TRAUMATOLOGY",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_GS_DESCRIPTION",
+    "name": "Cardiography unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_usg",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_TRAUMATOLOGY": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_TRAUMATOLOGY",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_GS_DESCRIPTION",
+    "name": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_TRAUMATOLOGY",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ultrasonograph",
+      "sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_ONCO_OFFICE": {
+    "id": "ROOM_TYPE_ONCO_OFFICE",
+    "description_loc_id": "ROOM_TYPE_ONCO_OFFICE_DESCRIPTION",
+    "name": "Oncology Office",
+    "description": "A doctor's office specialising in oncology. Staff requirements:\\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "ui_office_desk",
+      "ui_equipment_table",
+      "ui_chair_office"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "small_equipment",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "emergency_doctors_office",
+      "receipt",
+      "any_office",
+      "onco_office"
+    ],
+    "worker": "SKILL_DOC_SPEC_ONCO",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_ONCO_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_ONCO_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_ONCO_OFFICE_DESC",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Oncology department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "ui_stretcher",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "onco_office",
+      "any_inpatient_office",
+      "any_office",
+      "emergency_doctors_office",
+      "onco_inpatient_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_ONCO_NEURODIAGNOSTIC_UNIT_NE": {
+    "id": "ROOM_TYPE_ONCO_NEURODIAGNOSTIC_UNIT_NE",
+    "description_loc_id": "ROOM_TYPE_ONCO_NEURODIAGNOSTIC_UNIT_NE_DESC",
+    "name": "Oncology Neuroexam Unit",
+    "description": "Neuroexam unit provides specific neurological examinations for Oncology support. \\n\\nMin. Staff requirements: \\n1x Technologist - Neurologist",
+    "icon_index": 847,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_campimeter",
+      "ui_tonometer",
+      "ui_electroencephalograph",
+      "ui_ophthalmic_equipment"
+    ],
+    "office_tags": [
+      "small_equipment",
+      "ophthalmic_equipment",
+      "lab_specialist_workspace",
+      "neurology_unit",
+      "onco_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_NEUROLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_ONCO": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_ONCO",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_ONCO_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_elastograph",
+      "ui_shockwave"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "shockwave",
+      "ultrasonograph",
+      "elastograph",
+      "table_equipment",
+      "sonography_unit",
+      "gs_sonography_unit",
+      "onco_sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_ONCO": {
+    "id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_ONCO",
+    "description_loc_id": "ROOM_TYPE_CARDIOVASCULAR_DIAGNOSTIC_UNIT_ONOC_DESC",
+    "name": "Cardiography Unit",
+    "description": "Cardiography diagnostic unit provides various examination methods and tests related to human cardiovascular system. \\n\\nMin. Staff requirements: \\n1x Technologist - Cardiologist",
+    "icon_index": 835,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_electrocardiograph",
+      "ui_biohazard_bin",
+      "ui_lab_analyzer",
+      "ui_office_desk",
+      "ui_chair_office",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "electrocardiograph",
+      "electrocardiograph_mandatory",
+      "table_equipment",
+      "cardio_unit",
+      "cardio_unit_ne",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_CARDIOLOGY",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  }
+}
