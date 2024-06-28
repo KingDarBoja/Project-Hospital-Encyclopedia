@@ -169,6 +169,9 @@ async function populateModAssetListDictionary(filePath: string) {
       case 'Mod_ONCO':
         iconPath = `Mod_ONCO/${iconName}`;
         break;
+      case 'Mod_ENT':
+        iconPath = `Mod_ENT/${iconName}`;
+        break;
       default:
         break;
     }

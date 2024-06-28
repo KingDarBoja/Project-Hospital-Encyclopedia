@@ -2281,5 +2281,226 @@
       "width": 5,
       "height": 4
     }
+  },
+  "ROOM_TYPE_OTOR_OFFICE": {
+    "id": "ROOM_TYPE_OTOR_OFFICE",
+    "description_loc_id": "ROOM_TYPE_OTOR_OFFICE_DESCRIPTION",
+    "name": "Otorhinolaryngology Office",
+    "description": "A doctor's office specialising in ear, nose and throat. Staff requirements:\\n1x Doctor",
+    "icon_index": 801,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_ent",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "doctor_workspace",
+      "intern_workspace",
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "any_outpatient_office",
+      "any_office",
+      "specialized_office",
+      "ent_workstation",
+      "internal_medicine_office",
+      "receipt",
+      "otorhinolaryngology_office"
+    ],
+    "worker": "SKILL_DOC_SPEC_OTORHINOLARYNGOLOGY",
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_INPATIENT_OTOR_OFFICE": {
+    "id": "ROOM_TYPE_INPATIENT_OTOR_OFFICE",
+    "description_loc_id": "ROOM_TYPE_INPATIENT_OTOR_OFFICE_DESC",
+    "name": "Diagnostic unit",
+    "description": "Diagnostic unit at Otorhinolaryngology department provides examination and treatment procedures for hospitalized patients. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 829,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_ent",
+      "ui_exam_lamp_def",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_eye_test",
+      "ui_workstation",
+      "ui_crp_scan",
+      "ui_audiometer",
+      "ui_stretcher",
+      "whiteboard"
+    ],
+    "office_tags": [
+      "examinations_no_equipment",
+      "examinations_basic_equipment",
+      "specialized_office",
+      "otorhinolaryngology_office",
+      "otor_inpatient_office",
+      "any_inpatient_office",
+      "ent_workstation",
+      "any_office",
+      "receipt"
+    ],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OTOR": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OTOR",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_SONOGRAPHY_UNIT_OTOR_DESCRIPTION",
+    "name": "Sonography unit",
+    "description": "Sonography unit provides specific ultrasound-based examinations and treatments. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_table",
+      "ui_exam_lamp_def",
+      "ui_biohazard_bin",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_usg",
+      "ui_elastograph",
+      "ui_shockwave"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "shockwave",
+      "ultrasonograph",
+      "elastograph",
+      "table_equipment",
+      "sonography_unit",
+      "otor_sonography_unit",
+      "hospitalization_workspace"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_OTOR_SLEEP_LAB": {
+    "id": "ROOM_TYPE_OTOR_SLEEP_LAB",
+    "description_loc_id": "ROOM_TYPE_OTOR_SLEEP_LAB_DESC",
+    "name": "Sleep Lab",
+    "description": "Sleep Lab at Otorhinolaryngology department provides sleep studies for patients who might have Sleep Apnea. \\n\\nMin. Staff requirements: \\n1x Doctor \\n(Personnel based in On-call room)",
+    "icon_index": 839,
+    "equipment_tags": [
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_workstation",
+      "ui_polysomnograph",
+      "ui_stretcher",
+      "whiteboard",
+      "ui_equipment_table"
+    ],
+    "office_tags": [],
+    "size": {
+      "width": 4,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_DIAGNOSTIC_AUDIOGRAM_UNIT_OTOR": {
+    "id": "ROOM_TYPE_DIAGNOSTIC_AUDIOGRAM_UNIT_OTOR",
+    "description_loc_id": "ROOM_TYPE_DIAGNOSTIC_AUDIOGRAM_UNIT_OTOR_DESC",
+    "name": "Audiogram unit",
+    "description": "Audiogram unit at Otorhinolaryngology department provides audiograms procedures for hospitalized patients who might have hearing loss. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_lamp_def",
+      "ui_audiometer",
+      "ui_exam_table",
+      "ui_clean_hands",
+      "ui_cabinets_equipment",
+      "ui_equipment_table"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "table_equipment",
+      "otor_audiogram_unit",
+      "sonography_unit"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
+  },
+  "ROOM_TYPE_OTOR_LAB": {
+    "id": "ROOM_TYPE_OTOR_LAB",
+    "description_loc_id": "ROOM_TYPE_OTOR_LAB_DESC",
+    "name": "Ear, Nose and Throat Lab",
+    "description": "Ear, Nose and Throat Lab at Otorhinolaryngology department provides special and advanced laboratory tests for specialised diseases which would be hard to diagnoses for normal lab tests. \\n\\nMin. Staff requirements: \\n1x Technologist - Biochemistry",
+    "icon_index": 805,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_microscope",
+      "ui_glassware",
+      "ui_biohazard_bin",
+      "ui_lab_sink",
+      "ui_medical_fridge",
+      "ui_mic_incubator",
+      "ui_fume_hood",
+      "ui_ultracentrifuge",
+      "ui_lab_analyzer",
+      "ui_chair_office",
+      "ui_lab_desk"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "stat_lab",
+      "otorhinolaryngology_lab"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_QUALIF_SCIENCE_EDUCATION",
+    "size": {
+      "width": 5,
+      "height": 5
+    }
+  },
+  "ROOM_TYPE_OTOR_ENDOSCOPY_UNIT": {
+    "id": "ROOM_TYPE_OTOR_ENDOSCOPY_UNIT",
+    "description_loc_id": "ROOM_TYPE_OTOR_ENDOSCOPY_UNIT_DESC",
+    "name": "ENT Endoscopy Unit",
+    "description": "ENT Endoscopy Unit at Otorhinolaryngology department provides a special room to do endoscopies and advanced biopsies to check if there is any tumours or abnormalities within the patients ear, nose or throat. \\n\\nMin. Staff requirements: \\n1x Technologist - USG",
+    "icon_index": 831,
+    "equipment_tags": [
+      "ui_pc",
+      "ui_print",
+      "ui_exam_lamp_def",
+      "ui_exam_table",
+      "ui_cabinets_equipment",
+      "ui_exam_table",
+      "ui_ent",
+      "ui_clean_hands",
+      "ui_biohazard_bin",
+      "ui_workstation"
+    ],
+    "office_tags": [
+      "lab_specialist_workspace",
+      "ent_endoscopy",
+      "sonography_unit"
+    ],
+    "worker": "SKILL_LAB_SPECIALIST_SPEC_USG",
+    "size": {
+      "width": 5,
+      "height": 4
+    }
   }
 }

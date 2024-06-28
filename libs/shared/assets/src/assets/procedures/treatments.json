@@ -3765,5 +3765,661 @@
     ],
     "icon_index": 1946,
     "discomfort": "High"
+  },
+  "SURG_OTOR_FESS": {
+    "id": "SURG_OTOR_FESS",
+    "name": "SURG_OTOR_FESS",
+    "description": "SURG_OTOR_FESS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_TYPT": {
+    "id": "SURG_OTOR_TYPT",
+    "name": "SURG_OTOR_TYPT",
+    "description": "SURG_OTOR_TYPT_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2012,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_ADNO": {
+    "id": "SURG_OTOR_ADNO",
+    "name": "SURG_OTOR_ADNO",
+    "description": "SURG_OTOR_ADNO_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_LOTS": {
+    "id": "SURG_OTOR_LOTS",
+    "name": "SURG_OTOR_LOTS",
+    "description": "SURG_OTOR_LOTS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_VNS": {
+    "id": "SURG_OTOR_VNS",
+    "name": "SURG_OTOR_VNS",
+    "description": "SURG_OTOR_VNS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2012,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_MTDY": {
+    "id": "SURG_OTOR_MTDY",
+    "name": "SURG_OTOR_MTDY",
+    "description": "SURG_OTOR_MTDY_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2012,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_PRS": {
+    "id": "SURG_OTOR_PRS",
+    "name": "SURG_OTOR_PRS",
+    "description": "SURG_OTOR_PRS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_NDS": {
+    "id": "SURG_OTOR_NDS",
+    "name": "SURG_OTOR_NDS",
+    "description": "SURG_OTOR_NDS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_ERCS": {
+    "id": "SURG_OTOR_ERCS",
+    "name": "SURG_OTOR_ERCS",
+    "description": "SURG_OTOR_ERCS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2012,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_SPTP": {
+    "id": "SURG_OTOR_SPTP",
+    "name": "SURG_OTOR_SPTP",
+    "description": "SURG_OTOR_SPTP_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_FRS": {
+    "id": "SURG_OTOR_FRS",
+    "name": "SURG_OTOR_FRS",
+    "description": "SURG_OTOR_FRS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_COIM": {
+    "id": "SURG_OTOR_COIM",
+    "name": "SURG_OTOR_COIM",
+    "description": "SURG_OTOR_COIM_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2012,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_PHRS": {
+    "id": "SURG_OTOR_PHRS",
+    "name": "SURG_OTOR_PHRS",
+    "description": "SURG_OTOR_PHRS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_TCSY": {
+    "id": "SURG_OTOR_TCSY",
+    "name": "SURG_OTOR_TCSY",
+    "description": "SURG_OTOR_TCSY_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_TONS": {
+    "id": "SURG_OTOR_TONS",
+    "name": "SURG_OTOR_TONS",
+    "description": "SURG_OTOR_TONS_DESCRIPTION",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_CDLS": {
+    "id": "SURG_OTOR_CDLS",
+    "name": "Carbon Dioxide Laser Surgery",
+    "description": "The carbon dioxide laser (CO2 laser) was one of the earliest gas lasers to be developed. It was invented by Kumar Patel of Bell Labs in 1964, and is still one of the most useful. Carbon dioxide lasers are the highest-power continuous wave lasers that are currently available. They are also quite efficient: the ratio of output power to pump power can be as large as 20%. The CO2 laser produces a beam of infrared light with the principal wavelength bands centering on 9.4 and 10.6 micrometers .",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_ARHN": {
+    "id": "SURG_OTOR_ARHN",
+    "name": "Augmentation Rhinoplasty",
+    "description": "Rhinoplasty may require the addition of material to augment the nose. Augmentation is necessary for both aesthetic and functional indications. Functional reasons for augmentation include providing structural support for areas deficient of material, such as the upper or lower lateral cartilages. Augmentation may also be required for aesthetic reasons. Typically, augmentation rhinoplasty is performed to increase the projection of the nasal dorsum on the profile view. The nasal tip may also be augmented. In addition, grafts may be placed to camouflage irregularities of the bony dorsum and of the upper or lower lateral cartilages.",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_ENDOSCOPIC_CAUTERIZATION": {
+    "id": "SURG_OTOR_ENDOSCOPIC_CAUTERIZATION",
+    "name": "Endoscopic Cauterization",
+    "description": "Endoscopic cauterization is a surgical procedure where an electric current is used to burn/cautherize an area in order to open or close it off. It is commonly used to stop bleedings during surgeries. \\n\\nRequired room: Operating room at General Surgery dpt",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1942,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_VASCULAR_SURGERY": {
+    "id": "SURG_OTOR_VASCULAR_SURGERY",
+    "name": "Vascular surgery",
+    "description": "Surgical procedure to sew and fix damaged arteries. \\n\\nRequired room: Operating room at Traumatology + ICU",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 2645,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_PULMONARY_SURGERY_X": {
+    "id": "SURG_OTOR_PULMONARY_SURGERY_X",
+    "name": "Pulmonary surgery",
+    "description": "Pulmonary or lung surgery is surgery done to repair or remove parts of damaged lung tissue. \\n\\nRequired room: Operating room at Traumatology + ICU",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1998,
+    "discomfort": "High"
+  },
+  "SURG_OTOR_NERVE_DECOM_SURGERY": {
+    "id": "SURG_OTOR_NERVE_DECOM_SURGERY",
+    "name": "SURG_OTOR_NERVE_DECOM_SURGERY",
+    "description": "SURG_OTOR_NERVE_DECOM_SURGERY_DESC",
+    "required_doctors": [
+      {
+        "name": "Head and Neck Surgery",
+        "description": "Head and Neck Surgery allows the doctor to act as main surgeon at Ear, Nose and Throat department and affects how often surgeries will end up with complications.",
+        "icon_index": 2390
+      },
+      {
+        "name": "Anesthesiology",
+        "description": "Anesthesiology is required for the doctor to act as an anesthesiologist at surgery and gives extra survival chance to collapsed patients stabilized by this doctor. \\nDecreases death probability in collapsed patients. \\nDecreases post operative complications after surgery.",
+        "icon_index": 2354
+      },
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1946,
+    "discomfort": "Medium"
+  },
+  "TRT_JM_ANTACIDS": {
+    "id": "TRT_JM_ANTACIDS",
+    "name": "Antacids",
+    "description": "Antacids are substances that neutralize stomach acid, used to relieve heartburn, indigestion or reflux.\\n\\nRequired room: Otorhinolaryngology Diagnostic Unit / Otorhinolaryngology Doctor's Office / ICU / Observation Room",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1934,
+    "discomfort": "None"
+  },
+  "TRT_JM_CHEWING_GUM_OR_YAWN": {
+    "id": "TRT_JM_CHEWING_GUM_OR_YAWN",
+    "name": "Chewing Gum and Yawning",
+    "description": "Chewing Gum and Yawning can help open up the Eustachian tube to relieve pressure within the ears \\n\\nRequired room: Otorhinolaryngology Diagnostic Unit / Otorhinolaryngology Doctor's Office / ICU / Observation Room",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1044,
+    "discomfort": "None"
+  },
+  "TRT_JM_CDLS": {
+    "id": "TRT_JM_CDLS",
+    "name": "Carbon Dioxide Laser",
+    "description": "The carbon dioxide laser (CO2 laser) was one of the earliest gas lasers to be developed. It was invented by Kumar Patel of Bell Labs in 1964, and is still one of the most useful. Carbon dioxide lasers are the highest-power continuous wave lasers that are currently available. They are also quite efficient: the ratio of output power to pump power can be as large as 20%. The CO2 laser produces a beam of infrared light with the principal wavelength bands centering on 9.4 and 10.6 micrometers .",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1996,
+    "discomfort": "Low"
+  },
+  "TRT_JM_OBJECT_REMOVAL": {
+    "id": "TRT_JM_OBJECT_REMOVAL",
+    "name": "TRT_JM_OBJECT_REMOVAL",
+    "description": "TRT_JM_OBJECT_REMOVAL_DESC",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 2299,
+    "discomfort": "High"
+  },
+  "TRT_JM_PROTECTIVE_DRESSING": {
+    "id": "TRT_JM_PROTECTIVE_DRESSING",
+    "name": "Protective dressing",
+    "description": "Bandage protective dressing. \\n\\nRequired room: Office/Diagnostic unit / Burn unit at Traumatology dpt. / ICU / Trauma center at Emergency",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      },
+      {
+        "name": "Critical care medicine",
+        "description": "Critical care medicine gives the doctor access to specialized diagnostic methods used at ICU.",
+        "icon_index": 398
+      },
+      {
+        "name": "Acute medicine",
+        "description": "Acute medicine gives access to specialized procedures for diagnosing and treating critical patients at Emergency.",
+        "icon_index": 391
+      }
+    ],
+    "icon_index": 2293,
+    "discomfort": "Low"
+  },
+  "TRT_JM_DEBRIDEMENT": {
+    "id": "TRT_JM_DEBRIDEMENT",
+    "name": "Debridement",
+    "description": "Medical removal of dead tissue. \\n\\nRequired room: Office/Diagnostic unit / Burn unit at Traumatology dpt. / ICU / Trauma center at Emergency",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      },
+      {
+        "name": "Critical care medicine",
+        "description": "Critical care medicine gives the doctor access to specialized diagnostic methods used at ICU.",
+        "icon_index": 398
+      },
+      {
+        "name": "Acute medicine",
+        "description": "Acute medicine gives access to specialized procedures for diagnosing and treating critical patients at Emergency.",
+        "icon_index": 391
+      }
+    ],
+    "icon_index": 2291,
+    "discomfort": "High"
+  },
+  "TRT_JM_BURN_MANAGEMENT": {
+    "id": "TRT_JM_BURN_MANAGEMENT",
+    "name": "Burn management",
+    "description": "Medical procedure to cure various types of burns. \\n\\nRequired room: Office/Diagnostic unit/ Burn unit at Traumatology dpt. / ICU / Trauma center at Emergency",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      },
+      {
+        "name": "Critical care medicine",
+        "description": "Critical care medicine gives the doctor access to specialized diagnostic methods used at ICU.",
+        "icon_index": 398
+      },
+      {
+        "name": "Acute medicine",
+        "description": "Acute medicine gives access to specialized procedures for diagnosing and treating critical patients at Emergency.",
+        "icon_index": 391
+      }
+    ],
+    "icon_index": 2289,
+    "discomfort": "High"
+  },
+  "TRT_JM_CONCETRATED_OXYGEN": {
+    "id": "TRT_JM_CONCETRATED_OXYGEN",
+    "name": "Concentrated oxygen",
+    "description": "Therapy based on breathing concentrated oxygen. \\n\\nRequired room: Office/Diagnostic unit / Burn unit at Traumatology dpt. / ICU / Trauma center at Emergency",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      },
+      {
+        "name": "Critical care medicine",
+        "description": "Critical care medicine gives the doctor access to specialized diagnostic methods used at ICU.",
+        "icon_index": 398
+      },
+      {
+        "name": "Acute medicine",
+        "description": "Acute medicine gives access to specialized procedures for diagnosing and treating critical patients at Emergency.",
+        "icon_index": 391
+      }
+    ],
+    "icon_index": 2830,
+    "discomfort": "Low"
   }
 }

@@ -42,6 +42,7 @@ const diagnoses: DiagnosesDict = {
   trauma: {},
   infect: {},
   onco: {},
+  ent: {},
 };
 
 const missingSymptoms: Record<keyof DiagnosesDict, string[]> = {
@@ -54,6 +55,7 @@ const missingSymptoms: Record<keyof DiagnosesDict, string[]> = {
   trauma: [],
   infect: [],
   onco: [],
+  ent: [],
 };
 
 export async function generateDiagnoses(
@@ -170,8 +172,11 @@ async function populateDiagnosesDictionary(
 
           /** Save the missing symptoms in each mod field. */
           switch (child.DepartmentRef) {
-            case DepartmentRef.DptOncologyDepartment:
+            case DepartmentRef.DptOncology:
               missingSymptoms.onco.push(symptom.GameDBSymptomRef);
+              break;
+            case DepartmentRef.DptEarNoseThroat:
+              missingSymptoms.ent.push(symptom.GameDBSymptomRef);
               break;
             default:
               break;
@@ -199,12 +204,17 @@ async function populateDiagnosesDictionary(
         type: 'MODDED',
         bia_ref: child.CustomIconBigAssetRef,
         sia_ref: child.CustomIconSmallAssetRef,
-        big_icon_path: auxDict.assetLists[child.CustomIconBigAssetRef]?.icon_path || '',
-        small_icon_path: auxDict.assetLists[child.CustomIconSmallAssetRef]?.icon_path || '',
+        big_icon_path:
+          auxDict.assetLists[child.CustomIconBigAssetRef]?.icon_path || '',
+        small_icon_path:
+          auxDict.assetLists[child.CustomIconSmallAssetRef]?.icon_path || '',
       };
       switch (child.DepartmentRef) {
-        case DepartmentRef.DptOncologyDepartment:
+        case DepartmentRef.DptOncology:
           diagnoses.onco[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptEarNoseThroat:
+          diagnoses.ent[child.ID] ??= newDiagnose;
           break;
         default:
           break;
@@ -218,13 +228,13 @@ async function populateDiagnosesDictionary(
         case DepartmentRef.DptEmergency:
           diagnoses.er[child.ID] ??= newDiagnose;
           break;
-        case DepartmentRef.DptGeneralSurgeryDepartment:
+        case DepartmentRef.DptGeneralSurgery:
           diagnoses.surg[child.ID] ??= newDiagnose;
           break;
-        case DepartmentRef.DptInternalMedicineDepartment:
+        case DepartmentRef.DptInternalMedicine:
           diagnoses.intern[child.ID] ??= newDiagnose;
           break;
-        case DepartmentRef.DptOrthopaedicsAndTraumatology:
+        case DepartmentRef.DptOrthopaedics:
           diagnoses.ortho[child.ID] ??= newDiagnose;
           break;
         case DepartmentRef.DptCardiology:
@@ -233,10 +243,10 @@ async function populateDiagnosesDictionary(
         case DepartmentRef.DptNeurology:
           diagnoses.neuro[child.ID] ??= newDiagnose;
           break;
-        case DepartmentRef.DptTraumatologyDepartment:
+        case DepartmentRef.DptTraumatology:
           diagnoses.trauma[child.ID] ??= newDiagnose;
           break;
-        case DepartmentRef.DptInfectiousDiseasesDepartment:
+        case DepartmentRef.DptInfectiousDiseases:
           diagnoses.infect[child.ID] ??= newDiagnose;
           break;
         default:

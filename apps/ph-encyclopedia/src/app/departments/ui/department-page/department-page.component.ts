@@ -18,6 +18,7 @@ const DepartmentTitles: Record<OfficialDepartments, string> = {
   trauma: 'Traumatology',
   infect: 'Infectious Diseases',
   onco: 'Oncology',
+  ent: 'Otorhinolaryngology',
 };
 
 @Component({

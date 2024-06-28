@@ -59,11 +59,4 @@ async function populateLocalizationDictionary(filePath: string) {
       },
     };
   }
-
-  // Pretty-printing for debugging.
-  // const prettyStr = JSON.stringify(parsedDoc, null, 2);
-
-  // console.log(`******** File path: ${filePath} ********`);
-  // console.log(prettyStr);
-  // console.groupEnd();
 }

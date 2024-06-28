@@ -1262,5 +1262,313 @@
     },
     "icon_index": 1712,
     "discomfort": "None"
+  },
+  "EXM_JM_OAE": {
+    "id": "EXM_JM_OAE",
+    "name": "Otoacoustic Emissions",
+    "description": "The OAE (Otoacoustic Emissions) test checks part of the inner ear's response to sound. The test is mostly done on infants and children who may not be able to respond to behavioral hearing tests because of their age. \\n\\nRequired room: ENT Office at ENT",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1662,
+    "discomfort": "Low"
+  },
+  "EXM_JM_AUDIOMETRY": {
+    "id": "EXM_JM_AUDIOMETRY",
+    "name": "(ENT version) Audiometry",
+    "description": "Audiometric testing determines patient's level of hearing. \\n\\nRequired room: Doctor's office / Observation room / ICU / Office / Diagnostic unit at Emergency / ICU / General Surgery dpt / Internal Medicine dpt / DID",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1702,
+    "discomfort": "Low"
+  },
+  "EXM_JM_AUDIOGRAM": {
+    "id": "EXM_JM_AUDIOGRAM",
+    "name": "Audiogram",
+    "description": "An audiogram is a graph that shows the audible threshold for standardized frequencies as measured by an audiometer. The Y axis represents intensity measured in decibels and the X axis represents frequency measured in hertz. \\n\\nRequired room: Audiogram Unit at ENT",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1702,
+    "discomfort": "Low"
+  },
+  "EXM_JM_OTOSCOPY": {
+    "id": "EXM_JM_OTOSCOPY",
+    "name": "Otoscopy",
+    "description": "Otoscopy is a clinical procedure used to examine structures of the ear, particularly the external auditory canal, tympanic membrane, and middle ear. Clinicians use the process during routine wellness physical exams, examination for any diagnostic clues and the evaluation of specific ear complaints. \\n\\nRequired room: Endoscopy Unit at ENT",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1662,
+    "discomfort": "Medium"
+  },
+  "EXM_JM_EAR_BIOPSY_SAMPLING": {
+    "id": "EXM_JM_EAR_BIOPSY_SAMPLING",
+    "name": "Ear Biopsy - Sampling",
+    "description": "A ear biopsy is a surgical procedure, where a sample of the ear canal is extracted under surgical anesthesia. This is usually done to find out what a ear tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1712,
+    "discomfort": "High"
+  },
+  "EXM_JM_EAR_BIOPSY_TESTING": {
+    "id": "EXM_JM_EAR_BIOPSY_TESTING",
+    "name": "Ear Biopsy - Testing",
+    "description": "A ear biopsy is a surgical procedure, where a sample of the ear canal is extracted under surgical anesthesia. This is usually done to find out what a ear tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1712,
+    "discomfort": "None"
+  },
+  "EXM_JM_RHINOSCOPY": {
+    "id": "EXM_JM_RHINOSCOPY",
+    "name": "Rhinoscopy",
+    "description": "Rhinoscopy is a method of looking into the nose and throat. While there are other methods of looking into the nose, these methods only allow the doctor to see about an inch inside the nasal cavity. A rhinoscopy allows the doctor to see almost all of the inside of the nose, throat, adenoids, and vocal cords. \\n\\nRequired room: Endoscopy Unit at ENT",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1658,
+    "discomfort": "Medium"
+  },
+  "EXM_JM_NOSE_BIOPSY_SAMPLING": {
+    "id": "EXM_JM_NOSE_BIOPSY_SAMPLING",
+    "name": "Nose Biopsy - Sampling",
+    "description": "A nose biopsy is a surgical procedure, where a sample of the nasal cavity is extracted under surgical anesthesia. This is usually done to find out what a nose tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1712,
+    "discomfort": "High"
+  },
+  "EXM_JM_NOSE_BIOPSY_TESTING": {
+    "id": "EXM_JM_NOSE_BIOPSY_TESTING",
+    "name": "Nose Biopsy - Test",
+    "description": "A nose biopsy is a surgical procedure, where a sample of the nasal cavity is extracted under surgical anesthesia. This is usually done to find out what a nose tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1712,
+    "discomfort": "None"
+  },
+  "EXM_OTOR_LARYNGOSCOPY": {
+    "id": "EXM_OTOR_LARYNGOSCOPY",
+    "name": "(ENT version) Laryngoscopy",
+    "description": "A procedure where a flexible tube (endoscope) with a tiny video camera and a light source in the end is inserted through the nose to examine the larynx, glottis, and vocal chords. Laryngoscopy is also used to facilitate tracheal intubation. \\n\\nRequired room: Doctor's office / Observation room / Trauma center / ICU",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1668,
+    "discomfort": "Medium"
+  },
+  "EXM_JM_LARYNGOSCOPY": {
+    "id": "EXM_JM_LARYNGOSCOPY",
+    "name": "Advanced Laryngoscopy",
+    "description": "A procedure where a flexible tube (endoscope) with a tiny video camera and a light source in the end is inserted through the nose to examine the larynx, glottis, and vocal chords. Laryngoscopy is also used to facilitate tracheal intubation. \\n\\nRequired room: Doctor's office / Observation room / Trauma center / ICU",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1668,
+    "discomfort": "High"
+  },
+  "EXM_JM_THROAT_BIOPSY_SAMPLING": {
+    "id": "EXM_JM_THROAT_BIOPSY_SAMPLING",
+    "name": "Throat Biopsy - Sampling",
+    "description": "A throat biopsy is a surgical procedure, where a sample of the throat is extracted under surgical anesthesia. This is usually done to find out what a throat tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "USG",
+      "description": "USG technologist is capable of operating Ultrasonographic devices.",
+      "icon_index": 2384
+    },
+    "icon_index": 1712,
+    "discomfort": "High"
+  },
+  "EXM_JM_THROAT_BIOPSY_TESTING": {
+    "id": "EXM_JM_THROAT_BIOPSY_TESTING",
+    "name": "Throat Biopsy - Test",
+    "description": "A throat biopsy is a surgical procedure, where a sample of the throat is extracted under surgical anesthesia. This is usually done to find out what a throat tumour is made of. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1712,
+    "discomfort": "None"
+  },
+  "EXM_JM_SKIN_INJECTION_TEST": {
+    "id": "EXM_JM_SKIN_INJECTION_TEST",
+    "name": "(ENT version) Skin allergy test",
+    "description": "Injection of a small amount of different allergen extracts into the skin usually on the arm to confirm or deny the allergic reactions to specific allergens. \\n\\nRequired room: Offices / Diagnostic units at Emergency dpt / ICU dpt / Neurology dpt",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1672,
+    "discomfort": "Medium"
+  },
+  "EXM_JM_SLEEP_STUDY": {
+    "id": "EXM_JM_SLEEP_STUDY",
+    "name": "Polysomnograph",
+    "description": "Polysomnography, also called a sleep study, is a test used to diagnose sleep disorders. Polysomnography records your brain waves, the oxygen level in your blood, heart rate and breathing, as well as eye and leg movements during the study. \\n\\nRequired room: Sleep Lab",
+    "required_doctors": [
+      {
+        "name": "Otorhinolaryngology",
+        "description": "Otorhinolaryngology gives access to specialized procedures for detecting, diagnosing and treating various forms of ear, nose and throat diseases.",
+        "icon_index": 405
+      }
+    ],
+    "icon_index": 1320,
+    "discomfort": "None"
+  },
+  "EXM_JM_RAPID_STREP_SAMPLING": {
+    "id": "EXM_JM_RAPID_STREP_SAMPLING",
+    "name": "Rapid Strep Test - Sampling",
+    "description": "The rapid strep test (RST) is a rapid antigen detection test (RADT) that is widely used in clinics to assist in the diagnosis of bacterial pharyngitis caused by group A streptococci (GAS), sometimes termed strep throat. There are currently several types of rapid strep test in use, each employing a distinct technology. However, they all work by detecting the presence of GAS in the throat of a person by responding to GAS-specific antigens on a throat swab. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1664,
+    "discomfort": "Low"
+  },
+  "EXM_JM_RAPID_STREP_TESTING": {
+    "id": "EXM_JM_RAPID_STREP_TESTING",
+    "name": "Rapid Strep Test - Testing",
+    "description": "The rapid strep test (RST) is a rapid antigen detection test (RADT) that is widely used in clinics to assist in the diagnosis of bacterial pharyngitis caused by group A streptococci (GAS), sometimes termed strep throat. There are currently several types of rapid strep test in use, each employing a distinct technology. However, they all work by detecting the presence of GAS in the throat of a person by responding to GAS-specific antigens on a throat swab. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1664,
+    "discomfort": "None"
+  },
+  "EXM_JM_SPUTUM_CULTURE_SAMPLING": {
+    "id": "EXM_JM_SPUTUM_CULTURE_SAMPLING",
+    "name": "Sputum Culture - Sampling",
+    "description": "A sputum culture is a test to detect and identify bacteria or fungi that infect the lungs or breathing passages. Sputum is a thick fluid produced in the lungs and in the adjacent airways. ... If no bacteria or fungi grow, the culture is negative. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1664,
+    "discomfort": "Low"
+  },
+  "EXM_JM_SPUTUM_CULTURE_TESTING": {
+    "id": "EXM_JM_SPUTUM_CULTURE_TESTING",
+    "name": "Sputum Culture - Testing",
+    "description": "A sputum culture is a test to detect and identify bacteria or fungi that infect the lungs or breathing passages. Sputum is a thick fluid produced in the lungs and in the adjacent airways. ... If no bacteria or fungi grow, the culture is negative. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1664,
+    "discomfort": "None"
+  },
+  "EXM_JM_THROAT_SWAB_SAMPLING": {
+    "id": "EXM_JM_THROAT_SWAB_SAMPLING",
+    "name": "Throat Swab",
+    "description": "A throat swab culture, or throat culture, is a test commonly used to diagnose bacterial infections in the throat. These infections can include strep throat, pneumonia, diphtheria, tonsillitis, whooping cough, and meningitis. The purpose of a throat swab culture is to detect the presence of organisms in the throat that could cause infection. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1664,
+    "discomfort": "Low"
+  },
+  "EXM_JM_THROAT_SWAB_TESTING": {
+    "id": "EXM_JM_THROAT_SWAB_TESTING",
+    "name": "Throat Swab Culture",
+    "description": "A throat swab culture, or throat culture, is a test commonly used to diagnose bacterial infections in the throat. These infections can include strep throat, pneumonia, diphtheria, tonsillitis, whooping cough, and meningitis. The purpose of a throat swab culture is to detect the presence of organisms in the throat that could cause infection. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1664,
+    "discomfort": "None"
+  },
+  "EXM_JM_NASAL_SWAB_SAMPLING": {
+    "id": "EXM_JM_NASAL_SWAB_SAMPLING",
+    "name": "Nasal Swab",
+    "description": "A nasal swab, is a test that checks for viruses and bacteria that cause respiratory infections. There are many types of respiratory infections. A nasal swab test can help your provider diagnose the type of infection you have and which treatment would be best for you. The test may be done by taking a sample of cells from your nostrils or from the nasopharynx. The nasopharynx is the uppermost part of your nose and throat. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [
+      {
+        "name": "General Medicine",
+        "description": "General medicine qualification allows the doctor to do all basic examinations and treatments and affects their speed.",
+        "icon_index": 2306
+      }
+    ],
+    "icon_index": 1664,
+    "discomfort": "Low"
+  },
+  "EXM_JM_NASAL_SWAB_TESTING": {
+    "id": "EXM_JM_NASAL_SWAB_TESTING",
+    "name": "Nasal Swab Culture",
+    "description": "A nasal swab, is a test that checks for viruses and bacteria that cause respiratory infections. There are many types of respiratory infections. A nasal swab test can help your provider diagnose the type of infection you have and which treatment would be best for you. The test may be done by taking a sample of cells from your nostrils or from the nasopharynx. The nasopharynx is the uppermost part of your nose and throat. \\n\\nSampling: Any office / Any diagnostic unit \\n\\nRequired room: ENT Lab at ENT \\n\\nRequired equipment: Glassware + Fume hood + incubator + Microscope",
+    "required_doctors": [],
+    "required_lab_spec": {
+      "name": "Biochemistry",
+      "description": "Biochemistry gives access to various STAT laboratory tests.",
+      "icon_index": 447
+    },
+    "icon_index": 1664,
+    "discomfort": "None"
   }
 }

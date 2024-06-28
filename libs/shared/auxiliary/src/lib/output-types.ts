@@ -56,5 +56,5 @@ export interface AssetListSchema {
   /** The most important thing is the icon path. If empty, it comes from the
    * base game. Do not forget to prefix the folder dir mirroing the structure at
    * assets/icons/ */
-  icon_path: `Mod_ONCO/${string}` | '';
+  icon_path: `Mod_ONCO/${string}` | `Mod_ENT/${string}` | '';
 }

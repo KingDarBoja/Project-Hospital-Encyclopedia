@@ -120,9 +120,9 @@ export class NavigationComponent {
           name: 'Oncology',
         },
         {
-          route: '/modded_dpt/ent',
-          icon: 'ph_icon_97',
-          name: 'Ear, Nose and Throat',
+          route: '/modded_dpt/otorhinolaryngology',
+          icon: 'Mod_ENT/mod_dept_icon_0',
+          name: 'Otorhinolaryngology',
         },
         {
           route: '/modded_dpt/plastics',

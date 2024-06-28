@@ -12,6 +12,7 @@ export enum OfficialDepartments {
   TRAUMATOLOGY = 'trauma',
   INFECTIOUS_DISEASES = 'infect',
   ONCOLOGY = 'onco',
+  OTORHINOLARYNGOLOGY = 'ent',
 }
 
 export type OfficialDepartmentsType = `${OfficialDepartments}`;
@@ -35,6 +36,8 @@ export type DiagnosesDict = {
   infect: Record<string, BaseGameDiagnoseSchema>;
   /** Mod: Oncology */
   onco: Record<string, ModdedGameDiagnoseSchema>;
+  /** Mod: Ear Nose and Throat */
+  ent: Record<string, ModdedGameDiagnoseSchema>;
 };
 
 type DiagnoseSymptomSchema = Pick<

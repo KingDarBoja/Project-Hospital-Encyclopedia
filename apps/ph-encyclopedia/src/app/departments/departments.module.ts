@@ -60,6 +60,12 @@ const DepartmentRoutes: Routes = [
     pathMatch: 'full',
     data: { dptCode: OfficialDepartments.ONCOLOGY },
   },
+  {
+    path: 'otorhinolaryngology',
+    component: DepartmentPageComponent,
+    pathMatch: 'full',
+    data: { dptCode: OfficialDepartments.OTORHINOLARYNGOLOGY },
+  },
 ];
 
 @NgModule({

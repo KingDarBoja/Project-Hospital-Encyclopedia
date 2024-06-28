@@ -1,13 +1,17 @@
 export enum DepartmentRef {
   DptCardiology = 'DPT_CARDIOLOGY',
   DptEmergency = 'DPT_EMERGENCY',
-  DptGeneralSurgeryDepartment = 'DPT_GENERAL_SURGERY_DEPARTMENT',
-  DptInfectiousDiseasesDepartment = 'DPT_INFECTIOUS_DISEASES_DEPARTMENT',
-  DptInternalMedicineDepartment = 'DPT_INTERNAL_MEDICINE_DEPARTMENT',
+  DptGeneralSurgery = 'DPT_GENERAL_SURGERY_DEPARTMENT',
+  DptInfectiousDiseases = 'DPT_INFECTIOUS_DISEASES_DEPARTMENT',
+  DptInternalMedicine = 'DPT_INTERNAL_MEDICINE_DEPARTMENT',
   DptNeurology = 'DPT_NEUROLOGY',
-  DptOrthopaedicsAndTraumatology = 'DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY',
-  DptTraumatologyDepartment = 'DPT_TRAUMATOLOGY_DEPARTMENT',
-  DptOncologyDepartment = 'DPT_ONCOLOGY',
+  DptOrthopaedics = 'DPT_ORTHOPAEDICS_AND_TRAUMATOLOGY',
+  DptTraumatology = 'DPT_TRAUMATOLOGY_DEPARTMENT',
+  DptOncology = 'DPT_ONCOLOGY',
+  DptEarNoseThroat = 'DPT_OTORHINOLARYNGOLOGY',
 }
 
-export const ModdedDepartments = [DepartmentRef.DptOncologyDepartment]
+export const ModdedDepartments = [
+  DepartmentRef.DptOncology,
+  DepartmentRef.DptEarNoseThroat,
+];
