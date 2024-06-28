@@ -36,7 +36,7 @@
       </div>
       @if (diagnose.symptoms) {
       <mat-list class="space-y-2">
-        @for (symptom of diagnose.symptoms; track symptom.id) {
+        @for (symptom of diagnose.symptoms; track idx; let idx = $index) {
         <mat-card appearance="outlined">
           <mat-card-content class="flex flex-col space-y-1">
             <div class="text-red-900 font-bold text-base">Symptom</div>
