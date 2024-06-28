@@ -2,11 +2,19 @@
   <mat-card-header class="rounded-t bg-red-700">
     <div class="flex flex-row space-x-1 pb-4 justify-between">
       <div class="w-10">
+        @if (diagnose.type === 'BASE') {
         <img
           class="object-contain"
           src="assets/icons/ph_icon_{{ diagnose.icon_index }}.png"
           fallbackSrc
         />
+        } @else {
+        <img
+          class="object-contain"
+          src="assets/icons/{{ diagnose.big_icon_path }}"
+          fallbackSrc
+        />
+        }
       </div>
       <span class="flex flex-1 items-center text-base text-white font-medium">
         {{ diagnose.name }}

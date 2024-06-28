@@ -330,7 +330,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_015",
+    "sia_ref": "ASSET_ONC_SYM_ICON_016",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag1b.png"
   },
   "DIA_ONCO_CRP_AGC1_1": {
     "id": "DIA_ONCO_CRP_AGC1_1",
@@ -668,7 +673,12 @@
       }
     ],
     "insurance": 1425,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_015",
+    "sia_ref": "ASSET_ONC_SYM_ICON_016",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag1b.png"
   },
   "DIA_ONCO_CRP_AGC1_2": {
     "id": "DIA_ONCO_CRP_AGC1_2",
@@ -1025,7 +1035,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_015",
+    "sia_ref": "ASSET_ONC_SYM_ICON_016",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag1b.png"
   },
   "DIA_ONCO_CRP_AGC2_0": {
     "id": "DIA_ONCO_CRP_AGC2_0",
@@ -1255,7 +1270,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_045",
+    "sia_ref": "ASSET_ONC_SYM_ICON_046",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag2b.png"
   },
   "DIA_ONCO_CRP_AGC2_1": {
     "id": "DIA_ONCO_CRP_AGC2_1",
@@ -1514,7 +1534,12 @@
       }
     ],
     "insurance": 2885,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_045",
+    "sia_ref": "ASSET_ONC_SYM_ICON_046",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag2b.png"
   },
   "DIA_ONCO_CRP_AGC2_2": {
     "id": "DIA_ONCO_CRP_AGC2_2",
@@ -1811,7 +1836,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_045",
+    "sia_ref": "ASSET_ONC_SYM_ICON_046",
+    "big_icon_path": "Mod_ONCO/dia_sl_ag2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ag2b.png"
   },
   "DIA_ONCO_CRP_BLC01_0_V2": {
     "id": "DIA_ONCO_CRP_BLC01_0_V2",
@@ -2083,7 +2113,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_057",
+    "sia_ref": "ASSET_ONC_SYM_ICON_058",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc01a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc01b.png"
   },
   "DIA_ONCO_CRP_BLC01_1_V2": {
     "id": "DIA_ONCO_CRP_BLC01_1_V2",
@@ -2355,7 +2390,12 @@
       }
     ],
     "insurance": 5125,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_057",
+    "sia_ref": "ASSET_ONC_SYM_ICON_058",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc01a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc01b.png"
   },
   "DIA_ONCO_CRP_BLC01_2_V2": {
     "id": "DIA_ONCO_CRP_BLC01_2_V2",
@@ -2627,7 +2667,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_057",
+    "sia_ref": "ASSET_ONC_SYM_ICON_058",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc01a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc01b.png"
   },
   "DIA_ONCO_CRP_BLC02_A_V2": {
     "id": "DIA_ONCO_CRP_BLC02_A_V2",
@@ -2712,7 +2757,12 @@
       }
     ],
     "insurance": 160,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_135",
+    "sia_ref": "ASSET_ONC_SYM_ICON_136",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc01_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc01_Cb.png"
   },
   "DIA_ONCO_CRP_BLC02_B_V2": {
     "id": "DIA_ONCO_CRP_BLC02_B_V2",
@@ -2888,7 +2938,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_135",
+    "sia_ref": "ASSET_ONC_SYM_ICON_136",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc01_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc01_Cb.png"
   },
   "DIA_ONCO_CRP_BLC03_0_V2": {
     "id": "DIA_ONCO_CRP_BLC03_0_V2",
@@ -3069,7 +3124,12 @@
       }
     ],
     "insurance": 850,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_175",
+    "sia_ref": "ASSET_ONC_SYM_ICON_176",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc05st1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc05st1b.png"
   },
   "DIA_ONCO_CRP_BLC03_1_V2": {
     "id": "DIA_ONCO_CRP_BLC03_1_V2",
@@ -3250,7 +3310,12 @@
       }
     ],
     "insurance": 850,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_175",
+    "sia_ref": "ASSET_ONC_SYM_ICON_176",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc05st1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc05st1b.png"
   },
   "DIA_ONCO_CRP_BLC03_2_V2": {
     "id": "DIA_ONCO_CRP_BLC03_2_V2",
@@ -3455,7 +3520,12 @@
       }
     ],
     "insurance": 4130,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_141",
+    "sia_ref": "ASSET_ONC_SYM_ICON_142",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc04_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc04_Cb.png"
   },
   "DIA_ONCO_CRP_BLC04_0_V2": {
     "id": "DIA_ONCO_CRP_BLC04_0_V2",
@@ -3650,7 +3720,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_059",
+    "sia_ref": "ASSET_ONC_SYM_ICON_060",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc02a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc02b.png"
   },
   "DIA_ONCO_CRP_BLC05_A_V2": {
     "id": "DIA_ONCO_CRP_BLC05_A_V2",
@@ -3826,7 +3901,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_137",
+    "sia_ref": "ASSET_ONC_SYM_ICON_138",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc02_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc02_Cb.png"
   },
   "DIA_ONCO_CRP_BLC05_B_V2": {
     "id": "DIA_ONCO_CRP_BLC05_B_V2",
@@ -4031,7 +4111,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_137",
+    "sia_ref": "ASSET_ONC_SYM_ICON_138",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc02_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc02_Cb.png"
   },
   "DIA_ONCO_CRP_BLC05_C_V2": {
     "id": "DIA_ONCO_CRP_BLC05_C_V2",
@@ -4231,7 +4316,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_137",
+    "sia_ref": "ASSET_ONC_SYM_ICON_138",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc02_Ca.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc02_Cb.png"
   },
   "DIA_ONCO_CRP_BLC06_0": {
     "id": "DIA_ONCO_CRP_BLC06_0",
@@ -4412,7 +4502,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_061",
+    "sia_ref": "ASSET_ONC_SYM_ICON_062",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc03a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc03b.png"
   },
   "DIA_ONCO_CRP_BLC06_1": {
     "id": "DIA_ONCO_CRP_BLC06_1",
@@ -4593,7 +4688,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_061",
+    "sia_ref": "ASSET_ONC_SYM_ICON_062",
+    "big_icon_path": "Mod_ONCO/dia_sl_blc03a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_blc03b.png"
   },
   "DIA_ONCO_CRP_BLC08_0_V2": {
     "id": "DIA_ONCO_CRP_BLC08_0_V2",
@@ -4721,7 +4821,12 @@
       }
     ],
     "insurance": 160,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_355",
+    "sia_ref": "ASSET_ONC_SYM_ICON_356",
+    "big_icon_path": "Mod_ONCO/dia_sl_lymphoma2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lymphoma2b.png"
   },
   "DIA_ONCO_CRP_BLC07_0_V2": {
     "id": "DIA_ONCO_CRP_BLC07_0_V2",
@@ -4969,7 +5074,12 @@
       }
     ],
     "insurance": 3900,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_353",
+    "sia_ref": "ASSET_ONC_SYM_ICON_354",
+    "big_icon_path": "Mod_ONCO/dia_sl_lymphoma1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lymphoma1b.png"
   },
   "DIA_ONCO_CRP_BLC09_0": {
     "id": "DIA_ONCO_CRP_BLC09_0",
@@ -5188,7 +5298,12 @@
       }
     ],
     "insurance": 3900,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_357",
+    "sia_ref": "ASSET_ONC_SYM_ICON_358",
+    "big_icon_path": "Mod_ONCO/dia_sl_lymphoma3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lymphoma3b.png"
   },
   "DIA_ONCO_CRP_BREC1_0": {
     "id": "DIA_ONCO_CRP_BREC1_0",
@@ -5308,7 +5423,12 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_237",
+    "sia_ref": "ASSET_ONC_SYM_ICON_238",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC1b.png"
   },
   "DIA_ONCO_CRP_BREC1_1_V2": {
     "id": "DIA_ONCO_CRP_BREC1_1_V2",
@@ -5476,7 +5596,12 @@
       }
     ],
     "insurance": 1700,
-    "occurrence": "OCCURRENCE_SL_COMMON"
+    "occurrence": "OCCURRENCE_SL_COMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_239",
+    "sia_ref": "ASSET_ONC_SYM_ICON_240",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC2b.png"
   },
   "DIA_ONCO_CRP_BREC1_2": {
     "id": "DIA_ONCO_CRP_BREC1_2",
@@ -5692,7 +5817,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_241",
+    "sia_ref": "ASSET_ONC_SYM_ICON_242",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC3b.png"
   },
   "DIA_ONCO_CRP_BREC1_0M": {
     "id": "DIA_ONCO_CRP_BREC1_0M",
@@ -5812,7 +5942,12 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_237",
+    "sia_ref": "ASSET_ONC_SYM_ICON_238",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC1b.png"
   },
   "DIA_ONCO_CRP_BREC1_1M_V2": {
     "id": "DIA_ONCO_CRP_BREC1_1M_V2",
@@ -5980,7 +6115,12 @@
       }
     ],
     "insurance": 1700,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_239",
+    "sia_ref": "ASSET_ONC_SYM_ICON_240",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC2b.png"
   },
   "DIA_ONCO_CRP_BREC1_2M": {
     "id": "DIA_ONCO_CRP_BREC1_2M",
@@ -6196,7 +6336,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRAUNIQUE"
+    "occurrence": "OCCURRENCE_SL_ULTRAUNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_241",
+    "sia_ref": "ASSET_ONC_SYM_ICON_242",
+    "big_icon_path": "Mod_ONCO/dia_sl_BRC3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_BRC3b.png"
   },
   "DIA_ONCO_CRP_OVAC1_0F": {
     "id": "DIA_ONCO_CRP_OVAC1_0F",
@@ -6373,7 +6518,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_307",
+    "sia_ref": "ASSET_ONC_SYM_ICON_308",
+    "big_icon_path": "Mod_ONCO/dia_sl_OVA1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_OVA1b.png"
   },
   "DIA_ONCO_CRP_OVAC1_1F": {
     "id": "DIA_ONCO_CRP_OVAC1_1F",
@@ -6555,7 +6705,12 @@
       }
     ],
     "insurance": 1950,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_307",
+    "sia_ref": "ASSET_ONC_SYM_ICON_308",
+    "big_icon_path": "Mod_ONCO/dia_sl_OVA1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_OVA1b.png"
   },
   "DIA_ONCO_CRP_OVAC1_2F": {
     "id": "DIA_ONCO_CRP_OVAC1_2F",
@@ -6737,7 +6892,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_309",
+    "sia_ref": "ASSET_ONC_SYM_ICON_310",
+    "big_icon_path": "Mod_ONCO/dia_sl_OVA2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_OVA2b.png"
   },
   "DIA_ONCO_CRP_VAGC1_0F": {
     "id": "DIA_ONCO_CRP_VAGC1_0F",
@@ -6804,7 +6964,12 @@
       }
     ],
     "insurance": 90,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0001",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0002",
+    "big_icon_path": "Mod_ONCO/dia_slp_vag01a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_vag01b.png"
   },
   "DIA_ONCO_CRP_VAGC1_1F": {
     "id": "DIA_ONCO_CRP_VAGC1_1F",
@@ -6876,7 +7041,12 @@
       }
     ],
     "insurance": 990,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0003",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0004",
+    "big_icon_path": "Mod_ONCO/dia_slp_vag02a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_vag02b.png"
   },
   "DIA_ONCO_CRP_VAGC2_0F": {
     "id": "DIA_ONCO_CRP_VAGC2_0F",
@@ -7048,7 +7218,12 @@
       }
     ],
     "insurance": 1120,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0005",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0006",
+    "big_icon_path": "Mod_ONCO/dia_slp_vscc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_vscc1b.png"
   },
   "DIA_ONCO_CRP_VAGC2_1F": {
     "id": "DIA_ONCO_CRP_VAGC2_1F",
@@ -7228,7 +7403,12 @@
       }
     ],
     "insurance": 1850,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0007",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0008",
+    "big_icon_path": "Mod_ONCO/dia_slp_vscc2a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_vscc2b.png"
   },
   "DIA_ONCO_CRP_VAGC2_2F": {
     "id": "DIA_ONCO_CRP_VAGC2_2F",
@@ -7408,7 +7588,12 @@
       }
     ],
     "insurance": 2788,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0009",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0010",
+    "big_icon_path": "Mod_ONCO/dia_slp_vscc3a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_vscc3b.png"
   },
   "DIA_ONCO_CRP_BC1_2": {
     "id": "DIA_ONCO_CRP_BC1_2",
@@ -7700,7 +7885,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_029",
+    "sia_ref": "ASSET_ONC_SYM_ICON_030",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc2b.png"
   },
   "DIA_ONCO_CRP_BC1_0": {
     "id": "DIA_ONCO_CRP_BC1_0",
@@ -7943,7 +8133,12 @@
       }
     ],
     "insurance": 1200,
-    "occurrence": "OCCURRENCE_SL_COMMON"
+    "occurrence": "OCCURRENCE_SL_COMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_027",
+    "sia_ref": "ASSET_ONC_SYM_ICON_028",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc1b.png"
   },
   "DIA_ONCO_CRP_BC1_1": {
     "id": "DIA_ONCO_CRP_BC1_1",
@@ -8186,7 +8381,12 @@
       }
     ],
     "insurance": 2650,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_027",
+    "sia_ref": "ASSET_ONC_SYM_ICON_028",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc1b.png"
   },
   "DIA_ONCO_CRP_BC3_0": {
     "id": "DIA_ONCO_CRP_BC3_0",
@@ -8381,7 +8581,12 @@
       }
     ],
     "insurance": 3440,
-    "occurrence": "OCCURRENCE_SL_PRETTYRARE"
+    "occurrence": "OCCURRENCE_SL_PRETTYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_033",
+    "sia_ref": "ASSET_ONC_SYM_ICON_034",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc4a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc4b.png"
   },
   "DIA_ONCO_CRP_BC3_1": {
     "id": "DIA_ONCO_CRP_BC3_1",
@@ -8584,7 +8789,12 @@
       }
     ],
     "insurance": 3440,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_033",
+    "sia_ref": "ASSET_ONC_SYM_ICON_034",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc4a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc4b.png"
   },
   "DIA_ONCO_CRP_BC2_0": {
     "id": "DIA_ONCO_CRP_BC2_0",
@@ -8803,7 +9013,12 @@
       }
     ],
     "insurance": 4010,
-    "occurrence": "OCCURRENCE_SL_UNIQUE"
+    "occurrence": "OCCURRENCE_SL_UNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_031",
+    "sia_ref": "ASSET_ONC_SYM_ICON_032",
+    "big_icon_path": "Mod_ONCO/dia_sl_coc3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_coc3b.png"
   },
   "DIA_ONCO_CRP_LIV0_0": {
     "id": "DIA_ONCO_CRP_LIV0_0",
@@ -8955,7 +9170,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_UNLIKELY"
+    "occurrence": "OCCURRENCE_SL_UNLIKELY",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_411",
+    "sia_ref": "ASSET_ONC_SYM_ICON_412",
+    "big_icon_path": "Mod_ONCO/dia_sl_liv1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_liv1b.png"
   },
   "DIA_ONCO_CRP_LIV0_1": {
     "id": "DIA_ONCO_CRP_LIV0_1",
@@ -9160,7 +9380,12 @@
       }
     ],
     "insurance": 1875,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_411",
+    "sia_ref": "ASSET_ONC_SYM_ICON_412",
+    "big_icon_path": "Mod_ONCO/dia_sl_liv1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_liv1b.png"
   },
   "DIA_ONCO_CRP_LIV0_2": {
     "id": "DIA_ONCO_CRP_LIV0_2",
@@ -9428,7 +9653,12 @@
       }
     ],
     "insurance": 2325,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_419",
+    "sia_ref": "ASSET_ONC_SYM_ICON_420",
+    "big_icon_path": "Mod_ONCO/dia_sl_liv3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_liv3b.png"
   },
   "DIA_ONCO_CRP_LIV0_3": {
     "id": "DIA_ONCO_CRP_LIV0_3",
@@ -9658,7 +9888,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_413",
+    "sia_ref": "ASSET_ONC_SYM_ICON_414",
+    "big_icon_path": "Mod_ONCO/dia_sl_liv2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_liv2b.png"
   },
   "DIA_ONCO_CRP_LC_2": {
     "id": "DIA_ONCO_CRP_LC_2",
@@ -10051,7 +10286,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_017",
+    "sia_ref": "ASSET_ONC_SYM_ICON_018",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc1b.png"
   },
   "DIA_ONCO_CRP_LC_0": {
     "id": "DIA_ONCO_CRP_LC_0",
@@ -10314,7 +10554,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_017",
+    "sia_ref": "ASSET_ONC_SYM_ICON_018",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc1b.png"
   },
   "DIA_ONCO_CRP_LC_1": {
     "id": "DIA_ONCO_CRP_LC_1",
@@ -10654,7 +10899,12 @@
       }
     ],
     "insurance": 1870,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_017",
+    "sia_ref": "ASSET_ONC_SYM_ICON_018",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc1b.png"
   },
   "DIA_ONCO_CRP_LC3_0": {
     "id": "DIA_ONCO_CRP_LC3_0",
@@ -10806,7 +11056,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_379",
+    "sia_ref": "ASSET_ONC_SYM_ICON_380",
+    "big_icon_path": "Mod_ONCO/dia_slp_lc03_2a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_lc03_2b.png"
   },
   "DIA_ONCO_CRP_LC3_1": {
     "id": "DIA_ONCO_CRP_LC3_1",
@@ -11068,7 +11323,12 @@
       }
     ],
     "insurance": 1650,
-    "occurrence": "OCCURRENCE_SL_COMMON"
+    "occurrence": "OCCURRENCE_SL_COMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_379",
+    "sia_ref": "ASSET_ONC_SYM_ICON_380",
+    "big_icon_path": "Mod_ONCO/dia_slp_lc03_2a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_lc03_2b.png"
   },
   "DIA_ONCO_CRP_LC4_0": {
     "id": "DIA_ONCO_CRP_LC4_0",
@@ -11306,7 +11566,12 @@
       }
     ],
     "insurance": 3322,
-    "occurrence": "OCCURRENCE_SL_PRETTYRARE"
+    "occurrence": "OCCURRENCE_SL_PRETTYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_383",
+    "sia_ref": "ASSET_ONC_SYM_ICON_384",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc3a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc3b.png"
   },
   "DIA_ONCO_CRP_LC2_0": {
     "id": "DIA_ONCO_CRP_LC2_0",
@@ -11464,7 +11729,12 @@
       }
     ],
     "insurance": 1363,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_375",
+    "sia_ref": "ASSET_ONC_SYM_ICON_376",
+    "big_icon_path": "Mod_ONCO/dia_slp_lc03_1a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_lc03_1b.png"
   },
   "DIA_ONCO_CRP_LC1_0": {
     "id": "DIA_ONCO_CRP_LC1_0",
@@ -11751,7 +12021,12 @@
       }
     ],
     "insurance": 2296,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_019",
+    "sia_ref": "ASSET_ONC_SYM_ICON_020",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc2b.png"
   },
   "DIA_ONCO_CRP_LC1_1": {
     "id": "DIA_ONCO_CRP_LC1_1",
@@ -12096,7 +12371,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_019",
+    "sia_ref": "ASSET_ONC_SYM_ICON_020",
+    "big_icon_path": "Mod_ONCO/dia_sl_lc2a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_lc2b.png"
   },
   "DIA_ONCO_CRP_PROC1_0M": {
     "id": "DIA_ONCO_CRP_PROC1_0M",
@@ -12187,7 +12467,12 @@
       }
     ],
     "insurance": 160,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_339",
+    "sia_ref": "ASSET_ONC_SYM_ICON_340",
+    "big_icon_path": "Mod_ONCO/dia_sl_prostate1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_prostate1b.png"
   },
   "DIA_ONCO_CRP_PROC1_1M": {
     "id": "DIA_ONCO_CRP_PROC1_1M",
@@ -12302,7 +12587,12 @@
       }
     ],
     "insurance": 2120,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_339",
+    "sia_ref": "ASSET_ONC_SYM_ICON_340",
+    "big_icon_path": "Mod_ONCO/dia_sl_prostate1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_prostate1b.png"
   },
   "DIA_ONCO_CRP_PROC1_2M": {
     "id": "DIA_ONCO_CRP_PROC1_2M",
@@ -12460,7 +12750,12 @@
       }
     ],
     "insurance": 2296,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_339",
+    "sia_ref": "ASSET_ONC_SYM_ICON_340",
+    "big_icon_path": "Mod_ONCO/dia_sl_prostate1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_prostate1b.png"
   },
   "DIA_ONCO_CRP_PROC1_3M": {
     "id": "DIA_ONCO_CRP_PROC1_3M",
@@ -12636,7 +12931,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_339",
+    "sia_ref": "ASSET_ONC_SYM_ICON_340",
+    "big_icon_path": "Mod_ONCO/dia_sl_prostate1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_prostate1b.png"
   },
   "DIA_ONCO_CRP_MC001_0": {
     "id": "DIA_ONCO_CRP_MC001_0",
@@ -12861,7 +13161,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_047",
+    "sia_ref": "ASSET_ONC_SYM_ICON_048",
+    "big_icon_path": "Mod_ONCO/dia_sl_acc01a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_acc01b.png"
   },
   "DIA_ONCO_CRP_MC001_1_V2": {
     "id": "DIA_ONCO_CRP_MC001_1_V2",
@@ -13187,7 +13492,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_047",
+    "sia_ref": "ASSET_ONC_SYM_ICON_048",
+    "big_icon_path": "Mod_ONCO/dia_sl_acc01a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_acc01b.png"
   },
   "DIA_ONCO_CRP_ORA001_1": {
     "id": "DIA_ONCO_CRP_ORA001_1",
@@ -13312,7 +13622,12 @@
       }
     ],
     "insurance": 2050,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_435",
+    "sia_ref": "ASSET_ONC_SYM_ICON_436",
+    "big_icon_path": "Mod_ONCO/dia_sl_ora001a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ora001b.png"
   },
   "DIA_ONCO_CRP_ORA001_2": {
     "id": "DIA_ONCO_CRP_ORA001_2",
@@ -13475,7 +13790,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_435",
+    "sia_ref": "ASSET_ONC_SYM_ICON_436",
+    "big_icon_path": "Mod_ONCO/dia_sl_ora001a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_ora001b.png"
   },
   "DIA_ONCO_CRP_ORA002_1": {
     "id": "DIA_ONCO_CRP_ORA002_1",
@@ -13600,7 +13920,12 @@
       }
     ],
     "insurance": 1335,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0011",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0012",
+    "big_icon_path": "Mod_ONCO/dia_slp_salvcc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_salvcc1b.png"
   },
   "DIA_ONCO_CRP_ORA002_1F": {
     "id": "DIA_ONCO_CRP_ORA002_1F",
@@ -13725,7 +14050,12 @@
       }
     ],
     "insurance": 1335,
-    "occurrence": "OCCURRENCE_SL_ULTRAUNIQUE"
+    "occurrence": "OCCURRENCE_SL_ULTRAUNIQUE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_CRP_DIA_ICON_0011",
+    "sia_ref": "ASSET_ONC_CRP_DIA_ICON_0012",
+    "big_icon_path": "Mod_ONCO/dia_slp_salvcc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_slp_salvcc1b.png"
   },
   "DIA_ONCO_CRP_SC1_1": {
     "id": "DIA_ONCO_CRP_SC1_1",
@@ -13840,7 +14170,12 @@
       }
     ],
     "insurance": 355,
-    "occurrence": "OCCURRENCE_SL_COMMON"
+    "occurrence": "OCCURRENCE_SL_COMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_001",
+    "sia_ref": "ASSET_ONC_SYM_ICON_002",
+    "big_icon_path": "Mod_ONCO/dia_sl_sc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_sc1b.png"
   },
   "DIA_ONCO_CRP_SC1_2": {
     "id": "DIA_ONCO_CRP_SC1_2",
@@ -13955,7 +14290,12 @@
       }
     ],
     "insurance": 415,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_001",
+    "sia_ref": "ASSET_ONC_SYM_ICON_002",
+    "big_icon_path": "Mod_ONCO/dia_sl_sc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_sc1b.png"
   },
   "DIA_ONCO_CRP_SC1_3": {
     "id": "DIA_ONCO_CRP_SC1_3",
@@ -14080,7 +14420,12 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_001",
+    "sia_ref": "ASSET_ONC_SYM_ICON_002",
+    "big_icon_path": "Mod_ONCO/dia_sl_sc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_sc1b.png"
   },
   "DIA_ONCO_CRP_SC1_4": {
     "id": "DIA_ONCO_CRP_SC1_4",
@@ -14224,7 +14569,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_001",
+    "sia_ref": "ASSET_ONC_SYM_ICON_002",
+    "big_icon_path": "Mod_ONCO/dia_sl_sc1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_sc1b.png"
   },
   "DIA_ONCO_CRP_SC2_1": {
     "id": "DIA_ONCO_CRP_SC2_1",
@@ -14339,7 +14689,10 @@
       }
     ],
     "insurance": 355,
-    "occurrence": "OCCURRENCE_SL_COMMON"
+    "occurrence": "OCCURRENCE_SL_COMMON",
+    "type": "MODDED",
+    "big_icon_path": "",
+    "small_icon_path": ""
   },
   "DIA_ONCO_CRP_SC2_2": {
     "id": "DIA_ONCO_CRP_SC2_2",
@@ -14454,7 +14807,10 @@
       }
     ],
     "insurance": 415,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "big_icon_path": "",
+    "small_icon_path": ""
   },
   "DIA_ONCO_CRP_SC2_3": {
     "id": "DIA_ONCO_CRP_SC2_3",
@@ -14579,7 +14935,10 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "big_icon_path": "",
+    "small_icon_path": ""
   },
   "DIA_ONCO_CRP_SC2_4": {
     "id": "DIA_ONCO_CRP_SC2_4",
@@ -14742,7 +15101,10 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "big_icon_path": "",
+    "small_icon_path": ""
   },
   "DIA_ONCO_CRP_SC3_1": {
     "id": "DIA_ONCO_CRP_SC3_1",
@@ -14838,7 +15200,12 @@
       }
     ],
     "insurance": 520,
-    "occurrence": "OCCURRENCE_SL_UNCOMMON"
+    "occurrence": "OCCURRENCE_SL_UNCOMMON",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_003",
+    "sia_ref": "ASSET_ONC_SYM_ICON_004",
+    "big_icon_path": "Mod_ONCO/dia_sl_mea1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_mea1b.png"
   },
   "DIA_ONCO_CRP_SC3_2": {
     "id": "DIA_ONCO_CRP_SC3_2",
@@ -14934,7 +15301,12 @@
       }
     ],
     "insurance": 920,
-    "occurrence": "OCCURRENCE_SL_RARE"
+    "occurrence": "OCCURRENCE_SL_RARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_003",
+    "sia_ref": "ASSET_ONC_SYM_ICON_004",
+    "big_icon_path": "Mod_ONCO/dia_sl_mea1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_mea1b.png"
   },
   "DIA_ONCO_CRP_SC3_3": {
     "id": "DIA_ONCO_CRP_SC3_3",
@@ -15040,7 +15412,12 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_VERYRARE"
+    "occurrence": "OCCURRENCE_SL_VERYRARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_003",
+    "sia_ref": "ASSET_ONC_SYM_ICON_004",
+    "big_icon_path": "Mod_ONCO/dia_sl_mea1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_mea1b.png"
   },
   "DIA_ONCO_CRP_SC3_4_V2": {
     "id": "DIA_ONCO_CRP_SC3_4_V2",
@@ -15251,7 +15628,12 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_003",
+    "sia_ref": "ASSET_ONC_SYM_ICON_004",
+    "big_icon_path": "Mod_ONCO/dia_sl_mea1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_mea1b.png"
   },
   "DIA_ONCO_CRP_SC4_0": {
     "id": "DIA_ONCO_CRP_SC4_0",
@@ -15280,7 +15662,12 @@
       }
     ],
     "insurance": 1250,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_365",
+    "sia_ref": "ASSET_ONC_SYM_ICON_366",
+    "big_icon_path": "Mod_ONCO/dia_sl_merkel1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_merkel1b.png"
   },
   "DIA_ONCO_CRP_SC4_1_V2": {
     "id": "DIA_ONCO_CRP_SC4_1_V2",
@@ -15419,6 +15806,11 @@
       }
     ],
     "insurance": 3200,
-    "occurrence": "OCCURRENCE_SL_ULTRARARE"
+    "occurrence": "OCCURRENCE_SL_ULTRARARE",
+    "type": "MODDED",
+    "bia_ref": "ASSET_ONC_SYM_ICON_365",
+    "sia_ref": "ASSET_ONC_SYM_ICON_366",
+    "big_icon_path": "Mod_ONCO/dia_sl_merkel1a.png",
+    "small_icon_path": "Mod_ONCO/dia_sl_merkel1b.png"
   }
 }

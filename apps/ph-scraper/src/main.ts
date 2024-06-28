@@ -30,7 +30,7 @@ async function main() {
 
   // 5. Obtain all diagnoses (using the generated symptoms).
   console.log(chalk.green('5. Started processing of symptoms'));
-  await generateDiagnoses(localizationDict, symptoms);
+  await generateDiagnoses(localizationDict, symptoms, auxDict);
   console.log(chalk.green('5. Finished processing of symptoms'));
 
   console.log(chalk.bgRed('---- Finished Project Hospital Scraper ----'));

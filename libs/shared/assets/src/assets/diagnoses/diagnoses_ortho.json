@@ -170,7 +170,8 @@
       }
     ],
     "insurance": 2900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_CUS": {
     "id": "DIA_CUS",
@@ -367,7 +368,8 @@
       }
     ],
     "insurance": 300,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_RAT": {
     "id": "DIA_RAT",
@@ -688,7 +690,8 @@
       }
     ],
     "insurance": 1100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_HOA": {
     "id": "DIA_HOA",
@@ -928,7 +931,8 @@
       }
     ],
     "insurance": 3000,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_KOA": {
     "id": "DIA_KOA",
@@ -1125,7 +1129,8 @@
       }
     ],
     "insurance": 700,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_DMS": {
     "id": "DIA_DMS",
@@ -1379,7 +1384,8 @@
       }
     ],
     "insurance": 800,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_IBM": {
     "id": "DIA_IBM",
@@ -1614,7 +1620,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_PMS": {
     "id": "DIA_PMS",
@@ -1940,7 +1947,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_SDS": {
     "id": "DIA_SDS",
@@ -2065,7 +2073,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_SDL": {
     "id": "DIA_SDL",
@@ -2281,7 +2290,8 @@
       }
     ],
     "insurance": 800,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_CSL": {
     "id": "DIA_CSL",
@@ -2454,7 +2464,8 @@
       }
     ],
     "insurance": 700,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_OSM": {
     "id": "DIA_OSM",
@@ -2636,7 +2647,8 @@
       }
     ],
     "insurance": 3100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_CDD": {
     "id": "DIA_CDD",
@@ -2828,7 +2840,8 @@
       }
     ],
     "insurance": 700,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_BOH": {
     "id": "DIA_BOH",
@@ -2996,7 +3009,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_AOM": {
     "id": "DIA_AOM",
@@ -3226,7 +3240,8 @@
       }
     ],
     "insurance": 1000,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_OLB": {
     "id": "DIA_OLB",
@@ -3418,7 +3433,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_BOT": {
     "id": "DIA_BOT",
@@ -3634,7 +3650,8 @@
       }
     ],
     "insurance": 800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_TEW": {
     "id": "DIA_TEW",
@@ -3783,7 +3800,8 @@
       }
     ],
     "insurance": 700,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_DWH": {
     "id": "TRM_DWH",
@@ -3989,7 +4007,8 @@
       }
     ],
     "insurance": 800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_DWA": {
     "id": "TRM_DWA",
@@ -4171,7 +4190,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_DWL": {
     "id": "TRM_DWL",
@@ -4353,7 +4373,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_DWF": {
     "id": "TRM_DWF",
@@ -4559,7 +4580,8 @@
       }
     ],
     "insurance": 800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SHS": {
     "id": "TRM_SHS",
@@ -4770,7 +4792,8 @@
       }
     ],
     "insurance": 900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SHD": {
     "id": "TRM_SHD",
@@ -4909,7 +4932,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_KSP": {
     "id": "TRM_KSP",
@@ -5125,7 +5149,8 @@
       }
     ],
     "insurance": 900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_KDL": {
     "id": "TRM_KDL",
@@ -5269,7 +5294,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_ASP": {
     "id": "TRM_ASP",
@@ -5490,7 +5516,8 @@
       }
     ],
     "insurance": 900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_DLA": {
     "id": "TRM_DLA",
@@ -5639,7 +5666,8 @@
       }
     ],
     "insurance": 900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_ACL": {
     "id": "TRM_ACL",
@@ -5783,7 +5811,8 @@
       }
     ],
     "insurance": 700,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFU": {
     "id": "TRM_SFU",
@@ -5970,7 +5999,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_OFU": {
     "id": "TRM_OFU",
@@ -6171,7 +6201,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_CFU": {
     "id": "TRM_CFU",
@@ -6425,7 +6456,8 @@
       }
     ],
     "insurance": 3300,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFR": {
     "id": "TRM_SFR",
@@ -6612,7 +6644,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFH": {
     "id": "TRM_SFH",
@@ -6799,7 +6832,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_OFH": {
     "id": "TRM_OFH",
@@ -7000,7 +7034,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_CFH": {
     "id": "TRM_CFH",
@@ -7254,7 +7289,8 @@
       }
     ],
     "insurance": 3300,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_BRR": {
     "id": "TRM_BRR",
@@ -7441,7 +7477,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFF": {
     "id": "TRM_SFF",
@@ -7628,7 +7665,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_OFF": {
     "id": "TRM_OFF",
@@ -7829,7 +7867,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_CFF": {
     "id": "TRM_CFF",
@@ -8083,7 +8122,8 @@
       }
     ],
     "insurance": 3300,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFT": {
     "id": "TRM_SFT",
@@ -8270,7 +8310,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SPT": {
     "id": "TRM_SPT",
@@ -8457,7 +8498,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFI": {
     "id": "TRM_SFI",
@@ -8644,7 +8686,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_OFT": {
     "id": "TRM_OFT",
@@ -8845,7 +8888,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_ANF": {
     "id": "TRM_ANF",
@@ -9114,7 +9158,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_MBF": {
     "id": "TRM_MBF",
@@ -9354,7 +9399,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_FOF": {
     "id": "TRM_FOF",
@@ -9594,7 +9640,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SFC": {
     "id": "TRM_SFC",
@@ -9800,7 +9847,8 @@
       }
     ],
     "insurance": 600,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_SHC": {
     "id": "TRM_SHC",
@@ -10006,7 +10054,8 @@
       }
     ],
     "insurance": 2900,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_MNF": {
     "id": "TRM_MNF",
@@ -10198,7 +10247,8 @@
       }
     ],
     "insurance": 2800,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_NSF": {
     "id": "TRM_NSF",
@@ -10371,6 +10421,7 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   }
 }

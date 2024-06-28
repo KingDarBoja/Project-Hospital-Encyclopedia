@@ -5,6 +5,8 @@ import * as fse from 'fs-extra';
 
 import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
+  AssetListSchema,
+  ModAssetListsDatabaseSchema,
   RoomTypeSchema,
   RoomTypesDatabaseSchema,
   SkillSchema,
@@ -15,6 +17,7 @@ import { BASE_PATH } from './common';
 export type Auxiliary = {
   skills: Record<string, SkillSchema>;
   roomTypes: Record<string, RoomTypeSchema>;
+  assetLists: Record<string, AssetListSchema>;
 };
 
 const alwaysArray = ['GameDBSkill'];
@@ -31,6 +34,7 @@ const parser = new XMLParser({
 const auxiliary: Auxiliary = {
   skills: {},
   roomTypes: {},
+  assetLists: {},
 };
 
 export async function generateAuxiliary(
@@ -42,31 +46,40 @@ export async function generateAuxiliary(
 
   // Get all the xml files inside the `input` directory and loop each to obtain
   // a parsed json for futher processing.
-  const procedureFilePaths = await fs.readdir(inputPath, { recursive: true });
-  for (const procedureFilePath of procedureFilePaths) {
-    const filePath = path.join(inputPath, procedureFilePath);
+  const auxFilePaths = await fs.readdir(inputPath, { recursive: true });
+  for (const auxFilePath of auxFilePaths) {
+    const filePath = path.join(inputPath, auxFilePath);
     const stat = fse.statSync(filePath);
 
     // Make sure we are not reading a directory.
     if (stat.isFile()) {
-      if (procedureFilePath.includes('Skills')) {
+      if (auxFilePath.includes('Skills')) {
         await populateSkillDictionary(filePath, localizationDict);
       }
 
-      if (procedureFilePath.includes('RoomTypes')) {
+      if (auxFilePath.includes('RoomTypes')) {
         await populateRoomTypesDictionary(filePath, localizationDict);
+      }
+
+      if (auxFilePath.includes('ModAssetLists')) {
+        await populateModAssetListDictionary(filePath);
       }
     }
   }
 
   await fse.outputFile(
     path.resolve(outputPath, 'skills.json'),
-    JSON.stringify(auxiliary.skills)
+    JSON.stringify(auxiliary.skills, null, 2)
   );
 
   await fse.outputFile(
     path.resolve(outputPath, 'room_types.json'),
-    JSON.stringify(auxiliary.roomTypes)
+    JSON.stringify(auxiliary.roomTypes, null, 2)
+  );
+
+  await fse.outputFile(
+    path.resolve(outputPath, 'asset_lists.json'),
+    JSON.stringify(auxiliary.assetLists, null, 2)
   );
 
   return auxiliary;
@@ -137,6 +150,33 @@ async function populateRoomTypesDictionary(
       office_tags: officeTags,
       worker: child.RequiredSkill || undefined,
       size: { width: child.MinWidth, height: child.MinHeight },
+    };
+  }
+}
+
+async function populateModAssetListDictionary(filePath: string) {
+  const rawDoc = await fse.readFile(filePath);
+  const dirName = path.dirname(filePath).split(path.sep).pop();
+
+  // Parse the file content.
+  const parsedDoc = parser.parse(rawDoc) as ModAssetListsDatabaseSchema;
+  const root = parsedDoc.Database.GameDBAsset;
+
+  for (const child of root) {
+    let iconPath: AssetListSchema['icon_path'] = '';
+    const iconName = child.File.split('/').pop();
+    switch (dirName) {
+      case 'Mod_ONCO':
+        iconPath = `Mod_ONCO/${iconName}`;
+        break;
+      default:
+        break;
+    }
+
+    auxiliary.assetLists[child.ID] ??= {
+      id: child.ID,
+      type: child.Type,
+      icon_path: iconPath,
     };
   }
 }

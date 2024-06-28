@@ -2,16 +2,24 @@ import { XMLParser } from 'fast-xml-parser';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import * as fse from 'fs-extra';
-import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
+import chalk from 'chalk';
+
 import { BASE_PATH } from './common';
+import { Auxiliary } from './generateAuxiliary';
+import { LocalizationSchema } from '@ph-encyclopedia/shared/localization';
 import {
-  DepartmentRef,
+  BaseGameDiagnoseSchema,
   DiagnoseDatabaseSchema,
   DiagnoseSchema,
   DiagnosesDict,
+  ModdedGameDiagnoseSchema,
+  SharedDiagnoseSchema,
 } from '@ph-encyclopedia/shared/diagnoses';
 import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
-import chalk from 'chalk';
+import {
+  DepartmentRef,
+  ModdedDepartments,
+} from '@ph-encyclopedia/shared/auxiliary';
 
 const BASE_DIAGNOSES_DIR = 'diagnoses';
 
@@ -50,7 +58,8 @@ const missingSymptoms: Record<keyof DiagnosesDict, string[]> = {
 
 export async function generateDiagnoses(
   localizationDict: Record<string, LocalizationSchema>,
-  symptomsDict: Record<string, SymptomSchema>
+  symptomsDict: Record<string, SymptomSchema>,
+  auxDict: Auxiliary
 ) {
   const inputPath = path.resolve(BASE_PATH, 'input', BASE_DIAGNOSES_DIR);
   const outputPath = path.resolve(BASE_PATH, 'output', BASE_DIAGNOSES_DIR);
@@ -67,7 +76,8 @@ export async function generateDiagnoses(
       await populateDiagnosesDictionary(
         fullFilePath,
         localizationDict,
-        symptomsDict
+        symptomsDict,
+        auxDict
       );
     }
   }
@@ -76,7 +86,7 @@ export async function generateDiagnoses(
     Object.keys(diagnoses).map((dpt) =>
       fse.outputFile(
         path.resolve(outputPath, `diagnoses_${dpt}.json`),
-        JSON.stringify(diagnoses[dpt])
+        JSON.stringify(diagnoses[dpt], null, 2)
       )
     ),
   ]);
@@ -87,7 +97,7 @@ export async function generateDiagnoses(
       .map(([dptKey]) =>
         fse.outputFile(
           path.resolve(outputPath, `missing_symptoms_${dptKey}.json`),
-          JSON.stringify(missingSymptoms[dptKey])
+          JSON.stringify(missingSymptoms[dptKey], null, 2)
         )
       ),
   ]);
@@ -98,7 +108,8 @@ export async function generateDiagnoses(
 async function populateDiagnosesDictionary(
   filePath: string,
   localizationDict: Record<string, LocalizationSchema>,
-  symptomsDict: Record<string, SymptomSchema>
+  symptomsDict: Record<string, SymptomSchema>,
+  auxDict: Auxiliary
 ) {
   const rawDoc = await fse.readFile(filePath);
 
@@ -171,7 +182,7 @@ async function populateDiagnosesDictionary(
       })
       .filter((x) => x?.id);
 
-    const newDiagnose: DiagnoseSchema = {
+    const newDiagnoseShared: SharedDiagnoseSchema = {
       id: child.ID,
       name: locName,
       description: locDesc,
@@ -181,36 +192,56 @@ async function populateDiagnosesDictionary(
       occurrence: child.OccurrenceRef,
     };
 
-    switch (child.DepartmentRef) {
-      case DepartmentRef.DptEmergency:
-        diagnoses.er[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptGeneralSurgeryDepartment:
-        diagnoses.surg[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptInternalMedicineDepartment:
-        diagnoses.intern[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptOrthopaedicsAndTraumatology:
-        diagnoses.ortho[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptCardiology:
-        diagnoses.cardio[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptNeurology:
-        diagnoses.neuro[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptTraumatologyDepartment:
-        diagnoses.trauma[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptInfectiousDiseasesDepartment:
-        diagnoses.infect[child.ID] ??= newDiagnose;
-        break;
-      case DepartmentRef.DptOncologyDepartment:
-        diagnoses.onco[child.ID] ??= newDiagnose;
-        break;
-      default:
-        break;
+    if (ModdedDepartments.includes(child.DepartmentRef)) {
+      /** TODO: We must map this reference into an icon path */
+      const newDiagnose: ModdedGameDiagnoseSchema = {
+        ...newDiagnoseShared,
+        type: 'MODDED',
+        bia_ref: child.CustomIconBigAssetRef,
+        sia_ref: child.CustomIconSmallAssetRef,
+        big_icon_path: auxDict.assetLists[child.CustomIconBigAssetRef]?.icon_path || '',
+        small_icon_path: auxDict.assetLists[child.CustomIconSmallAssetRef]?.icon_path || '',
+      };
+      switch (child.DepartmentRef) {
+        case DepartmentRef.DptOncologyDepartment:
+          diagnoses.onco[child.ID] ??= newDiagnose;
+          break;
+        default:
+          break;
+      }
+    } else {
+      const newDiagnose: BaseGameDiagnoseSchema = {
+        ...newDiagnoseShared,
+        type: 'BASE',
+      };
+      switch (child.DepartmentRef) {
+        case DepartmentRef.DptEmergency:
+          diagnoses.er[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptGeneralSurgeryDepartment:
+          diagnoses.surg[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptInternalMedicineDepartment:
+          diagnoses.intern[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptOrthopaedicsAndTraumatology:
+          diagnoses.ortho[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptCardiology:
+          diagnoses.cardio[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptNeurology:
+          diagnoses.neuro[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptTraumatologyDepartment:
+          diagnoses.trauma[child.ID] ??= newDiagnose;
+          break;
+        case DepartmentRef.DptInfectiousDiseasesDepartment:
+          diagnoses.infect[child.ID] ??= newDiagnose;
+          break;
+        default:
+          break;
+      }
     }
   }
 }

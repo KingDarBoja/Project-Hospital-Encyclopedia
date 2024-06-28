@@ -1,3 +1,5 @@
+import { ModAssetType } from "./input-types";
+
 type SharedGameSkillSchema = {
   /** The `ID` attribute tag. */
   id: string;
@@ -44,4 +46,15 @@ export interface RoomTypeSchema {
   worker?: string;
   /** Min width and height required for placing this room. */
   size: { width: number; height: number };
+}
+
+export interface AssetListSchema {
+  /** The `ID` attribute tag. */
+  id: string;
+  /** The type of asset. */
+  type: `${ModAssetType}`;
+  /** The most important thing is the icon path. If empty, it comes from the
+   * base game. Do not forget to prefix the folder dir mirroing the structure at
+   * assets/icons/ */
+  icon_path: `Mod_ONCO/${string}` | '';
 }

@@ -58,3 +58,22 @@ interface GameDBRequiredEquipment {
   Tag: string;
   MinCount: string;
 }
+
+export interface ModAssetListsDatabaseSchema {
+  Database: ModAssetListDatabaseSchema;
+}
+
+interface ModAssetListDatabaseSchema {
+  GameDBAsset: ModGameDBAsset[];
+}
+
+interface ModGameDBAsset {
+  Type: ModAssetType;
+  File: string;
+  ID: string;
+}
+
+export enum ModAssetType {
+  TextureCustomSprite = 'TEXTURE_CUSTOM_SPRITE',
+  TextureObjects = 'TEXTURE_OBJECTS',
+}

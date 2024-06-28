@@ -179,7 +179,8 @@
       }
     ],
     "insurance": 300,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_BTI": {
     "id": "DIA_BTI",
@@ -318,7 +319,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_UNCOMMON"
+    "occurrence": "OCCURRENCE_UNCOMMON",
+    "type": "BASE"
   },
   "DIA_CKX": {
     "id": "DIA_CKX",
@@ -481,7 +483,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_HRZ": {
     "id": "DIA_HRZ",
@@ -678,7 +681,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ONM": {
     "id": "DIA_ONM",
@@ -779,7 +783,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ATF": {
     "id": "DIA_ATF",
@@ -904,7 +909,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_IDA": {
     "id": "DIA_IDA",
@@ -1153,7 +1159,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_LIN": {
     "id": "DIA_LIN",
@@ -1311,7 +1318,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_CLD": {
     "id": "DIA_CLD",
@@ -1565,7 +1573,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ASN": {
     "id": "DIA_ASN",
@@ -1733,7 +1742,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_APH": {
     "id": "DIA_APH",
@@ -2011,7 +2021,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ANG": {
     "id": "DIA_ANG",
@@ -2265,7 +2276,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ANV": {
     "id": "DIA_ANV",
@@ -2562,7 +2574,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_LAR": {
     "id": "DIA_LAR",
@@ -2778,7 +2791,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_BRN": {
     "id": "DIA_BRN",
@@ -3008,7 +3022,8 @@
       }
     ],
     "insurance": 500,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_HFV": {
     "id": "DIA_HFV",
@@ -3190,7 +3205,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_ACD": {
     "id": "DIA_ACD",
@@ -3430,7 +3446,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_GEW": {
     "id": "DIA_GEW",
@@ -3627,7 +3644,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_SCS": {
     "id": "DIA_SCS",
@@ -3728,7 +3746,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_RYS": {
     "id": "DIA_RYS",
@@ -3829,7 +3848,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_CFS": {
     "id": "DIA_CFS",
@@ -4044,7 +4064,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_INS": {
     "id": "DIA_INS",
@@ -4221,7 +4242,8 @@
       }
     ],
     "insurance": 100,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_ACT": {
     "id": "TRM_ACT",
@@ -4408,7 +4430,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_HCT": {
     "id": "TRM_HCT",
@@ -4595,7 +4618,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_FCT": {
     "id": "TRM_FCT",
@@ -4787,7 +4811,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_ACN": {
     "id": "TRM_ACN",
@@ -4984,7 +5009,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_LCT": {
     "id": "TRM_LCT",
@@ -5171,7 +5197,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "TRM_CCT": {
     "id": "TRM_CCT",
@@ -5357,7 +5384,8 @@
       }
     ],
     "insurance": 400,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_046": {
     "id": "DIA_046",
@@ -5616,7 +5644,8 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   },
   "DIA_INF": {
     "id": "DIA_INF",
@@ -5875,6 +5904,7 @@
       }
     ],
     "insurance": 200,
-    "occurrence": "OCCURRENCE_COMMON"
+    "occurrence": "OCCURRENCE_COMMON",
+    "type": "BASE"
   }
 }

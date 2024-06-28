@@ -1,0 +1,2982 @@
+{
+  "ASSET_ONC_CRP_DIA_ICON_0001": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vag01a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0002": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vag01b.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0003": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vag02a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0004": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vag02b.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0005": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc1a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0006": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc1b.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0007": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc2a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0008": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc2b.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0009": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc3a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0010": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_vscc3b.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0011": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0011",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_salvcc1a.png"
+  },
+  "ASSET_ONC_CRP_DIA_ICON_0012": {
+    "id": "ASSET_ONC_CRP_DIA_ICON_0012",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_salvcc1b.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0001": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_vag01a.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0002": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_vag01b.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0003": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_vscca.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0004": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_vsccb.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0005": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_salvcc1a.png"
+  },
+  "ASSET_ONC_CRP_MAIN_ICON_0006": {
+    "id": "ASSET_ONC_CRP_MAIN_ICON_0006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_main_slp_salvcc1b.png"
+  },
+  "ASSET_ONC_CRP_SUR_ICON_0001": {
+    "id": "ASSET_ONC_CRP_SUR_ICON_0001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sur_slp_vag1a.png"
+  },
+  "ASSET_ONC_CRP_SUR_ICON_0002": {
+    "id": "ASSET_ONC_CRP_SUR_ICON_0002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sur_slp_vag1b.png"
+  },
+  "ASSET_ONC_CRP_SUR_ICON_0003": {
+    "id": "ASSET_ONC_CRP_SUR_ICON_0003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sur_slp_radi1a.png"
+  },
+  "ASSET_ONC_CRP_SUR_ICON_0004": {
+    "id": "ASSET_ONC_CRP_SUR_ICON_0004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sur_slp_radi1b.png"
+  },
+  "ASSET_ONC_CRP_SYM_ICON_0001": {
+    "id": "ASSET_ONC_CRP_SYM_ICON_0001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_sym_slp_p16a.png"
+  },
+  "ASSET_ONC_CRP_SYM_ICON_0002": {
+    "id": "ASSET_ONC_CRP_SYM_ICON_0002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_sym_slp_p16b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0001": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_ovarbioS_1a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0002": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_ovarbioS_1b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0003": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_ovarbioT_1a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0004": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_ovarbioT_1b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0005": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_vagbioS_1a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0006": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_vagbioS_1b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0007": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_vagbioT_1a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0008": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_exm_slp_vagbioT_1b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0009": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_slp_exm_salivaryglandbio1a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0010": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_slp_exm_salivaryglandbio1b.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0011": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0011",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_slp_exm_salivaryglandbio2a.png"
+  },
+  "ASSET_ONC_CRP_EXM_ICON_0012": {
+    "id": "ASSET_ONC_CRP_EXM_ICON_0012",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/CRP_slp_exm_salivaryglandbio2b.png"
+  },
+  "ASSET_TEX_ONCO_DECALS": {
+    "id": "ASSET_TEX_ONCO_DECALS",
+    "type": "TEXTURE_OBJECTS",
+    "icon_path": "Mod_ONCO/mod_decals_2048_atlas.png"
+  },
+  "ASSET_TEX_ONCO_CUSTOM_ICON001": {
+    "id": "ASSET_TEX_ONCO_CUSTOM_ICON001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/decal_sl_001.png"
+  },
+  "ASSET_TEX_ONCO_CUSTOM_ICON002": {
+    "id": "ASSET_TEX_ONCO_CUSTOM_ICON002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/decal_sl_002.png"
+  },
+  "ASSET_TEX_ONCO_CUSTOM_ICON003": {
+    "id": "ASSET_TEX_ONCO_CUSTOM_ICON003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/decal_sl_003.png"
+  },
+  "ASSET_TEX_ONCO_CUSTOM_ICON004": {
+    "id": "ASSET_TEX_ONCO_CUSTOM_ICON004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/decal_sl_004.png"
+  },
+  "ASSET_TEX_ONCO_OBJECTS": {
+    "id": "ASSET_TEX_ONCO_OBJECTS",
+    "type": "TEXTURE_OBJECTS",
+    "icon_path": "Mod_ONCO/mod_objects_tall_atlas.png"
+  },
+  "ASSET_TEX_ONCO_OBJECTS_SMALL": {
+    "id": "ASSET_TEX_ONCO_OBJECTS_SMALL",
+    "type": "TEXTURE_OBJECTS",
+    "icon_path": "Mod_ONCO/mod_objects_small_atlas.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_PICT1": {
+    "id": "ASSET_TEX_ONCO_OBJECT_PICT1",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_picture1.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_PICT2": {
+    "id": "ASSET_TEX_ONCO_OBJECT_PICT2",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_picture2.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_001": {
+    "id": "ASSET_TEX_ONCO_OBJECT_001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_cube1.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_002": {
+    "id": "ASSET_TEX_ONCO_OBJECT_002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_cube2.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_004": {
+    "id": "ASSET_TEX_ONCO_OBJECT_004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_cube3.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_005": {
+    "id": "ASSET_TEX_ONCO_OBJECT_005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_cube4.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_003": {
+    "id": "ASSET_TEX_ONCO_OBJECT_003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_plant1.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_006": {
+    "id": "ASSET_TEX_ONCO_OBJECT_006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_Poster1a.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_007": {
+    "id": "ASSET_TEX_ONCO_OBJECT_007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_Poster1b.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_008": {
+    "id": "ASSET_TEX_ONCO_OBJECT_008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_Poster1c.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_009": {
+    "id": "ASSET_TEX_ONCO_OBJECT_009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_Poster1d.png"
+  },
+  "ASSET_TEX_ONCO_OBJECT_010": {
+    "id": "ASSET_TEX_ONCO_OBJECT_010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/object_sl_Poster1e.png"
+  },
+  "ASSET_MOD_ICON_ONCO": {
+    "id": "ASSET_MOD_ICON_ONCO",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_skill_icon_onco.png"
+  },
+  "ASSET_MOD_ICON_ONCO_DARK": {
+    "id": "ASSET_MOD_ICON_ONCO_DARK",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_skill_icon_onco_dark.png"
+  },
+  "ASSET_ONC_DPT_ICON_0": {
+    "id": "ASSET_ONC_DPT_ICON_0",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_0.png"
+  },
+  "ASSET_ONC_DPT_ICON_1": {
+    "id": "ASSET_ONC_DPT_ICON_1",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_1.png"
+  },
+  "ASSET_ONC_DPT_ICON_2": {
+    "id": "ASSET_ONC_DPT_ICON_2",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_2.png"
+  },
+  "ASSET_ONC_DPT_ICON_3": {
+    "id": "ASSET_ONC_DPT_ICON_3",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_3.png"
+  },
+  "ASSET_ONC_DPT_ICON_4": {
+    "id": "ASSET_ONC_DPT_ICON_4",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_4.png"
+  },
+  "ASSET_ONC_DPT_ICON_5": {
+    "id": "ASSET_ONC_DPT_ICON_5",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_5.png"
+  },
+  "ASSET_ONC_DPT_ICON_6": {
+    "id": "ASSET_ONC_DPT_ICON_6",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/mod_dept_icon_6.png"
+  },
+  "ASSET_ONC_SYM_ICON_001": {
+    "id": "ASSET_ONC_SYM_ICON_001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_sc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_002": {
+    "id": "ASSET_ONC_SYM_ICON_002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_sc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_003": {
+    "id": "ASSET_ONC_SYM_ICON_003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_mea1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_004": {
+    "id": "ASSET_ONC_SYM_ICON_004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_mea1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_005": {
+    "id": "ASSET_ONC_SYM_ICON_005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_metasta.png"
+  },
+  "ASSET_ONC_SYM_ICON_006": {
+    "id": "ASSET_ONC_SYM_ICON_006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_metastb.png"
+  },
+  "ASSET_ONC_SYM_ICON_007": {
+    "id": "ASSET_ONC_SYM_ICON_007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nodulea.png"
+  },
+  "ASSET_ONC_SYM_ICON_008": {
+    "id": "ASSET_ONC_SYM_ICON_008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_noduleb.png"
+  },
+  "ASSET_ONC_SYM_ICON_009": {
+    "id": "ASSET_ONC_SYM_ICON_009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_PNIa.png"
+  },
+  "ASSET_ONC_SYM_ICON_010": {
+    "id": "ASSET_ONC_SYM_ICON_010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_PNIb.png"
+  },
+  "ASSET_ONC_SYM_ICON_011": {
+    "id": "ASSET_ONC_SYM_ICON_011",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevela.png"
+  },
+  "ASSET_ONC_SYM_ICON_012": {
+    "id": "ASSET_ONC_SYM_ICON_012",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevelb.png"
+  },
+  "ASSET_ONC_SYM_ICON_013": {
+    "id": "ASSET_ONC_SYM_ICON_013",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowlevela.png"
+  },
+  "ASSET_ONC_SYM_ICON_014": {
+    "id": "ASSET_ONC_SYM_ICON_014",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowlevelb.png"
+  },
+  "ASSET_ONC_SYM_ICON_015": {
+    "id": "ASSET_ONC_SYM_ICON_015",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ag1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_016": {
+    "id": "ASSET_ONC_SYM_ICON_016",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ag1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_017": {
+    "id": "ASSET_ONC_SYM_ICON_017",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_018": {
+    "id": "ASSET_ONC_SYM_ICON_018",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_019": {
+    "id": "ASSET_ONC_SYM_ICON_019",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_020": {
+    "id": "ASSET_ONC_SYM_ICON_020",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_021": {
+    "id": "ASSET_ONC_SYM_ICON_021",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hemopta.png"
+  },
+  "ASSET_ONC_SYM_ICON_022": {
+    "id": "ASSET_ONC_SYM_ICON_022",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hemoptb.png"
+  },
+  "ASSET_ONC_SYM_ICON_023": {
+    "id": "ASSET_ONC_SYM_ICON_023",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nervea.png"
+  },
+  "ASSET_ONC_SYM_ICON_024": {
+    "id": "ASSET_ONC_SYM_ICON_024",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nerveb.png"
+  },
+  "ASSET_ONC_SYM_ICON_025": {
+    "id": "ASSET_ONC_SYM_ICON_025",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_aniflexa.png"
+  },
+  "ASSET_ONC_SYM_ICON_026": {
+    "id": "ASSET_ONC_SYM_ICON_026",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_aniflexb.png"
+  },
+  "ASSET_ONC_SYM_ICON_039": {
+    "id": "ASSET_ONC_SYM_ICON_039",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_040": {
+    "id": "ASSET_ONC_SYM_ICON_040",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_041": {
+    "id": "ASSET_ONC_SYM_ICON_041",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowlevel1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_042": {
+    "id": "ASSET_ONC_SYM_ICON_042",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowlevel1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_043": {
+    "id": "ASSET_ONC_SYM_ICON_043",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_044": {
+    "id": "ASSET_ONC_SYM_ICON_044",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_027": {
+    "id": "ASSET_ONC_SYM_ICON_027",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_028": {
+    "id": "ASSET_ONC_SYM_ICON_028",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_029": {
+    "id": "ASSET_ONC_SYM_ICON_029",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_030": {
+    "id": "ASSET_ONC_SYM_ICON_030",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_031": {
+    "id": "ASSET_ONC_SYM_ICON_031",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_032": {
+    "id": "ASSET_ONC_SYM_ICON_032",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_033": {
+    "id": "ASSET_ONC_SYM_ICON_033",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_034": {
+    "id": "ASSET_ONC_SYM_ICON_034",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_035": {
+    "id": "ASSET_ONC_SYM_ICON_035",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_036": {
+    "id": "ASSET_ONC_SYM_ICON_036",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_037": {
+    "id": "ASSET_ONC_SYM_ICON_037",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_038": {
+    "id": "ASSET_ONC_SYM_ICON_038",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_coc6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_045": {
+    "id": "ASSET_ONC_SYM_ICON_045",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ag2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_046": {
+    "id": "ASSET_ONC_SYM_ICON_046",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ag2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_047": {
+    "id": "ASSET_ONC_SYM_ICON_047",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_acc01a.png"
+  },
+  "ASSET_ONC_SYM_ICON_048": {
+    "id": "ASSET_ONC_SYM_ICON_048",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_acc01b.png"
+  },
+  "ASSET_ONC_SYM_ICON_049": {
+    "id": "ASSET_ONC_SYM_ICON_049",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_largelymphNa.png"
+  },
+  "ASSET_ONC_SYM_ICON_050": {
+    "id": "ASSET_ONC_SYM_ICON_050",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_largelymphNb.png"
+  },
+  "ASSET_ONC_SYM_ICON_051": {
+    "id": "ASSET_ONC_SYM_ICON_051",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_052": {
+    "id": "ASSET_ONC_SYM_ICON_052",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_053": {
+    "id": "ASSET_ONC_SYM_ICON_053",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_054": {
+    "id": "ASSET_ONC_SYM_ICON_054",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highlevel4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_055": {
+    "id": "ASSET_ONC_SYM_ICON_055",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_crisis1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_056": {
+    "id": "ASSET_ONC_SYM_ICON_056",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_crisis1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_057": {
+    "id": "ASSET_ONC_SYM_ICON_057",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc01a.png"
+  },
+  "ASSET_ONC_SYM_ICON_058": {
+    "id": "ASSET_ONC_SYM_ICON_058",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc01b.png"
+  },
+  "ASSET_ONC_SYM_ICON_059": {
+    "id": "ASSET_ONC_SYM_ICON_059",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc02a.png"
+  },
+  "ASSET_ONC_SYM_ICON_060": {
+    "id": "ASSET_ONC_SYM_ICON_060",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc02b.png"
+  },
+  "ASSET_ONC_SYM_ICON_061": {
+    "id": "ASSET_ONC_SYM_ICON_061",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc03a.png"
+  },
+  "ASSET_ONC_SYM_ICON_062": {
+    "id": "ASSET_ONC_SYM_ICON_062",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc03b.png"
+  },
+  "ASSET_ONC_SYM_ICON_063": {
+    "id": "ASSET_ONC_SYM_ICON_063",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc04a.png"
+  },
+  "ASSET_ONC_SYM_ICON_064": {
+    "id": "ASSET_ONC_SYM_ICON_064",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc04b.png"
+  },
+  "ASSET_ONC_SYM_ICON_175": {
+    "id": "ASSET_ONC_SYM_ICON_175",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc05st1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_176": {
+    "id": "ASSET_ONC_SYM_ICON_176",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc05st1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_177": {
+    "id": "ASSET_ONC_SYM_ICON_177",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc06st1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_178": {
+    "id": "ASSET_ONC_SYM_ICON_178",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc06st1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_179": {
+    "id": "ASSET_ONC_SYM_ICON_179",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc07st1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_180": {
+    "id": "ASSET_ONC_SYM_ICON_180",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc07st1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_135": {
+    "id": "ASSET_ONC_SYM_ICON_135",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc01_Ca.png"
+  },
+  "ASSET_ONC_SYM_ICON_136": {
+    "id": "ASSET_ONC_SYM_ICON_136",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc01_Cb.png"
+  },
+  "ASSET_ONC_SYM_ICON_137": {
+    "id": "ASSET_ONC_SYM_ICON_137",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc02_Ca.png"
+  },
+  "ASSET_ONC_SYM_ICON_138": {
+    "id": "ASSET_ONC_SYM_ICON_138",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc02_Cb.png"
+  },
+  "ASSET_ONC_SYM_ICON_139": {
+    "id": "ASSET_ONC_SYM_ICON_139",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc03_Ca.png"
+  },
+  "ASSET_ONC_SYM_ICON_140": {
+    "id": "ASSET_ONC_SYM_ICON_140",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc03_Cb.png"
+  },
+  "ASSET_ONC_SYM_ICON_141": {
+    "id": "ASSET_ONC_SYM_ICON_141",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc04_Ca.png"
+  },
+  "ASSET_ONC_SYM_ICON_142": {
+    "id": "ASSET_ONC_SYM_ICON_142",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_blc04_Cb.png"
+  },
+  "ASSET_ONC_SYM_ICON_065": {
+    "id": "ASSET_ONC_SYM_ICON_065",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_infection1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_066": {
+    "id": "ASSET_ONC_SYM_ICON_066",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_infection1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_067": {
+    "id": "ASSET_ONC_SYM_ICON_067",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lymphcyc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_068": {
+    "id": "ASSET_ONC_SYM_ICON_068",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lymphcyc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_069": {
+    "id": "ASSET_ONC_SYM_ICON_069",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_070": {
+    "id": "ASSET_ONC_SYM_ICON_070",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_249": {
+    "id": "ASSET_ONC_SYM_ICON_249",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_250": {
+    "id": "ASSET_ONC_SYM_ICON_250",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_251": {
+    "id": "ASSET_ONC_SYM_ICON_251",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_252": {
+    "id": "ASSET_ONC_SYM_ICON_252",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_253": {
+    "id": "ASSET_ONC_SYM_ICON_253",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_254": {
+    "id": "ASSET_ONC_SYM_ICON_254",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_071": {
+    "id": "ASSET_ONC_SYM_ICON_071",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_072": {
+    "id": "ASSET_ONC_SYM_ICON_072",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_077": {
+    "id": "ASSET_ONC_SYM_ICON_077",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_078": {
+    "id": "ASSET_ONC_SYM_ICON_078",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_079": {
+    "id": "ASSET_ONC_SYM_ICON_079",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_080": {
+    "id": "ASSET_ONC_SYM_ICON_080",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_081": {
+    "id": "ASSET_ONC_SYM_ICON_081",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_082": {
+    "id": "ASSET_ONC_SYM_ICON_082",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_083": {
+    "id": "ASSET_ONC_SYM_ICON_083",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_084": {
+    "id": "ASSET_ONC_SYM_ICON_084",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_085": {
+    "id": "ASSET_ONC_SYM_ICON_085",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_086": {
+    "id": "ASSET_ONC_SYM_ICON_086",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_087": {
+    "id": "ASSET_ONC_SYM_ICON_087",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker7a.png"
+  },
+  "ASSET_ONC_SYM_ICON_088": {
+    "id": "ASSET_ONC_SYM_ICON_088",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker7b.png"
+  },
+  "ASSET_ONC_SYM_ICON_089": {
+    "id": "ASSET_ONC_SYM_ICON_089",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker8a.png"
+  },
+  "ASSET_ONC_SYM_ICON_090": {
+    "id": "ASSET_ONC_SYM_ICON_090",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker8b.png"
+  },
+  "ASSET_ONC_SYM_ICON_091": {
+    "id": "ASSET_ONC_SYM_ICON_091",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker9a.png"
+  },
+  "ASSET_ONC_SYM_ICON_092": {
+    "id": "ASSET_ONC_SYM_ICON_092",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker9b.png"
+  },
+  "ASSET_ONC_SYM_ICON_101": {
+    "id": "ASSET_ONC_SYM_ICON_101",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker10a.png"
+  },
+  "ASSET_ONC_SYM_ICON_102": {
+    "id": "ASSET_ONC_SYM_ICON_102",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker10b.png"
+  },
+  "ASSET_ONC_SYM_ICON_103": {
+    "id": "ASSET_ONC_SYM_ICON_103",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker11a.png"
+  },
+  "ASSET_ONC_SYM_ICON_104": {
+    "id": "ASSET_ONC_SYM_ICON_104",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker11b.png"
+  },
+  "ASSET_ONC_SYM_ICON_105": {
+    "id": "ASSET_ONC_SYM_ICON_105",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker12a.png"
+  },
+  "ASSET_ONC_SYM_ICON_106": {
+    "id": "ASSET_ONC_SYM_ICON_106",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker12b.png"
+  },
+  "ASSET_ONC_SYM_ICON_113": {
+    "id": "ASSET_ONC_SYM_ICON_113",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker13a.png"
+  },
+  "ASSET_ONC_SYM_ICON_114": {
+    "id": "ASSET_ONC_SYM_ICON_114",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker13b.png"
+  },
+  "ASSET_ONC_SYM_ICON_115": {
+    "id": "ASSET_ONC_SYM_ICON_115",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker14a.png"
+  },
+  "ASSET_ONC_SYM_ICON_116": {
+    "id": "ASSET_ONC_SYM_ICON_116",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker14b.png"
+  },
+  "ASSET_ONC_SYM_ICON_117": {
+    "id": "ASSET_ONC_SYM_ICON_117",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker15a.png"
+  },
+  "ASSET_ONC_SYM_ICON_118": {
+    "id": "ASSET_ONC_SYM_ICON_118",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker15b.png"
+  },
+  "ASSET_ONC_SYM_ICON_119": {
+    "id": "ASSET_ONC_SYM_ICON_119",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker16a.png"
+  },
+  "ASSET_ONC_SYM_ICON_120": {
+    "id": "ASSET_ONC_SYM_ICON_120",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker16b.png"
+  },
+  "ASSET_ONC_SYM_ICON_121": {
+    "id": "ASSET_ONC_SYM_ICON_121",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker17a.png"
+  },
+  "ASSET_ONC_SYM_ICON_122": {
+    "id": "ASSET_ONC_SYM_ICON_122",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker17b.png"
+  },
+  "ASSET_ONC_SYM_ICON_123": {
+    "id": "ASSET_ONC_SYM_ICON_123",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker18a.png"
+  },
+  "ASSET_ONC_SYM_ICON_124": {
+    "id": "ASSET_ONC_SYM_ICON_124",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker18b.png"
+  },
+  "ASSET_ONC_SYM_ICON_125": {
+    "id": "ASSET_ONC_SYM_ICON_125",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker19a.png"
+  },
+  "ASSET_ONC_SYM_ICON_126": {
+    "id": "ASSET_ONC_SYM_ICON_126",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker19b.png"
+  },
+  "ASSET_ONC_SYM_ICON_129": {
+    "id": "ASSET_ONC_SYM_ICON_129",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker20a.png"
+  },
+  "ASSET_ONC_SYM_ICON_130": {
+    "id": "ASSET_ONC_SYM_ICON_130",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker20b.png"
+  },
+  "ASSET_ONC_SYM_ICON_143": {
+    "id": "ASSET_ONC_SYM_ICON_143",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker21a.png"
+  },
+  "ASSET_ONC_SYM_ICON_144": {
+    "id": "ASSET_ONC_SYM_ICON_144",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker21b.png"
+  },
+  "ASSET_ONC_SYM_ICON_145": {
+    "id": "ASSET_ONC_SYM_ICON_145",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker22a.png"
+  },
+  "ASSET_ONC_SYM_ICON_146": {
+    "id": "ASSET_ONC_SYM_ICON_146",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker22b.png"
+  },
+  "ASSET_ONC_SYM_ICON_163": {
+    "id": "ASSET_ONC_SYM_ICON_163",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker23a.png"
+  },
+  "ASSET_ONC_SYM_ICON_164": {
+    "id": "ASSET_ONC_SYM_ICON_164",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker23b.png"
+  },
+  "ASSET_ONC_SYM_ICON_165": {
+    "id": "ASSET_ONC_SYM_ICON_165",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker24a.png"
+  },
+  "ASSET_ONC_SYM_ICON_166": {
+    "id": "ASSET_ONC_SYM_ICON_166",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker24b.png"
+  },
+  "ASSET_ONC_SYM_ICON_167": {
+    "id": "ASSET_ONC_SYM_ICON_167",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker25a.png"
+  },
+  "ASSET_ONC_SYM_ICON_168": {
+    "id": "ASSET_ONC_SYM_ICON_168",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker25b.png"
+  },
+  "ASSET_ONC_SYM_ICON_169": {
+    "id": "ASSET_ONC_SYM_ICON_169",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker26a.png"
+  },
+  "ASSET_ONC_SYM_ICON_170": {
+    "id": "ASSET_ONC_SYM_ICON_170",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker26b.png"
+  },
+  "ASSET_ONC_SYM_ICON_201": {
+    "id": "ASSET_ONC_SYM_ICON_201",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker27a.png"
+  },
+  "ASSET_ONC_SYM_ICON_202": {
+    "id": "ASSET_ONC_SYM_ICON_202",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_BrightMarker27b.png"
+  },
+  "ASSET_ONC_SYM_ICON_073": {
+    "id": "ASSET_ONC_SYM_ICON_073",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_074": {
+    "id": "ASSET_ONC_SYM_ICON_074",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_095": {
+    "id": "ASSET_ONC_SYM_ICON_095",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_096": {
+    "id": "ASSET_ONC_SYM_ICON_096",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_097": {
+    "id": "ASSET_ONC_SYM_ICON_097",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_098": {
+    "id": "ASSET_ONC_SYM_ICON_098",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_099": {
+    "id": "ASSET_ONC_SYM_ICON_099",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_100": {
+    "id": "ASSET_ONC_SYM_ICON_100",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_107": {
+    "id": "ASSET_ONC_SYM_ICON_107",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_108": {
+    "id": "ASSET_ONC_SYM_ICON_108",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_109": {
+    "id": "ASSET_ONC_SYM_ICON_109",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_110": {
+    "id": "ASSET_ONC_SYM_ICON_110",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_111": {
+    "id": "ASSET_ONC_SYM_ICON_111",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker7a.png"
+  },
+  "ASSET_ONC_SYM_ICON_112": {
+    "id": "ASSET_ONC_SYM_ICON_112",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker7b.png"
+  },
+  "ASSET_ONC_SYM_ICON_127": {
+    "id": "ASSET_ONC_SYM_ICON_127",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker8a.png"
+  },
+  "ASSET_ONC_SYM_ICON_128": {
+    "id": "ASSET_ONC_SYM_ICON_128",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker8b.png"
+  },
+  "ASSET_ONC_SYM_ICON_147": {
+    "id": "ASSET_ONC_SYM_ICON_147",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker9a.png"
+  },
+  "ASSET_ONC_SYM_ICON_148": {
+    "id": "ASSET_ONC_SYM_ICON_148",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker9b.png"
+  },
+  "ASSET_ONC_SYM_ICON_149": {
+    "id": "ASSET_ONC_SYM_ICON_149",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker10a.png"
+  },
+  "ASSET_ONC_SYM_ICON_150": {
+    "id": "ASSET_ONC_SYM_ICON_150",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker10b.png"
+  },
+  "ASSET_ONC_SYM_ICON_171": {
+    "id": "ASSET_ONC_SYM_ICON_171",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker11a.png"
+  },
+  "ASSET_ONC_SYM_ICON_172": {
+    "id": "ASSET_ONC_SYM_ICON_172",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker11b.png"
+  },
+  "ASSET_ONC_SYM_ICON_181": {
+    "id": "ASSET_ONC_SYM_ICON_181",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker12a.png"
+  },
+  "ASSET_ONC_SYM_ICON_182": {
+    "id": "ASSET_ONC_SYM_ICON_182",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker12b.png"
+  },
+  "ASSET_ONC_SYM_ICON_183": {
+    "id": "ASSET_ONC_SYM_ICON_183",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker13a.png"
+  },
+  "ASSET_ONC_SYM_ICON_184": {
+    "id": "ASSET_ONC_SYM_ICON_184",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_DimMarker13b.png"
+  },
+  "ASSET_ONC_SYM_ICON_075": {
+    "id": "ASSET_ONC_SYM_ICON_075",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_NormMarker1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_076": {
+    "id": "ASSET_ONC_SYM_ICON_076",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_NormMarker1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_093": {
+    "id": "ASSET_ONC_SYM_ICON_093",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_bleedgum1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_094": {
+    "id": "ASSET_ONC_SYM_ICON_094",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_bleedgum1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_131": {
+    "id": "ASSET_ONC_SYM_ICON_131",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cnsL1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_132": {
+    "id": "ASSET_ONC_SYM_ICON_132",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cnsL1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_133": {
+    "id": "ASSET_ONC_SYM_ICON_133",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cnsH1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_134": {
+    "id": "ASSET_ONC_SYM_ICON_134",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cnsH1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_151": {
+    "id": "ASSET_ONC_SYM_ICON_151",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hightcell1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_152": {
+    "id": "ASSET_ONC_SYM_ICON_152",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hightcell1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_153": {
+    "id": "ASSET_ONC_SYM_ICON_153",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_aplasia1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_154": {
+    "id": "ASSET_ONC_SYM_ICON_154",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_aplasia1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_155": {
+    "id": "ASSET_ONC_SYM_ICON_155",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enlargeLiver1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_156": {
+    "id": "ASSET_ONC_SYM_ICON_156",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enlargeLiver1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_157": {
+    "id": "ASSET_ONC_SYM_ICON_157",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enlargeSpleen1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_158": {
+    "id": "ASSET_ONC_SYM_ICON_158",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enlargeSpleen1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_159": {
+    "id": "ASSET_ONC_SYM_ICON_159",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowwbc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_160": {
+    "id": "ASSET_ONC_SYM_ICON_160",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_lowwbc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_161": {
+    "id": "ASSET_ONC_SYM_ICON_161",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_rupSpleen1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_162": {
+    "id": "ASSET_ONC_SYM_ICON_162",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_rupSpleen1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_173": {
+    "id": "ASSET_ONC_SYM_ICON_173",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_platlet1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_174": {
+    "id": "ASSET_ONC_SYM_ICON_174",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_platlet1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_185": {
+    "id": "ASSET_ONC_SYM_ICON_185",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_damGene1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_186": {
+    "id": "ASSET_ONC_SYM_ICON_186",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_damGene1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_187": {
+    "id": "ASSET_ONC_SYM_ICON_187",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enzyme1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_188": {
+    "id": "ASSET_ONC_SYM_ICON_188",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enzyme1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_189": {
+    "id": "ASSET_ONC_SYM_ICON_189",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enzyme2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_190": {
+    "id": "ASSET_ONC_SYM_ICON_190",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_enzyme2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_193": {
+    "id": "ASSET_ONC_SYM_ICON_193",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_194": {
+    "id": "ASSET_ONC_SYM_ICON_194",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_195": {
+    "id": "ASSET_ONC_SYM_ICON_195",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_196": {
+    "id": "ASSET_ONC_SYM_ICON_196",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_197": {
+    "id": "ASSET_ONC_SYM_ICON_197",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_198": {
+    "id": "ASSET_ONC_SYM_ICON_198",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_199": {
+    "id": "ASSET_ONC_SYM_ICON_199",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_200": {
+    "id": "ASSET_ONC_SYM_ICON_200",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_203": {
+    "id": "ASSET_ONC_SYM_ICON_203",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_204": {
+    "id": "ASSET_ONC_SYM_ICON_204",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_205": {
+    "id": "ASSET_ONC_SYM_ICON_205",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_206": {
+    "id": "ASSET_ONC_SYM_ICON_206",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_207": {
+    "id": "ASSET_ONC_SYM_ICON_207",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo7a.png"
+  },
+  "ASSET_ONC_SYM_ICON_208": {
+    "id": "ASSET_ONC_SYM_ICON_208",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo7b.png"
+  },
+  "ASSET_ONC_SYM_ICON_209": {
+    "id": "ASSET_ONC_SYM_ICON_209",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo8a.png"
+  },
+  "ASSET_ONC_SYM_ICON_210": {
+    "id": "ASSET_ONC_SYM_ICON_210",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo8b.png"
+  },
+  "ASSET_ONC_SYM_ICON_211": {
+    "id": "ASSET_ONC_SYM_ICON_211",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo9a.png"
+  },
+  "ASSET_ONC_SYM_ICON_212": {
+    "id": "ASSET_ONC_SYM_ICON_212",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo9b.png"
+  },
+  "ASSET_ONC_SYM_ICON_213": {
+    "id": "ASSET_ONC_SYM_ICON_213",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo10a.png"
+  },
+  "ASSET_ONC_SYM_ICON_214": {
+    "id": "ASSET_ONC_SYM_ICON_214",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo10b.png"
+  },
+  "ASSET_ONC_SYM_ICON_255": {
+    "id": "ASSET_ONC_SYM_ICON_255",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo11a.png"
+  },
+  "ASSET_ONC_SYM_ICON_256": {
+    "id": "ASSET_ONC_SYM_ICON_256",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo11b.png"
+  },
+  "ASSET_ONC_SYM_ICON_263": {
+    "id": "ASSET_ONC_SYM_ICON_263",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo12a.png"
+  },
+  "ASSET_ONC_SYM_ICON_264": {
+    "id": "ASSET_ONC_SYM_ICON_264",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromo12b.png"
+  },
+  "ASSET_ONC_SYM_ICON_301": {
+    "id": "ASSET_ONC_SYM_ICON_301",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_302": {
+    "id": "ASSET_ONC_SYM_ICON_302",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_191": {
+    "id": "ASSET_ONC_SYM_ICON_191",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hairycell1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_192": {
+    "id": "ASSET_ONC_SYM_ICON_192",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hairycell1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_215": {
+    "id": "ASSET_ONC_SYM_ICON_215",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_larget1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_216": {
+    "id": "ASSET_ONC_SYM_ICON_216",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_larget1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_217": {
+    "id": "ASSET_ONC_SYM_ICON_217",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_neco1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_218": {
+    "id": "ASSET_ONC_SYM_ICON_218",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_neco1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_219": {
+    "id": "ASSET_ONC_SYM_ICON_219",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_220": {
+    "id": "ASSET_ONC_SYM_ICON_220",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_221": {
+    "id": "ASSET_ONC_SYM_ICON_221",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_222": {
+    "id": "ASSET_ONC_SYM_ICON_222",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_223": {
+    "id": "ASSET_ONC_SYM_ICON_223",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_224": {
+    "id": "ASSET_ONC_SYM_ICON_224",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highbl3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_225": {
+    "id": "ASSET_ONC_SYM_ICON_225",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastdimple1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_226": {
+    "id": "ASSET_ONC_SYM_ICON_226",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastdimple1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_227": {
+    "id": "ASSET_ONC_SYM_ICON_227",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastdischarge1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_228": {
+    "id": "ASSET_ONC_SYM_ICON_228",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastdischarge1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_229": {
+    "id": "ASSET_ONC_SYM_ICON_229",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastfinding1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_230": {
+    "id": "ASSET_ONC_SYM_ICON_230",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastfinding1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_231": {
+    "id": "ASSET_ONC_SYM_ICON_231",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastlump1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_232": {
+    "id": "ASSET_ONC_SYM_ICON_232",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastlump1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_233": {
+    "id": "ASSET_ONC_SYM_ICON_233",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastpain1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_234": {
+    "id": "ASSET_ONC_SYM_ICON_234",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastpain1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_235": {
+    "id": "ASSET_ONC_SYM_ICON_235",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastSCHNG1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_236": {
+    "id": "ASSET_ONC_SYM_ICON_236",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_breastSCHNG1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_245": {
+    "id": "ASSET_ONC_SYM_ICON_245",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_sorenipple1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_246": {
+    "id": "ASSET_ONC_SYM_ICON_246",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_sorenipple1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_247": {
+    "id": "ASSET_ONC_SYM_ICON_247",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_suscalc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_248": {
+    "id": "ASSET_ONC_SYM_ICON_248",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_suscalc1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_237": {
+    "id": "ASSET_ONC_SYM_ICON_237",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_238": {
+    "id": "ASSET_ONC_SYM_ICON_238",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_239": {
+    "id": "ASSET_ONC_SYM_ICON_239",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_240": {
+    "id": "ASSET_ONC_SYM_ICON_240",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_241": {
+    "id": "ASSET_ONC_SYM_ICON_241",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_242": {
+    "id": "ASSET_ONC_SYM_ICON_242",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_243": {
+    "id": "ASSET_ONC_SYM_ICON_243",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_244": {
+    "id": "ASSET_ONC_SYM_ICON_244",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_BRC4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_257": {
+    "id": "ASSET_ONC_SYM_ICON_257",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_estrogen1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_258": {
+    "id": "ASSET_ONC_SYM_ICON_258",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_estrogen1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_259": {
+    "id": "ASSET_ONC_SYM_ICON_259",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_progesterone1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_260": {
+    "id": "ASSET_ONC_SYM_ICON_260",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_progesterone1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_261": {
+    "id": "ASSET_ONC_SYM_ICON_261",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_progesterone1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_262": {
+    "id": "ASSET_ONC_SYM_ICON_262",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_progesterone1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_265": {
+    "id": "ASSET_ONC_SYM_ICON_265",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_incont1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_266": {
+    "id": "ASSET_ONC_SYM_ICON_266",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_incont1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_267": {
+    "id": "ASSET_ONC_SYM_ICON_267",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_268": {
+    "id": "ASSET_ONC_SYM_ICON_268",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_269": {
+    "id": "ASSET_ONC_SYM_ICON_269",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_270": {
+    "id": "ASSET_ONC_SYM_ICON_270",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_271": {
+    "id": "ASSET_ONC_SYM_ICON_271",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_272": {
+    "id": "ASSET_ONC_SYM_ICON_272",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_273": {
+    "id": "ASSET_ONC_SYM_ICON_273",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_274": {
+    "id": "ASSET_ONC_SYM_ICON_274",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_275": {
+    "id": "ASSET_ONC_SYM_ICON_275",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_276": {
+    "id": "ASSET_ONC_SYM_ICON_276",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_brain5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_277": {
+    "id": "ASSET_ONC_SYM_ICON_277",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainPres1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_278": {
+    "id": "ASSET_ONC_SYM_ICON_278",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainPres1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_279": {
+    "id": "ASSET_ONC_SYM_ICON_279",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainWave1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_280": {
+    "id": "ASSET_ONC_SYM_ICON_280",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainWave1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_281": {
+    "id": "ASSET_ONC_SYM_ICON_281",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_282": {
+    "id": "ASSET_ONC_SYM_ICON_282",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_283": {
+    "id": "ASSET_ONC_SYM_ICON_283",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_tumour1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_284": {
+    "id": "ASSET_ONC_SYM_ICON_284",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_tumour1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_285": {
+    "id": "ASSET_ONC_SYM_ICON_285",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cellsB1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_286": {
+    "id": "ASSET_ONC_SYM_ICON_286",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cellsB1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_287": {
+    "id": "ASSET_ONC_SYM_ICON_287",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainDam1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_288": {
+    "id": "ASSET_ONC_SYM_ICON_288",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainDam1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_289": {
+    "id": "ASSET_ONC_SYM_ICON_289",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainstone1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_290": {
+    "id": "ASSET_ONC_SYM_ICON_290",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_brainstone1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_291": {
+    "id": "ASSET_ONC_SYM_ICON_291",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_speech1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_292": {
+    "id": "ASSET_ONC_SYM_ICON_292",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_speech1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_293": {
+    "id": "ASSET_ONC_SYM_ICON_293",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_microsy1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_294": {
+    "id": "ASSET_ONC_SYM_ICON_294",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_microsy1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_295": {
+    "id": "ASSET_ONC_SYM_ICON_295",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_296": {
+    "id": "ASSET_ONC_SYM_ICON_296",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_297": {
+    "id": "ASSET_ONC_SYM_ICON_297",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_298": {
+    "id": "ASSET_ONC_SYM_ICON_298",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_299": {
+    "id": "ASSET_ONC_SYM_ICON_299",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_300": {
+    "id": "ASSET_ONC_SYM_ICON_300",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_303": {
+    "id": "ASSET_ONC_SYM_ICON_303",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ICPain1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_304": {
+    "id": "ASSET_ONC_SYM_ICON_304",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ICPain1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_305": {
+    "id": "ASSET_ONC_SYM_ICON_305",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_306": {
+    "id": "ASSET_ONC_SYM_ICON_306",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_307": {
+    "id": "ASSET_ONC_SYM_ICON_307",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_308": {
+    "id": "ASSET_ONC_SYM_ICON_308",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_309": {
+    "id": "ASSET_ONC_SYM_ICON_309",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_310": {
+    "id": "ASSET_ONC_SYM_ICON_310",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_311": {
+    "id": "ASSET_ONC_SYM_ICON_311",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_312": {
+    "id": "ASSET_ONC_SYM_ICON_312",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_313": {
+    "id": "ASSET_ONC_SYM_ICON_313",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_314": {
+    "id": "ASSET_ONC_SYM_ICON_314",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_OVA4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_315": {
+    "id": "ASSET_ONC_SYM_ICON_315",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_uter1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_316": {
+    "id": "ASSET_ONC_SYM_ICON_316",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_uter1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_317": {
+    "id": "ASSET_ONC_SYM_ICON_317",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_uter2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_318": {
+    "id": "ASSET_ONC_SYM_ICON_318",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_uter2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_319": {
+    "id": "ASSET_ONC_SYM_ICON_319",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_fefull1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_320": {
+    "id": "ASSET_ONC_SYM_ICON_320",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_fefull1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_321": {
+    "id": "ASSET_ONC_SYM_ICON_321",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_menstruChange1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_322": {
+    "id": "ASSET_ONC_SYM_ICON_322",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_menstruChange1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_323": {
+    "id": "ASSET_ONC_SYM_ICON_323",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_menstruChange2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_324": {
+    "id": "ASSET_ONC_SYM_ICON_324",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_menstruChange2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_325": {
+    "id": "ASSET_ONC_SYM_ICON_325",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_326": {
+    "id": "ASSET_ONC_SYM_ICON_326",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_chromoB6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_327": {
+    "id": "ASSET_ONC_SYM_ICON_327",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ovacyst1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_328": {
+    "id": "ASSET_ONC_SYM_ICON_328",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ovacyst1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_329": {
+    "id": "ASSET_ONC_SYM_ICON_329",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_micInva1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_330": {
+    "id": "ASSET_ONC_SYM_ICON_330",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_micInva1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_331": {
+    "id": "ASSET_ONC_SYM_ICON_331",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Psammoma1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_332": {
+    "id": "ASSET_ONC_SYM_ICON_332",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Psammoma1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_333": {
+    "id": "ASSET_ONC_SYM_ICON_333",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ascites1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_334": {
+    "id": "ASSET_ONC_SYM_ICON_334",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ascites1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_335": {
+    "id": "ASSET_ONC_SYM_ICON_335",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_WaterOnLung1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_336": {
+    "id": "ASSET_ONC_SYM_ICON_336",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_WaterOnLung1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_337": {
+    "id": "ASSET_ONC_SYM_ICON_337",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_psaAG1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_338": {
+    "id": "ASSET_ONC_SYM_ICON_338",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_psaAG1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_339": {
+    "id": "ASSET_ONC_SYM_ICON_339",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_prostate1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_340": {
+    "id": "ASSET_ONC_SYM_ICON_340",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_prostate1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_341": {
+    "id": "ASSET_ONC_SYM_ICON_341",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hardurine1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_342": {
+    "id": "ASSET_ONC_SYM_ICON_342",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hardurine1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_343": {
+    "id": "ASSET_ONC_SYM_ICON_343",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_painfulsx1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_344": {
+    "id": "ASSET_ONC_SYM_ICON_344",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_painfulsx1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_345": {
+    "id": "ASSET_ONC_SYM_ICON_345",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_sleepurine1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_346": {
+    "id": "ASSET_ONC_SYM_ICON_346",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_sleepurine1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_347": {
+    "id": "ASSET_ONC_SYM_ICON_347",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen6a.png"
+  },
+  "ASSET_ONC_SYM_ICON_348": {
+    "id": "ASSET_ONC_SYM_ICON_348",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_antigen6b.png"
+  },
+  "ASSET_ONC_SYM_ICON_349": {
+    "id": "ASSET_ONC_SYM_ICON_349",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ed1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_350": {
+    "id": "ASSET_ONC_SYM_ICON_350",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_ed1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_351": {
+    "id": "ASSET_ONC_SYM_ICON_351",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Hematospermia1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_352": {
+    "id": "ASSET_ONC_SYM_ICON_352",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Hematospermia1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_353": {
+    "id": "ASSET_ONC_SYM_ICON_353",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_354": {
+    "id": "ASSET_ONC_SYM_ICON_354",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_355": {
+    "id": "ASSET_ONC_SYM_ICON_355",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_356": {
+    "id": "ASSET_ONC_SYM_ICON_356",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_357": {
+    "id": "ASSET_ONC_SYM_ICON_357",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_358": {
+    "id": "ASSET_ONC_SYM_ICON_358",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_359": {
+    "id": "ASSET_ONC_SYM_ICON_359",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_360": {
+    "id": "ASSET_ONC_SYM_ICON_360",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_361": {
+    "id": "ASSET_ONC_SYM_ICON_361",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma5a.png"
+  },
+  "ASSET_ONC_SYM_ICON_362": {
+    "id": "ASSET_ONC_SYM_ICON_362",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lymphoma5b.png"
+  },
+  "ASSET_ONC_SYM_ICON_363": {
+    "id": "ASSET_ONC_SYM_ICON_363",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_growthp1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_364": {
+    "id": "ASSET_ONC_SYM_ICON_364",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_growthp1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_365": {
+    "id": "ASSET_ONC_SYM_ICON_365",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_merkel1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_366": {
+    "id": "ASSET_ONC_SYM_ICON_366",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_merkel1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_367": {
+    "id": "ASSET_ONC_SYM_ICON_367",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mcpF1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_368": {
+    "id": "ASSET_ONC_SYM_ICON_368",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mcpF1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_369": {
+    "id": "ASSET_ONC_SYM_ICON_369",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_animo1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_370": {
+    "id": "ASSET_ONC_SYM_ICON_370",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_animo1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_371": {
+    "id": "ASSET_ONC_SYM_ICON_371",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cellvisual1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_372": {
+    "id": "ASSET_ONC_SYM_ICON_372",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cellvisual1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_373": {
+    "id": "ASSET_ONC_SYM_ICON_373",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nkhomeobox1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_374": {
+    "id": "ASSET_ONC_SYM_ICON_374",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nkhomeobox1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_375": {
+    "id": "ASSET_ONC_SYM_ICON_375",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_lc03_1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_376": {
+    "id": "ASSET_ONC_SYM_ICON_376",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_lc03_1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_377": {
+    "id": "ASSET_ONC_SYM_ICON_377",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_proteinA1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_378": {
+    "id": "ASSET_ONC_SYM_ICON_378",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_proteinA1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_379": {
+    "id": "ASSET_ONC_SYM_ICON_379",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_lc03_2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_380": {
+    "id": "ASSET_ONC_SYM_ICON_380",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_slp_lc03_2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_381": {
+    "id": "ASSET_ONC_SYM_ICON_381",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_bone1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_382": {
+    "id": "ASSET_ONC_SYM_ICON_382",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_bone1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_383": {
+    "id": "ASSET_ONC_SYM_ICON_383",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_384": {
+    "id": "ASSET_ONC_SYM_ICON_384",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_lc3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_385": {
+    "id": "ASSET_ONC_SYM_ICON_385",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_proteinA2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_386": {
+    "id": "ASSET_ONC_SYM_ICON_386",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_proteinA2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_387": {
+    "id": "ASSET_ONC_SYM_ICON_387",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_microsat1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_388": {
+    "id": "ASSET_ONC_SYM_ICON_388",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_microsat1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_389": {
+    "id": "ASSET_ONC_SYM_ICON_389",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_spot1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_390": {
+    "id": "ASSET_ONC_SYM_ICON_390",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_spot1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_391": {
+    "id": "ASSET_ONC_SYM_ICON_391",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_gene1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_392": {
+    "id": "ASSET_ONC_SYM_ICON_392",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_gene1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_393": {
+    "id": "ASSET_ONC_SYM_ICON_393",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_signet1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_394": {
+    "id": "ASSET_ONC_SYM_ICON_394",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_signet1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_395": {
+    "id": "ASSET_ONC_SYM_ICON_395",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_colonfind1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_396": {
+    "id": "ASSET_ONC_SYM_ICON_396",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_colonfind1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_397": {
+    "id": "ASSET_ONC_SYM_ICON_397",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_398": {
+    "id": "ASSET_ONC_SYM_ICON_398",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_399": {
+    "id": "ASSET_ONC_SYM_ICON_399",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_400": {
+    "id": "ASSET_ONC_SYM_ICON_400",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_401": {
+    "id": "ASSET_ONC_SYM_ICON_401",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_402": {
+    "id": "ASSET_ONC_SYM_ICON_402",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_403": {
+    "id": "ASSET_ONC_SYM_ICON_403",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin4a.png"
+  },
+  "ASSET_ONC_SYM_ICON_404": {
+    "id": "ASSET_ONC_SYM_ICON_404",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_mucin4b.png"
+  },
+  "ASSET_ONC_SYM_ICON_405": {
+    "id": "ASSET_ONC_SYM_ICON_405",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cell1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_406": {
+    "id": "ASSET_ONC_SYM_ICON_406",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cell1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_407": {
+    "id": "ASSET_ONC_SYM_ICON_407",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cell2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_408": {
+    "id": "ASSET_ONC_SYM_ICON_408",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_cell2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_409": {
+    "id": "ASSET_ONC_SYM_ICON_409",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_whitestool1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_410": {
+    "id": "ASSET_ONC_SYM_ICON_410",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_whitestool1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_411": {
+    "id": "ASSET_ONC_SYM_ICON_411",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_412": {
+    "id": "ASSET_ONC_SYM_ICON_412",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_413": {
+    "id": "ASSET_ONC_SYM_ICON_413",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv2a.png"
+  },
+  "ASSET_ONC_SYM_ICON_414": {
+    "id": "ASSET_ONC_SYM_ICON_414",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv2b.png"
+  },
+  "ASSET_ONC_SYM_ICON_415": {
+    "id": "ASSET_ONC_SYM_ICON_415",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_doctorform1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_416": {
+    "id": "ASSET_ONC_SYM_ICON_416",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_doctorform1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_417": {
+    "id": "ASSET_ONC_SYM_ICON_417",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hepa1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_418": {
+    "id": "ASSET_ONC_SYM_ICON_418",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hepa1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_419": {
+    "id": "ASSET_ONC_SYM_ICON_419",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv3a.png"
+  },
+  "ASSET_ONC_SYM_ICON_420": {
+    "id": "ASSET_ONC_SYM_ICON_420",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_liv3b.png"
+  },
+  "ASSET_ONC_SYM_ICON_421": {
+    "id": "ASSET_ONC_SYM_ICON_421",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_afp1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_422": {
+    "id": "ASSET_ONC_SYM_ICON_422",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_afp1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_423": {
+    "id": "ASSET_ONC_SYM_ICON_423",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_abnormal1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_424": {
+    "id": "ASSET_ONC_SYM_ICON_424",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_abnormal1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_425": {
+    "id": "ASSET_ONC_SYM_ICON_425",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_liverfail1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_426": {
+    "id": "ASSET_ONC_SYM_ICON_426",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_liverfail1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_427": {
+    "id": "ASSET_ONC_SYM_ICON_427",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_liverreject1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_428": {
+    "id": "ASSET_ONC_SYM_ICON_428",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_liverreject1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_429": {
+    "id": "ASSET_ONC_SYM_ICON_429",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_internalbleed1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_430": {
+    "id": "ASSET_ONC_SYM_ICON_430",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_internalbleed1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_431": {
+    "id": "ASSET_ONC_SYM_ICON_431",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hemo1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_432": {
+    "id": "ASSET_ONC_SYM_ICON_432",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hemo1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_433": {
+    "id": "ASSET_ONC_SYM_ICON_433",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_rupture1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_434": {
+    "id": "ASSET_ONC_SYM_ICON_434",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_rupture1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_435": {
+    "id": "ASSET_ONC_SYM_ICON_435",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ora001a.png"
+  },
+  "ASSET_ONC_SYM_ICON_436": {
+    "id": "ASSET_ONC_SYM_ICON_436",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/dia_sl_ora001b.png"
+  },
+  "ASSET_ONC_SYM_ICON_437": {
+    "id": "ASSET_ONC_SYM_ICON_437",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nerve1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_438": {
+    "id": "ASSET_ONC_SYM_ICON_438",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_nerve1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_439": {
+    "id": "ASSET_ONC_SYM_ICON_439",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Dysplasia1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_440": {
+    "id": "ASSET_ONC_SYM_ICON_440",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_Dysplasia1b.png"
+  },
+  "ASSET_ONC_SYM_ICON_441": {
+    "id": "ASSET_ONC_SYM_ICON_441",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highcellc1a.png"
+  },
+  "ASSET_ONC_SYM_ICON_442": {
+    "id": "ASSET_ONC_SYM_ICON_442",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_highcellc1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_001": {
+    "id": "ASSET_ONC_TRT_ICON_001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_creama.png"
+  },
+  "ASSET_ONC_TRT_ICON_002": {
+    "id": "ASSET_ONC_TRT_ICON_002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_creamb.png"
+  },
+  "ASSET_ONC_TRT_ICON_003": {
+    "id": "ASSET_ONC_TRT_ICON_003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pdta.png"
+  },
+  "ASSET_ONC_TRT_ICON_004": {
+    "id": "ASSET_ONC_TRT_ICON_004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pdtb.png"
+  },
+  "ASSET_ONC_TRT_ICON_005": {
+    "id": "ASSET_ONC_TRT_ICON_005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_tartha.png"
+  },
+  "ASSET_ONC_TRT_ICON_006": {
+    "id": "ASSET_ONC_TRT_ICON_006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_tarthb.png"
+  },
+  "ASSET_ONC_TRT_ICON_007": {
+    "id": "ASSET_ONC_TRT_ICON_007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pillbottlea.png"
+  },
+  "ASSET_ONC_TRT_ICON_008": {
+    "id": "ASSET_ONC_TRT_ICON_008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pillbottleb.png"
+  },
+  "ASSET_ONC_TRT_ICON_009": {
+    "id": "ASSET_ONC_TRT_ICON_009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_epipena.png"
+  },
+  "ASSET_ONC_TRT_ICON_010": {
+    "id": "ASSET_ONC_TRT_ICON_010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_epipenb.png"
+  },
+  "ASSET_ONC_TRT_ICON_011": {
+    "id": "ASSET_ONC_TRT_ICON_011",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pilltraya.png"
+  },
+  "ASSET_ONC_TRT_ICON_012": {
+    "id": "ASSET_ONC_TRT_ICON_012",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pilltrayb.png"
+  },
+  "ASSET_ONC_TRT_ICON_013": {
+    "id": "ASSET_ONC_TRT_ICON_013",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_activemon1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_014": {
+    "id": "ASSET_ONC_TRT_ICON_014",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_activemon1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_015": {
+    "id": "ASSET_ONC_TRT_ICON_015",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_016": {
+    "id": "ASSET_ONC_TRT_ICON_016",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_017": {
+    "id": "ASSET_ONC_TRT_ICON_017",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_018": {
+    "id": "ASSET_ONC_TRT_ICON_018",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_021": {
+    "id": "ASSET_ONC_TRT_ICON_021",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag2a.png"
+  },
+  "ASSET_ONC_TRT_ICON_022": {
+    "id": "ASSET_ONC_TRT_ICON_022",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag2b.png"
+  },
+  "ASSET_ONC_TRT_ICON_023": {
+    "id": "ASSET_ONC_TRT_ICON_023",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag3a.png"
+  },
+  "ASSET_ONC_TRT_ICON_024": {
+    "id": "ASSET_ONC_TRT_ICON_024",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag3b.png"
+  },
+  "ASSET_ONC_TRT_ICON_025": {
+    "id": "ASSET_ONC_TRT_ICON_025",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag4a.png"
+  },
+  "ASSET_ONC_TRT_ICON_026": {
+    "id": "ASSET_ONC_TRT_ICON_026",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbag4b.png"
+  },
+  "ASSET_ONC_TRT_ICON_019": {
+    "id": "ASSET_ONC_TRT_ICON_019",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills2a.png"
+  },
+  "ASSET_ONC_TRT_ICON_020": {
+    "id": "ASSET_ONC_TRT_ICON_020",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills2b.png"
+  },
+  "ASSET_ONC_TRT_ICON_027": {
+    "id": "ASSET_ONC_TRT_ICON_027",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills3a.png"
+  },
+  "ASSET_ONC_TRT_ICON_028": {
+    "id": "ASSET_ONC_TRT_ICON_028",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills3b.png"
+  },
+  "ASSET_ONC_TRT_ICON_029": {
+    "id": "ASSET_ONC_TRT_ICON_029",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_bottleHS1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_030": {
+    "id": "ASSET_ONC_TRT_ICON_030",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_bottleHS1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_031": {
+    "id": "ASSET_ONC_TRT_ICON_031",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_estoCream1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_032": {
+    "id": "ASSET_ONC_TRT_ICON_032",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_estoCream1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_033": {
+    "id": "ASSET_ONC_TRT_ICON_033",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hormoneT1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_034": {
+    "id": "ASSET_ONC_TRT_ICON_034",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_hormoneT1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_035": {
+    "id": "ASSET_ONC_TRT_ICON_035",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_036": {
+    "id": "ASSET_ONC_TRT_ICON_036",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_037": {
+    "id": "ASSET_ONC_TRT_ICON_037",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX2a.png"
+  },
+  "ASSET_ONC_TRT_ICON_038": {
+    "id": "ASSET_ONC_TRT_ICON_038",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX2b.png"
+  },
+  "ASSET_ONC_TRT_ICON_039": {
+    "id": "ASSET_ONC_TRT_ICON_039",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX3a.png"
+  },
+  "ASSET_ONC_TRT_ICON_040": {
+    "id": "ASSET_ONC_TRT_ICON_040",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX3b.png"
+  },
+  "ASSET_ONC_TRT_ICON_041": {
+    "id": "ASSET_ONC_TRT_ICON_041",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_pill1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_042": {
+    "id": "ASSET_ONC_TRT_ICON_042",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/sym_sl_pill1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_043": {
+    "id": "ASSET_ONC_TRT_ICON_043",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX4a.png"
+  },
+  "ASSET_ONC_TRT_ICON_044": {
+    "id": "ASSET_ONC_TRT_ICON_044",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_ivbagX4b.png"
+  },
+  "ASSET_ONC_TRT_ICON_045": {
+    "id": "ASSET_ONC_TRT_ICON_045",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_Ammonul1a.png"
+  },
+  "ASSET_ONC_TRT_ICON_046": {
+    "id": "ASSET_ONC_TRT_ICON_046",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_Ammonul1b.png"
+  },
+  "ASSET_ONC_TRT_ICON_047": {
+    "id": "ASSET_ONC_TRT_ICON_047",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pill4a.png"
+  },
+  "ASSET_ONC_TRT_ICON_048": {
+    "id": "ASSET_ONC_TRT_ICON_048",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pill4b.png"
+  },
+  "ASSET_ONC_TRT_ICON_049": {
+    "id": "ASSET_ONC_TRT_ICON_049",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills4a.png"
+  },
+  "ASSET_ONC_TRT_ICON_050": {
+    "id": "ASSET_ONC_TRT_ICON_050",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/trt_sl_pills4b.png"
+  },
+  "ASSET_ONC_EXM_ICON_001": {
+    "id": "ASSET_ONC_EXM_ICON_001",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_ccbta.png"
+  },
+  "ASSET_ONC_EXM_ICON_002": {
+    "id": "ASSET_ONC_EXM_ICON_002",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_ccbtb.png"
+  },
+  "ASSET_ONC_EXM_ICON_003": {
+    "id": "ASSET_ONC_EXM_ICON_003",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_neda.png"
+  },
+  "ASSET_ONC_EXM_ICON_004": {
+    "id": "ASSET_ONC_EXM_ICON_004",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_nedb.png"
+  },
+  "ASSET_ONC_EXM_ICON_005": {
+    "id": "ASSET_ONC_EXM_ICON_005",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_testtubea.png"
+  },
+  "ASSET_ONC_EXM_ICON_006": {
+    "id": "ASSET_ONC_EXM_ICON_006",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_testtubeb.png"
+  },
+  "ASSET_ONC_EXM_ICON_007": {
+    "id": "ASSET_ONC_EXM_ICON_007",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_coloa.png"
+  },
+  "ASSET_ONC_EXM_ICON_008": {
+    "id": "ASSET_ONC_EXM_ICON_008",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_colob.png"
+  },
+  "ASSET_ONC_EXM_ICON_009": {
+    "id": "ASSET_ONC_EXM_ICON_009",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_ned1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_010": {
+    "id": "ASSET_ONC_EXM_ICON_010",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_ned1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_011": {
+    "id": "ASSET_ONC_EXM_ICON_011",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biops1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_012": {
+    "id": "ASSET_ONC_EXM_ICON_012",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biops1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_013": {
+    "id": "ASSET_ONC_EXM_ICON_013",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_flowcyc1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_014": {
+    "id": "ASSET_ONC_EXM_ICON_014",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_flowcyc1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_015": {
+    "id": "ASSET_ONC_EXM_ICON_015",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_bloodcount1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_016": {
+    "id": "ASSET_ONC_EXM_ICON_016",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_bloodcount1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_017": {
+    "id": "ASSET_ONC_EXM_ICON_017",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_bloodsmear1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_018": {
+    "id": "ASSET_ONC_EXM_ICON_018",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_bloodsmear1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_019": {
+    "id": "ASSET_ONC_EXM_ICON_019",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_LFT1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_020": {
+    "id": "ASSET_ONC_EXM_ICON_020",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_LFT1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_021": {
+    "id": "ASSET_ONC_EXM_ICON_021",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_LFT1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_022": {
+    "id": "ASSET_ONC_EXM_ICON_022",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_LFT1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_023": {
+    "id": "ASSET_ONC_EXM_ICON_023",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_IVS1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_024": {
+    "id": "ASSET_ONC_EXM_ICON_024",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_IVS1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_025": {
+    "id": "ASSET_ONC_EXM_ICON_025",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_mammo1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_026": {
+    "id": "ASSET_ONC_EXM_ICON_026",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_mammo1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_027": {
+    "id": "ASSET_ONC_EXM_ICON_027",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biops2a.png"
+  },
+  "ASSET_ONC_EXM_ICON_028": {
+    "id": "ASSET_ONC_EXM_ICON_028",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biops2b.png"
+  },
+  "ASSET_ONC_EXM_ICON_029": {
+    "id": "ASSET_ONC_EXM_ICON_029",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_electro1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_030": {
+    "id": "ASSET_ONC_EXM_ICON_030",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_electro1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_031": {
+    "id": "ASSET_ONC_EXM_ICON_031",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_urtExam1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_032": {
+    "id": "ASSET_ONC_EXM_ICON_032",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_urtExam1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_033": {
+    "id": "ASSET_ONC_EXM_ICON_033",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_DRE1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_034": {
+    "id": "ASSET_ONC_EXM_ICON_034",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_DRE1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_035": {
+    "id": "ASSET_ONC_EXM_ICON_035",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_minTest1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_036": {
+    "id": "ASSET_ONC_EXM_ICON_036",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_minTest1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_037": {
+    "id": "ASSET_ONC_EXM_ICON_037",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biopsyX1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_038": {
+    "id": "ASSET_ONC_EXM_ICON_038",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_biopsyX1b.png"
+  },
+  "ASSET_ONC_EXM_ICON_039": {
+    "id": "ASSET_ONC_EXM_ICON_039",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_liverbiopsy1a.png"
+  },
+  "ASSET_ONC_EXM_ICON_040": {
+    "id": "ASSET_ONC_EXM_ICON_040",
+    "type": "TEXTURE_CUSTOM_SPRITE",
+    "icon_path": "Mod_ONCO/exm_sl_liverbiopsy1b.png"
+  }
+}
