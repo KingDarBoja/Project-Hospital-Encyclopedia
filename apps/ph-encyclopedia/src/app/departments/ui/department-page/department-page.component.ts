@@ -31,7 +31,7 @@ export class DepartmentPageComponent {
 
   readonly dptTitles = DepartmentTitles;
   dptCode = this.activatedRoute.data.pipe(
-    map(data => data['dptCode'] as OfficialDepartmentsType),
+    map((data) => data['dptCode'] as OfficialDepartmentsType)
   );
   diagnoses = toSignal(
     this.dptCode.pipe(
@@ -53,7 +53,7 @@ export class DepartmentPageComponent {
         diagnoses: Object.values(res).sort((a, b) =>
           a.name.localeCompare(b.name)
         ),
-      })),
+      }))
       // tap((res) => console.log(res))
     );
   }

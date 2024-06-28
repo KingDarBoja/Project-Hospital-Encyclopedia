@@ -121,8 +121,3 @@ $dpt-grey: rgb(110, 110, 110);
     color: $dpt-grey;
   }
 }
-
-/* Workaround for the mat-card not aligning properly */
-.custom-mdc-card-title {
-  line-height: 40px !important;
-}

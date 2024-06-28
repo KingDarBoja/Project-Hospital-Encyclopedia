@@ -1,95 +1,105 @@
 <mat-card class="h-full">
-  <mat-card-header
-    class="text-white text-ellipsis font-medium rounded-t bg-red-700"
-  >
-    <div mat-card-avatar >
-      <img src="assets/icons/ph_icon_{{ diagnose.icon_index }}.png" />
+  <mat-card-header class="rounded-t bg-red-700">
+    <div class="flex flex-row space-x-1 pb-4 justify-between">
+      <div class="w-10">
+        <img
+          class="object-contain"
+          src="assets/icons/ph_icon_{{ diagnose.icon_index }}.png"
+          fallbackSrc
+        />
+      </div>
+      <span class="flex flex-1 items-center text-base text-white font-medium">
+        {{ diagnose.name }}
+      </span>
     </div>
-    <mat-card-title class="custom-mdc-card-title">
-      {{ diagnose.name }}
-    </mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <section class="flex flex-col mt-2 space-y-2">
       <div
-        class="text-left font-medium"
+        class="text-sm text-left font-medium"
         [ngClass]="occurenceColour[diagnose.occurrence]"
       >
         Occurence: {{ occurenceI18N[diagnose.occurrence] }} | Insurance: ${{
           diagnose.insurance
         }}
       </div>
-      <div class="text-ellipsis text-justify text-gray-600">
+      <div class="text-sm text-ellipsis text-justify text-gray-600">
         {{ diagnose.description }}
       </div>
-      <ng-container *ngIf="diagnose.symptoms">
-        <ng-template
-          [ngTemplateOutlet]="symptomList"
-          [ngTemplateOutletContext]="{ symptoms: diagnose.symptoms }"
-        ></ng-template>
-      </ng-container>
-    </section>
-  </mat-card-content>
-</mat-card>
-
-<ng-template #symptomList let-symptoms="symptoms">
-  <mat-list class="">
-    <div mat-subheader>Symptoms</div>
-    <div class="space-y-2">
-      <ng-container *ngFor="let symptom of symptoms">
-        <section mat-line class="flex flex-row items-center">
-          <img
-            class="rounded-full symptom-filter"
-            src="assets/icons/ph_icon_{{ symptom.icon_index }}.png"
-          />
-          <figcaption class="flex flex-col pl-2 text-xs">
-            <div class="text-sm font-medium text-red-700 whitespace-normal">
-              {{ symptom.name }}
-            </div>
-            <div class="whitespace-normal text-red-700">
-              Probability: {{ symptom.probability }}% - Hazard:
-              {{ symptom.hazard }}
-            </div>
-            <section class="py-1 text-green-700">
-              <span class="font-medium">Examinations</span>
-              <ul class="list-disc list-inside -space-y-2">
-                <li
-                  *ngFor="let exm of symptom.examinations"
-                  class="flex flex-row items-center"
-                >
-                  <img
-                    class="rounded-full h-8 w-8 examination-filter"
-                    src="assets/icons/ph_icon_{{ exm.icon_index }}.png"
-                  />
-                  <figcaption class="flex flex-col pl-2">
-                    {{ exm.name }}
-                  </figcaption>
-                </li>
-              </ul>
+      @if (diagnose.symptoms) {
+      <mat-list class="space-y-2">
+        @for (symptom of diagnose.symptoms; track symptom) {
+        <mat-card appearance="outlined">
+          <mat-card-content class="flex flex-col space-y-1">
+            <div class="text-red-900 font-bold text-base">Symptom</div>
+            <section class="flex flex-1 space-x-1">
+              <div class="w-10">
+                <img
+                  class="object-contain symptom-filter"
+                  src="assets/icons/ph_icon_{{ symptom.icon_index }}.png"
+                  fallbackSrc
+                />
+              </div>
+              <div class="flex flex-col text-red-700">
+                <span class="text-sm font-medium">
+                  {{ symptom.name }}
+                </span>
+                <span class="text-xs">
+                  Probability: {{ symptom.probability }}% - Hazard:
+                  {{ symptom.hazard }}
+                </span>
+              </div>
             </section>
 
-            <section class="py-1 text-blue-700">
-              <span class="font-medium">Treatments</span>
-              <div class="flex flex-row items-center">
-                <ng-container *ngIf="symptom.treatment">
+            <section class="flex flex-col text-green-700">
+              <mat-divider></mat-divider>
+              <span class="font-medium text-base pt-2">Examinations</span>
+              <div class="text-sm">
+                @if (symptom.examinations.length) {
+                <ul class="-space-y-2">
+                  @for (exm of symptom.examinations; track exm) {
+                  <li class="flex flex-row items-center">
+                    <img
+                      class="rounded-full h-8 w-8 examination-filter"
+                      src="assets/icons/ph_icon_{{ exm.icon_index }}.png"
+                      fallbackSrc
+                    />
+                    <span>
+                      {{ exm.name }}
+                    </span>
+                  </li>
+                  }
+                </ul>
+
+                } @else {<span>Cannot be examined.</span> }
+              </div>
+            </section>
+
+            <section class="flex flex-col text-blue-700">
+              <mat-divider></mat-divider>
+              <span class="font-medium text-base pt-2">Treatments</span>
+              <div class="text-sm">
+                @if (symptom.treatment) {
+                <div class="flex flex-row items-center">
                   <img
                     class="rounded-full h-8 w-8 treatment-filter"
                     src="assets/icons/ph_icon_{{
                       symptom.treatment.icon_index
                     }}.png"
+                    fallbackSrc
                   />
-                  <figcaption class="flex flex-col pl-2">
+                  <span>
                     {{ symptom.treatment.name }}
-                  </figcaption>
-                </ng-container>
-                <ng-container *ngIf="!symptom.treatment"
-                  >Cannot be treated.</ng-container
-                >
+                  </span>
+                </div>
+                } @else { <span>Cannot be treated.</span> }
               </div>
             </section>
-          </figcaption>
-        </section>
-      </ng-container>
-    </div>
-  </mat-list>
-</ng-template>
+          </mat-card-content>
+        </mat-card>
+        }
+      </mat-list>
+      }
+    </section>
+  </mat-card-content>
+</mat-card>

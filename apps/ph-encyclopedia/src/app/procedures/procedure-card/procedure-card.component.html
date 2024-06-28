@@ -1,60 +1,72 @@
 <mat-card class="h-full">
   <mat-card-header
-    class="text-white text-ellipsis font-medium rounded-t"
+    class="rounded-t"
     [ngClass]="[type === 'EXM' ? 'bg-green-700' : 'bg-blue-700']"
   >
-    <div mat-card-avatar>
-      <img src="assets/icons/ph_icon_{{ procedure.icon_index }}.png" />
+    <div class="flex flex-row space-x-1 pb-4 justify-between">
+      <div class="w-10">
+        <img
+          class="object-contain"
+          src="assets/icons/ph_icon_{{ formattedProcedure.raw.icon_index }}.png"
+          fallbackSrc
+        />
+      </div>
+      <span class="flex flex-1 items-center text-md text-white font-medium">
+        {{ formattedProcedure.raw.name }}
+      </span>
     </div>
-    <mat-card-title class="custom-mdc-card-title">
-      {{ procedure.name }}
-    </mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <section class="flex flex-col mt-2 space-y-2">
-      <div class="text-ellipsis text-justify text-gray-600">
-        {{ procedure.description }}
+      <div class="flex flex-col text-gray-600 space-y-2 text-sm">
+        <span class="italic text-justify">{{ formattedProcedure.desc }}</span>
+        <span class="font-medium text-xs">{{ formattedProcedure.req_rooms }}</span>
       </div>
-      <ng-container *ngIf="procedure.required_doctors">
-        <ng-template
-          [ngTemplateOutlet]="skillList"
-          [ngTemplateOutletContext]="{
-            skills: procedure.required_doctors,
-            title: 'Doctor'
-          }"
-        ></ng-template>
-      </ng-container>
-      <ng-container *ngIf="procedure.required_lab_spec">
-        <ng-template
-          [ngTemplateOutlet]="skillList"
-          [ngTemplateOutletContext]="{
-            skills: [procedure.required_lab_spec],
-            title: 'Lab Specialist'
-          }"
-        ></ng-template>
-      </ng-container>
+      @if (formattedProcedure.raw.required_doctors?.length) {
+      <ng-template
+        [ngTemplateOutlet]="skillList"
+        [ngTemplateOutletContext]="{
+          skills: formattedProcedure.raw.required_doctors,
+          title: 'Doctor'
+        }"
+      ></ng-template>
+      } @if (formattedProcedure.raw.required_lab_spec) {
+      <ng-template
+        [ngTemplateOutlet]="skillList"
+        [ngTemplateOutletContext]="{
+          skills: [formattedProcedure.raw.required_lab_spec],
+          title: 'Lab Specialist'
+        }"
+      ></ng-template>
+      }
     </section>
   </mat-card-content>
 </mat-card>
 
 <ng-template #skillList let-skills="skills" let-title="title">
-  <mat-list class="">
-    <div mat-subheader>Required {{ title }} Skills</div>
-    <div class="space-y-2">
-      <ng-container *ngFor="let skill of skills">
-        <section mat-line class="flex flex-row items-center">
-          <img
-            class="rounded-full"
-            src="assets/icons/ph_icon_{{ skill.icon_index }}.png"
-          />
-          <figcaption class="flex flex-col pl-2">
-            <div class="font-bold whitespace-normal">
-              {{ skill.name }}
-            </div>
-            <div class="whitespace-normal">{{ skill.description }}</div>
-          </figcaption>
+  <mat-card appearance="outlined">
+    <mat-card-content class="flex flex-col space-y-1">
+      <div class="text-red-900 font-bold text-sm">
+        Required {{ title }} Skills
+      </div>
+      <div class="space-y-1">
+        @for (skill of skills; track skill) {
+        <section
+          class="flex flex-1 space-x-1 items-center text-sm text-blue-900"
+        >
+          <div class="w-10">
+            <img
+              class="object-contain"
+              src="assets/icons/ph_icon_{{ skill.icon_index }}.png"
+              fallbackSrc
+            />
+          </div>
+          <div class="font-medium">
+            {{ skill.name }}
+          </div>
         </section>
-      </ng-container>
-    </div>
-  </mat-list>
+        }
+      </div>
+    </mat-card-content>
+  </mat-card>
 </ng-template>
