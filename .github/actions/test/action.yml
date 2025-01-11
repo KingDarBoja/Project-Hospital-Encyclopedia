@@ -1,0 +1,29 @@
+#
+name: Test
+
+description: Test if all the nx libraries and apps were affected after the nx migration.
+
+# inputs:
+#   codecov_token:
+#     description: Codecov token
+#     required: true
+
+runs:
+  using: composite
+
+  steps:
+    # - name: Format check
+    #   shell: bash
+    #   run: yarn nx format:check --base=main
+    - name: Lint
+      shell: bash
+      run: yarn nx affected:lint --base=main
+    - name: Build
+      shell: bash
+      run: yarn nx affected:build --base=main
+    # - name: Test
+    #   shell: bash
+    #   run: yarn nx affected:test --base=main -c=ci
+    # - name: E2E
+    #   shell: bash
+    #   run: yarn nx affected:e2e --base=main
