@@ -4,8 +4,9 @@ import { map } from 'rxjs/operators';
 import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
 
 @Component({
-  selector: 'ph-encyclopedia-treatment-list',
-  templateUrl: 'treatment.component.html',
+    selector: 'ph-encyclopedia-treatment-list',
+    templateUrl: 'treatment.component.html',
+    standalone: false
 })
 export class TreatmentComponent {
   readonly treatment$ = this.http
