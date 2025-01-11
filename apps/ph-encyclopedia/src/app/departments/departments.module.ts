@@ -15,7 +15,7 @@ const DepartmentRoutes: Routes = [
     path: 'general_surgery',
     component: DepartmentPageComponent,
     pathMatch: 'full',
-    data: { dptCode: OfficialDepartments.INTERNAL_MEDICINE },
+    data: { dptCode: OfficialDepartments.GENERAL_SURGERY },
   },
   {
     path: 'internal_medicine',
