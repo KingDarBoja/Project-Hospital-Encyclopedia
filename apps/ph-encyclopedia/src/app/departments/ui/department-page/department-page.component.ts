@@ -22,8 +22,9 @@ const DepartmentTitles: Record<OfficialDepartments, string> = {
 };
 
 @Component({
-  selector: 'ph-encyclopedia-department-page',
-  templateUrl: 'department-page.component.html',
+    selector: 'ph-encyclopedia-department-page',
+    templateUrl: 'department-page.component.html',
+    standalone: false
 })
 export class DepartmentPageComponent {
   private http = inject(HttpClient);

@@ -2,8 +2,9 @@ import { Component, Input } from '@angular/core';
 import { DiagnoseSchema } from '@ph-encyclopedia/shared/diagnoses';
 
 @Component({
-  selector: 'ph-encyclopedia-diagnose-card',
-  templateUrl: 'diagnose-card.component.html'
+    selector: 'ph-encyclopedia-diagnose-card',
+    templateUrl: 'diagnose-card.component.html',
+    standalone: false
 })
 
 export class DiagnoseCardComponent {

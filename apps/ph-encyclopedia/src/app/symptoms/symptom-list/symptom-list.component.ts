@@ -4,7 +4,8 @@ import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
 import { map } from 'rxjs/operators';
 
 @Component({
-  templateUrl: 'symptom-list.component.html',
+    templateUrl: 'symptom-list.component.html',
+    standalone: false
 })
 export class SymptomListComponent {
   readonly symptom$ = this.http

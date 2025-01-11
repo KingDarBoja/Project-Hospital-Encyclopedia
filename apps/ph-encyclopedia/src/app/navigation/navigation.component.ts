@@ -30,23 +30,22 @@ type NavigationSection = Array<{
 }>;
 
 @Component({
-  selector: 'ph-encyclopedia-app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrl: './navigation.component.scss',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatDividerModule,
-    MatListModule,
-    MatIconModule,
-    AsyncPipe,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-  ],
+    selector: 'ph-encyclopedia-app-navigation',
+    templateUrl: './navigation.component.html',
+    styleUrl: './navigation.component.scss',
+    imports: [
+        CommonModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatDividerModule,
+        MatListModule,
+        MatIconModule,
+        AsyncPipe,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+    ]
 })
 export class NavigationComponent {
   private breakpointObserver = inject(BreakpointObserver);
