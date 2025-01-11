@@ -1,0 +1,57 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "packageNames": ["@types/node"],
+      "allowedVersions": "22.x"
+    },
+    {
+      "groupName": "Typescript",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^typescript"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+    {
+      "groupName": "Rxjs",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^rxjs"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "groupName": "Angular",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": [
+        "^@angular",
+        "^@schematics",
+        "^@ngrx",
+        "^eslint",
+        "^esbuild",
+        "^prettier",
+        "^@swc",
+        "^jest",
+        "^ts-jest",
+        "^@playwright",
+        "^tslib",
+        "^ts-node",
+        "^zone\\.js"
+      ],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "groupName": "Nx Workspace",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^@nx/", "^nx$"],
+      "enabled": false
+    },
+    {
+      "groupName": "Tailwind Packages",
+      "matchManagers": ["npm"],
+      "packageNames": ["tailwindcss", "postcss", "autoprefixer"]
+    }
+  ]
+}
