@@ -59,7 +59,7 @@
     "@swc/helpers": "~0.5.11",
     "@types/fs-extra": "^11.0.0",
     "@types/jest": "29.5.14",
-    "@types/node": "^20.14.9",
+    "@types/node": "^22.0.0",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "@typescript-eslint/utils": "7.18.0",
