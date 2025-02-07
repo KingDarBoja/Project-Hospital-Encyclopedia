@@ -9016,7 +9016,7 @@ jest-each@^29.7.0:
     jest-util "^29.7.0"
     pretty-format "^29.7.0"
 
-jest-environment-jsdom@29.7.0, jest-environment-jsdom@^29.0.0:
+jest-environment-jsdom@29.7.0, jest-environment-jsdom@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-29.7.0.tgz#d206fa3551933c3fd519e5dfdb58a0f5139a837f"
   integrity sha512-k9iQbsf9OyOfdzWH8HDmrRT0gSIcX+FLNW7IQq94tFX0gynPwqDTW0Ho6iMVNjGz/nb+l/vW3dWM2bbLLpkbXA==
@@ -9113,16 +9113,16 @@ jest-pnp-resolver@^1.2.2:
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.3.tgz#930b1546164d4ad5937d5540e711d4d38d4cad2e"
   integrity sha512-+3NpwQEnRoIBtx4fyhblQDPgJI0H1IEIkX7ShLUjPGA7TtUTvI1oiKi3SR4oBR0hQhQR80l4WAe5RrXBwWMA8w==
 
-jest-preset-angular@14.4.2:
-  version "14.4.2"
-  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-14.4.2.tgz#c2c0e1581cebed863b86efa52a14b1cb8b3cae30"
-  integrity sha512-BYYv0FaTDfBNh8WyA9mpOV3krfw20kurBGK8INZUnv7KZDAWZuQtCET4TwTWxSNQ9jS1OX1+a5weCm/bTDDM1A==
+jest-preset-angular@14.5.1:
+  version "14.5.1"
+  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-14.5.1.tgz#f72dcdf3b49140dabcb8c7007be0f609c3fdc041"
+  integrity sha512-HLYYMwNcv3mFrKbOPJwR29tKqVg+yWxez8ilCIsEj1HRYZ/OVsBy5+dcMok+VqL5nmeukTsGnEfGWt+SsQqtkA==
   dependencies:
     bs-logger "^0.2.6"
     esbuild-wasm ">=0.15.13"
-    jest-environment-jsdom "^29.0.0"
-    jest-util "^29.0.0"
-    pretty-format "^29.0.0"
+    jest-environment-jsdom "^29.7.0"
+    jest-util "^29.7.0"
+    pretty-format "^29.7.0"
     ts-jest "^29.0.0"
   optionalDependencies:
     esbuild ">=0.15.13"
