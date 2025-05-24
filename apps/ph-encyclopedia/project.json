@@ -8,9 +8,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/ph-encyclopedia",
         "index": "apps/ph-encyclopedia/src/index.html",
@@ -31,9 +29,7 @@
             "output": "assets"
           }
         ],
-        "styles": [
-          "apps/ph-encyclopedia/src/styles.scss"
-        ],
+        "styles": ["apps/ph-encyclopedia/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -79,7 +75,8 @@
           "buildTarget": "ph-encyclopedia:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -92,9 +89,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/ph-encyclopedia"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/apps/ph-encyclopedia"],
       "options": {
         "jestConfig": "apps/ph-encyclopedia/jest.config.ts"
       }
