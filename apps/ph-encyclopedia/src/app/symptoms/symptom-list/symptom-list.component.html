@@ -1,13 +1,15 @@
-<ng-container *ngIf="symptom$ | async as symptoms">
+@if (symptom$ | async; as symptoms) {
   <section class="mb-2 flex flex-col">
     <div class="font-medium text-2xl text-red-900 text-center">Symptoms</div>
     <div class="text-lg text-red-900">Total symptoms: {{ symptoms.length }}</div>
   </section>
   <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div class="col-span-1" *ngFor="let symptom of symptoms">
-      <ph-encyclopedia-symptom-card
-        [symptom]="symptom"
-      ></ph-encyclopedia-symptom-card>
-    </div>
+    @for (symptom of symptoms; track symptom) {
+      <div class="col-span-1">
+        <ph-encyclopedia-symptom-card
+          [symptom]="symptom"
+        ></ph-encyclopedia-symptom-card>
+      </div>
+    }
   </section>
-</ng-container>
+}

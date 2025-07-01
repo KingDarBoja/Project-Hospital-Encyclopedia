@@ -1,4 +1,4 @@
-<ng-container *ngIf="examination$ | async as examinations">
+@if (examination$ | async; as examinations) {
   <section class="mb-2 flex flex-col">
     <span class="font-medium text-2xl text-green-900">Examinations</span>
     <div class="text-lg text-green-900">
@@ -6,12 +6,14 @@
     </div>
   </section>
   <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div class="col-span-1" *ngFor="let exm of examinations">
-      <ph-encyclopedia-procedure-card
-        [procedure]="exm"
-        [type]="'EXM'"
-      ></ph-encyclopedia-procedure-card>
-    </div>
+    @for (exm of examinations; track exm) {
+      <div class="col-span-1">
+        <ph-encyclopedia-procedure-card
+          [procedure]="exm"
+          [type]="'EXM'"
+        ></ph-encyclopedia-procedure-card>
+      </div>
+    }
   </section>
-</ng-container>
+}
 
