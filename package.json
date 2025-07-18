@@ -49,7 +49,7 @@
     "@nx/workspace": "21.2.4",
     "@schematics/angular": "20.1.1",
     "@swc-node/register": "~1.10.0",
-    "@swc/core": "~1.12.0",
+    "@swc/core": "~1.13.0",
     "@swc/helpers": "~0.5.11",
     "@types/fs-extra": "^11.0.0",
     "@types/jest": "29.5.14",
