@@ -4,7 +4,7 @@
   "sourceRoot": "apps/ph-scraper/src",
   "projectType": "application",
   "tags": [],
-"targets": {
+  "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
