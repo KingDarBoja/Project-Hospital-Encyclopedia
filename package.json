@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "8.38.0",
     "@typescript-eslint/utils": "8.38.0",
     "autoprefixer": "^10.4.20",
-    "cypress": "14.5.2",
+    "cypress": "14.5.3",
     "esbuild": "^0.25.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
