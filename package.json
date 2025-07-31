@@ -30,9 +30,9 @@
     "zone.js": "0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "20.1.3",
-    "@angular-devkit/core": "20.1.3",
-    "@angular-devkit/schematics": "20.1.3",
+    "@angular-devkit/build-angular": "20.1.4",
+    "@angular-devkit/core": "20.1.4",
+    "@angular-devkit/schematics": "20.1.4",
     "@angular-eslint/eslint-plugin": "20.1.1",
     "@angular-eslint/eslint-plugin-template": "20.1.1",
     "@angular-eslint/template-parser": "20.1.1",
@@ -47,7 +47,7 @@
     "@nx/js": "21.3.10",
     "@nx/node": "21.3.10",
     "@nx/workspace": "21.3.10",
-    "@schematics/angular": "20.1.3",
+    "@schematics/angular": "20.1.4",
     "@swc-node/register": "~1.10.0",
     "@swc/core": "~1.13.0",
     "@swc/helpers": "~0.5.11",
