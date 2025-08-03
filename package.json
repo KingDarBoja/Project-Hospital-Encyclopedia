@@ -70,7 +70,7 @@
     "nx": "21.3.10",
     "postcss": "^8.4.49",
     "prettier": "2.8.8",
-    "ts-jest": "29.4.0",
+    "ts-jest": "29.4.1",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
     "jest-util": "30.0.5"
