@@ -23,7 +23,7 @@ jobs:
 
       # Setup NodeJS and dependencies
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22.19.0'
 
