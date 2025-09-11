@@ -91,7 +91,8 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/apps/ph-encyclopedia"],
       "options": {
-        "jestConfig": "apps/ph-encyclopedia/jest.config.ts"
+        "jestConfig": "apps/ph-encyclopedia/jest.config.ts",
+        "tsConfig": "apps/ph-encyclopedia/tsconfig.spec.json"
       }
     },
     "deploy": {
