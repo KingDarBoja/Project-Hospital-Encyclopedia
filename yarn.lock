@@ -141,12 +141,12 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@angular-devkit/architect@0.2003.5":
-  version "0.2003.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.2003.5.tgz#8ddb672c06083e8c2b8b477d974c09096267b577"
-  integrity sha512-KtA//ucTIdnKp1+vTYnqBallEbiZHLx3Gs7XgYm+p4VJfVjbMZHWY2vrbJoyCUp05goiv2XnDy0bKQ9VYHePWg==
+"@angular-devkit/architect@0.2003.6":
+  version "0.2003.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.2003.6.tgz#e242a12e49c577703a77ac26d2fff321d1ab336c"
+  integrity sha512-VtXxfJzrBZ8MQN83shXNaTUaLSOIwa+4/3LD5drxSnHuYJrz+d3FIApWAxcA9QzucsTDZwXyFxaWZN/e5XVm6g==
   dependencies:
-    "@angular-devkit/core" "20.3.5"
+    "@angular-devkit/core" "20.3.6"
     rxjs "7.8.2"
 
 "@angular-devkit/architect@~0.1800.0":
@@ -157,16 +157,16 @@
     "@angular-devkit/core" "18.0.7"
     rxjs "7.8.1"
 
-"@angular-devkit/build-angular@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-20.3.5.tgz#ce2710bd72450c3d321dc9293c4e720dbcc433a2"
-  integrity sha512-33bG6ic/GC9OrqPiR6ynTpnw9vKfebZtWQzFO9ovjkUoZt4lUFWUgo/F0zeoaJgj0N35Ihn3Dvtxz/x2rwr9lw==
+"@angular-devkit/build-angular@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-20.3.6.tgz#90bf374a1b1b54cc7c14299eb3ebaf1c9969d494"
+  integrity sha512-yCybq8Lh6PnuN5oa81qFDmHjV/MMB1tOY99NU6N/DM4IcbGdyS8IFEeVvM3ohz6bTnqvkmi3rSxWs1jDWvm5/Q==
   dependencies:
     "@ampproject/remapping" "2.3.0"
-    "@angular-devkit/architect" "0.2003.5"
-    "@angular-devkit/build-webpack" "0.2003.5"
-    "@angular-devkit/core" "20.3.5"
-    "@angular/build" "20.3.5"
+    "@angular-devkit/architect" "0.2003.6"
+    "@angular-devkit/build-webpack" "0.2003.6"
+    "@angular-devkit/core" "20.3.6"
+    "@angular/build" "20.3.6"
     "@babel/core" "7.28.3"
     "@babel/generator" "7.28.3"
     "@babel/helper-annotate-as-pure" "7.27.3"
@@ -177,7 +177,7 @@
     "@babel/preset-env" "7.28.3"
     "@babel/runtime" "7.28.3"
     "@discoveryjs/json-ext" "0.6.3"
-    "@ngtools/webpack" "20.3.5"
+    "@ngtools/webpack" "20.3.6"
     ansi-colors "4.1.3"
     autoprefixer "10.4.21"
     babel-loader "10.0.0"
@@ -219,12 +219,12 @@
   optionalDependencies:
     esbuild "0.25.9"
 
-"@angular-devkit/build-webpack@0.2003.5":
-  version "0.2003.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-webpack/-/build-webpack-0.2003.5.tgz#4d98504bd22b51f8f08473fb13c4c7b17acf8a76"
-  integrity sha512-BdcaJ5c/a+SD8ZaUo1Qq0a03zeTvGX4ydIaM4li5JYuA8bPCibU9tnb/1FcOWgIZVL1RdV6oIIqbAW6ufq7e1g==
+"@angular-devkit/build-webpack@0.2003.6":
+  version "0.2003.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-webpack/-/build-webpack-0.2003.6.tgz#434d01344e9ba123fb2ea86bcbbf7d72a05f952f"
+  integrity sha512-KcPIZChvJH2+MscD66Ef6+Od8bVjZXnRHpCCxgcmT+VOC2682cCgBVeZFXXlC7+SI8MfFLashIIY3RN5ORYv2w==
   dependencies:
-    "@angular-devkit/architect" "0.2003.5"
+    "@angular-devkit/architect" "0.2003.6"
     rxjs "7.8.2"
 
 "@angular-devkit/core@18.0.7":
@@ -251,10 +251,10 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/core@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-20.3.5.tgz#fb2085bf12d5ca1cfe247216ee1a145b79c95e7b"
-  integrity sha512-NpAP5j3q/n+SC1s0yAWKDAbc7Y8xUxlmJ5iDRJBGu6qDKM7lMnYA1tn2UEy/JnXluJ2XZqqiymrtucw7yux2xQ==
+"@angular-devkit/core@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-20.3.6.tgz#db336cebf6b0e733008aec963347f6b3944f0932"
+  integrity sha512-uLRk3865Iz/EO9Zm/mrFfdyoZinJBihXE6HVDYRYjAqsgW14LsD8pkpWy9+LYlOwcH96Ndnev+msxaTJaNXtPg==
   dependencies:
     ajv "8.17.1"
     ajv-formats "3.0.1"
@@ -263,12 +263,12 @@
     rxjs "7.8.2"
     source-map "0.7.6"
 
-"@angular-devkit/schematics@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-20.3.5.tgz#4681fde63f11c70748ae873a35c1fea9fa9c0787"
-  integrity sha512-BDizJp7QIoCyMZmuGKoryNUH3QgFPnkEIv0gRdpLhZum4+ZN/DYWaf/jSSGnSVGK88oMrgq7420VEjYPlgJ5MA==
+"@angular-devkit/schematics@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-20.3.6.tgz#8741661e81ae49bb8052b400e4a8773c91d726d6"
+  integrity sha512-QD7QS1oR0XcZ9ZI4D1c4JjKmSn2up/ocOU2FS1mMO7S5RtAZMsPv4J3r+6ywHA2ev2sRySOQ0D8OYBcEuYX9Jw==
   dependencies:
-    "@angular-devkit/core" "20.3.5"
+    "@angular-devkit/core" "20.3.6"
     jsonc-parser "3.3.1"
     magic-string "0.30.17"
     ora "8.2.0"
@@ -331,13 +331,13 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/build@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@angular/build/-/build-20.3.5.tgz#c2f9d7bce395c8928651b61b0c947134331d7cf3"
-  integrity sha512-Nwwwm8U7lolkdHt75PiPkW93689SBFUN9qEQeu02sPfq2Tqyn20PZGifXkV8A/6mlWbQUjfUnGpRTVk/WhW9Eg==
+"@angular/build@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular/build/-/build-20.3.6.tgz#26473724085e1276e3a7046eb602cdd2dd6e98a0"
+  integrity sha512-O5qyxCCe77tu1zy9XudKxqFqi5zih0ZI8J8Anra/ZZdtTKbLMprXMGFzMYzwCqvcIzzbmOumkSJKoXbFazHaaw==
   dependencies:
     "@ampproject/remapping" "2.3.0"
-    "@angular-devkit/architect" "0.2003.5"
+    "@angular-devkit/architect" "0.2003.6"
     "@babel/core" "7.28.3"
     "@babel/helper-annotate-as-pure" "7.27.3"
     "@babel/helper-split-export-declaration" "7.24.7"
@@ -374,17 +374,17 @@
     tslib "^2.3.0"
 
 "@angular/cli@~20.3.0":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-20.3.5.tgz#0b2f37fb7d913fee83b3563589b39ca564e7e7c4"
-  integrity sha512-UA843Mh5uHIWnrzKUotGmhJmvefyEizFS7X8xJEUJsX5pa1EKUB/145rKHoLHxRRpHGxFcXtvciJCksFz1lSBA==
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-20.3.6.tgz#628064fb18c57248d23d930f44122955413d31be"
+  integrity sha512-1RozAub7Gcl5ES3vBYatIgoMDgujlvySwHARoYT+1VhbYvM0RTt4sn2aDhHxqG0GcyiXR5zISkzJvldaY2nQCQ==
   dependencies:
-    "@angular-devkit/architect" "0.2003.5"
-    "@angular-devkit/core" "20.3.5"
-    "@angular-devkit/schematics" "20.3.5"
+    "@angular-devkit/architect" "0.2003.6"
+    "@angular-devkit/core" "20.3.6"
+    "@angular-devkit/schematics" "20.3.6"
     "@inquirer/prompts" "7.8.2"
     "@listr2/prompt-adapter-inquirer" "3.0.1"
     "@modelcontextprotocol/sdk" "1.17.3"
-    "@schematics/angular" "20.3.5"
+    "@schematics/angular" "20.3.6"
     "@yarnpkg/lockfile" "1.1.0"
     algoliasearch "5.35.0"
     ini "5.0.0"
@@ -3051,20 +3051,20 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@inquirer/ansi@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/ansi/-/ansi-1.0.0.tgz#29525c673caf36c12e719712830705b9c31f0462"
-  integrity sha512-JWaTfCxI1eTmJ1BIv86vUfjVatOdxwD0DAVKYevY8SazeUUZtW+tNbsdejVO1GYE0GXJW1N1ahmiC3TFd+7wZA==
+"@inquirer/ansi@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@inquirer/ansi/-/ansi-1.0.1.tgz#994f7dd16a00c547a7b110e04bf4f4eca1857929"
+  integrity sha512-yqq0aJW/5XPhi5xOAL1xRCpe1eh8UFVgYFpFsjEqmIR8rKLyP+HINvFXwUaxYICflJrVlxnp7lLN6As735kVpw==
 
 "@inquirer/checkbox@^4.2.1":
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/@inquirer/checkbox/-/checkbox-4.2.4.tgz#efa6f280477a0821c610e502b1c80f167f17ba2e"
-  integrity sha512-2n9Vgf4HSciFq8ttKXk+qy+GsyTXPV1An6QAwe/8bkbbqvG4VW1I/ZY1pNu2rf+h9bdzMLPbRSfcNxkHBy/Ydw==
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/checkbox/-/checkbox-4.3.0.tgz#747ab0ec9b385dd77d3215a51fc9abe25f556a4b"
+  integrity sha512-5+Q3PKH35YsnoPTh75LucALdAxom6xh5D1oeY561x4cqBuH24ZFVyFREPe14xgnrtmGu3EEt1dIi60wRVSnGCw==
   dependencies:
-    "@inquirer/ansi" "^1.0.0"
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/figures" "^1.0.13"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/ansi" "^1.0.1"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/figures" "^1.0.14"
+    "@inquirer/type" "^3.0.9"
     yoctocolors-cjs "^2.1.2"
 
 "@inquirer/confirm@5.1.14":
@@ -3076,12 +3076,12 @@
     "@inquirer/type" "^3.0.8"
 
 "@inquirer/confirm@^5.1.14":
-  version "5.1.18"
-  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-5.1.18.tgz#0b76e5082d834c0e3528023705b867fc1222d535"
-  integrity sha512-MilmWOzHa3Ks11tzvuAmFoAd/wRuaP3SwlT1IZhyMke31FKLxPiuDWcGXhU+PKveNOpAc4axzAgrgxuIJJRmLw==
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-5.1.19.tgz#bf28b420898999eb7479ab55623a3fbaf1453ff4"
+  integrity sha512-wQNz9cfcxrtEnUyG5PndC8g3gZ7lGDBzmWiXZkX8ot3vfZ+/BLjR8EvyGX4YzQLeVqtAlY/YScZpW7CW8qMoDQ==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
 
 "@inquirer/core@^10.1.15":
   version "10.2.0"
@@ -3097,14 +3097,14 @@
     wrap-ansi "^6.2.0"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/core@^10.2.2":
-  version "10.2.2"
-  resolved "https://registry.yarnpkg.com/@inquirer/core/-/core-10.2.2.tgz#d31eb50ba0c76b26e7703c2c0d1d0518144c23ab"
-  integrity sha512-yXq/4QUnk4sHMtmbd7irwiepjB8jXU0kkFRL4nr/aDBA2mDz13cMakEWdDwX3eSCTkk03kwcndD1zfRAIlELxA==
+"@inquirer/core@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/core/-/core-10.3.0.tgz#342e4fd62cbd33ea62089364274995dbec1f2ffe"
+  integrity sha512-Uv2aPPPSK5jeCplQmQ9xadnFx2Zhj9b5Dj7bU6ZeCdDNNY11nhYy4btcSdtDguHqCT2h5oNeQTcUNSGGLA7NTA==
   dependencies:
-    "@inquirer/ansi" "^1.0.0"
-    "@inquirer/figures" "^1.0.13"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/ansi" "^1.0.1"
+    "@inquirer/figures" "^1.0.14"
+    "@inquirer/type" "^3.0.9"
     cli-width "^4.1.0"
     mute-stream "^2.0.0"
     signal-exit "^4.1.0"
@@ -3112,21 +3112,21 @@
     yoctocolors-cjs "^2.1.2"
 
 "@inquirer/editor@^4.2.17":
-  version "4.2.20"
-  resolved "https://registry.yarnpkg.com/@inquirer/editor/-/editor-4.2.20.tgz#25c3ceeaed91f62135832c3792c650b4d8102dc7"
-  integrity sha512-7omh5y5bK672Q+Brk4HBbnHNowOZwrb/78IFXdrEB9PfdxL3GudQyDk8O9vQ188wj3xrEebS2M9n18BjJoI83g==
+  version "4.2.21"
+  resolved "https://registry.yarnpkg.com/@inquirer/editor/-/editor-4.2.21.tgz#9ffe641760a1a1f7722c39be00143060537adcc7"
+  integrity sha512-MjtjOGjr0Kh4BciaFShYpZ1s9400idOdvQ5D7u7lE6VztPFoyLcVNE5dXBmEEIQq5zi4B9h2kU+q7AVBxJMAkQ==
   dependencies:
-    "@inquirer/core" "^10.2.2"
+    "@inquirer/core" "^10.3.0"
     "@inquirer/external-editor" "^1.0.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/type" "^3.0.9"
 
 "@inquirer/expand@^4.0.17":
-  version "4.0.20"
-  resolved "https://registry.yarnpkg.com/@inquirer/expand/-/expand-4.0.20.tgz#7c2b542ccd0d0c85428263c6d56308b880b12cb2"
-  integrity sha512-Dt9S+6qUg94fEvgn54F2Syf0Z3U8xmnBI9ATq2f5h9xt09fs2IJXSCIXyyVHwvggKWFXEY/7jATRo2K6Dkn6Ow==
+  version "4.0.21"
+  resolved "https://registry.yarnpkg.com/@inquirer/expand/-/expand-4.0.21.tgz#3b22eb3d9961bdbad6edb2a956cfcadc15be9128"
+  integrity sha512-+mScLhIcbPFmuvU3tAGBed78XvYHSvCl6dBiYMlzCLhpr0bzGzd8tfivMMeqND6XZiaZ1tgusbUHJEfc6YzOdA==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
     yoctocolors-cjs "^2.1.2"
 
 "@inquirer/external-editor@^1.0.2":
@@ -3137,35 +3137,35 @@
     chardet "^2.1.0"
     iconv-lite "^0.7.0"
 
-"@inquirer/figures@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@inquirer/figures/-/figures-1.0.13.tgz#ad0afd62baab1c23175115a9b62f511b6a751e45"
-  integrity sha512-lGPVU3yO9ZNqA7vTYz26jny41lE7yoQansmqdMLBEfqaGsmdg7V3W9mK9Pvb5IL4EVZ9GnSDGMO/cJXud5dMaw==
+"@inquirer/figures@^1.0.13", "@inquirer/figures@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@inquirer/figures/-/figures-1.0.14.tgz#12a7bfd344a83ae6cc5d6004b389ed11f6db6be4"
+  integrity sha512-DbFgdt+9/OZYFM+19dbpXOSeAstPy884FPy1KjDu4anWwymZeOYhMY1mdFri172htv6mvc/uvIAAi7b7tvjJBQ==
 
 "@inquirer/input@^4.2.1":
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/@inquirer/input/-/input-4.2.4.tgz#8a8b79c9fe31cc036082404b26b601cca0cb6f30"
-  integrity sha512-cwSGpLBMwpwcZZsc6s1gThm0J+it/KIJ+1qFL2euLmSKUMGumJ5TcbMgxEjMjNHRGadouIYbiIgruKoDZk7klw==
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@inquirer/input/-/input-4.2.5.tgz#40fe0a4b585c367089b57ef455da4980fbc5480f"
+  integrity sha512-7GoWev7P6s7t0oJbenH0eQ0ThNdDJbEAEtVt9vsrYZ9FulIokvd823yLyhQlWHJPGce1wzP53ttfdCZmonMHyA==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
 
 "@inquirer/number@^3.0.17":
-  version "3.0.20"
-  resolved "https://registry.yarnpkg.com/@inquirer/number/-/number-3.0.20.tgz#bfbc9cfd5f2730d86036ef124ec151fbd5ea669b"
-  integrity sha512-bbooay64VD1Z6uMfNehED2A2YOPHSJnQLs9/4WNiV/EK+vXczf/R988itL2XLDGTgmhMF2KkiWZo+iEZmc4jqg==
+  version "3.0.21"
+  resolved "https://registry.yarnpkg.com/@inquirer/number/-/number-3.0.21.tgz#fb8fac4c8bd08471b1068dc89f42d61fe3a43ca9"
+  integrity sha512-5QWs0KGaNMlhbdhOSCFfKsW+/dcAVC2g4wT/z2MCiZM47uLgatC5N20kpkDQf7dHx+XFct/MJvvNGy6aYJn4Pw==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
 
 "@inquirer/password@^4.0.17":
-  version "4.0.20"
-  resolved "https://registry.yarnpkg.com/@inquirer/password/-/password-4.0.20.tgz#931c2a321cc09a63d790199702d3930a3e864830"
-  integrity sha512-nxSaPV2cPvvoOmRygQR+h0B+Av73B01cqYLcr7NXcGXhbmsYfUb8fDdw2Us1bI2YsX+VvY7I7upgFYsyf8+Nug==
+  version "4.0.21"
+  resolved "https://registry.yarnpkg.com/@inquirer/password/-/password-4.0.21.tgz#b3422a19621290f2270f9b2ef8eeded8cf85db4f"
+  integrity sha512-xxeW1V5SbNFNig2pLfetsDb0svWlKuhmr7MPJZMYuDnCTkpVBI+X/doudg4pznc1/U+yYmWFFOi4hNvGgUo7EA==
   dependencies:
-    "@inquirer/ansi" "^1.0.0"
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/ansi" "^1.0.1"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
 
 "@inquirer/prompts@7.8.2":
   version "7.8.2"
@@ -3184,39 +3184,39 @@
     "@inquirer/select" "^4.3.1"
 
 "@inquirer/rawlist@^4.1.5":
-  version "4.1.8"
-  resolved "https://registry.yarnpkg.com/@inquirer/rawlist/-/rawlist-4.1.8.tgz#a254a385b715a133dcf42a31161aee8827846a53"
-  integrity sha512-CQ2VkIASbgI2PxdzlkeeieLRmniaUU1Aoi5ggEdm6BIyqopE9GuDXdDOj9XiwOqK5qm72oI2i6J+Gnjaa26ejg==
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/@inquirer/rawlist/-/rawlist-4.1.9.tgz#b4641cb54e130049a13bd1b7621ac766c6d531f2"
+  integrity sha512-AWpxB7MuJrRiSfTKGJ7Y68imYt8P9N3Gaa7ySdkFj1iWjr6WfbGAhdZvw/UnhFXTHITJzxGUI9k8IX7akAEBCg==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/type" "^3.0.9"
     yoctocolors-cjs "^2.1.2"
 
 "@inquirer/search@^3.1.0":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@inquirer/search/-/search-3.1.3.tgz#3a4d725c596617ab9a516906fea9d8347ea5c28f"
-  integrity sha512-D5T6ioybJJH0IiSUK/JXcoRrrm8sXwzrVMjibuPs+AgxmogKslaafy1oxFiorNI4s3ElSkeQZbhYQgLqiL8h6Q==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/search/-/search-3.2.0.tgz#fef378965592e9f407cd4f1f782ca40df1b3ed5e"
+  integrity sha512-a5SzB/qrXafDX1Z4AZW3CsVoiNxcIYCzYP7r9RzrfMpaLpB+yWi5U8BWagZyLmwR0pKbbL5umnGRd0RzGVI8bQ==
   dependencies:
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/figures" "^1.0.13"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/figures" "^1.0.14"
+    "@inquirer/type" "^3.0.9"
     yoctocolors-cjs "^2.1.2"
 
 "@inquirer/select@^4.3.1":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@inquirer/select/-/select-4.3.4.tgz#e50e0c2539631ba93e26adc225a9e0e232883833"
-  integrity sha512-Qp20nySRmfbuJBBsgPU7E/cL62Hf250vMZRzYDcBHty2zdD1kKCnoDFWRr0WO2ZzaXp3R7a4esaVGJUx0E6zvA==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@inquirer/select/-/select-4.4.0.tgz#e19d0d0fbfcd5cb4a20f292e62c88aa8155cc6dc"
+  integrity sha512-kaC3FHsJZvVyIjYBs5Ih8y8Bj4P/QItQWrZW22WJax7zTN+ZPXVGuOM55vzbdCP9zKUiBd9iEJVdesujfF+cAA==
   dependencies:
-    "@inquirer/ansi" "^1.0.0"
-    "@inquirer/core" "^10.2.2"
-    "@inquirer/figures" "^1.0.13"
-    "@inquirer/type" "^3.0.8"
+    "@inquirer/ansi" "^1.0.1"
+    "@inquirer/core" "^10.3.0"
+    "@inquirer/figures" "^1.0.14"
+    "@inquirer/type" "^3.0.9"
     yoctocolors-cjs "^2.1.2"
 
-"@inquirer/type@^3.0.7", "@inquirer/type@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-3.0.8.tgz#efc293ba0ed91e90e6267f1aacc1c70d20b8b4e8"
-  integrity sha512-lg9Whz8onIHRthWaN1Q9EGLa/0LFJjyM8mEUbL1eTi6yMGvBf8gvyDLtxSXztQsxMvhxxNpJYrwa1YHdq+w4Jw==
+"@inquirer/type@^3.0.7", "@inquirer/type@^3.0.8", "@inquirer/type@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-3.0.9.tgz#f7f9696e9276e4e1ae9332767afb9199992e31d9"
+  integrity sha512-QPaNt/nmE2bLGQa9b7wwyRJoLZ7pN6rcyXvzU0YCmivmJyq1BVo94G98tStRWkoD1RgDX5C+dPlhhHzNdu/W/w==
 
 "@isaacs/balanced-match@^4.0.1":
   version "4.0.1"
@@ -4379,10 +4379,10 @@
     "@emnapi/runtime" "^1.5.0"
     "@tybys/wasm-util" "^0.10.1"
 
-"@ngtools/webpack@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-20.3.5.tgz#42ea7bf743048d0a28be7dd95296bb48291f576a"
-  integrity sha512-LThQWzgEw6a1eTRWn2hUxwVe8WalL75yola4AaI8gJVqlRhfTcjqpleULihCm9cynn3HnVsaHFElaoLdxhugCA==
+"@ngtools/webpack@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-20.3.6.tgz#3a45d0f3714ece8b03b97781c6e1e982293f66b6"
+  integrity sha512-PM3ODWdiYmLfUueJR+jpffuX1qwM6kyEOg/SE9+kfSSyu9dRFt3k5LoAHAzH+gbs1JsvztmG/wfkE/ZlexteKQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -5421,13 +5421,13 @@
     error-stack-parser "^2.1.4"
     html-entities "^2.6.0"
 
-"@schematics/angular@20.3.5":
-  version "20.3.5"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-20.3.5.tgz#8adad4116d7cf2c3e93f4488f7b541190314694a"
-  integrity sha512-mrVWO64psqah8E8HgpF30NMizVZyX6aH3k6hqf2tDgU3+giKX7xvTG9UQCaXA4MLBsQbpcWAmwPLipwLnPm8wA==
+"@schematics/angular@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-20.3.6.tgz#b655f73f6c585921e8799bcde5d8ec400949d40a"
+  integrity sha512-YPIEyKPBOyJYlda5fA49kMThzZ4WidomEMDghshux8xidbjDaPWBZdyVPQj3IXyW0teGlUM/TH0TH2weumMZrg==
   dependencies:
-    "@angular-devkit/core" "20.3.5"
-    "@angular-devkit/schematics" "20.3.5"
+    "@angular-devkit/core" "20.3.6"
+    "@angular-devkit/schematics" "20.3.6"
     jsonc-parser "3.3.1"
 
 "@sigstore/bundle@^3.1.0":
@@ -8417,9 +8417,9 @@ emittery@^0.13.1:
   integrity sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==
 
 emoji-regex@^10.3.0:
-  version "10.5.0"
-  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.5.0.tgz#be23498b9e39db476226d8e81e467f39aca26b78"
-  integrity sha512-lb49vf1Xzfx080OKA0o6l8DQQpV+6Vg95zyCJX9VB/BqKYlhG7N4wgROUUHRA+ZPUefLnteQOad7z1kT2bV7bg==
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.6.0.tgz#bf3d6e8f7f8fd22a65d9703475bc0147357a6b0d"
+  integrity sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -8960,9 +8960,9 @@ expect@30.2.0:
     jest-util "30.2.0"
 
 exponential-backoff@^3.1.1:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.2.tgz#a8f26adb96bf78e8cd8ad1037928d5e5c0679d91"
-  integrity sha512-8QxYTVXUkuy7fIIoitQkPwGonB8F3Zj8eEO8Sqg9Zv/bkI7RJAzowee4gr81Hak/dUTpA2Z7VfQgoijjPNlUZA==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.3.tgz#51cf92c1c0493c766053f9d3abee4434c244d2f6"
+  integrity sha512-ZgEeZXj30q+I0EN+CbSSpIyPaJ5HVQD18Z1m+u1FXbAeT94mr1zw50q4q6jiiC447Nl/YTcIYSAftiGqetwXCA==
 
 express-rate-limit@^7.5.0:
   version "7.5.1"
@@ -9770,9 +9770,9 @@ hosted-git-info@^8.0.0:
     lru-cache "^10.0.1"
 
 hosted-git-info@^9.0.0:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-9.0.1.tgz#8d4852bd9673ac78f51fc250b239a29018fa8864"
-  integrity sha512-FLN0k/CSIHgTZr46YbK5od55jQEzWNGCNl8AufispkkTwcIpnxG1NMH52+O7lu0z3mI9bjPfGzcO7MhDesQ1kw==
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-9.0.2.tgz#b38c8a802b274e275eeeccf9f4a1b1a0a8557ada"
+  integrity sha512-M422h7o/BR3rmCQ8UHi7cyyMqKltdP9Uo+J2fXK+RSAY+wTcKOIRyhTuKv4qn+DJf3g+PL890AzId5KZpX+CBg==
   dependencies:
     lru-cache "^11.1.0"
 
@@ -12206,9 +12206,9 @@ node-gyp-build-optional-packages@5.2.2:
     detect-libc "^2.0.1"
 
 node-gyp@^11.0.0:
-  version "11.4.2"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-11.4.2.tgz#bb74cc6a80a0cc301811c8efd755fac39efc7cd0"
-  integrity sha512-3gD+6zsrLQH7DyYOUIutaauuXrcyxeTPyQuZQCQoNPZMHMMS5m4y0xclNpvYzoK3VNzuyxT6eF4mkIL4WSZ1eQ==
+  version "11.5.0"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-11.5.0.tgz#82661b5f40647a7361efe918e3cea76d297fcc56"
+  integrity sha512-ra7Kvlhxn5V9Slyus0ygMa2h+UqExPqUIkfk7Pc8QTLT956JLSy51uWFwHtIYy0vI8cB4BDhc/S03+880My/LQ==
   dependencies:
     env-paths "^2.2.0"
     exponential-backoff "^3.1.1"
