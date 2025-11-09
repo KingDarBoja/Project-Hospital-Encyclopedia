@@ -59,7 +59,7 @@
     "@typescript-eslint/utils": "8.46.3",
     "autoprefixer": "^10.4.20",
     "cypress": "15.6.0",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.27.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-cypress": "2.15.2",
