@@ -273,44 +273,44 @@
     ora "9.0.0"
     rxjs "7.8.2"
 
-"@angular-eslint/bundled-angular-compiler@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-21.2.0.tgz#634cf61fd0c2974e4ad38affee2354e46a17875c"
-  integrity sha512-J0DWL+j6t9ItFIyIADvzHGqwDA1qfVJ9bx+oTmJ/Hlo7cUpIRoXpcTXpug0CEEABFH0RfDu6PDG2b0FoZ1+7bg==
+"@angular-eslint/bundled-angular-compiler@21.3.0":
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-21.3.0.tgz#3d2aff8a753809a18c4e931270ecda79694b13aa"
+  integrity sha512-l521I24J9gJxyMbRkrM24Tc7W8J8BP+TDAmVs2nT8+lXbS3kg8QpWBRtd+hNUgq6o+vt+lKBkytnEfu8OiqeRg==
 
-"@angular-eslint/eslint-plugin-template@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-21.2.0.tgz#bec5597284d662ef384c48e09a4cc6455540bb1e"
-  integrity sha512-lJ13Dj0DjR6YiceQR0sRbyWzSzOQ6uZPwK9CJUF3wuZjYAUvL1D61zaU9QrVLtf89NVOxv+dYZHDdu3IDeIqbA==
+"@angular-eslint/eslint-plugin-template@21.3.0":
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-21.3.0.tgz#142ee21b8943508348ef258c6ca2d4cfefcb6d10"
+  integrity sha512-lVixd/KypPWgA/5/pUOhJV9MTcaHjYZEqyOi+IiLk+h+maGxn6/s6Ot+20n+XGS85zAgOY+qUw6EEQ11hoojIQ==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.2.0"
-    "@angular-eslint/utils" "21.2.0"
+    "@angular-eslint/bundled-angular-compiler" "21.3.0"
+    "@angular-eslint/utils" "21.3.0"
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
-"@angular-eslint/eslint-plugin@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin/-/eslint-plugin-21.2.0.tgz#9377d1108f28738e7187a470d3902a20816054f9"
-  integrity sha512-X2Qn2viDsjm91CEMxNrxDH3qkKpp6un0C1F1BW2p/m9J4AUVfOcXwWz9UpHFSHTRQ+YlTJbiH1ZwwAPeKhFaxA==
+"@angular-eslint/eslint-plugin@21.3.0":
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin/-/eslint-plugin-21.3.0.tgz#719c269abb6aadd0e1d59392266e2c24ad68b243"
+  integrity sha512-Whf/AUUBekOlfSJRS78m76YGrBQAZ3waXE7oOdlW5xEQvn8jBDN9EGuNnjg/syZzvzjK4ZpYC4g1XYXrc+fQIg==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.2.0"
-    "@angular-eslint/utils" "21.2.0"
+    "@angular-eslint/bundled-angular-compiler" "21.3.0"
+    "@angular-eslint/utils" "21.3.0"
     ts-api-utils "^2.1.0"
 
-"@angular-eslint/template-parser@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/template-parser/-/template-parser-21.2.0.tgz#1c21ccfc5715f39a9dcabed00d3e667a950b2422"
-  integrity sha512-TCb3qYOC/uXKZCo56cJ6N9sHeWdFhyVqrbbYfFjTi09081T6jllgHDZL5Ms7gOMNY8KywWGGbhxwvzeA0RwTgA==
+"@angular-eslint/template-parser@21.3.0":
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/template-parser/-/template-parser-21.3.0.tgz#2f234bfee66c376fe36e7df63c37a225d7c2bddb"
+  integrity sha512-ysyou1zAY6M6rSZNdIcYKGd4nk6TCapamyFNB3ivmTlVZ0O35TS9o/rJ0aUttuHgDp+Ysgs3ql+LA746PXgCyQ==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.2.0"
-    eslint-scope "^9.0.0"
+    "@angular-eslint/bundled-angular-compiler" "21.3.0"
+    eslint-scope "^9.1.1"
 
-"@angular-eslint/utils@21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-21.2.0.tgz#67dd355427bf07c57eee4a2a3723235b08cb5a07"
-  integrity sha512-E19/hkuvHoNFvctBkmEiGWpy2bbC6cgbr3GNVrn2nGtbI4jnwnDFCGHv50I4LBfvj0PA9E6TWe73ejJ5qoMJWQ==
+"@angular-eslint/utils@21.3.0":
+  version "21.3.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-21.3.0.tgz#7ddb1ad94ef3c6435f1aced6cbf2a25523627fdb"
+  integrity sha512-oNigH6w3l+owTMboj/uFG0tHOy43uH8BpQRtBOQL1/s2+5in/BJ2Fjobv3SyizxTgeJ1FhRefbkT8GmVjK7jAA==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.2.0"
+    "@angular-eslint/bundled-angular-compiler" "21.3.0"
 
 "@angular/animations@21.2.4":
   version "21.2.4"
@@ -6208,6 +6208,11 @@
   dependencies:
     "@types/estree" "*"
 
+"@types/esrecurse@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@types/esrecurse/-/esrecurse-4.3.1.tgz#6f636af962fbe6191b830bd676ba5986926bccec"
+  integrity sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==
+
 "@types/estree@*":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
@@ -9346,11 +9351,13 @@ eslint-scope@^8.4.0:
     esrecurse "^4.3.0"
     estraverse "^5.2.0"
 
-eslint-scope@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-9.0.0.tgz#b4eeba2278f9cfc440c7a126da58795b666909c6"
-  integrity sha512-+Yh0LeQKq+mW/tQArNj67tljR3L1HajDTQPuZOEwC00oBdoIDQrr89yBgjAlzAwRrY/5zDkM3v99iGHwz9y0dw==
+eslint-scope@^9.1.1:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-9.1.2.tgz#b9de6ace2fab1cff24d2e58d85b74c8fcea39802"
+  integrity sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==
   dependencies:
+    "@types/esrecurse" "^4.3.1"
+    "@types/estree" "^1.0.8"
     esrecurse "^4.3.0"
     estraverse "^5.2.0"
 
