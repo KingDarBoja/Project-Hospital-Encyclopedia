@@ -11893,10 +11893,10 @@ jest-pnp-resolver@^1.2.3:
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.3.tgz#930b1546164d4ad5937d5540e711d4d38d4cad2e"
   integrity sha512-+3NpwQEnRoIBtx4fyhblQDPgJI0H1IEIkX7ShLUjPGA7TtUTvI1oiKi3SR4oBR0hQhQR80l4WAe5RrXBwWMA8w==
 
-jest-preset-angular@16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-16.0.0.tgz#2bf5fc0061896f82c7f52c432e7f2f0d6edc2d90"
-  integrity sha512-FVo98EZiJ9cwHeteJozCCIkgJecytt1tu0t8DrAMTyyQ4x/seeZmctkWXP0J9uGyARS0Kcwd+f2YeKqKQOB2yA==
+jest-preset-angular@16.1.4:
+  version "16.1.4"
+  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-16.1.4.tgz#01a234118d58804ac027d4806162c91e678e31cc"
+  integrity sha512-9RAEcxejwhumdGhOabraQ6ZSNAKJfOHHeQpq47fYOfBNNl4CIQf9um7a6vGK2iGSxvo0tNzw1mNVlYWKkPWx1g==
   dependencies:
     "@jest/environment-jsdom-abstract" "^30.0.0"
     bs-logger "^0.2.6"
