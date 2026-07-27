@@ -28,7 +28,12 @@
         "libs/shared/procedures/src/index.ts"
       ],
       "@ph-encyclopedia/shared/symptoms": ["libs/shared/symptoms/src/index.ts"]
-    }
+    },
+    "strict": false,
+    "noUncheckedSideEffectImports": false,
+    "types": ["*"],
+    "esModuleInterop": false,
+    "ignoreDeprecations": "6.0"
   },
   "exclude": ["node_modules", "tmp"]
 }

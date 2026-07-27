@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SymptomSchema } from '@ph-encyclopedia/shared/symptoms';
 import { map } from 'rxjs/operators';
 
 @Component({
     templateUrl: 'symptom-list.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class SymptomListComponent {

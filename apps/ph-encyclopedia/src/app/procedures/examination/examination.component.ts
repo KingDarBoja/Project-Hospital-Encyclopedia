@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
@@ -6,6 +6,7 @@ import { ProcedureSchema } from '@ph-encyclopedia/shared/procedures';
 @Component({
     selector: 'ph-encyclopedia-examination-list',
     templateUrl: 'examination.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ExaminationComponent {
