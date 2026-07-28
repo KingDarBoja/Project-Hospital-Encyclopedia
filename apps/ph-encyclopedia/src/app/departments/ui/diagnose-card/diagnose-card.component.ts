@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { DiagnoseSchema } from '@ph-encyclopedia/shared/diagnoses';
 
 @Component({
     selector: 'ph-encyclopedia-diagnose-card',
     templateUrl: 'diagnose-card.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 

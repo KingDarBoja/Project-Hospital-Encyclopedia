@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import {
   RouterLink,
@@ -33,6 +33,7 @@ type NavigationSection = Array<{
     selector: 'ph-encyclopedia-app-navigation',
     templateUrl: './navigation.component.html',
     styleUrl: './navigation.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         CommonModule,
         MatToolbarModule,

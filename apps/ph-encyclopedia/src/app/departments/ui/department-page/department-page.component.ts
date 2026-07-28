@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EMPTY, map, switchMap } from 'rxjs';
 import {
@@ -24,6 +24,7 @@ const DepartmentTitles: Record<OfficialDepartments, string> = {
 @Component({
     selector: 'ph-encyclopedia-department-page',
     templateUrl: 'department-page.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class DepartmentPageComponent {
