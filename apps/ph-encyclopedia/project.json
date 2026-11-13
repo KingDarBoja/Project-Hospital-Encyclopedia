@@ -9,6 +9,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/ph-encyclopedia",
         "index": "apps/ph-encyclopedia/src/index.html",
@@ -62,11 +63,12 @@
           "sourceMap": true,
           "namedChunks": true
         }
-      },
-      "defaultConfiguration": "production"
+      }
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
+      "defaultConfiguration": "development",
+      "continuous": true,
       "configurations": {
         "production": {
           "buildTarget": "ph-encyclopedia:build:production"
@@ -75,24 +77,14 @@
           "buildTarget": "ph-encyclopedia:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "continuous": true
+      "readyWhen": {
+        "signal": true
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
         "buildTarget": "ph-encyclopedia:build"
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint"
-    },
-    "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/apps/ph-encyclopedia"],
-      "options": {
-        "jestConfig": "apps/ph-encyclopedia/jest.config.ts",
-        "tsConfig": "apps/ph-encyclopedia/tsconfig.spec.json"
       }
     },
     "deploy": {
